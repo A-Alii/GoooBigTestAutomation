@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="deviceName" value="emulator-5554"></parameter>
+    <parameter name="platformName" value="Android"></parameter>
+    <parameter name="platformVersion" value="9"></parameter>
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="F:/GoooBigMobileApp">
+        <classes>
+            <class name="GoooBigTestCases.GoooBig_Preparation"></class>
+            <class name="GoooBigTestCases.GoooBig_Login"></class>
+            <!--<class name="GoooBigTestCases.GoooBig_Home"></class>-->
+            <class name="GoooBigTestCases.GoooBig_branchesAndWarehouses"></class>
+            <class name="GoooBigTestCases.GoooBig_ShiftStart"></class>
+            <class name="GoooBigTestCases.GoooBig_Invoices"></class>
+            <!--<class name="GoooBigTestCases.GoooBig_PendingInvoice"></class>
+            <class name="GoooBigTestCases.GoooBig_NoticeCreditor"></class>
+            <class name="GoooBigTestCases.GoooBig_PostPaid"></class>
+            <class name="GoooBigTestCases.GoooBig_PriceOffer"></class>-->
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,1 @@
+Output Of testcase: TEST CASE PASSED and Logo Is Exist In Home Page.
