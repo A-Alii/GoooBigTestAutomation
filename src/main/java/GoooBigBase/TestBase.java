@@ -13,6 +13,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
+
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -83,4 +87,16 @@ public class TestBase {
         return null;
     }
 
+    public void cropImageUsingAwt(String inputImagePath, String outputImagePath) {
+        try {
+            BufferedImage originalImage = ImageIO.read(new File(inputImagePath));
+            // Define the rectangle to crop (these values should be adjusted based on your target area)
+            // Example values for the rectangle (x, y, width, height)
+            Rectangle rectCrop = new Rectangle(300, 650, 400, 300); // Adjust these values
+            BufferedImage croppedImage = originalImage.getSubimage(rectCrop.x, rectCrop.y, rectCrop.width, rectCrop.height);
+            ImageIO.write(croppedImage, "png", new File(outputImagePath));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

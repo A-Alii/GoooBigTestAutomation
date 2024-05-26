@@ -112,8 +112,6 @@ public class Invoices extends TestBase {
         hamburgerMenu.click();
         settings.click();
         printingSettings.click();
-        check1.click();
-        check2.click();
         chooseInvoice.click();
         A4.click();
         submitCheck.click();

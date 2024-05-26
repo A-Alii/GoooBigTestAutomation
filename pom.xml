@@ -37,6 +37,16 @@
       <artifactId>tess4j</artifactId>
       <version>4.5.5</version>
     </dependency>
-
+    <!-- https://mvnrepository.com/artifact/org.opencv/opencv -->
+    <dependency>
+      <groupId>org.opencv</groupId>
+      <artifactId>opencv</artifactId>
+      <version>4.9.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example</groupId>
+      <artifactId>GoooBigMobileApp</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
   </dependencies>
 </project>
