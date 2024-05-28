@@ -39,7 +39,6 @@ public class TestBase {
     @Parameters({"deviceName", "platformName", "platformVersion"})
     @BeforeSuite
     public void beforeClass(String deviceName, String platformName, String platformVersion) throws IOException {
-
         File propFile = new File("src\\main\\java\\GoooBigResources\\config.properties");
         inputStream = new FileInputStream(propFile);
         prop = new Properties();
@@ -52,14 +51,8 @@ public class TestBase {
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, prop.getProperty("androidAutomationName"));
         caps.setCapability(MobileCapabilityType.APP, androidApp.getAbsolutePath());
         driver = new AndroidDriver<MobileElement>(new URL(prop.getProperty("appiumServerLink")), caps);
-
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
-
-    /*@AfterClass
-    public void tearDown(){
-        driver.quit();
-    }*/
 
     public AppiumDriver<MobileElement> getDriver() {
         return driver;

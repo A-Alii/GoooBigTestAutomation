@@ -31,10 +31,12 @@ public class GoooBig_branchesAndWarehouses extends TestBase {
         branchesAndWarehouses.clickOnCashier();
         Allure.step("verify to select valid warehouse from list.");
         branchesAndWarehouses.selectOptionFromList();
+        String WarehouseName = branchesAndWarehouses.getBranchName();
+        System.out.println("Warehouse Name is: " + WarehouseName);
         Allure.step("verify to click on Apply button.");
         Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         branchesAndWarehouses.clickOnApply();
         System.out.println("TEST CASE DONE SUCCESSFULLY");
-
     }
+
 }

@@ -55,8 +55,8 @@ public class GoooBig_ShiftStart extends TestBase {
         Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         shiftStart.ClickOnApplyButton();
         System.out.println("Shift Started Successfully");
-        shiftStart.ClickOnCashier();
-        shiftStart.hideKeyboard();
+        /*shiftStart.ClickOnCashier();
+        shiftStart.hideKeyboard();*/
     }
 
 

@@ -16,10 +16,21 @@ public class HomeScreen extends TestBase {
         this.driver = driver;
     }
 
+    public void hideKeyboard() {
+        driver.hideKeyboard();
+    }
+    public void navigate(){
+        driver.navigate().back();
+    }
+
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index='1']")
     private MobileElement Logo;
     public boolean isLogoDisplay(){
         return Logo.isDisplayed();
+    }
+
+    public void NavigateBack(){
+        driver.navigate().back();
     }
 
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='إدارة التشغيل']")
@@ -76,6 +87,64 @@ public class HomeScreen extends TestBase {
         return Categories.isDisplayed();
     }
 
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='الفروع']")
+    private MobileElement WarehousesOption;
+    public void NavigateToWarehouses(){
+        WarehousesOption.click();
+    }
 
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
+    private MobileElement WarehouseName;
+    public String getTextOfWarehouseName() {
+        return WarehouseName.getAttribute("content-desc");
+    }
+
+    @AndroidFindBy(xpath = "//android.view.View[@index='3']")
+    private MobileElement warehouse;
+    public String getTextOfWarehouseInHomeScreen(){
+        return warehouse.getAttribute("content-desc");
+    }
+
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, ')') and contains(@index, '0')]")
+    private MobileElement WarehouseInHamburgerMenu;
+    public String getTextOfWarehouseInHamburgerMenu(){
+        return WarehouseInHamburgerMenu.getAttribute("content-desc");
+    }
+
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='1']")
+    private MobileElement cancelIcon;
+    public void clickOnCancelIcon(){
+        cancelIcon.click();
+    }
+
+    @AndroidFindBy(xpath = "//android.view.View[@index='3']")
+    private MobileElement UpdateSection;
+    public boolean UpdateSectionIsDisplay(){
+        return UpdateSection.isDisplayed();
+    }
+
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='8']")
+    private MobileElement favoriteIcon;
+    public void clickOnFavoriteIcon(){
+        favoriteIcon.click();
+    }
+
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='3']")
+    private MobileElement categoriesIcon;
+    public void clickOnCategoriesIcon(){
+        categoriesIcon.click();
+    }
+
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='المزيد']")
+    private MobileElement moreIcon;
+    public void clickOnMoreIcon(){
+        moreIcon.click();
+    }
+
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='7']")
+    private MobileElement homeIcon;
+    public void clickOnHomeIcon(){
+        homeIcon.click();
+    }
 
 }

@@ -23,11 +23,16 @@ public class BranchesAndWarehouses extends TestBase {
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='اختر الفرع']")
     private MobileElement BranchesAndWarehouses;
     @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, 'مستودع') and contains(@index, '0')]")
-    private MobileElement BrancheRyadh;
+    private MobileElement SelectWarehouse;
     public void selectOptionFromList() throws InterruptedException{
         BranchesAndWarehouses.click();
-        BrancheRyadh.click();
-        //System.out.println(BrancheRyadh.getText());
+        SelectWarehouse.click();
+    }
+
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
+    private MobileElement WarehouseNameInBranches;
+    public String getBranchName(){
+        return WarehouseNameInBranches.getAttribute("content-desc");
     }
 
 }
