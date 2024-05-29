@@ -3,24 +3,19 @@ package GoooBigTestCases;
 import GoooBigBase.TestBase;
 import GoooBigListener.TestListener;
 import GoooBigScreens.Login;
-import GoooBigScreens.OrganizationPreparation;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
-import java.io.ByteArrayInputStream;
 
 import static io.qameta.allure.SeverityLevel.CRITICAL;
 
 @Listeners(TestListener.class)
 public class GoooBig_Login extends TestBase {
-     Login login;
+    Login login;
+
     /*@Test(priority = 1)
     @Description("This test attempts to login to organization using an Empty Data UserId and a password.")
     @Severity(CRITICAL)

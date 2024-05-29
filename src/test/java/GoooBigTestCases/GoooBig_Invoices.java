@@ -17,25 +17,22 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
-import java.util.Base64;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 import static io.qameta.allure.SeverityLevel.CRITICAL;
 
 @Listeners(TestListener.class)
 public class GoooBig_Invoices extends TestBase {
     Invoices invoices;
+
     @Test(priority = 1)
     @Description("This test attempts to Small Tax Invoice with discount over Product level")
     @Severity(CRITICAL)
@@ -172,8 +169,8 @@ public class GoooBig_Invoices extends TestBase {
                 System.out.println("الخصم(السلة) : " + secondNumber);
                 System.out.println("المجموع(السلة) : " + thirdNumber);
                 // Convert strings to BigDecimal for comparison
-                BigDecimal expectedTotalAmount = new BigDecimal(totalAmount).setScale(2, BigDecimal.ROUND_HALF_UP);
-                BigDecimal actualTotalAmount = new BigDecimal(thirdNumber).setScale(2, BigDecimal.ROUND_HALF_UP);
+                BigDecimal expectedTotalAmount = new BigDecimal(totalAmount).setScale(2, RoundingMode.HALF_UP);
+                BigDecimal actualTotalAmount = new BigDecimal(thirdNumber).setScale(2, RoundingMode.HALF_UP);
                 // Assertions
                 Allure.step("Assert Total Amount in cart with Total Amount in invoice.");
                 Assert.assertEquals(expectedTotalAmount, actualTotalAmount);
@@ -214,6 +211,7 @@ public class GoooBig_Invoices extends TestBase {
         invoices.hideKeyboard();
         System.out.println("Invoice Small Tax Added Successfully");
     }
+
     @Test(priority = 2)
     @Description("This test attempts to Small Non Tax Invoice With Discount over Invoice level")
     @Severity(CRITICAL)
@@ -334,8 +332,8 @@ public class GoooBig_Invoices extends TestBase {
                 System.out.println("الخصم(السلة) : " + secondNumber);
                 System.out.println("المجموع(السلة) : " + thirdNumber);
                 // Convert strings to BigDecimal for comparison
-                BigDecimal expectedTotalAmount = new BigDecimal(totalAmount).setScale(2, BigDecimal.ROUND_HALF_UP);
-                BigDecimal actualTotalAmount = new BigDecimal(thirdNumber).setScale(2, BigDecimal.ROUND_HALF_UP);
+                BigDecimal expectedTotalAmount = new BigDecimal(totalAmount).setScale(2, RoundingMode.HALF_UP);
+                BigDecimal actualTotalAmount = new BigDecimal(thirdNumber).setScale(2, RoundingMode.HALF_UP);
                 // Assertions
                 Allure.step("Assert Total Amount in cart with Total Amount in invoice.");
                 Assert.assertEquals(expectedTotalAmount, actualTotalAmount);
@@ -375,6 +373,7 @@ public class GoooBig_Invoices extends TestBase {
         invoices.hideKeyboard();
         System.out.println("Invoice Small Non Tax Added Successfully");
     }
+
     @Test(priority = 3)
     @Description("This test attempts to A4 Tax Invoice with discount over Product level")
     @Severity(CRITICAL)
@@ -493,7 +492,7 @@ public class GoooBig_Invoices extends TestBase {
             System.out.println("استخراج القيمة بأستخدام المفتاح الخاص بها من الفاتورة");
             System.out.println("----------------------------------------------------");
             String totalAmount = extractValueByKeyA4(result, "الاجمالى");
-            System.out.println( "الاجمالى(الفاتورة) : " + totalAmount);
+            System.out.println("الاجمالى(الفاتورة) : " + totalAmount);
             String discountAmount = extractValueByKeyA4(result, "مجموع الخصومات");
             System.out.println("الخصم(الفاتورة) : " + discountAmount);
             String totalAmountAfterDiscount = extractValueByKeyA4(result, "إجمالى المبلغ المستحق");
@@ -529,10 +528,10 @@ public class GoooBig_Invoices extends TestBase {
                 System.out.println("المجموع بعد الخصم(السلة) : " + thirdNumber);
 
                 try {
-                    BigDecimal expectedDiscount = new BigDecimal(discountAmount).setScale(2, BigDecimal.ROUND_HALF_UP);
-                    BigDecimal actualDiscount = new BigDecimal(secondNumber).setScale(2, BigDecimal.ROUND_HALF_UP);
-                    BigDecimal expectedAmountAfterDiscount = new BigDecimal(totalAmountAfterDiscount).setScale(2, BigDecimal.ROUND_HALF_UP);
-                    BigDecimal actualAmountAfterDiscount = new BigDecimal(thirdNumber).setScale(2, BigDecimal.ROUND_HALF_UP);
+                    BigDecimal expectedDiscount = new BigDecimal(discountAmount).setScale(2, RoundingMode.HALF_UP);
+                    BigDecimal actualDiscount = new BigDecimal(secondNumber).setScale(2, RoundingMode.HALF_UP);
+                    BigDecimal expectedAmountAfterDiscount = new BigDecimal(totalAmountAfterDiscount).setScale(2, RoundingMode.HALF_UP);
+                    BigDecimal actualAmountAfterDiscount = new BigDecimal(thirdNumber).setScale(2, RoundingMode.HALF_UP);
 
                     // Assertions
                     Allure.step("Assert Total Discount Amount in cart with Total Discount Amount in invoice.");
@@ -549,8 +548,7 @@ public class GoooBig_Invoices extends TestBase {
                 System.out.println("Not enough numbers extracted to perform assertions.");
             }
 
-        }
-        catch (TesseractException e) {
+        } catch (TesseractException e) {
             e.printStackTrace();
             System.out.println("Error while extracting text from image: " + e.getMessage());
         }
@@ -565,15 +563,14 @@ public class GoooBig_Invoices extends TestBase {
         // Remove non-numeric characters from TotalPrice
         String cleanedTotalPrice = TotalPrice.replaceAll("[^0-9.]", "");
         // Compare TotalPrice with the last extracted number
-        System.out.println("إجمالى سعر الفاتوره فى السلة : " + numbers.get(numbers.size() -1));
+        System.out.println("إجمالى سعر الفاتوره فى السلة : " + numbers.get(numbers.size() - 1));
         if (!numbers.isEmpty()) {
             double totalPriceValue = Double.parseDouble(cleanedTotalPrice);
-            double lastNumberValue = Double.parseDouble(numbers.get(numbers.size() -1));
+            double lastNumberValue = Double.parseDouble(numbers.get(numbers.size() - 1));
             Assert.assertEquals(totalPriceValue, lastNumberValue); // Specify a delta value for double comparison
             System.out.println("TotalPrice is equal to the total Price number in invoices screen.");
             Allure.addAttachment("Test Output", "text/plain", "Assertion Result is: " + "TotalPrice is equal to the total Price number in invoices screen.");
-        }
-        else {
+        } else {
             System.out.println("No number extracted from details to compare with TotalPrice.");
         }
         System.out.println("********************************************");
@@ -581,6 +578,7 @@ public class GoooBig_Invoices extends TestBase {
         invoices.hideKeyboard();
         System.out.println("A4Invoice Added Successfully");
     }
+
     @Test(priority = 4)
     @Description("This test attempts to A4 Invoice with discount over Invoice level")
     @Severity(CRITICAL)
@@ -699,7 +697,7 @@ public class GoooBig_Invoices extends TestBase {
             System.out.println("استخراج القيمة بأستخدام المفتاح الخاص بها من الفاتورة");
             System.out.println("----------------------------------------------------");
             String totalAmount = extractValueByKeyA4(result, "الاجمالى");
-            System.out.println( "الاجمالى(الفاتورة) : " + totalAmount);
+            System.out.println("الاجمالى(الفاتورة) : " + totalAmount);
             String discountAmount = extractValueByKeyA4(result, "مجموع الخصومات");
             System.out.println("الخصم(الفاتورة) : " + discountAmount);
             String totalAmountAfterDiscount = extractValueByKeyA4(result, "إجمالى المبلغ المستحق");
@@ -735,10 +733,10 @@ public class GoooBig_Invoices extends TestBase {
                 System.out.println("المجموع بعد الخصم(السلة) : " + thirdNumber);
 
                 try {
-                    BigDecimal expectedDiscount = new BigDecimal(discountAmount).setScale(2, BigDecimal.ROUND_HALF_UP);
-                    BigDecimal actualDiscount = new BigDecimal(secondNumber).setScale(2, BigDecimal.ROUND_HALF_UP);
-                    BigDecimal expectedAmountAfterDiscount = new BigDecimal(totalAmountAfterDiscount).setScale(2, BigDecimal.ROUND_HALF_UP);
-                    BigDecimal actualAmountAfterDiscount = new BigDecimal(thirdNumber).setScale(2, BigDecimal.ROUND_HALF_UP);
+                    BigDecimal expectedDiscount = new BigDecimal(discountAmount).setScale(2, RoundingMode.HALF_UP);
+                    BigDecimal actualDiscount = new BigDecimal(secondNumber).setScale(2, RoundingMode.HALF_UP);
+                    BigDecimal expectedAmountAfterDiscount = new BigDecimal(totalAmountAfterDiscount).setScale(2, RoundingMode.HALF_UP);
+                    BigDecimal actualAmountAfterDiscount = new BigDecimal(thirdNumber).setScale(2, RoundingMode.HALF_UP);
 
                     // Assertions
                     Allure.step("Assert Total Discount Amount in cart with Total Discount Amount in invoice.");
@@ -755,8 +753,7 @@ public class GoooBig_Invoices extends TestBase {
                 System.out.println("Not enough numbers extracted to perform assertions.");
             }
 
-        }
-        catch (TesseractException e) {
+        } catch (TesseractException e) {
             e.printStackTrace();
             System.out.println("Error while extracting text from image: " + e.getMessage());
         }
@@ -771,15 +768,14 @@ public class GoooBig_Invoices extends TestBase {
         // Remove non-numeric characters from TotalPrice
         String cleanedTotalPrice = TotalPrice.replaceAll("[^0-9.]", "");
         // Compare TotalPrice with the last extracted number
-        System.out.println("إجمالى سعر الفاتوره فى السلة : " + numbers.get(numbers.size() -1));
+        System.out.println("إجمالى سعر الفاتوره فى السلة : " + numbers.get(numbers.size() - 1));
         if (!numbers.isEmpty()) {
             double totalPriceValue = Double.parseDouble(cleanedTotalPrice);
-            double lastNumberValue = Double.parseDouble(numbers.get(numbers.size() -1));
+            double lastNumberValue = Double.parseDouble(numbers.get(numbers.size() - 1));
             Assert.assertEquals(totalPriceValue, lastNumberValue); // Specify a delta value for double comparison
             System.out.println("TotalPrice is equal to the total Price number in invoices screen.");
             Allure.addAttachment("Test Output", "text/plain", "Assertion Result is: " + "TotalPrice is equal to the total Price number in invoices screen.");
-        }
-        else {
+        } else {
             System.out.println("No number extracted from details to compare with TotalPrice.");
         }
         System.out.println("********************************************");
@@ -787,6 +783,7 @@ public class GoooBig_Invoices extends TestBase {
         invoices.hideKeyboard();
         System.out.println("A4Invoice with discount over invoice level Added Successfully");
     }
+
     @Test(priority = 5)
     @Description("This test attempts to Small Non Tax Invoice with discount over Product level")
     @Severity(CRITICAL)
@@ -912,8 +909,8 @@ public class GoooBig_Invoices extends TestBase {
                 System.out.println("الخصم(السلة) : " + secondNumber);
                 System.out.println("المجموع(السلة) : " + thirdNumber);
                 // Convert strings to BigDecimal for comparison
-                BigDecimal expectedTotalAmount = new BigDecimal(totalAmount).setScale(2, BigDecimal.ROUND_HALF_UP);
-                BigDecimal actualTotalAmount = new BigDecimal(thirdNumber).setScale(2, BigDecimal.ROUND_HALF_UP);
+                BigDecimal expectedTotalAmount = new BigDecimal(totalAmount).setScale(2, RoundingMode.HALF_UP);
+                BigDecimal actualTotalAmount = new BigDecimal(thirdNumber).setScale(2, RoundingMode.HALF_UP);
                 // Assertions
                 Allure.step("Assert Total Amount in cart with Total Amount in invoice.");
                 Assert.assertEquals(expectedTotalAmount, actualTotalAmount);
@@ -953,6 +950,7 @@ public class GoooBig_Invoices extends TestBase {
         invoices.hideKeyboard();
         System.out.println("Invoice Small Non Tax Added Successfully");
     }
+
     @Test(priority = 6)
     @Description("This test attempts to Small Non Tax Invoice With Discount over Invoice level")
     @Severity(CRITICAL)
@@ -1073,8 +1071,8 @@ public class GoooBig_Invoices extends TestBase {
                 System.out.println("الخصم(السلة) : " + secondNumber);
                 System.out.println("المجموع(السلة) : " + thirdNumber);
                 // Convert strings to BigDecimal for comparison
-                BigDecimal expectedTotalAmount = new BigDecimal(totalAmount).setScale(2, BigDecimal.ROUND_HALF_UP);
-                BigDecimal actualTotalAmount = new BigDecimal(thirdNumber).setScale(2, BigDecimal.ROUND_HALF_UP);
+                BigDecimal expectedTotalAmount = new BigDecimal(totalAmount).setScale(2, RoundingMode.HALF_UP);
+                BigDecimal actualTotalAmount = new BigDecimal(thirdNumber).setScale(2, RoundingMode.HALF_UP);
                 // Assertions
                 Allure.step("Assert Total Amount in cart with Total Amount in invoice.");
                 Assert.assertEquals(expectedTotalAmount, actualTotalAmount);
@@ -1114,6 +1112,7 @@ public class GoooBig_Invoices extends TestBase {
         invoices.hideKeyboard();
         System.out.println("Invoice Small Non Tax Added Successfully");
     }
+
     @Test(priority = 7)
     @Description("This test attempts to A4 Non Tax Invoice with discount over Product level")
     @Severity(CRITICAL)
@@ -1239,7 +1238,7 @@ public class GoooBig_Invoices extends TestBase {
             System.out.println("استخراج القيمة بأستخدام المفتاح الخاص بها من الفاتورة");
             System.out.println("----------------------------------------------------");
             String totalAmount = extractValueByKeyA4(result, "الاجمالى");
-            System.out.println( "الاجمالى(الفاتورة) : " + totalAmount);
+            System.out.println("الاجمالى(الفاتورة) : " + totalAmount);
             String discountAmount = extractValueByKeyA4(result, "مجموع الخصومات");
             System.out.println("الخصم(الفاتورة) : " + discountAmount);
             String totalAmountAfterDiscount = extractValueByKeyA4(result, "إجمالى المبلغ المستحق");
@@ -1275,10 +1274,10 @@ public class GoooBig_Invoices extends TestBase {
                 System.out.println("المجموع بعد الخصم(السلة) : " + thirdNumber);
 
                 try {
-                    BigDecimal expectedDiscount = new BigDecimal(discountAmount).setScale(2, BigDecimal.ROUND_HALF_UP);
-                    BigDecimal actualDiscount = new BigDecimal(secondNumber).setScale(2, BigDecimal.ROUND_HALF_UP);
-                    BigDecimal expectedAmountAfterDiscount = new BigDecimal(totalAmountAfterDiscount).setScale(2, BigDecimal.ROUND_HALF_UP);
-                    BigDecimal actualAmountAfterDiscount = new BigDecimal(thirdNumber).setScale(2, BigDecimal.ROUND_HALF_UP);
+                    BigDecimal expectedDiscount = new BigDecimal(discountAmount).setScale(2, RoundingMode.HALF_UP);
+                    BigDecimal actualDiscount = new BigDecimal(secondNumber).setScale(2, RoundingMode.HALF_UP);
+                    BigDecimal expectedAmountAfterDiscount = new BigDecimal(totalAmountAfterDiscount).setScale(2, RoundingMode.HALF_UP);
+                    BigDecimal actualAmountAfterDiscount = new BigDecimal(thirdNumber).setScale(2, RoundingMode.HALF_UP);
 
                     // Assertions
                     Allure.step("Assert Total Discount Amount in cart with Total Discount Amount in invoice.");
@@ -1295,8 +1294,7 @@ public class GoooBig_Invoices extends TestBase {
                 System.out.println("Not enough numbers extracted to perform assertions.");
             }
 
-        }
-        catch (TesseractException e) {
+        } catch (TesseractException e) {
             e.printStackTrace();
             System.out.println("Error while extracting text from image: " + e.getMessage());
         }
@@ -1311,15 +1309,14 @@ public class GoooBig_Invoices extends TestBase {
         // Remove non-numeric characters from TotalPrice
         String cleanedTotalPrice = TotalPrice.replaceAll("[^0-9.]", "");
         // Compare TotalPrice with the last extracted number
-        System.out.println("إجمالى سعر الفاتوره فى السلة : " + numbers.get(numbers.size() -1));
+        System.out.println("إجمالى سعر الفاتوره فى السلة : " + numbers.get(numbers.size() - 1));
         if (!numbers.isEmpty()) {
             double totalPriceValue = Double.parseDouble(cleanedTotalPrice);
-            double lastNumberValue = Double.parseDouble(numbers.get(numbers.size() -1));
+            double lastNumberValue = Double.parseDouble(numbers.get(numbers.size() - 1));
             Assert.assertEquals(totalPriceValue, lastNumberValue); // Specify a delta value for double comparison
             System.out.println("TotalPrice is equal to the total Price number in invoices screen.");
             Allure.addAttachment("Test Output", "text/plain", "Assertion Result is: " + "TotalPrice is equal to the total Price number in invoices screen.");
-        }
-        else {
+        } else {
             System.out.println("No number extracted from details to compare with TotalPrice.");
         }
         System.out.println("********************************************");
@@ -1327,6 +1324,7 @@ public class GoooBig_Invoices extends TestBase {
         invoices.hideKeyboard();
         System.out.println("Invoice Small Non Tax Added Successfully");
     }
+
     @Test(priority = 8)
     @Description("This test attempts to A4 Non Tax Invoice With Discount over Invoice level")
     @Severity(CRITICAL)
@@ -1447,7 +1445,7 @@ public class GoooBig_Invoices extends TestBase {
             System.out.println("استخراج القيمة بأستخدام المفتاح الخاص بها من الفاتورة");
             System.out.println("----------------------------------------------------");
             String totalAmount = extractValueByKeyA4(result, "الاجمالى");
-            System.out.println( "الاجمالى(الفاتورة) : " + totalAmount);
+            System.out.println("الاجمالى(الفاتورة) : " + totalAmount);
             String discountAmount = extractValueByKeyA4(result, "مجموع الخصومات");
             System.out.println("الخصم(الفاتورة) : " + discountAmount);
             String totalAmountAfterDiscount = extractValueByKeyA4(result, "إجمالى المبلغ المستحق");
@@ -1483,10 +1481,10 @@ public class GoooBig_Invoices extends TestBase {
                 System.out.println("المجموع بعد الخصم(السلة) : " + thirdNumber);
 
                 try {
-                    BigDecimal expectedDiscount = new BigDecimal(discountAmount).setScale(2, BigDecimal.ROUND_HALF_UP);
-                    BigDecimal actualDiscount = new BigDecimal(secondNumber).setScale(2, BigDecimal.ROUND_HALF_UP);
-                    BigDecimal expectedAmountAfterDiscount = new BigDecimal(totalAmountAfterDiscount).setScale(2, BigDecimal.ROUND_HALF_UP);
-                    BigDecimal actualAmountAfterDiscount = new BigDecimal(thirdNumber).setScale(2, BigDecimal.ROUND_HALF_UP);
+                    BigDecimal expectedDiscount = new BigDecimal(discountAmount).setScale(2, RoundingMode.HALF_UP);
+                    BigDecimal actualDiscount = new BigDecimal(secondNumber).setScale(2, RoundingMode.HALF_UP);
+                    BigDecimal expectedAmountAfterDiscount = new BigDecimal(totalAmountAfterDiscount).setScale(2, RoundingMode.HALF_UP);
+                    BigDecimal actualAmountAfterDiscount = new BigDecimal(thirdNumber).setScale(2, RoundingMode.HALF_UP);
 
                     // Assertions
                     Allure.step("Assert Total Discount Amount in cart with Total Discount Amount in invoice.");
@@ -1503,8 +1501,7 @@ public class GoooBig_Invoices extends TestBase {
                 System.out.println("Not enough numbers extracted to perform assertions.");
             }
 
-        }
-        catch (TesseractException e) {
+        } catch (TesseractException e) {
             e.printStackTrace();
             System.out.println("Error while extracting text from image: " + e.getMessage());
         }
@@ -1519,15 +1516,14 @@ public class GoooBig_Invoices extends TestBase {
         // Remove non-numeric characters from TotalPrice
         String cleanedTotalPrice = TotalPrice.replaceAll("[^0-9.]", "");
         // Compare TotalPrice with the last extracted number
-        System.out.println("إجمالى سعر الفاتوره فى السلة : " + numbers.get(numbers.size() -1));
+        System.out.println("إجمالى سعر الفاتوره فى السلة : " + numbers.get(numbers.size() - 1));
         if (!numbers.isEmpty()) {
             double totalPriceValue = Double.parseDouble(cleanedTotalPrice);
-            double lastNumberValue = Double.parseDouble(numbers.get(numbers.size() -1));
+            double lastNumberValue = Double.parseDouble(numbers.get(numbers.size() - 1));
             Assert.assertEquals(totalPriceValue, lastNumberValue); // Specify a delta value for double comparison
             System.out.println("TotalPrice is equal to the total Price number in invoices screen.");
             Allure.addAttachment("Test Output", "text/plain", "Assertion Result is: " + "TotalPrice is equal to the total Price number in invoices screen.");
-        }
-        else {
+        } else {
             System.out.println("No number extracted from details to compare with TotalPrice.");
         }
         System.out.println("********************************************");

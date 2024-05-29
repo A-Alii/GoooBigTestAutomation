@@ -17,7 +17,38 @@ public class PendingIInvoiceScreen extends TestBase {
     MobileElement NonTax;
     @AndroidFindBy(xpath = "//android.view.View[@index='14']")
     MobileElement submitCheck;
-    public void smallNonTaxInvoicePendingInvoice(){
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='1']")
+    MobileElement searchbar;
+    @AndroidFindBy(xpath = "//android.widget.Button[@index = '0']")
+    MobileElement addToCart;
+    @AndroidFindBy(xpath = "//android.widget.Button[@index = '1']")
+    MobileElement addToCart1;
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'السلة') or contains(@content-desc,'9000 SR')]")
+    MobileElement BasketButton;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc = 'التالي']")
+    MobileElement NextButton;
+    @AndroidFindBy(xpath = "//android.view.View[@index = '1']")
+    MobileElement InvoicePending;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index = '0']")
+    MobileElement EditProduct;
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='6']")
+    MobileElement discountField;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
+    MobileElement submitButton;
+    @AndroidFindBy(xpath = "//android.widget.Button[@index='3']")
+    MobileElement plusIcon;
+    @AndroidFindBy(xpath = "//android.widget.Button[@content-desc='تعليق']")
+    MobileElement Hold;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='الكاشير']")
+    MobileElement Cashier;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الفواتير']")
+    MobileElement Invoices;
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'ختيار عميل') or contains(@content-desc,'SR')]")
+    MobileElement detailsOfInvoice;
+    @AndroidFindBy(xpath = "//android.view.View[@index='7']")
+    MobileElement TotalPendingInvoicePrice;
+
+    public void smallNonTaxInvoicePendingInvoice() {
         hamburgerMenu.click();
         settings.click();
         printingSettings.click();
@@ -25,91 +56,78 @@ public class PendingIInvoiceScreen extends TestBase {
         NonTax.click();
         submitCheck.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.EditText[@index='1']")
-    MobileElement searchbar;
-    public void sendKeysToSearchProduct(String ProductName){
+
+    public void sendKeysToSearchProduct(String ProductName) {
         searchbar.click();
         searchbar.sendKeys(ProductName);
     }
-    public void clickOnClearSearch(){
+
+    public void clickOnClearSearch() {
         clearFields();
     }
+
     public void clearFields() {
         searchbar.clear();
     }
-    @AndroidFindBy(xpath = "//android.widget.Button[@index = '0']")
-    MobileElement addToCart;
-    public void clickOnProduct(){
+
+    public void clickOnProduct() {
         addToCart.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.Button[@index = '1']")
-    MobileElement addToCart1;
-    public void clickOnProduct1(){
+
+    public void clickOnProduct1() {
         addToCart1.click();
     }
-    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'السلة') or contains(@content-desc,'9000 SR')]")
-    MobileElement BasketButton ;
-    public  void goToCart(){
+
+    public void goToCart() {
         BasketButton.click();
     }
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc = 'التالي']")
-    MobileElement NextButton;
-    public void clickOnNextBasket(){
+
+    public void clickOnNextBasket() {
         NextButton.click();
     }
-    @AndroidFindBy(xpath = "//android.view.View[@index = '1']")
-    MobileElement InvoicePending;
-    public void clickOnInvoicePending(){
+
+    public void clickOnInvoicePending() {
         InvoicePending.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index = '0']")
-    MobileElement EditProduct;
-    public void clickOnEditProduct(){
+
+    public void clickOnEditProduct() {
         EditProduct.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.EditText[@index='6']")
-    MobileElement discountField;
-    public void sendKeysToDiscount(String discount){
+
+    public void sendKeysToDiscount(String discount) {
         discountField.click();
         discountField.clear();
         discountField.sendKeys(discount);
         hideKeyboard();
     }
-    public String getDiscountAmount(){
+
+    public String getDiscountAmount() {
         return discountField.getText();
     }
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
-    MobileElement submitButton;
-    public void clickOnSubmitButton(){
+
+    public void clickOnSubmitButton() {
         submitButton.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.Button[@index='3']")
-    MobileElement plusIcon;
-    @AndroidFindBy(xpath = "//android.widget.Button[@content-desc='تعليق']")
-    MobileElement Hold;
-    public void clickOnHoldInvoice(){
+
+    public void clickOnHoldInvoice() {
         plusIcon.click();
         Hold.click();
     }
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc='الكاشير']")
-    MobileElement Cashier;
-    public void clickOnCashier(){
+
+    public void clickOnCashier() {
         Cashier.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الفواتير']")
-    MobileElement Invoices;
-    public void goToInvoices(){
+
+    public void goToInvoices() {
         hamburgerMenu.click();
         Invoices.click();
     }
-    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'ختيار عميل') or contains(@content-desc,'SR')]")
-    MobileElement detailsOfInvoice;
-    public String getDetailsOfInvoice(){
+
+    public String getDetailsOfInvoice() {
         return detailsOfInvoice.getAttribute("content-desc");
     }
-    @AndroidFindBy(xpath = "//android.view.View[@index='7']")
-    MobileElement TotalPendingInvoicePrice;
-    public String getTotalPendingInvoicePrice(){
+
+    public String getTotalPendingInvoicePrice() {
         return TotalPendingInvoicePrice.getAttribute("content-desc");
     }
 }

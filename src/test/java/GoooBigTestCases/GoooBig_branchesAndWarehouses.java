@@ -3,7 +3,6 @@ package GoooBigTestCases;
 import GoooBigBase.TestBase;
 import GoooBigListener.TestListener;
 import GoooBigScreens.BranchesAndWarehouses;
-import GoooBigScreens.HomeScreen;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -20,6 +19,7 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 @Listeners(TestListener.class)
 public class GoooBig_branchesAndWarehouses extends TestBase {
     BranchesAndWarehouses branchesAndWarehouses;
+
     @Test(priority = 1)
     @Description("This test attempts to verify Select Warehouse.")
     @Severity(CRITICAL)

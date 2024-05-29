@@ -5,22 +5,25 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class Login extends TestBase {
-    @AndroidFindBy (xpath = "//android.widget.EditText[@index='0']")
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='0']")
     MobileElement UserName;
-    @AndroidFindBy (xpath = "//android.widget.EditText[@index='1']")
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='1']")
     MobileElement Password;
-    @AndroidFindBy (xpath = "//android.view.View[@content-desc='تسجيل الدخول']")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تسجيل الدخول']")
     MobileElement LoginButton;
-    public String getText(){
+
+    public String getText() {
         return LoginButton.getAttribute("content-desc");
     }
-    public void fillLoginScreen(String Name, String Pass){
+
+    public void fillLoginScreen(String Name, String Pass) {
         UserName.click();
         UserName.sendKeys(Name);
         Password.click();
         Password.sendKeys(Pass);
         LoginButton.click();
     }
+
     public void clearFields() {
         // Clear data from each field
         UserName.click();
@@ -28,7 +31,8 @@ public class Login extends TestBase {
         Password.click();
         Password.clear();
     }
-    public void clickLoginButton(){
+
+    public void clickLoginButton() {
         LoginButton.click();
     }
 }

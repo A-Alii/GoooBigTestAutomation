@@ -1,7 +1,6 @@
 package GoooBigTestCases;
 
 import GoooBigBase.TestBase;
-import GoooBigScreens.Invoices;
 import GoooBigScreens.PendingIInvoiceScreen;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
@@ -20,6 +19,7 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 
 public class GoooBig_PendingInvoice extends TestBase {
     PendingIInvoiceScreen pendingIInvoiceScreen;
+
     @Test(priority = 11)
     @Description("This test attempts to Small Non Tax Invoice with discount over Product level and make it Pending invoice")
     @Severity(CRITICAL)

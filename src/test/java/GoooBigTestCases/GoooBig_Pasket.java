@@ -1,15 +1,14 @@
 package GoooBigTestCases;
 
 import GoooBigBase.TestBase;
-import GoooBigScreens.AddClientScreen;
 import GoooBigScreens.PasketScreen;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class GoooBig_Pasket extends TestBase {
     PasketScreen pasketScreen;
+
     @Test(priority = 1)
-    public void testcase1(){
+    public void testcase1() {
         pasketScreen = new PasketScreen();
         pasketScreen.clickOnEditIcon();
         pasketScreen.sendKeysToDiscount("400");
@@ -17,12 +16,14 @@ public class GoooBig_Pasket extends TestBase {
         //System.out.println(pasketScreen.getDiscountAmount());
         pasketScreen.clickOnSubmitButton();
     }
+
     @Test(priority = 2)
-    public void testcase2(){
+    public void testcase2() {
         pasketScreen = new PasketScreen();
         pasketScreen.clickOnPlusIcon();
         pasketScreen.clickOnNextButton();
     }
+
     @Test(priority = 3)
     public void testcase3() throws InterruptedException {
         pasketScreen = new PasketScreen();

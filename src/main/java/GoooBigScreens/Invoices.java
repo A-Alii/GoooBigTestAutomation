@@ -21,7 +21,48 @@ public class Invoices extends TestBase {
     MobileElement NonTax;
     @AndroidFindBy(xpath = "//android.view.View[@index='14']")
     MobileElement submitCheck;
-    public void smallNonTaxInvoice(){
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='13']")
+    MobileElement chooseInvoice;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc= 'فاتورة غير ضريبية']")
+    MobileElement Tax;
+    @AndroidFindBy(xpath = "//android.view.View[@index='3']")
+    MobileElement A4;
+    @AndroidFindBy(xpath = "//android.view.View[@index='3']")
+    MobileElement A4NonTax;
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='1']")
+    MobileElement searchbar;
+    @AndroidFindBy(xpath = "//android.widget.Button[@index = '0']")
+    MobileElement addToCart;
+    @AndroidFindBy(xpath = "//android.widget.Button[@index = '1']")
+    MobileElement addToCart1;
+    @AndroidFindBy(xpath = "//android.widget.Button[@index = '0']")
+    MobileElement addToCartFirst;
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'السلة') or contains(@content-desc,'9000 SR')]")
+    MobileElement BasketButton;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc = 'التالي']")
+    MobileElement NextButton;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index = '8']")
+    MobileElement CashButton;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index = '0']")
+    MobileElement EditProduct;
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='6']")
+    MobileElement discountField;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
+    MobileElement submitButton;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='الكاشير']")
+    MobileElement Cashier;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='4']")
+    MobileElement DiscountButton;
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='3']")
+    MobileElement discountInvoiceField;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الفواتير']")
+    MobileElement Invoices;
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'ختيار عميل') or contains(@content-desc,'SR')]")
+    MobileElement detailsOfInvoice;
+    @AndroidFindBy(xpath = "//android.view.View[@index='8']")
+    MobileElement TotalInvoicePrice;
+
+    public void smallNonTaxInvoice() {
         hamburgerMenu.click();
         settings.click();
         printingSettings.click();
@@ -31,11 +72,8 @@ public class Invoices extends TestBase {
         NonTax.click();
         submitCheck.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='13']")
-    MobileElement chooseInvoice;
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc= 'فاتورة غير ضريبية']")
-    MobileElement Tax;
-    public void SmallTaxInvoice(){
+
+    public void SmallTaxInvoice() {
         hamburgerMenu.click();
         settings.click();
         printingSettings.click();
@@ -43,11 +81,8 @@ public class Invoices extends TestBase {
         Tax.click();
         submitCheck.click();
     }
-    @AndroidFindBy(xpath = "//android.view.View[@index='3']")
-    MobileElement A4;
-    @AndroidFindBy(xpath = "//android.view.View[@index='3']")
-    MobileElement A4NonTax;
-    public void A4Invoice(){
+
+    public void A4Invoice() {
         hamburgerMenu.click();
         settings.click();
         printingSettings.click();
@@ -55,7 +90,8 @@ public class Invoices extends TestBase {
         A4.click();
         submitCheck.click();
     }
-    public void A4InvoiceNonTax(){
+
+    public void A4InvoiceNonTax() {
         hamburgerMenu.click();
         settings.click();
         printingSettings.click();
@@ -63,104 +99,92 @@ public class Invoices extends TestBase {
         A4NonTax.click();
         submitCheck.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.EditText[@index='1']")
-    MobileElement searchbar;
-    public void sendKeysToSearchProduct(String ProductName){
+
+    public void sendKeysToSearchProduct(String ProductName) {
         searchbar.click();
         searchbar.sendKeys(ProductName);
     }
-    public void clickOnClearSearch(){
+
+    public void clickOnClearSearch() {
         clearFields();
     }
+
     public void clearFields() {
         searchbar.clear();
     }
-    @AndroidFindBy(xpath = "//android.widget.Button[@index = '0']")
-    MobileElement addToCart;
-    public void clickOnProduct(){
+
+    public void clickOnProduct() {
         addToCart.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.Button[@index = '1']")
-    MobileElement addToCart1;
-    public void clickOnProduct1(){
+
+    public void clickOnProduct1() {
         addToCart1.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.Button[@index = '0']")
-    MobileElement addToCartFirst;
-    public void clickOnProductFirst(){
+
+    public void clickOnProductFirst() {
         addToCartFirst.click();
     }
-    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'السلة') or contains(@content-desc,'9000 SR')]")
-    MobileElement BasketButton ;
-    public  void goToCart(){
+
+    public void goToCart() {
         BasketButton.click();
     }
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc = 'التالي']")
-    MobileElement NextButton;
-    public void clickOnNextBasket(){
+
+    public void clickOnNextBasket() {
         NextButton.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index = '8']")
-    MobileElement CashButton;
-    public void clickOnCashButton(){
+
+    public void clickOnCashButton() {
         CashButton.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index = '0']")
-    MobileElement EditProduct;
-    public void clickOnEditProduct(){
+
+    public void clickOnEditProduct() {
         EditProduct.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.EditText[@index='6']")
-    MobileElement discountField;
-    public void sendKeysToDiscount(String discount){
+
+    public void sendKeysToDiscount(String discount) {
         discountField.click();
         discountField.clear();
         discountField.sendKeys(discount);
         hideKeyboard();
     }
-    public String getDiscountAmount(){
+
+    public String getDiscountAmount() {
         return discountField.getText();
     }
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
-    MobileElement submitButton;
-    public void clickOnSubmitButton(){
+
+    public void clickOnSubmitButton() {
         submitButton.click();
     }
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc='الكاشير']")
-    MobileElement Cashier;
-    public void clickOnCashier(){
+
+    public void clickOnCashier() {
         Cashier.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='4']")
-    MobileElement DiscountButton;
-    public void clickOnDiscountButton(){
+
+    public void clickOnDiscountButton() {
         DiscountButton.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.EditText[@index='3']")
-    MobileElement discountInvoiceField;
-    public void sendKeysToInvoiceDiscount(String discount){
+
+    public void sendKeysToInvoiceDiscount(String discount) {
         discountInvoiceField.click();
         discountInvoiceField.clear();
         discountInvoiceField.sendKeys(discount);
         hideKeyboard();
     }
-    public void clickOnSubmitButtonInvoice(){
+
+    public void clickOnSubmitButtonInvoice() {
         submitButton.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الفواتير']")
-    MobileElement Invoices;
-    public void goToInvoices(){
+
+    public void goToInvoices() {
         hamburgerMenu.click();
         Invoices.click();
     }
-    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'ختيار عميل') or contains(@content-desc,'SR')]")
-    MobileElement detailsOfInvoice;
-    public String getDetailsOfInvoice(){
+
+    public String getDetailsOfInvoice() {
         return detailsOfInvoice.getAttribute("content-desc");
     }
-    @AndroidFindBy(xpath = "//android.view.View[@index='8']")
-    MobileElement TotalInvoicePrice;
-    public String getTotalInvoicePrice(){
+
+    public String getTotalInvoicePrice() {
         return TotalInvoicePrice.getAttribute("content-desc");
     }
 }

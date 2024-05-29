@@ -19,6 +19,7 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 @Listeners(TestListener.class)
 public class GoooBig_NoticeCreditor extends TestBase {
     NoticeCreditorScreen noticeCreditorScreen;
+
     @Test(priority = 1)
     @Description("This test attempts to verify Notice Creditor Functionality.")
     @Severity(CRITICAL)
@@ -32,12 +33,14 @@ public class GoooBig_NoticeCreditor extends TestBase {
         noticeCreditorScreen.hideKeyboard();
         noticeCreditorScreen.goToCart();
     }
+
     @Step("Try to Remove Product from the Notice Creditor Invoice.")
     public void step2() {
         noticeCreditorScreen = new NoticeCreditorScreen();
         noticeCreditorScreen.clickOnRemoveProductIcon();
         Allure.addAttachment("Screenshot for Result After Try To Remove Product From Notice Creditor Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
     }
+
     @Test(priority = 2)
     @Description("This test attempts to remove product from cart for Notice Creditor Invoice.")
     @Severity(CRITICAL)
@@ -45,6 +48,7 @@ public class GoooBig_NoticeCreditor extends TestBase {
     public void VerifyRemoveProductFromNoticeCreditorInvoice() {
         step2();
     }
+
     @Step("Try to Edit Product from the Notice Creditor Invoice.")
     public void step3() throws InterruptedException {
         noticeCreditorScreen = new NoticeCreditorScreen();
@@ -52,6 +56,7 @@ public class GoooBig_NoticeCreditor extends TestBase {
         noticeCreditorScreen.clickOnEditProductIcon();
         Allure.addAttachment("Screenshot for Result After Try To Edit on Notice Creditor Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
     }
+
     @Test(priority = 3)
     @Description("This test attempts to Edit product from cart for Notice Creditor Invoice.")
     @Severity(CRITICAL)
@@ -59,6 +64,7 @@ public class GoooBig_NoticeCreditor extends TestBase {
     public void VerifyEditeProductFromNoticeCreditorInvoice() throws InterruptedException {
         step3();
     }
+
     @Test(priority = 4)
     @Description("This test attempts to Navigate to Make Notice Creditor invoice.")
     @Severity(CRITICAL)

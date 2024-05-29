@@ -19,6 +19,7 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 @Listeners(TestListener.class)
 public class GoooBig_Home extends TestBase {
     private HomeScreen homeScreen;
+
     @Test(priority = 1)
     @Description("This test attempts to verify the warehouse name is consistent across different screens.")
     @Severity(CRITICAL)
@@ -70,6 +71,7 @@ public class GoooBig_Home extends TestBase {
         System.out.println("Assertion Done Successfully.");
         Allure.addAttachment("Test Output for Verify Warehouse Name", "text/plain", "Output of testcase: TEST CASE PASSED and Logo Is Exist In Home Page and Warehouse Name is displayed.");
     }
+
     @Test(priority = 2)
     @Description("This test attempts to verify the logo is displayed.")
     @Severity(CRITICAL)
@@ -81,6 +83,7 @@ public class GoooBig_Home extends TestBase {
         System.out.println("Logo Is Exist In Home Page.");
         Allure.addAttachment("Test Output", "text/plain", "Output of testcase: TEST CASE PASSED and Logo Is Exist In Home Page.");
     }
+
     @Test(priority = 3)
     @Description("This test attempts to verify switching between options on the home screen.")
     @Severity(CRITICAL)
@@ -104,6 +107,7 @@ public class GoooBig_Home extends TestBase {
 
         Allure.addAttachment("Test Output", "text/plain", "Output of testcase: TEST CASE PASSED and user can switch between all options.");
     }
+
     @Test(priority = 4)
     @Description("This test attempts to verify the Search bar on the home screen.")
     @Severity(SeverityLevel.CRITICAL)
@@ -116,6 +120,7 @@ public class GoooBig_Home extends TestBase {
         homeScreen.hideKeyboard();
         Assert.assertFalse(searchResult, "Search results found when none were expected");
     }
+
     @Test(priority = 5)
     @Description("This test attempts to verify the Search bar on the home screen.")
     @Severity(SeverityLevel.CRITICAL)
@@ -127,6 +132,7 @@ public class GoooBig_Home extends TestBase {
         boolean UpdateResult = homeScreen.UpdateSectionIsDisplay();
         Assert.assertFalse(UpdateResult, "Update results found when none were expected");
     }
+
     @Test(priority = 6)
     @Description("This test attempts to verify switching between navbar options on the home screen.")
     @Severity(CRITICAL)
@@ -153,6 +159,7 @@ public class GoooBig_Home extends TestBase {
         homeScreen.clickOnHomeIcon();
         Allure.addAttachment("Test Output", "text/plain", "Output of testcase: TEST CASE PASSED and user can switch between all options.");
     }
+
     // Helper method to extract text between parentheses
     private String extractTextBetweenParentheses(String text) {
         Pattern pattern = Pattern.compile("\\(([^)]+)\\)");
@@ -162,6 +169,7 @@ public class GoooBig_Home extends TestBase {
         }
         return "";
     }
+
     // Helper method to add screenshot to Allure report
     private void addScreenshotToAllure() {
         Allure.addAttachment("Screenshot", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));

@@ -4,20 +4,15 @@ import GoooBigBase.TestBase;
 import GoooBigListener.TestListener;
 import GoooBigScreens.OrganizationPreparation;
 import io.appium.java_client.AppiumDriver;
-import io.qameta.allure.*;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import io.qameta.allure.Allure;
+import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import java.io.ByteArrayInputStream;
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.text.DateFormat;
 
 import static io.qameta.allure.SeverityLevel.CRITICAL;
@@ -111,6 +106,7 @@ public class GoooBig_Preparation extends TestBase {
         Allure.addAttachment("Test Output", "text/plain", "Text in the field is: " + "Preparation Successfully Done.");
         Thread.sleep(3000);
     }
+
     @Test(priority = 6)
     @Description("This test attempts to redirect to Login Screen.")
     @Severity(CRITICAL)

@@ -2,7 +2,6 @@ package GoooBigTestCases;
 
 import GoooBigBase.TestBase;
 import GoooBigListener.TestListener;
-import GoooBigScreens.BranchesAndWarehouses;
 import GoooBigScreens.ShiftStart;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
@@ -10,7 +9,6 @@ import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 

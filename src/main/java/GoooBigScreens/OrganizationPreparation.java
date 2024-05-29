@@ -5,19 +5,20 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class OrganizationPreparation extends TestBase {
-    @AndroidFindBy (xpath = "//android.widget.EditText[@index='0']")
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='0']")
     MobileElement UserName;
-    @AndroidFindBy (xpath = "//android.widget.EditText[@index='1']")
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='1']")
     MobileElement Password;
-    @AndroidFindBy (xpath = "//android.widget.EditText[@index='2']")
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='2']")
     MobileElement OrgId;
-    @AndroidFindBy (xpath = "//android.view.View[@content-desc=\"تجهيز\"]")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"تجهيز\"]")
     MobileElement PrepareButton;
-    @AndroidFindBy (xpath = "//android.widget.ImageView[@content-desc=\"دخول\"]")
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc=\"دخول\"]")
     MobileElement Login;
-    @AndroidFindBy (xpath = "//android.view.View[@index='31']")
+    @AndroidFindBy(xpath = "//android.view.View[@index='31']")
     MobileElement ProductsNumberShow;
-    public void fillPrepareOrg(String Name, String Pass, String Id){
+
+    public void fillPrepareOrg(String Name, String Pass, String Id) {
         UserName.click();
         UserName.sendKeys(Name);
         Password.click();
@@ -26,9 +27,11 @@ public class OrganizationPreparation extends TestBase {
         OrgId.sendKeys(Id);
         PrepareButton.click();
     }
+
     public boolean isProductsNumberDisplay() {
         return ProductsNumberShow.isDisplayed();
     }
+
     public void clearFields() {
         // Clear data from each field
         UserName.click();
@@ -38,7 +41,8 @@ public class OrganizationPreparation extends TestBase {
         OrgId.click();
         OrgId.clear();
     }
-    public void clickLoginButton(){
+
+    public void clickLoginButton() {
         Login.click();
     }
 }
