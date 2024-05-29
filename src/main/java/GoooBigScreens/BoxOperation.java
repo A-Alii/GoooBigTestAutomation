@@ -1,32 +1,17 @@
 package GoooBigScreens;
-
 import GoooBigBase.TestBase;
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class BoxOperation extends TestBase {
-    private AppiumDriver driver;
-
-    public BoxOperation(AppiumDriver driver) {
-        this.driver = driver;
-    }
-    public void navigateBack() {
-        driver.navigate().back();
-    }
-    public void hideKeyboard() {
-        driver.hideKeyboard();
-    }
-
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
-    private MobileElement hamburgerMenu;
+    MobileElement hamburgerMenu;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='عمليات الصندوق']")
-    private MobileElement boxOperation;
-
+    MobileElement boxOperation;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إنهاء الدوام']")
-    private MobileElement endShift;
+    MobileElement endShift;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الفواتير']")
-    private MobileElement Invoices;
+    MobileElement Invoices;
     public void goToBoxOperation(){
         hamburgerMenu.click();
         boxOperation.click();
@@ -39,29 +24,25 @@ public class BoxOperation extends TestBase {
         hamburgerMenu.click();
         endShift.click();
     }
-
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='عمليات الصندوق']")
-    private MobileElement boxOperationVisible;
-    public boolean isBoxOperationScreenDisplay(){
-        return boxOperationVisible.isDisplayed();
+    MobileElement boxOperationVisible;
+    public void isBoxOperationScreenDisplay(){
+        boxOperationVisible.isDisplayed();
     }
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index='0']")
-    private MobileElement TransactionType;
+    MobileElement TransactionType;
     @AndroidFindBy(xpath = "//android.view.View[@index='1']")
-    private MobileElement withdraw;
+    MobileElement withdraw;
     @AndroidFindBy(xpath = "//android.view.View[@index='0']")
-    private MobileElement deposit;
+    MobileElement deposit;
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='1']")
-    private MobileElement amountTransaction;
-    public String getAmountQuantity(){
-        return amountTransaction.getText();
-    }
+    MobileElement amountTransaction;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
-    private MobileElement employeeName;
+    MobileElement employeeName;
     @AndroidFindBy(xpath = "//android.view.View[@index='1']")
-    private MobileElement employeesChoice;
+    MobileElement employeesChoice;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
-    private MobileElement applyTransaction;
+    MobileElement applyTransaction;
     public void clickOnWithdraw(){
         TransactionType.click();
         withdraw.click();
@@ -93,40 +74,23 @@ public class BoxOperation extends TestBase {
         clickOnEmployee();
         applyTransaction.click();
     }
-    @AndroidFindBy(xpath = "//android.widget.Button[@index='0']")
-    private MobileElement JustOnce;
-    public void clickOnJustOnce(){
-        JustOnce.click();
-    }
-
-
-    @AndroidFindBy(xpath = "//android.view.View[@index='6']")
-    private MobileElement withdrawField;
-    public String getAmountWithdraw(){
-        return withdrawField.getText();
-    }
-
     @AndroidFindBy(xpath = "//android.view.View[@index='8']")
-    private MobileElement TotalBox;
+    MobileElement TotalBox;
     public String getAmountTotalBox(){
         return TotalBox.getText();
     }
-
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='إلغاء']")
-    private MobileElement cancelButton;
-
+    MobileElement cancelButton;
     public void clickOnCancelButton(){
         cancelButton.click();
     }
-
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index='1']")
-    private MobileElement logoDisplay;
+    MobileElement logoDisplay;
     public boolean logoIsDisplay(){
         return logoDisplay.isDisplayed();
     }
-
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='1']")
-    private MobileElement searchbar;
+    MobileElement searchbar;
     public void sendKeysToSearchProduct(String ProductName){
         searchbar.click();
         searchbar.sendKeys(ProductName);
@@ -137,43 +101,38 @@ public class BoxOperation extends TestBase {
     public void clearFields() {
         searchbar.clear();
     }
-
     @AndroidFindBy(xpath = "//android.widget.Button[@index = '0']")
-    private MobileElement addToCart;
+    MobileElement addToCart;
     public void clickOnProduct(){
         addToCart.click();
     }
-
     @AndroidFindBy(xpath = "//android.widget.Button[@index = '1']")
-    private MobileElement addToCart1;
+    MobileElement addToCart1;
     public void clickOnProduct1(){
         addToCart1.click();
     }
-
     @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'السلة') or contains(@content-desc,'9000 SR')]")
-    private MobileElement BasketButton ;
+    MobileElement BasketButton ;
     public  void goToCart(){
         BasketButton.click();
     }
     @AndroidFindBy(xpath = "//android.view.View[@content-desc = 'التالي']")
-    private MobileElement NextButton;
+    MobileElement NextButton;
     public void clickOnNextBasket(){
         NextButton.click();
     }
-
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index = '8']")
-    private MobileElement CashButton;
+    MobileElement CashButton;
     public void clickOnCashButton(){
         CashButton.click();
     }
-
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index = '0']")
-    private MobileElement EditProduct;
+    MobileElement EditProduct;
     public void clickOnEditProduct(){
         EditProduct.click();
     }
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='6']")
-    private MobileElement discountField;
+    MobileElement discountField;
     public void sendKeysToDiscount(String discount){
         discountField.click();
         discountField.clear();
@@ -184,32 +143,24 @@ public class BoxOperation extends TestBase {
         return discountField.getText();
     }
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
-    private MobileElement submitButton;
+    MobileElement submitButton;
     public void clickOnSubmitButton(){
         submitButton.click();
     }
-
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index='4']")
-    private MobileElement DiscountButton;
+    MobileElement DiscountButton;
     public void clickOnDiscountButton(){
         DiscountButton.click();
     }
-
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='3']")
-    private MobileElement discountInvoiceField;
+    MobileElement discountInvoiceField;
     public void sendKeysToInvoiceDiscount(String discount){
         discountInvoiceField.click();
         discountInvoiceField.clear();
         discountInvoiceField.sendKeys(discount);
         hideKeyboard();
     }
-
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
-    private MobileElement InvoiceSubmitButton;
     public void clickOnSubmitButtonInvoice(){
         submitButton.click();
     }
-
-
-
 }

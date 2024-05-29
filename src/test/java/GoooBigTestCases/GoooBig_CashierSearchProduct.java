@@ -6,10 +6,9 @@ import org.testng.annotations.Test;
 
 public class GoooBig_CashierSearchProduct extends TestBase {
     CashierScreen cashierScreen;
-
     @Test(priority = 1)
     public void testcase1() {
-        cashierScreen = new CashierScreen(driver);
+        cashierScreen = new CashierScreen();
         cashierScreen.ClickOnCashier();
         cashierScreen.clickOnHamburger();
         cashierScreen.clickOnSettings();
@@ -22,18 +21,16 @@ public class GoooBig_CashierSearchProduct extends TestBase {
         cashierScreen.clickOnClearSearch();
         cashierScreen.hideKeyboard();
     }
-
     @Test(priority = 2)
     public void testcase2() throws InterruptedException {
-        cashierScreen = new CashierScreen(driver);
+        cashierScreen = new CashierScreen();
         cashierScreen.clickOnCartEmpty();
         Thread.sleep(3000);
         System.out.println("There is no products in cart.");
     }
-
     @Test(priority = 3)
     public void testcase3(){
-        cashierScreen = new CashierScreen(driver);
+        cashierScreen = new CashierScreen();
         cashierScreen.clickOnPhoneCategory();
         cashierScreen.clickOnAppleDepartment();
         cashierScreen.clickOnShowAllProducts();
@@ -43,25 +40,21 @@ public class GoooBig_CashierSearchProduct extends TestBase {
         cashierScreen.goToCart();
         System.out.println("Cart contains a products");
     }
-
-
     @Test(priority = 4)
     public void testcase4(){
-        cashierScreen = new CashierScreen(driver);
+        cashierScreen = new CashierScreen();
         cashierScreen.clickOnDeleteAllProducts();
         cashierScreen.hideKeyboard();
         cashierScreen.clearFields();
         cashierScreen.hideKeyboard();
     }
-
     @Test(priority = 5)
     public void testcase5(){
-        cashierScreen = new CashierScreen(driver);
+        cashierScreen = new CashierScreen();
         cashierScreen.sendKeysToSearchProduct("باقة رمضان");
         cashierScreen.hideKeyboard();
         cashierScreen.AddToCart();
         cashierScreen.goToCart();
         System.out.println("Cart contains a products");
     }
-
 }

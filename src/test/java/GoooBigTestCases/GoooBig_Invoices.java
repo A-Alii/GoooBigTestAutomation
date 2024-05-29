@@ -36,17 +36,16 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 @Listeners(TestListener.class)
 public class GoooBig_Invoices extends TestBase {
     Invoices invoices;
-
     @Test(priority = 1)
     @Description("This test attempts to Small Tax Invoice with discount over Product level")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void SmallTaxInvoiceWithDiscountOverProductLevel() throws InterruptedException, IOException {
-        invoices = new Invoices(driver);
+        invoices = new Invoices();
         Allure.step("verify to select Invoice Type.");
         invoices.smallNonTaxInvoice();
-        invoices.navigate();
-        invoices.navigate();
+        invoices.navigateBack();
+        invoices.navigateBack();
         Allure.step("verify to search for a product and add it in cart.");
         invoices.sendKeysToSearchProduct("باقة رمضان");
         invoices.hideKeyboard();
@@ -161,7 +160,6 @@ public class GoooBig_Invoices extends TestBase {
             System.out.println(result);
             Allure.addAttachment("Filtered Invoice Text", "text/plain", result);
             // Extract values by key
-            String discountAmount = extractValueByKey(result, "الخصم");
             String totalAmount = extractValueByKey(result, "إجمالى المبلغ المستحق");
             // Accessing the first, second, and third numbers
             System.out.println("البيانات المطلوبة من السلة");
@@ -190,7 +188,7 @@ public class GoooBig_Invoices extends TestBase {
 
         Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
-        invoices.navigate();
+        invoices.navigateBack();
         Allure.step("verify to Navigate to Invoice to compare total price in the screen with total price in the cart.");
         invoices.goToInvoices();
         Thread.sleep(3000);
@@ -212,18 +210,16 @@ public class GoooBig_Invoices extends TestBase {
         }
 
         System.out.println("********************************************");
-        invoices.navigate();
+        invoices.navigateBack();
         invoices.hideKeyboard();
         System.out.println("Invoice Small Tax Added Successfully");
     }
-
-
     @Test(priority = 2)
     @Description("This test attempts to Small Non Tax Invoice With Discount over Invoice level")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void SmallTaxInvoiceWithDiscountOverInvoiceLevel() throws InterruptedException, IOException {
-        invoices = new Invoices(driver);
+        invoices = new Invoices();
         Allure.step("verify to search for a product and add it in cart.");
         invoices.sendKeysToSearchProduct("iphone 13");
         invoices.hideKeyboard();
@@ -354,7 +350,7 @@ public class GoooBig_Invoices extends TestBase {
 
         Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
-        invoices.navigate();
+        invoices.navigateBack();
         Allure.step("verify to Navigate to Invoice to compare total price in the screen with total price in the cart.");
         invoices.goToInvoices();
         Thread.sleep(3000);
@@ -375,22 +371,19 @@ public class GoooBig_Invoices extends TestBase {
             System.out.println("No number extracted from details to compare with TotalPrice.");
         }
         System.out.println("********************************************");
-        invoices.navigate();
+        invoices.navigateBack();
         invoices.hideKeyboard();
         System.out.println("Invoice Small Non Tax Added Successfully");
     }
-
-
-
     @Test(priority = 3)
     @Description("This test attempts to A4 Tax Invoice with discount over Product level")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void A4TaxInvoiceWithDiscountOverProductLevel() throws InterruptedException {
-        invoices = new Invoices(driver);
+        invoices = new Invoices();
         invoices.A4Invoice();
-        invoices.navigate();
-        invoices.navigate();
+        invoices.navigateBack();
+        invoices.navigateBack();
         Allure.step("verify to add product to cart");
         invoices.sendKeysToSearchProduct("باقة رمضان");
         invoices.hideKeyboard();
@@ -563,7 +556,7 @@ public class GoooBig_Invoices extends TestBase {
         }
         Allure.addAttachment("Screenshot for Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
-        invoices.navigate();
+        invoices.navigateBack();
         invoices.goToInvoices();
         Thread.sleep(3000);
         System.out.println("********************************************");
@@ -584,18 +577,16 @@ public class GoooBig_Invoices extends TestBase {
             System.out.println("No number extracted from details to compare with TotalPrice.");
         }
         System.out.println("********************************************");
-        invoices.navigate();
+        invoices.navigateBack();
         invoices.hideKeyboard();
         System.out.println("A4Invoice Added Successfully");
     }
-
-
     @Test(priority = 4)
     @Description("This test attempts to A4 Invoice with discount over Invoice level")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void A4TaxInvoiceWithDiscountOverInvoiceLevel() throws InterruptedException {
-        invoices = new Invoices(driver);
+        invoices = new Invoices();
         Thread.sleep(3000);
         invoices.sendKeysToSearchProduct("Galaxy 0999");
         invoices.hideKeyboard();
@@ -771,7 +762,7 @@ public class GoooBig_Invoices extends TestBase {
         }
         Allure.addAttachment("Screenshot for Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
-        invoices.navigate();
+        invoices.navigateBack();
         invoices.goToInvoices();
         Thread.sleep(3000);
         System.out.println("********************************************");
@@ -792,22 +783,20 @@ public class GoooBig_Invoices extends TestBase {
             System.out.println("No number extracted from details to compare with TotalPrice.");
         }
         System.out.println("********************************************");
-        invoices.navigate();
+        invoices.navigateBack();
         invoices.hideKeyboard();
         System.out.println("A4Invoice with discount over invoice level Added Successfully");
     }
-
-
     @Test(priority = 5)
     @Description("This test attempts to Small Non Tax Invoice with discount over Product level")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void smallNonTaxInvoiceWithDiscountOverProductLevel() throws InterruptedException, IOException {
-        invoices = new Invoices(driver);
+        invoices = new Invoices();
         Allure.step("verify to select Invoice Type.");
         invoices.SmallTaxInvoice();
-        invoices.navigate();
-        invoices.navigate();
+        invoices.navigateBack();
+        invoices.navigateBack();
         Allure.step("verify to search for a product and add it in cart.");
         invoices.sendKeysToSearchProduct("ديل");
         invoices.hideKeyboard();
@@ -939,7 +928,7 @@ public class GoooBig_Invoices extends TestBase {
 
         Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
-        invoices.navigate();
+        invoices.navigateBack();
         Allure.step("verify to Navigate to Invoice to compare total price in the screen with total price in the cart.");
         invoices.goToInvoices();
         Thread.sleep(3000);
@@ -960,18 +949,16 @@ public class GoooBig_Invoices extends TestBase {
             System.out.println("No number extracted from details to compare with TotalPrice.");
         }
         System.out.println("********************************************");
-        invoices.navigate();
+        invoices.navigateBack();
         invoices.hideKeyboard();
         System.out.println("Invoice Small Non Tax Added Successfully");
     }
-
-
     @Test(priority = 6)
     @Description("This test attempts to Small Non Tax Invoice With Discount over Invoice level")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void SmallNonTaxInvoiceWithDiscountOverInvoiceLevel() throws InterruptedException, IOException {
-        invoices = new Invoices(driver);
+        invoices = new Invoices();
         Allure.step("verify to search for a product and add it in cart.");
         invoices.sendKeysToSearchProduct("Galaxy 0999");
         invoices.hideKeyboard();
@@ -1102,7 +1089,7 @@ public class GoooBig_Invoices extends TestBase {
 
         Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
-        invoices.navigate();
+        invoices.navigateBack();
         Allure.step("verify to Navigate to Invoice to compare total price in the screen with total price in the cart.");
         invoices.goToInvoices();
         Thread.sleep(3000);
@@ -1123,23 +1110,20 @@ public class GoooBig_Invoices extends TestBase {
             System.out.println("No number extracted from details to compare with TotalPrice.");
         }
         System.out.println("********************************************");
-        invoices.navigate();
+        invoices.navigateBack();
         invoices.hideKeyboard();
         System.out.println("Invoice Small Non Tax Added Successfully");
     }
-
-
-
     @Test(priority = 7)
     @Description("This test attempts to A4 Non Tax Invoice with discount over Product level")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void A4NonTaxInvoiceWithDiscountOverProductLevel() throws InterruptedException, IOException {
-        invoices = new Invoices(driver);
+        invoices = new Invoices();
         Allure.step("verify to select Invoice Type.");
         invoices.A4InvoiceNonTax();
-        invoices.navigate();
-        invoices.navigate();
+        invoices.navigateBack();
+        invoices.navigateBack();
         Allure.step("verify to search for a product and add it in cart.");
         invoices.sendKeysToSearchProduct("Galaxy 10");
         invoices.hideKeyboard();
@@ -1318,7 +1302,7 @@ public class GoooBig_Invoices extends TestBase {
         }
         Allure.addAttachment("Screenshot for Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
-        invoices.navigate();
+        invoices.navigateBack();
         invoices.goToInvoices();
         Thread.sleep(3000);
         System.out.println("********************************************");
@@ -1339,18 +1323,16 @@ public class GoooBig_Invoices extends TestBase {
             System.out.println("No number extracted from details to compare with TotalPrice.");
         }
         System.out.println("********************************************");
-        invoices.navigate();
+        invoices.navigateBack();
         invoices.hideKeyboard();
         System.out.println("Invoice Small Non Tax Added Successfully");
     }
-
-
     @Test(priority = 8)
     @Description("This test attempts to A4 Non Tax Invoice With Discount over Invoice level")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void A4NonTaxInvoiceWithDiscountOverInvoiceLevel() throws InterruptedException {
-        invoices = new Invoices(driver);
+        invoices = new Invoices();
         Allure.step("verify to search for a product and add it in cart.");
         invoices.sendKeysToSearchProduct("باقة رمضان");
         invoices.hideKeyboard();
@@ -1528,7 +1510,7 @@ public class GoooBig_Invoices extends TestBase {
         }
         Allure.addAttachment("Screenshot for Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
-        invoices.navigate();
+        invoices.navigateBack();
         invoices.goToInvoices();
         Thread.sleep(3000);
         System.out.println("********************************************");
@@ -1549,10 +1531,9 @@ public class GoooBig_Invoices extends TestBase {
             System.out.println("No number extracted from details to compare with TotalPrice.");
         }
         System.out.println("********************************************");
-        invoices.navigate();
+        invoices.navigateBack();
         invoices.hideKeyboard();
         System.out.println("Invoice Small Non Tax Added Successfully");
     }
-
 }
 

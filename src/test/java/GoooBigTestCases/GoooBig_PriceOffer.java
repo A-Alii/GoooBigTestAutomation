@@ -19,18 +19,16 @@ import java.util.regex.Pattern;
 import static io.qameta.allure.SeverityLevel.CRITICAL;
 
 public class GoooBig_PriceOffer extends TestBase {
-
     PriceOffer priceOffer;
-
     @Test(priority = 1)
     @Description("This test attempts to Small Non Tax Invoice with discount over Product level to display Price.")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void SmallTaxInvoiceToDisplayThePriceWithDiscountOverProduct() throws InterruptedException {
-        priceOffer = new PriceOffer(driver);
+        priceOffer = new PriceOffer();
         priceOffer.smallNonTaxInvoiceDisplayPrice();
-        priceOffer.navigate();
-        priceOffer.navigate();
+        priceOffer.navigateBack();
+        priceOffer.navigateBack();
         priceOffer.sendKeysToSearchProduct("iphone 13");
         priceOffer.hideKeyboard();
         priceOffer.clickOnProduct();
@@ -84,7 +82,7 @@ public class GoooBig_PriceOffer extends TestBase {
         Thread.sleep(4000);
         Allure.addAttachment("Screenshot for Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
-        priceOffer.navigate();
+        priceOffer.navigateBack();
         priceOffer.goToInvoices();
         Thread.sleep(2000);
         priceOffer.clickOnInvoiceDisplayPrice();
@@ -107,7 +105,7 @@ public class GoooBig_PriceOffer extends TestBase {
         }
         System.out.println("********************************************");
 
-        priceOffer.navigate();
+        priceOffer.navigateBack();
         priceOffer.hideKeyboard();
         System.out.println("Invoice Small Non Tax Added Successfully");
     }

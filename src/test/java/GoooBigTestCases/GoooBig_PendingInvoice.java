@@ -19,20 +19,17 @@ import java.util.regex.Pattern;
 import static io.qameta.allure.SeverityLevel.CRITICAL;
 
 public class GoooBig_PendingInvoice extends TestBase {
-
     PendingIInvoiceScreen pendingIInvoiceScreen;
-
-
     @Test(priority = 11)
     @Description("This test attempts to Small Non Tax Invoice with discount over Product level and make it Pending invoice")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void PendingInvoiceTestCase() throws InterruptedException {
-        pendingIInvoiceScreen = new PendingIInvoiceScreen(driver);
+        pendingIInvoiceScreen = new PendingIInvoiceScreen();
         Allure.step("verify to select Invoice Type.");
         pendingIInvoiceScreen.smallNonTaxInvoicePendingInvoice();
-        pendingIInvoiceScreen.navigate();
-        pendingIInvoiceScreen.navigate();
+        pendingIInvoiceScreen.navigateBack();
+        pendingIInvoiceScreen.navigateBack();
         Allure.step("verify to search for a product and add it in cart.");
         pendingIInvoiceScreen.sendKeysToSearchProduct("iphone 13");
         pendingIInvoiceScreen.hideKeyboard();
@@ -90,7 +87,7 @@ public class GoooBig_PendingInvoice extends TestBase {
             }
         }
         System.out.println("----------------------------------------");
-        pendingIInvoiceScreen.navigate();
+        pendingIInvoiceScreen.navigateBack();
         pendingIInvoiceScreen.hideKeyboard();
         pendingIInvoiceScreen.goToCart();
         Allure.step("verify to hold the invoice.");
@@ -117,7 +114,7 @@ public class GoooBig_PendingInvoice extends TestBase {
             System.out.println("No number extracted from details to compare with TotalPrice.");
         }
         System.out.println("********************************************");
-        pendingIInvoiceScreen.navigate();
+        pendingIInvoiceScreen.navigateBack();
         pendingIInvoiceScreen.hideKeyboard();
         System.out.println("A4Invoice with discount over invoice level Added Successfully");
     }

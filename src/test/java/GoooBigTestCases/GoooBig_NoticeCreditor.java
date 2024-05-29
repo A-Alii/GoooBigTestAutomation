@@ -18,15 +18,13 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 
 @Listeners(TestListener.class)
 public class GoooBig_NoticeCreditor extends TestBase {
-
     NoticeCreditorScreen noticeCreditorScreen;
-
     @Test(priority = 1)
     @Description("This test attempts to verify Notice Creditor Functionality.")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void VerifyNoticeCreditorFunctionality() {
-        noticeCreditorScreen = new NoticeCreditorScreen(driver);
+        noticeCreditorScreen = new NoticeCreditorScreen();
         Allure.step("Navigate to Invoices Screen.");
         noticeCreditorScreen.NavigateToInvoices();
         Allure.step("Select any invoice and click on Notice Creditor icon for invoice.");
@@ -34,10 +32,9 @@ public class GoooBig_NoticeCreditor extends TestBase {
         noticeCreditorScreen.hideKeyboard();
         noticeCreditorScreen.goToCart();
     }
-
     @Step("Try to Remove Product from the Notice Creditor Invoice.")
     public void step2() {
-        noticeCreditorScreen = new NoticeCreditorScreen(driver);
+        noticeCreditorScreen = new NoticeCreditorScreen();
         noticeCreditorScreen.clickOnRemoveProductIcon();
         Allure.addAttachment("Screenshot for Result After Try To Remove Product From Notice Creditor Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
     }
@@ -48,10 +45,9 @@ public class GoooBig_NoticeCreditor extends TestBase {
     public void VerifyRemoveProductFromNoticeCreditorInvoice() {
         step2();
     }
-
     @Step("Try to Edit Product from the Notice Creditor Invoice.")
     public void step3() throws InterruptedException {
-        noticeCreditorScreen = new NoticeCreditorScreen(driver);
+        noticeCreditorScreen = new NoticeCreditorScreen();
         Thread.sleep(2000);
         noticeCreditorScreen.clickOnEditProductIcon();
         Allure.addAttachment("Screenshot for Result After Try To Edit on Notice Creditor Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
@@ -63,13 +59,12 @@ public class GoooBig_NoticeCreditor extends TestBase {
     public void VerifyEditeProductFromNoticeCreditorInvoice() throws InterruptedException {
         step3();
     }
-
     @Test(priority = 4)
     @Description("This test attempts to Navigate to Make Notice Creditor invoice.")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void VerifyToCreateANoticeCreditorInvoice() throws InterruptedException {
-        noticeCreditorScreen = new NoticeCreditorScreen(driver);
+        noticeCreditorScreen = new NoticeCreditorScreen();
         Thread.sleep(3000);
         Allure.step("click on Next Button.");
         noticeCreditorScreen.clickOnNextBasket();
@@ -134,7 +129,7 @@ public class GoooBig_NoticeCreditor extends TestBase {
         Thread.sleep(4000);
         Allure.addAttachment("Screenshot for Receipt.", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
-        noticeCreditorScreen.navigate();
+        noticeCreditorScreen.navigateBack();
         noticeCreditorScreen.NavigateToCashierProduct();
         Allure.step("verify to Navigate to End Shift to check the price of notice creditor was added successfully to his box.");
         noticeCreditorScreen.NavigateToEndShift();
@@ -142,9 +137,8 @@ public class GoooBig_NoticeCreditor extends TestBase {
         //System.out.println("+++++++++++++++++++" + noticeCreditorScreen.getElement());
         //Allure.addAttachment("Screenshot for Result of Notice Creditor.", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         //Thread.sleep(3000);
-        noticeCreditorScreen.navigate();
+        noticeCreditorScreen.navigateBack();
         noticeCreditorScreen.hideKeyboard();
         System.out.println("Notice Creditor Transaction Done Successfully.");
     }
-
 }

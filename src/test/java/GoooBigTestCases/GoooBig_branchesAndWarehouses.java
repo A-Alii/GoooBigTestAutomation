@@ -20,7 +20,6 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 @Listeners(TestListener.class)
 public class GoooBig_branchesAndWarehouses extends TestBase {
     BranchesAndWarehouses branchesAndWarehouses;
-
     @Test(priority = 1)
     @Description("This test attempts to verify Select Warehouse.")
     @Severity(CRITICAL)
@@ -38,5 +37,4 @@ public class GoooBig_branchesAndWarehouses extends TestBase {
         branchesAndWarehouses.clickOnApply();
         System.out.println("TEST CASE DONE SUCCESSFULLY");
     }
-
 }

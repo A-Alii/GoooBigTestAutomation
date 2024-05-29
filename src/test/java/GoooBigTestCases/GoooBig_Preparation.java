@@ -111,7 +111,6 @@ public class GoooBig_Preparation extends TestBase {
         Allure.addAttachment("Test Output", "text/plain", "Text in the field is: " + "Preparation Successfully Done.");
         Thread.sleep(3000);
     }
-
     @Test(priority = 6)
     @Description("This test attempts to redirect to Login Screen.")
     @Severity(CRITICAL)
@@ -123,5 +122,4 @@ public class GoooBig_Preparation extends TestBase {
         //Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Allure.addAttachment("Test Output", "text/plain", "Text in the field is: " + "Preparation Successfully Done and redirect to Login Screen Successfully.");
     }
-
 }

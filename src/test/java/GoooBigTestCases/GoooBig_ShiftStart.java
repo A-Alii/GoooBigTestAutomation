@@ -21,7 +21,6 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 @Listeners(TestListener.class)
 public class GoooBig_ShiftStart extends TestBase {
     ShiftStart shiftStart;
-
     /*@Test(priority = 1)
     @Description("This test attempts to verify click on Apply without enter Box Fund Start.")
     @Severity(CRITICAL)
@@ -46,7 +45,7 @@ public class GoooBig_ShiftStart extends TestBase {
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void verifyClickOnApplyWithValidData() throws InterruptedException {
-        shiftStart = new ShiftStart(driver);
+        shiftStart = new ShiftStart();
         Allure.step("verify to enter a valid data to Box Fund");
         shiftStart.SendKeysToBox("5000");
         Allure.step("verify to select delivery from");
@@ -58,35 +57,6 @@ public class GoooBig_ShiftStart extends TestBase {
         /*shiftStart.ClickOnCashier();
         shiftStart.hideKeyboard();*/
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     /*@Test(priority = 3)
     public void testcase3() throws InterruptedException {
@@ -113,9 +83,5 @@ public class GoooBig_ShiftStart extends TestBase {
         //shiftStart.hideKeyboard();
         System.out.println("Products Screen Are display");
     }*/
-
-
-
-
 
 }

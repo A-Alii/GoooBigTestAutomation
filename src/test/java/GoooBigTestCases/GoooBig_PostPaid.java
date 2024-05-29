@@ -25,20 +25,17 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 
 @Listeners(TestListener.class)
 public class GoooBig_PostPaid extends TestBase {
-
     PostPaidScreen postPaidScreen;
-
     @Test(priority = 1)
     @Description("This test attempts to Small Tax Invoice with discount over Product level")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void CreateAnPostPaidInvoice() throws InterruptedException, TesseractException, IOException {
-        postPaidScreen = new PostPaidScreen(driver);
+        postPaidScreen = new PostPaidScreen();
         Allure.step("Select Invoice Type..");
         postPaidScreen.smallNonTaxInvoice();
-        postPaidScreen.navigate();
-        postPaidScreen.navigate();
-
+        postPaidScreen.navigateBack();
+        postPaidScreen.navigateBack();
         Allure.step("verify to search for a product and add it in cart.");
         postPaidScreen.sendKeysToSearchProduct("iphone 13");
         postPaidScreen.hideKeyboard();
@@ -66,14 +63,14 @@ public class GoooBig_PostPaid extends TestBase {
         postPaidScreen.selectClientName();
         Thread.sleep(1000);
         postPaidScreen.clickOnSelection();
-        postPaidScreen.navigate();
+        postPaidScreen.navigateBack();
         Allure.step("click on PostPaid Button.");
         postPaidScreen.clickOnPostPaidButton();
         postPaidScreen.clickOnConfirmationButton();
         Thread.sleep(4000);
         Allure.addAttachment("Screenshot for invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
-        postPaidScreen.navigate();
+        postPaidScreen.navigateBack();
         //postPaidScreen.NavigateToCashierProduct();
         //postPaidScreen.hideKeyboard();
     }

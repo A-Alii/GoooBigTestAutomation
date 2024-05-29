@@ -92,4 +92,13 @@ public class TestBase {
             e.printStackTrace();
         }
     }
+
+    public void hideKeyboard() {
+        driver.hideKeyboard();
+    }
+
+    public void navigateBack() {
+        driver.navigate().back();
+    }
+
 }
