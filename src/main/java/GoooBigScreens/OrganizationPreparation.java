@@ -23,8 +23,11 @@ public class OrganizationPreparation extends TestBase {
         UserName.sendKeys(Name);
         Password.click();
         Password.sendKeys(Pass);
+        driver.hideKeyboard();
         OrgId.click();
+        driver.hideKeyboard();
         OrgId.sendKeys(Id);
+        driver.hideKeyboard();
         PrepareButton.click();
     }
 

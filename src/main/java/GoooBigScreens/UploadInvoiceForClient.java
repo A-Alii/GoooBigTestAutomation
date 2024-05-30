@@ -5,10 +5,14 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class UploadInvoiceForClient extends TestBase {
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='الكاشير']")
     MobileElement Cashier;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='العملاء']")
+    MobileElement clients;
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='1']")
     MobileElement searchbar;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc= '0\n" +
@@ -25,10 +29,22 @@ public class UploadInvoiceForClient extends TestBase {
     MobileElement AppleDepartment;
     @AndroidFindBy(xpath = "//android.view.View[@index='3']")
     MobileElement ApplyDepartment;
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc='عرض جميع المنتجات']")
-    MobileElement allProducts;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
     MobileElement hamburgerMenu;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='رفع البيانات']")
+    MobileElement uploadInvoiceOption;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='تحديث البيانات']")
+    MobileElement UpdateOption;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='العملاء']")
+    MobileElement checkClient;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تحديث']")
+    MobileElement updateButton;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202Bجاري تحديث البيانات\u202C']")
+    MobileElement loadingUpdate;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='بدء الرفع']")
+    MobileElement StartUploadInvoice;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202B تم الرفع بنجاح\u202C']")
+    MobileElement successUpload;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الإعدادات']")
     MobileElement settings;
     @AndroidFindBy(xpath = "//android.view.View[@index='14']")
@@ -65,10 +81,69 @@ public class UploadInvoiceForClient extends TestBase {
     MobileElement Confirmation;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc=\"إختيار عميل\"]")
     MobileElement selectClient;
-    @AndroidFindBy(xpath = "//android.view.View[contains(@index,'5') or contains(@content-desc,'abcdefghijklmnopqrstuvwxyz')]")
+    @AndroidFindBy(xpath = "//android.view.View[@index= '6' or contains(@content-desc,'abcdefghijklmnopqrstuvwxYyz')]")
+    MobileElement clickOnClient1;
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, 'العملاء') and @index='0']")
+    MobileElement clickOnClientP;
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, 'مديونيات العملاء') or contains(@index, '1')]")
     MobileElement clickOnClient;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='دفع مبلغ']")
+    MobileElement Payment;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[contains(@content-desc, 'إجمالى الرصيد')]")
+    MobileElement Amount;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='إختيار']")
     MobileElement clickOnSelectionButton;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الفواتير']")
+    MobileElement invoices;
+    // or contains(@content-desc,'SR')
+    @AndroidFindBy(xpath = "//android.view.View[@index='8']")
+    MobileElement invoiceAmount;
+
+    public void clickOnClientsOption() {
+        clients.click();
+    }
+
+    public void clickOnUploadInvoice() {
+        hamburgerMenu.click();
+        uploadInvoiceOption.click();
+        StartUploadInvoice.click();
+    }
+
+    public void updateClients() {
+        UpdateOption.click();
+        checkClient.click();
+        updateButton.click();
+    }
+
+    public boolean isSuccessUpload() {
+        WebDriverWait wait = new WebDriverWait(driver, 10); // wait for up to 10 seconds
+        try {
+            wait.until(ExpectedConditions.visibilityOf(successUpload));
+            return successUpload.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean isLoadingUpdateDisplay() {
+        return loadingUpdate.isDisplayed();
+    }
+
+    public void clickOnClientFirst() {
+        clickOnClient1.click();
+    }
+
+    public void clickOnClientPanel() {
+        clickOnClientP.click();
+    }
+
+    public void clickOnPayment() {
+        Payment.click();
+    }
+
+    public String getAmount() {
+        return Amount.getAttribute("content-desc");
+    }
 
     public void ClickOnCashier() {
         Cashier.click();
@@ -121,12 +196,23 @@ public class UploadInvoiceForClient extends TestBase {
         confirmDeleteAllProducts.click();
     }
 
+    public void clickOnInvoices() {
+        hamburgerMenu.click();
+        invoices.click();
+    }
+
+    public String getInvoiceAmount() {
+        return invoiceAmount.getAttribute("content-desc");
+    }
+
     public void smallNonTaxInvoice() {
         hamburgerMenu.click();
         settings.click();
         printingSettings.click();
+
         check1.click();
         check2.click();
+
         NonTaxORTax.click();
         NonTax.click();
         submitCheck.click();

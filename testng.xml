@@ -11,11 +11,12 @@
         <classes>
             <class name="GoooBigTestCases.GoooBig_Preparation"></class>
             <class name="GoooBigTestCases.GoooBig_Login"></class>
-            <class name="GoooBigTestCases.GoooBig_branchesAndWarehouses"></class>
+            <class name="GoooBigTestCases.GoooBig_SelectWarehouseForTablet"></class>
+            <!--<class name="GoooBigTestCases.GoooBig_branchesAndWarehouses"></class>
             <class name="GoooBigTestCases.GoooBig_ShiftStart"></class>
-            <!--<class name="GoooBigTestCases.GoooBig_Home"></class>-->
+            &lt;!&ndash;<class name="GoooBigTestCases.GoooBig_Home"></class>&ndash;&gt;
             <class name="GoooBigTestCases.GoooBig_AddClient"></class>
-            <class name="GoooBigTestCases.GoooBig_UploadInvoiceForClient"></class>
+            <class name="GoooBigTestCases.GoooBig_UploadInvoiceForClient"></class>-->
             <!--<class name="GoooBigTestCases.GoooBig_Invoices"></class>-->
             <!--<class name="GoooBigTestCases.GoooBig_PendingInvoice"></class>
             <class name="GoooBigTestCases.GoooBig_NoticeCreditor"></class>

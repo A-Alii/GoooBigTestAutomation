@@ -19,8 +19,10 @@ public class Login extends TestBase {
     public void fillLoginScreen(String Name, String Pass) {
         UserName.click();
         UserName.sendKeys(Name);
+        driver.hideKeyboard();
         Password.click();
         Password.sendKeys(Pass);
+        driver.hideKeyboard();
         LoginButton.click();
     }
 

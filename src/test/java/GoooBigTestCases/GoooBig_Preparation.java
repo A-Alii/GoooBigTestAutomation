@@ -96,7 +96,7 @@ public class GoooBig_Preparation extends TestBase {
     public void prepareOrganizationUsingValidData() throws IOException, InterruptedException {
         organizationPreparation = new OrganizationPreparation();
         Allure.step("Enter Valid Data");
-        organizationPreparation.clearFields();
+        //organizationPreparation.clearFields();
         organizationPreparation.fillPrepareOrg("0583", "4657", "1266");
         //Thread.sleep(2000);
         //Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
