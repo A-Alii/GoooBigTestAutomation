@@ -1,8 +1,8 @@
 ### GoooBig Test Report: https://gooobig-testing-report.netlify.app/
 
-**GoooBig POS Test Automation**
+## GoooBig POS Test Automation
 
-    GoooBig POS Test Automation is a project designed to automate testing processes for the GoooBig Point of Sale (POS) mobile application. The project aims to ensure the functionality, reliability, and performance of the GoooBig POS system through automated testing.
+GoooBig POS Test Automation is a project designed to automate testing processes for the GoooBig Point of Sale (POS) mobile application. The project aims to ensure the functionality, reliability, and performance of the GoooBig POS system through automated testing.
 
 # Table of Contents
     1. Introduction
