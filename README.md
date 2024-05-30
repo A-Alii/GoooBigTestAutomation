@@ -11,7 +11,7 @@ GoooBig POS Test Automation is a project designed to automate testing processes 
 - Contributing
 
 > [!Introduction]
-> GoooBig POS Test Automation is developed to streamline the testing process for the GoooBig POS mobile application. It includes automated tests covering various aspects of the POS system, including transaction processing, inventory management, user authentication, and more. By automating testing procedures, the project helps maintain the quality and stability of the GoooBig POS system.
+GoooBig POS Test Automation is developed to streamline the testing process for the GoooBig POS mobile application. It includes automated tests covering various aspects of the POS system, including transaction processing, inventory management, user authentication, and more. By automating testing procedures, the project helps maintain the quality and stability of the GoooBig POS system.
 
 > [!Features]
   - Automated tests for GoooBig POS mobile application
@@ -20,7 +20,7 @@ GoooBig POS Test Automation is a project designed to automate testing processes 
   - Detailed reporting and analysis of test results
     
 > [!Installation]
-> To use GoooBig POS Test Automation, follow these steps:
+To use GoooBig POS Test Automation, follow these steps:
 
 ## 1. Clone the repository to your local machine:
   > git clone https://github.com/A-Alii/GoooBigTestAutomation.git
@@ -28,7 +28,7 @@ GoooBig POS Test Automation is a project designed to automate testing processes 
 ## 2. Install the necessary dependencies. Detailed instructions can be found in the project's documentation.
 
 > [!Usage]
-> To run automated tests for the GoooBig POS mobile app:
+To run automated tests for the GoooBig POS mobile app:
 
     1. Navigate to the project directory on your local machine.
 
@@ -39,7 +39,7 @@ GoooBig POS Test Automation is a project designed to automate testing processes 
     4. For detailed usage instructions and examples, refer to the project's documentation.
 
 > [!Contributing]
-> Contributions to GoooBig POS Test Automation are welcome! If you'd like to contribute to the project, please follow these guidelines:
+Contributions to GoooBig POS Test Automation are welcome! If you'd like to contribute to the project, please follow these guidelines:
 
     1- Fork the repository and create your branch from main.
     2- Make your contributions, ensuring adherence to project conventions and standards.
