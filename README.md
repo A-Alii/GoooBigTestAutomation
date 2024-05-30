@@ -4,20 +4,24 @@
 GoooBig POS Test Automation is a project designed to automate testing processes for the GoooBig Point of Sale (POS) mobile application. The project aims to ensure the functionality, reliability, and performance of the GoooBig POS system through automated testing.
 
 # Table of Contents
-- Introduction
-- Features
-- Installation
-- Usage
-- Contributing
+    1. Introduction
+    2. Features
+    3. Installation
+    4. Usage
+    5. Contributing
 
 > [!Introduction]
 GoooBig POS Test Automation is developed to streamline the testing process for the GoooBig POS mobile application. It includes automated tests covering various aspects of the POS system, including transaction processing, inventory management, user authentication, and more. By automating testing procedures, the project helps maintain the quality and stability of the GoooBig POS system.
 
 > [!Features]
-  - Automated tests for GoooBig POS mobile application
-  - Test coverage for transaction processing, inventory management, user authentication, etc.
-  - Integration with popular testing frameworks and tools
-  - Detailed reporting and analysis of test results
+
+     1. Automated tests for GoooBig POS mobile application
+    
+     2. Test coverage for transaction processing, inventory management, user authentication, etc.
+    
+     3. Integration with popular testing frameworks and tools
+    
+     4. Detailed reporting and analysis of test results
     
 > [!Installation]
 To use GoooBig POS Test Automation, follow these steps:
@@ -41,13 +45,12 @@ To run automated tests for the GoooBig POS mobile app:
 > [!Contributing]
 Contributions to GoooBig POS Test Automation are welcome! If you'd like to contribute to the project, please follow these guidelines:
 
-    1- Fork the repository and create your branch from main.
-    2- Make your contributions, ensuring adherence to project conventions and standards.
-    3- Test your changes thoroughly.
-    4- Create a pull request, providing a detailed description of your changes.
+    1. Fork the repository and create your branch from main.
+    2. Make your contributions, ensuring adherence to project conventions and standards.
+    3. Test your changes thoroughly.
+    4. Create a pull request, providing a detailed description of your changes.
 
-## Report
-
+>[!Report]
 Here is an image from our Report:
 
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://drive.google.com/uc?export=view&id=1TN5UEeN8o6uAyRvzqae5Qb-CUC75T-oL)
