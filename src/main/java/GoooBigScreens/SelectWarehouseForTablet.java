@@ -73,5 +73,28 @@ public class SelectWarehouseForTablet extends TestBase {
         }
     }
 
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='رفع البيانات']")
+    MobileElement UploadButton;
+    public void clickOnUploadButton() {
+        UploadButton.click();
+    }
+
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='بدء الرفع']")
+    MobileElement StartUploadInvoice;
+    public void clickOnStartUploadInvoice() {
+        StartUploadInvoice.click();
+    }
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202B تم الرفع بنجاح\u202C']")
+    MobileElement UploadSuccess;
+    public boolean UploadSuccessIsDisplayed() {
+        WebDriverWait wait = new WebDriverWait(driver, 10); // wait for up to 10 seconds
+        try {
+            wait.until(ExpectedConditions.visibilityOf(UploadSuccess));
+            return UploadSuccess.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
 
 }

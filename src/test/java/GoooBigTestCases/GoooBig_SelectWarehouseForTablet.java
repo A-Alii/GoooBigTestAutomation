@@ -28,7 +28,7 @@ public class GoooBig_SelectWarehouseForTablet extends TestBase {
         // Start the stopwatch for the entire test case
         long testCaseStartTime = System.currentTimeMillis();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 50; i++) {
             System.out.println("Iteration: " + (i + 1));
 
             //start the stopwatch
@@ -55,6 +55,25 @@ public class GoooBig_SelectWarehouseForTablet extends TestBase {
 
         System.out.println("Total time taken for the test case: " + testCaseDuration + " milliseconds");
         System.out.println("Total time taken for the test case: " + testCaseDurationMinutes + " minutes");
+    }
+
+    @Test(priority = 3)
+    public void testcase3() {
+        selectWarehouseForTablet = new SelectWarehouseForTablet();
+        selectWarehouseForTablet.clickOnUploadButton();
+        selectWarehouseForTablet.clickOnStartUploadInvoice();
+
+        long testCaseStartTime = System.currentTimeMillis();
+
+        boolean isUploaded = selectWarehouseForTablet.UploadSuccessIsDisplayed();
+        if(isUploaded){
+            // Stop the stopwatch for the entire test case
+            long testCaseEndTime = System.currentTimeMillis();
+            long testCaseDuration = testCaseEndTime - testCaseStartTime;
+
+            double testCaseDurationMinutes = testCaseDuration / (1000.0 * 60.0);
+            System.out.println("Invoice is uploaded successfully and take a time: " + testCaseDurationMinutes + " minutes");
+        }
     }
 
 }
