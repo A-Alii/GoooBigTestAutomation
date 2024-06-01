@@ -2,9 +2,15 @@ package GoooBigScreens;
 
 import GoooBigBase.TestBase;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class SelectWarehouseForTablet extends TestBase {
 
@@ -86,12 +92,16 @@ public class SelectWarehouseForTablet extends TestBase {
     }
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202B تم الرفع بنجاح\u202C']")
     MobileElement UploadSuccess;
+
     public boolean UploadSuccessIsDisplayed() {
-        WebDriverWait wait = new WebDriverWait(driver, 10); // wait for up to 10 seconds
+        FluentWait<AndroidDriver<MobileElement>> wait = new FluentWait<>(driver)
+                .withTimeout(Duration.ofSeconds(500000000)) // Maximum wait time of 10 seconds
+                .pollingEvery(Duration.ofSeconds(2)) // Check for element every 2 seconds
+                .ignoring(NoSuchElementException.class); // Ignore NoSuchElementException
         try {
             wait.until(ExpectedConditions.visibilityOf(UploadSuccess));
             return UploadSuccess.isDisplayed();
-        } catch (Exception e) {
+        } catch (TimeoutException e) {
             return false;
         }
     }
