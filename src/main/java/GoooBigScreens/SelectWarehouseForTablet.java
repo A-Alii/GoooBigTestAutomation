@@ -34,6 +34,12 @@ public class SelectWarehouseForTablet extends TestBase {
     MobileElement cashInvoice;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202Bمن فضلك اختر طابعة\u202C']")
     MobileElement processComplete;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='رفع البيانات']")
+    MobileElement UploadButton;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='بدء الرفع']")
+    MobileElement StartUploadInvoice;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202B تم الرفع بنجاح\u202C']")
+    MobileElement UploadSuccess;
 
     public void clickOnSelectWarehouse() {
         selectWarehouse.click();
@@ -79,19 +85,13 @@ public class SelectWarehouseForTablet extends TestBase {
         }
     }
 
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='رفع البيانات']")
-    MobileElement UploadButton;
     public void clickOnUploadButton() {
         UploadButton.click();
     }
 
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc='بدء الرفع']")
-    MobileElement StartUploadInvoice;
     public void clickOnStartUploadInvoice() {
         StartUploadInvoice.click();
     }
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202B تم الرفع بنجاح\u202C']")
-    MobileElement UploadSuccess;
 
     public boolean UploadSuccessIsDisplayed() {
         FluentWait<AndroidDriver<MobileElement>> wait = new FluentWait<>(driver)

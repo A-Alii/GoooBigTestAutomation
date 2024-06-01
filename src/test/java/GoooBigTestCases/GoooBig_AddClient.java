@@ -36,8 +36,9 @@ public class GoooBig_AddClient extends TestBase {
         Allure.step("Click on Add Client Button and check screen is displayed");
         Assert.assertTrue(addClientScreen.isAddClientHeaderDisplay(), "Add Client Screen is not displayed");
     }
+/*
 
-    /*@Test(priority = 3)
+    @Test(priority = 3)
     @Description("This test attempts to Verify Click On Cancel Button.")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
@@ -53,6 +54,8 @@ public class GoooBig_AddClient extends TestBase {
             addClientScreen.navigateBack();
         }
     }
+*/
+/*
 
     @Test(priority = 4)
     @Description("This test attempts to Verify Click On Add Client Button With Empty Data.")
@@ -167,6 +170,7 @@ public class GoooBig_AddClient extends TestBase {
 
     }
 */
+
 /*    @Test(priority = 9)
     @Description("This test attempts to Verify Add Client With Valid Data.")
     @Severity(CRITICAL)
@@ -193,17 +197,44 @@ public class GoooBig_AddClient extends TestBase {
         System.out.println("Client Name was added in Table is: " + addClientScreen.getClientNameFromTable());
         Assert.assertEquals(ClientName, addClientScreen.getClientNameFromTable(), "after click on Apply button client doesn't added successfully and not matched.");
         addClientScreen.clickAddClientButton();
+    }*/
+
+    @Test(priority = 10)
+    @Description("This test attempts to Verify Add Client With Valid Same Previous Data.")
+    @Severity(CRITICAL)
+    @Owner("Ahmed Ali")
+    public void VerifyToAddClientWithValidSameData() {
+        try {
+            addClientScreen = new AddClientScreen();
+            addClientScreen.sendKeysToNameField("Yousef");
+            addClientScreen.hideKeyboard();
+            String ClientName = addClientScreen.getClientName();
+            System.out.println("Client Name is " + ClientName);
+            addClientScreen.sendKeysToPhoneField("012589745623");
+            addClientScreen.hideKeyboard();
+            addClientScreen.sendKeysToEmailField("Yousef@gmail.com");
+            addClientScreen.hideKeyboard();
+            addClientScreen.sendKeysToTaxNumberField("55555");
+            addClientScreen.hideKeyboard();
+            addClientScreen.clickApplyButton();
+            Assert.assertTrue(addClientScreen.isPopUpDisplayedAfterAddSameClient(), "after click on Apply button Same client added successfully.");
+            addClientScreen.navigateBack();
+            addClientScreen.navigateBack();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
-    */
+
+    //Random Clients
     /*@Test(priority = 9)
     @Description("This test attempts to Verify Add Client With Valid Data.")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
-    public void VerifyToAddClientWithValidData() {
+    public void VerifyToAddMultipleClientsWithValidData() {
         for (int i = 1; i <= 10; i++) {
                 addClientScreen = new AddClientScreen();
                 // Generate random client name
-                String clientName = generateRandomString(8);
+                String clientName = generateRandomString();
                 addClientScreen.sendKeysToNameField(clientName);
                 addClientScreen.hideKeyboard();
                 // Generate random phone number
@@ -227,11 +258,11 @@ public class GoooBig_AddClient extends TestBase {
     }
 
     // Method to generate a random string of given length
-    private String generateRandomString(int length) {
+    private String generateRandomString() {
         String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-        StringBuilder sb = new StringBuilder(length);
+        StringBuilder sb = new StringBuilder(8);
         Random random = new Random();
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < 8; i++) {
             sb.append(characters.charAt(random.nextInt(characters.length())));
         }
         return sb.toString();
@@ -270,30 +301,4 @@ public class GoooBig_AddClient extends TestBase {
         return sb.toString();
     }*/
 
-
-    @Test(priority = 9)
-    @Description("This test attempts to Verify Add Client With Valid Same Previous Data.")
-    @Severity(CRITICAL)
-    @Owner("Ahmed Ali")
-    public void VerifyToAddClientWithValidSameData() {
-        try {
-            addClientScreen = new AddClientScreen();
-            addClientScreen.sendKeysToNameField("Yousef");
-            addClientScreen.hideKeyboard();
-            String ClientName = addClientScreen.getClientName();
-            System.out.println("Client Name is " + ClientName);
-            addClientScreen.sendKeysToPhoneField("012589745623");
-            addClientScreen.hideKeyboard();
-            addClientScreen.sendKeysToEmailField("Yousef@gmail.com");
-            addClientScreen.hideKeyboard();
-            addClientScreen.sendKeysToTaxNumberField("55555");
-            addClientScreen.hideKeyboard();
-            addClientScreen.clickApplyButton();
-            Assert.assertTrue(addClientScreen.isPopUpDisplayedAfterAddSameClient(), "after click on Apply button Same client added successfully.");
-            addClientScreen.navigateBack();
-            addClientScreen.navigateBack();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
 }

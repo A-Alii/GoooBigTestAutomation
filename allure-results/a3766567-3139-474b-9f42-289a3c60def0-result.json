@@ -1,0 +1,100 @@
+{
+  "uuid": "a3766567-3139-474b-9f42-289a3c60def0",
+  "historyId": "79a753ebe71d52db9c630fb07572c7fa",
+  "fullName": "GoooBigTestCases.GoooBig_Preparation.redirectToLoginScreenAfterPrepareOrganization",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Preparation"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Preparation"
+    },
+    {
+      "name": "testMethod",
+      "value": "redirectToLoginScreenAfterPrepareOrganization"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Preparation"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "9572@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "redirectToLoginScreenAfterPrepareOrganization",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to redirect to Login Screen.",
+  "steps": [
+    {
+      "name": "Navigate to Login screen",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717244628266,
+      "stop": 1717244628267
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "238aefdf-ddee-4de7-9721-c2b5273155ad-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1717244628263,
+  "stop": 1717244628933
+}

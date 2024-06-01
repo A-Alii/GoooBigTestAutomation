@@ -5,25 +5,16 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
-import javax.imageio.ImageIO;
-import java.awt.*;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
-import java.time.Duration;
 import java.util.Properties;
-import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -79,19 +70,6 @@ public class TestBase {
             return matcher.group(1).replace(",", "").replaceAll("\\s+", "");
         }
         return null;
-    }
-
-    public void cropImageUsingAwt(String inputImagePath, String outputImagePath) {
-        try {
-            BufferedImage originalImage = ImageIO.read(new File(inputImagePath));
-            // Define the rectangle to crop (these values should be adjusted based on your target area)
-            // Example values for the rectangle (x, y, width, height)
-            Rectangle rectCrop = new Rectangle(300, 650, 400, 300); // Adjust these values
-            BufferedImage croppedImage = originalImage.getSubimage(rectCrop.x, rectCrop.y, rectCrop.width, rectCrop.height);
-            ImageIO.write(croppedImage, "png", new File(outputImagePath));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
     public void hideKeyboard() {
