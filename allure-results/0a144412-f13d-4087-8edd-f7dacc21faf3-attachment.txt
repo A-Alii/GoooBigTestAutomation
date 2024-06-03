@@ -1,1 +1,0 @@
-The Time Taken for Invoice:867 is 2782 milliseconds

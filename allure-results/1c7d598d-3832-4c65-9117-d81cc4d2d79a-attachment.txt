@@ -1,1 +1,0 @@
-The Time Taken for Invoice:92 is 4686 milliseconds

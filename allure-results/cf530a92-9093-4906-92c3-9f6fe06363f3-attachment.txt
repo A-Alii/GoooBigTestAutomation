@@ -1,1 +1,0 @@
-The Time Taken for Invoice:694 is 4052 milliseconds

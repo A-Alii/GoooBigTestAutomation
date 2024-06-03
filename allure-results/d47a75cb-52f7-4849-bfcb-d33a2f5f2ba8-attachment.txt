@@ -1,1 +1,0 @@
-The Time Taken for Invoice:856 is 3017 milliseconds

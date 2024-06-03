@@ -1,1 +1,0 @@
-The Time Taken for Invoice:543 is 3311 milliseconds

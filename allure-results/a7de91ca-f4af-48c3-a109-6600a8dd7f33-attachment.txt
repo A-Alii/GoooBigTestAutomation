@@ -1,1 +1,0 @@
-The Time Taken for Invoice:792 is 2923 milliseconds

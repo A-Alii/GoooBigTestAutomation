@@ -1,1 +1,0 @@
-The Time Taken for Invoice:713 is 3602 milliseconds

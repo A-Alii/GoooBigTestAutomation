@@ -1,1 +1,0 @@
-The Time Taken for Invoice:898 is 3355 milliseconds

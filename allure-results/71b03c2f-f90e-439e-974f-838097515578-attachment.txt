@@ -1,1 +1,0 @@
-The Time Taken for Invoice:727 is 3540 milliseconds

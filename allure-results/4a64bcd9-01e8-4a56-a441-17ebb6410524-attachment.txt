@@ -1,1 +1,0 @@
-The Time Taken for Invoice:941 is 3327 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:465 is 2876 milliseconds

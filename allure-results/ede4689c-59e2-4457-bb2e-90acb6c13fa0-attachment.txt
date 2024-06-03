@@ -1,1 +1,0 @@
-The Time Taken for Invoice:159 is 2983 milliseconds

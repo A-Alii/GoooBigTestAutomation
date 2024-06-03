@@ -1,1 +1,0 @@
-The Time Taken for Invoice:96 is 3349 milliseconds

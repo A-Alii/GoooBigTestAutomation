@@ -1,1 +1,0 @@
-The Time Taken for Invoice:140 is 2783 milliseconds

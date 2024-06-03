@@ -1,1 +1,0 @@
-The Time Taken for Invoice:387 is 3035 milliseconds

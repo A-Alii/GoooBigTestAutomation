@@ -1,1 +1,0 @@
-The Time Taken for Invoice:747 is 2780 milliseconds

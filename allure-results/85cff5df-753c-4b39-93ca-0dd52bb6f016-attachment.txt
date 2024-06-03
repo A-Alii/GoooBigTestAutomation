@@ -1,1 +1,0 @@
-The Time Taken for Invoice:521 is 4210 milliseconds

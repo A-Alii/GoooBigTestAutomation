@@ -1,1 +1,0 @@
-The Time Taken for Invoice:153 is 2884 milliseconds

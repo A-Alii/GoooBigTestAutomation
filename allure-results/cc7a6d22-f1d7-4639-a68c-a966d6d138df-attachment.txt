@@ -1,1 +1,0 @@
-The Time Taken for Invoice:53 is 3003 milliseconds

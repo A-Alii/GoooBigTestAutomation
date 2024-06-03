@@ -1,1 +1,0 @@
-The Time Taken for Invoice:47 is 3103 milliseconds

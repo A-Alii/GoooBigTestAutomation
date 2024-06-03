@@ -1,1 +1,0 @@
-The Time Taken for Invoice:67 is 4224 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:960 is 3972 milliseconds

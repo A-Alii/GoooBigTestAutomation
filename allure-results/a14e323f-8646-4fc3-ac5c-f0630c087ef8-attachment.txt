@@ -1,1 +1,0 @@
-The Time Taken for Invoice:12 is 4147 milliseconds

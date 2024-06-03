@@ -1,1 +1,0 @@
-The Time Taken for Invoice:365 is 3005 milliseconds

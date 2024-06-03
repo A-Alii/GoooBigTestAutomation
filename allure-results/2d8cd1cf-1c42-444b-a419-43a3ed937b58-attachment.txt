@@ -1,1 +1,0 @@
-The Time Taken for Invoice:238 is 2957 milliseconds

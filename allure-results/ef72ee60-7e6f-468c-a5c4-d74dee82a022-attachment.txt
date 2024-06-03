@@ -1,1 +1,0 @@
-The Time Taken for Invoice:144 is 3190 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:338 is 2825 milliseconds

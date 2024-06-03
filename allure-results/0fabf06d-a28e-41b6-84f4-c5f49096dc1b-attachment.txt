@@ -1,1 +1,0 @@
-The Time Taken for Invoice:778 is 3015 milliseconds

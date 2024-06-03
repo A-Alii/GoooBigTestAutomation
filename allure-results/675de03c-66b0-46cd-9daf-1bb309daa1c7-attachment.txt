@@ -1,1 +1,0 @@
-The Time Taken for Invoice:735 is 2748 milliseconds

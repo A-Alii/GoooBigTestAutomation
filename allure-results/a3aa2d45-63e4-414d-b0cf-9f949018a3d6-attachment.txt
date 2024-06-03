@@ -1,1 +1,0 @@
-The Time Taken for Invoice:198 is 2952 milliseconds

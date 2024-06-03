@@ -1,1 +1,0 @@
-The Time Taken for Invoice:506 is 3071 milliseconds

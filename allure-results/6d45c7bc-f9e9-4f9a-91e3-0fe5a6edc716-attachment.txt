@@ -1,1 +1,0 @@
-The Time Taken for Invoice:796 is 4123 milliseconds

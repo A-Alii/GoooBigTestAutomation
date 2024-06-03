@@ -1,1 +1,0 @@
-The Time Taken for Invoice:546 is 3047 milliseconds

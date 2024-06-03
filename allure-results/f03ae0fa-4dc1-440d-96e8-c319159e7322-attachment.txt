@@ -1,1 +1,0 @@
-The Time Taken for Invoice:123 is 3150 milliseconds

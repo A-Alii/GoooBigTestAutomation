@@ -1,1 +1,0 @@
-The Time Taken for Invoice:401 is 3024 milliseconds

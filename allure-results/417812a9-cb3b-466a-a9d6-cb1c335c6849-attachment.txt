@@ -1,1 +1,0 @@
-The Time Taken for Invoice:769 is 2857 milliseconds

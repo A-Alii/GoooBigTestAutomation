@@ -1,1 +1,0 @@
-The Time Taken for Invoice:42 is 4080 milliseconds

@@ -1,1 +1,0 @@
-Invoice is completed for iteration: 565 in 2917 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:27 is 4840 milliseconds

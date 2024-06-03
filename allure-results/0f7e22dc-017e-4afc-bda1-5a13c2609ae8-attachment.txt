@@ -1,1 +1,0 @@
-The Time Taken for Invoice:61 is 3208 milliseconds

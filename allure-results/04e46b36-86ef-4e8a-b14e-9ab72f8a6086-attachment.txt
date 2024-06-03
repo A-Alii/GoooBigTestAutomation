@@ -1,1 +1,0 @@
-The Time Taken for Invoice:757 is 3029 milliseconds

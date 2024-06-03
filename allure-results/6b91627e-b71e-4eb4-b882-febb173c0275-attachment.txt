@@ -1,1 +1,0 @@
-The Time Taken for Invoice:242 is 4280 milliseconds

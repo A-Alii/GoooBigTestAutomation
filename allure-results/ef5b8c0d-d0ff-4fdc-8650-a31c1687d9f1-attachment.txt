@@ -1,1 +1,0 @@
-The Time Taken for Invoice:321 is 2923 milliseconds

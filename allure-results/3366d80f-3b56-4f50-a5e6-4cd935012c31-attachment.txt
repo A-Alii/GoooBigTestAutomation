@@ -1,1 +1,0 @@
-The Time Taken for Invoice:46 is 3551 milliseconds

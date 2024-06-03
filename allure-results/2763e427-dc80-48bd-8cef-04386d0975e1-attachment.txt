@@ -1,1 +1,0 @@
-The Time Taken for Invoice:686 is 2921 milliseconds

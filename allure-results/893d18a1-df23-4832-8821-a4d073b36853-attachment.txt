@@ -1,1 +1,0 @@
-The Time Taken for Invoice:265 is 2976 milliseconds

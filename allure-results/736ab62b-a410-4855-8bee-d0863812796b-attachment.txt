@@ -1,1 +1,0 @@
-The Time Taken for Invoice:854 is 2909 milliseconds

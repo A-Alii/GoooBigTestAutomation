@@ -1,1 +1,0 @@
-The Time Taken for Invoice:926 is 4310 milliseconds

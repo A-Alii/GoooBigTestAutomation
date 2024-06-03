@@ -1,1 +1,0 @@
-The Time Taken for Invoice:460 is 2929 milliseconds

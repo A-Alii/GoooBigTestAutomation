@@ -1,1 +1,0 @@
-The Time Taken for Invoice:998 is 3659 milliseconds

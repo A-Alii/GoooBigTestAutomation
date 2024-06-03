@@ -1,1 +1,0 @@
-The Time Taken for Invoice:21 is 3038 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:547 is 2931 milliseconds

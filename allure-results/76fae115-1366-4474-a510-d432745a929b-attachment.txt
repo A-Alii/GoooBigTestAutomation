@@ -1,1 +1,0 @@
-The Time Taken for Invoice:484 is 3313 milliseconds

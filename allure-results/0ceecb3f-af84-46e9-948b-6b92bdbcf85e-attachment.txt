@@ -1,1 +1,0 @@
-The Time Taken for Invoice:651 is 2860 milliseconds

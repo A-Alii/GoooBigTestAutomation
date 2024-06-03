@@ -1,1 +1,0 @@
-The Time Taken for Invoice:524 is 2883 milliseconds

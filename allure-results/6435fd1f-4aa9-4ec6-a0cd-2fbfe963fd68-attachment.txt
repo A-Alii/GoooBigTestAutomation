@@ -1,1 +1,0 @@
-The Time Taken for Invoice:907 is 3221 milliseconds

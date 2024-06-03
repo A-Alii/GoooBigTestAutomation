@@ -1,1 +1,0 @@
-The Time Taken for Invoice:690 is 2891 milliseconds

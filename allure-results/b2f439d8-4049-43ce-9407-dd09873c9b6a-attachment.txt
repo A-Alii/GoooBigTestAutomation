@@ -1,1 +1,0 @@
-The Time Taken for Invoice:939 is 2943 milliseconds

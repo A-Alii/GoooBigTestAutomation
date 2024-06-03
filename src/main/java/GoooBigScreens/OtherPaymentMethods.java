@@ -1,10 +1,17 @@
 package GoooBigScreens;
 
 import GoooBigBase.TestBase;
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 
-public class Invoices extends TestBase {
+import java.util.concurrent.TimeUnit;
+
+public class OtherPaymentMethods extends TestBase {
+
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
     MobileElement hamburgerMenu;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الإعدادات']")
@@ -41,8 +48,8 @@ public class Invoices extends TestBase {
     MobileElement BasketButton;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc = 'التالي']")
     MobileElement NextButton;
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index = '8']")
-    MobileElement CashButton;
+    @AndroidFindBy(xpath = "//android.view.View[@index = '9']")
+    MobileElement otherPaymentMethodButton;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index = '0']")
     MobileElement EditProduct;
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='6']")
@@ -61,8 +68,59 @@ public class Invoices extends TestBase {
     MobileElement detailsOfInvoice;
     @AndroidFindBy(xpath = "//android.view.View[@index='8']")
     MobileElement TotalInvoicePrice;
+    @AndroidFindBy(xpath = "//android.widget.Button[@index='0']")
+    MobileElement product1;
+    @AndroidFindBy(xpath = "//android.widget.Button[@index='1']")
+    MobileElement productAgain;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc= '\u202Bيجب أن يكون المجموع يساوى مبلغ الفاتورة\u202C']")
+    MobileElement popUp;
+    @AndroidFindBy(xpath = "//android.view.View[@index= '6']")
+    MobileElement Amount;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='إضافة']")
+    MobileElement addPaymentMethod;
+    @AndroidFindBy(xpath = "//android.view.View[@index='21']")
+    MobileElement date1;
+    @AndroidFindBy(xpath = "//android.widget.Button[@content-desc='OK']")
+    MobileElement Ok;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='وقت التسليم']")
+    MobileElement dateAfter;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='23']")
+    MobileElement employeeName;
+    @AndroidFindBy(xpath = "//android.view.View[@index='1']")
+    MobileElement selectEmployee;
+    @AndroidFindBy(xpath = "//android.view.View[@index='25']")
+    MobileElement TaxNumber;
+    @AndroidFindBy(xpath = "//android.view.View[@index='33']")
+    MobileElement InvoiceTotal;
+    @AndroidFindBy(xpath = "//android.view.View[@index='31']")
+    MobileElement Discount;
+
+    public OtherPaymentMethods() {
+        // Initialize page factory and WebDriverWait
+        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
+
+    public void clickOnFirstElement() {
+        product1.click();
+    }
+
+    public void clickOnFirstElementAgain() {
+        productAgain.click();
+    }
 
     public void smallNonTaxInvoice() {
+        hamburgerMenu.click();
+        settings.click();
+        printingSettings.click();
+        check1.click();
+        check2.click();
+        NonTaxORTax.click();
+        NonTax.click();
+        submitCheck.click();
+    }
+
+    public void smallNonTaxInvoiceForOtherPaymentMethod() {
         hamburgerMenu.click();
         settings.click();
         printingSettings.click();
@@ -131,8 +189,8 @@ public class Invoices extends TestBase {
         NextButton.click();
     }
 
-    public void clickOnCashButton() {
-        CashButton.click();
+    public void clickOnOtherPaymentMethodButton() {
+        otherPaymentMethodButton.click();
     }
 
     public void clickOnEditProduct() {
@@ -186,10 +244,69 @@ public class Invoices extends TestBase {
         return TotalInvoicePrice.getAttribute("content-desc");
     }
 
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc='عرض جميع المنتجات']")
-    MobileElement AllProducts;
-
-    public void clickOnAllProducts() {
-        AllProducts.click();
+    public WebElement scroll() {
+        WebElement element;
+        element = driver.findElement(
+                MobileBy.AndroidUIAutomator(
+                        "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"تأكيد العملية\"))"));
+        return element;
     }
+
+    public void clickOnConfirmTransaction() {
+        WebElement element = scroll();
+        element.click(); // Click on the scrolled element
+    }
+
+    public boolean isPopUpPresent() {
+        return popUp.isDisplayed();
+    }
+
+    public String getAmount() {
+        return Amount.getAttribute("content-desc");
+    }
+
+    public void clickOnAddPaymentMethod() {
+        addPaymentMethod.click();
+    }
+
+    public void clickOnDate() {
+        date1.click();
+    }
+
+    public void clickOnOk() {
+        Ok.click();
+    }
+
+    public void clickOnOkAgain() {
+        Ok.click();
+    }
+
+    public String getInvoiceDate() {
+        return dateAfter.getAttribute("content-desc");
+    }
+
+    public void clickOnEmployeeName() {
+        employeeName.click();
+        selectEmployee.click();
+    }
+
+    public String getEmployeeName() {
+        return employeeName.getAttribute("content-desc");
+    }
+
+    public String getTaxNumber() {
+        return TaxNumber.getAttribute("content-desc");
+    }
+
+    public String getInvoiceTotal() {
+        return InvoiceTotal.getAttribute("content-desc");
+    }
+
+    public String getDiscountNumber() {
+        return Discount.getAttribute("content-desc");
+    }
+
+
 }
+
+

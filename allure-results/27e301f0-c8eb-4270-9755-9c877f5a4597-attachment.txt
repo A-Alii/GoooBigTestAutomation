@@ -1,1 +1,0 @@
-The Time Taken for Invoice:166 is 4629 milliseconds

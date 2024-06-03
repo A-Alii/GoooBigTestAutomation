@@ -1,1 +1,0 @@
-The Time Taken for Invoice:932 is 2749 milliseconds

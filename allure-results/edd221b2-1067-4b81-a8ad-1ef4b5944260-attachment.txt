@@ -1,1 +1,0 @@
-The Time Taken for Invoice:609 is 3022 milliseconds

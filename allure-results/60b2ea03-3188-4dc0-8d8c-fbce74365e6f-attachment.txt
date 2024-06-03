@@ -1,1 +1,0 @@
-The Time Taken for Invoice:589 is 2811 milliseconds

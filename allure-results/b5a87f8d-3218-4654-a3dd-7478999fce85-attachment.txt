@@ -1,1 +1,0 @@
-The Time Taken for Invoice:626 is 3941 milliseconds

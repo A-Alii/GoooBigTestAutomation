@@ -1,1 +1,0 @@
-The Time Taken for Invoice:697 is 2879 milliseconds

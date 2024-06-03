@@ -1,1 +1,0 @@
-The Time Taken for Invoice:886 is 2801 milliseconds

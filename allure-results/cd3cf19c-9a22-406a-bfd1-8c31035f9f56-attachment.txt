@@ -1,1 +1,0 @@
-The Time Taken for Invoice:699 is 4441 milliseconds

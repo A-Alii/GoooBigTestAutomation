@@ -1,1 +1,0 @@
-The Time Taken for Invoice:100 is 3584 milliseconds

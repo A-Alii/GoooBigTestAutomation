@@ -1,1 +1,0 @@
-The Time Taken for Invoice:414 is 3051 milliseconds

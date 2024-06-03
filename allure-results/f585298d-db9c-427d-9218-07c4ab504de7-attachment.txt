@@ -1,1 +1,0 @@
-The Time Taken for Invoice:981 is 2917 milliseconds

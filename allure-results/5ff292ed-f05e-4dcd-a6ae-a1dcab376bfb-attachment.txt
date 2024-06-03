@@ -1,1 +1,0 @@
-The Time Taken for Invoice:203 is 3025 milliseconds

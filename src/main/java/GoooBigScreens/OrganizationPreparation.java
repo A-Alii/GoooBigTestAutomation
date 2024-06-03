@@ -18,6 +18,30 @@ public class OrganizationPreparation extends TestBase {
     @AndroidFindBy(xpath = "//android.view.View[@index='31']")
     MobileElement ProductsNumberShow;
 
+    @AndroidFindBy(xpath = "//android.view.View[@index='0']")
+    MobileElement ErrorDisplay1;
+
+    @AndroidFindBy(xpath = "//android.view.View[@index='1']")
+    MobileElement ErrorDisplay2;
+    @AndroidFindBy(xpath = "//android.view.View[@index='0']")
+    MobileElement ErrorDisplay3;
+
+    public boolean isErrorUserNameDisplayed1() {
+        return ErrorDisplay1.isDisplayed();
+    }
+
+    public boolean isErrorUserNameDisplayed2() {
+        return ErrorDisplay2.isDisplayed();
+    }
+
+    public boolean isErrorUserNameDisplayed3() {
+        return ErrorDisplay3.isDisplayed();
+    }
+
+    public boolean isErrorUserNameDisplayed4() {
+        return UserName.isDisplayed();
+    }
+
     public void fillPrepareOrg(String Name, String Pass, String Id) {
         UserName.click();
         UserName.sendKeys(Name);

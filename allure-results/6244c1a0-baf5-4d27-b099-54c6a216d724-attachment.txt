@@ -1,1 +1,0 @@
-The Time Taken for Invoice:66 is 3080 milliseconds

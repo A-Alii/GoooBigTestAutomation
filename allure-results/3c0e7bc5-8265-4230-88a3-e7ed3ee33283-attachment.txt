@@ -1,1 +1,0 @@
-The Time Taken for Invoice:127 is 4136 milliseconds

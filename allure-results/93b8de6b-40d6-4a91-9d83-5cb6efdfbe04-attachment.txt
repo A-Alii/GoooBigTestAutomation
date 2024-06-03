@@ -1,1 +1,0 @@
-The Time Taken for Invoice:572 is 3019 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:957 is 3880 milliseconds

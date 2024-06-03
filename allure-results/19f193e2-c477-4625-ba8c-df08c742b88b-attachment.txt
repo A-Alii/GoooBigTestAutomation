@@ -1,1 +1,0 @@
-The Time Taken for Invoice:469 is 2848 milliseconds

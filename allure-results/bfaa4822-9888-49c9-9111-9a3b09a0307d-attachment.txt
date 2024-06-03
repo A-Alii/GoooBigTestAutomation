@@ -1,1 +1,0 @@
-The Time Taken for Invoice:270 is 2853 milliseconds

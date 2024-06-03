@@ -1,1 +1,0 @@
-The Time Taken for Invoice:995 is 2989 milliseconds

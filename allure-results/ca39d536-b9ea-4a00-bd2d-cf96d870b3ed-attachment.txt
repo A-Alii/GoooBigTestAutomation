@@ -1,1 +1,0 @@
-The Time Taken for Invoice:710 is 3323 milliseconds

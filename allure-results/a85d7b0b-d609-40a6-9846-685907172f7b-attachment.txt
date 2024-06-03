@@ -1,1 +1,0 @@
-The Time Taken for Invoice:317 is 3303 milliseconds

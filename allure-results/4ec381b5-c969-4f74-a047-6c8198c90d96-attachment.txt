@@ -1,1 +1,0 @@
-The Time Taken for Invoice:35 is 2996 milliseconds

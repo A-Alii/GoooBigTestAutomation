@@ -3,6 +3,9 @@ package GoooBigTestCases;
 import GoooBigBase.TestBase;
 import GoooBigScreens.UploadInvoiceForClient;
 import io.qameta.allure.Allure;
+import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
@@ -11,6 +14,8 @@ import org.testng.annotations.Test;
 import java.io.ByteArrayInputStream;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import static io.qameta.allure.SeverityLevel.CRITICAL;
 
 public class GoooBig_UploadInvoiceForClient extends TestBase {
     public String numberOnly = "";
@@ -23,7 +28,10 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
     private String test1 = "";
 
     @Test(priority = 1)
-    public void testcase1() {
+    @Description("This test attempts to select Invoice type.")
+    @Severity(CRITICAL)
+    @Owner("Ahmed Ali")
+    public void verifyToSelectInvoiceType() {
         cashierScreen = new UploadInvoiceForClient();
         cashierScreen.ClickOnCashier();
         cashierScreen.smallNonTaxInvoice();
@@ -33,15 +41,22 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
     }
 
     @Test(priority = 2)
-    public void testcase2() throws InterruptedException {
+    @Description("This test attempts to Navigate To Cart Without Products.")
+    @Severity(CRITICAL)
+    @Owner("Ahmed Ali")
+    public void verifyToNavigateToCartWithoutProducts() throws InterruptedException {
         cashierScreen = new UploadInvoiceForClient();
+        cashierScreen.hideKeyboard();
         cashierScreen.clickOnCartEmpty();
         Thread.sleep(1000);
         System.out.println("There is no products in cart.");
     }
 
     @Test(priority = 3)
-    public void testcase3() {
+    @Description("This test attempts to verify Select Category And Department And Product.")
+    @Severity(CRITICAL)
+    @Owner("Ahmed Ali")
+    public void verifyToSelectCategoryAndDepartmentAndProduct() throws InterruptedException {
         cashierScreen = new UploadInvoiceForClient();
         cashierScreen.clickOnPhoneCategory();
         cashierScreen.clickOnAppleDepartment();
@@ -52,7 +67,10 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
     }
 
     @Test(priority = 4)
-    public void testcase4() throws InterruptedException {
+    @Description("This test attempts to select client for invoice.")
+    @Severity(CRITICAL)
+    @Owner("Ahmed Ali")
+    public void verifyToSelectClientForInvoice() throws InterruptedException {
         cashierScreen = new UploadInvoiceForClient();
         cashierScreen.clickOnNextBasket();
         Allure.step("select client for invoice.");
@@ -63,7 +81,7 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
         cashierScreen.selectClientName();
         Thread.sleep(1000);
         cashierScreen.clickOnPayment();
-        Thread.sleep(2000);
+        Thread.sleep(6000);
         String clientAmount = cashierScreen.getAmount();
         System.out.println(clientAmount);
 
@@ -99,7 +117,10 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
     }
 
     @Test(priority = 5)
-    public void testcase5() throws InterruptedException {
+    @Description("This test attempts to Update Clients from Update Screen.")
+    @Severity(CRITICAL)
+    @Owner("Ahmed Ali")
+    public void verifyToUpdateClients() throws InterruptedException {
         cashierScreen = new UploadInvoiceForClient();
         cashierScreen.updateClients();
         Thread.sleep(6000);
@@ -121,8 +142,10 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
         cashierScreen.navigateBack();
 
         cashierScreen.clickOnClientsOption();
+        Thread.sleep(2000);
         cashierScreen.selectClientName();
         cashierScreen.clickOnPayment();
+        Thread.sleep(3000);
         String clientAmountLast = cashierScreen.getAmount();
         System.out.println(clientAmountLast);
         // Define the pattern for extracting numbers

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:481 is 3904 milliseconds

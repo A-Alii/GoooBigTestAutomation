@@ -1,1 +1,0 @@
-The Time Taken for Invoice:969 is 2926 milliseconds

@@ -136,13 +136,11 @@ public class GoooBig_NoticeCreditor extends TestBase {
         Allure.addAttachment("Screenshot for Receipt.", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         noticeCreditorScreen.navigateBack();
-        noticeCreditorScreen.NavigateToCashierProduct();
+        //noticeCreditorScreen.NavigateToCashierProduct();
         Allure.step("verify to Navigate to End Shift to check the price of notice creditor was added successfully to his box.");
         noticeCreditorScreen.NavigateToEndShift();
         Thread.sleep(2000);
-        //System.out.println("+++++++++++++++++++" + noticeCreditorScreen.getElement());
-        //Allure.addAttachment("Screenshot for Result of Notice Creditor.", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-        //Thread.sleep(3000);
+        noticeCreditorScreen.navigateBack();
         noticeCreditorScreen.navigateBack();
         noticeCreditorScreen.hideKeyboard();
         System.out.println("Notice Creditor Transaction Done Successfully.");

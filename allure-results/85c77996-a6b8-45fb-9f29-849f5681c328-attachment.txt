@@ -1,1 +1,0 @@
-The Time Taken for Invoice:435 is 2917 milliseconds

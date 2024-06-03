@@ -1,1 +1,0 @@
-The Time Taken for Invoice:871 is 3175 milliseconds

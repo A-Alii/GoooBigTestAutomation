@@ -1,1 +1,0 @@
-The Time Taken for Invoice:154 is 3157 milliseconds

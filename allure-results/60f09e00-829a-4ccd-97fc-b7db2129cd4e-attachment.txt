@@ -1,1 +1,0 @@
-The Time Taken for Invoice:437 is 4093 milliseconds

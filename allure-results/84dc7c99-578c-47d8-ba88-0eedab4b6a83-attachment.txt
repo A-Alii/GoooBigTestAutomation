@@ -1,1 +1,0 @@
-The Time Taken for Invoice:352 is 3000 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:173 is 3767 milliseconds

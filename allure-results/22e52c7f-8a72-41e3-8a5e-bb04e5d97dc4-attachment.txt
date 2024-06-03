@@ -1,1 +1,0 @@
-The Time Taken for Invoice:639 is 3178 milliseconds

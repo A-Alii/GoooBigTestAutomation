@@ -1,1 +1,0 @@
-The Time Taken for Invoice:350 is 3028 milliseconds

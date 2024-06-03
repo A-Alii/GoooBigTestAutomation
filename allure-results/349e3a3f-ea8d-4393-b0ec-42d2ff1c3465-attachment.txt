@@ -1,1 +1,0 @@
-The Time Taken for Invoice:817 is 3142 milliseconds

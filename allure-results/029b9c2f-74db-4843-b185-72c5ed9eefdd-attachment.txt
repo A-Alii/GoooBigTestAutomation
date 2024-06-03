@@ -1,1 +1,0 @@
-The Time Taken for Invoice:43 is 2906 milliseconds

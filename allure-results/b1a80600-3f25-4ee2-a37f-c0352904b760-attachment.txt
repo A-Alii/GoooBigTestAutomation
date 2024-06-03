@@ -1,1 +1,0 @@
-The Time Taken for Invoice:438 is 3089 milliseconds

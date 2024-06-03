@@ -1,1 +1,0 @@
-The Time Taken for Invoice:200 is 2838 milliseconds

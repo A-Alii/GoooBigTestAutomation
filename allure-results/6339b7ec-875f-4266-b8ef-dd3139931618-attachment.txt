@@ -1,1 +1,0 @@
-The Time Taken for Invoice:730 is 3716 milliseconds

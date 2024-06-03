@@ -1,1 +1,0 @@
-The Time Taken for Invoice:423 is 2880 milliseconds

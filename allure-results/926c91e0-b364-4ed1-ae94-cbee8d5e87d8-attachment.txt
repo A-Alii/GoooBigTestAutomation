@@ -1,1 +1,0 @@
-The Time Taken for Invoice:866 is 2890 milliseconds

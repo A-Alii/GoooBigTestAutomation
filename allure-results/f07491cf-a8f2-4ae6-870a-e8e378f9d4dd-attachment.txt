@@ -1,1 +1,0 @@
-The Time Taken for Invoice:383 is 3362 milliseconds

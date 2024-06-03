@@ -1,1 +1,0 @@
-The Time Taken for Invoice:20 is 3002 milliseconds

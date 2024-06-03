@@ -1,1 +1,0 @@
-The Time Taken for Invoice:388 is 4541 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:208 is 3185 milliseconds

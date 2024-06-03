@@ -1,1 +1,0 @@
-The Time Taken for Invoice:120 is 3880 milliseconds

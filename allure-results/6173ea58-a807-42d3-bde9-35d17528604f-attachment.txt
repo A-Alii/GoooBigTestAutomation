@@ -1,1 +1,0 @@
-The Time Taken for Invoice:248 is 2941 milliseconds

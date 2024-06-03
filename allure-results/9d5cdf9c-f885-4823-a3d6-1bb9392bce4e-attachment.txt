@@ -1,1 +1,0 @@
-The Time Taken for Invoice:749 is 4185 milliseconds

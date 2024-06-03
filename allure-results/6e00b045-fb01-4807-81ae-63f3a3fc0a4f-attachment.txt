@@ -1,1 +1,0 @@
-The Time Taken for Invoice:443 is 3343 milliseconds

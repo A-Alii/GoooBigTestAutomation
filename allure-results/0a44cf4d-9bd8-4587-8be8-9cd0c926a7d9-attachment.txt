@@ -1,1 +1,0 @@
-The Time Taken for Invoice:520 is 4007 milliseconds

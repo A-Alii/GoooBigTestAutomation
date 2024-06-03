@@ -1,1 +1,0 @@
-The Time Taken for Invoice:528 is 2781 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:976 is 2824 milliseconds

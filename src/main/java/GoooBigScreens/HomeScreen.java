@@ -70,6 +70,11 @@ public class HomeScreen extends TestBase {
         //searchBar.sendKeys(Keys.ENTER);
     }
 
+    public void clearSearchBar() {
+        searchBar.click();
+        searchBar.clear();
+    }
+
     public boolean isClientsExist() {
         return Categories.isDisplayed();
     }

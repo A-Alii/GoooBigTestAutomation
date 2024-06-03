@@ -1,1 +1,0 @@
-The Time Taken for Invoice:189 is 3775 milliseconds

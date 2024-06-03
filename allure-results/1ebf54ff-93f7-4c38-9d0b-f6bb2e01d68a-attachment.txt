@@ -1,1 +1,0 @@
-The Time Taken for Invoice:545 is 3374 milliseconds

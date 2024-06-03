@@ -1,1 +1,0 @@
-The Time Taken for Invoice:903 is 3189 milliseconds

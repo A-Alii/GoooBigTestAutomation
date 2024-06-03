@@ -1,1 +1,0 @@
-The Time Taken for Invoice:451 is 2957 milliseconds

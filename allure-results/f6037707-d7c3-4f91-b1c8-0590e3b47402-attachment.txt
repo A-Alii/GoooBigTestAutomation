@@ -1,1 +1,0 @@
-The Time Taken for Invoice:741 is 3442 milliseconds

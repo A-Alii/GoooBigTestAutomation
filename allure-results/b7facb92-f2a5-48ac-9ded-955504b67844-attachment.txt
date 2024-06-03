@@ -1,1 +1,0 @@
-The Time Taken for Invoice:536 is 2823 milliseconds

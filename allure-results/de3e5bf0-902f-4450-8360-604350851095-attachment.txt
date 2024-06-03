@@ -1,1 +1,0 @@
-The Time Taken for Invoice:878 is 2935 milliseconds

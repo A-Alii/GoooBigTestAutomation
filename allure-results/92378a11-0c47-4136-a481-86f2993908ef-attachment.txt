@@ -1,1 +1,0 @@
-The Time Taken for Invoice:371 is 3334 milliseconds

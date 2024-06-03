@@ -1,1 +1,0 @@
-The Time Taken for Invoice:628 is 3518 milliseconds

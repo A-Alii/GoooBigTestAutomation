@@ -1,1 +1,0 @@
-The Time Taken for Invoice:136 is 2945 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:390 is 3240 milliseconds

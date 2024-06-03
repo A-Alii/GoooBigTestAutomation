@@ -1,1 +1,0 @@
-The Time Taken for Invoice:625 is 3444 milliseconds

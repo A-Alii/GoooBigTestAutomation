@@ -1,1 +1,0 @@
-The Time Taken for Invoice:384 is 2822 milliseconds

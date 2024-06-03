@@ -1,1 +1,0 @@
-The Time Taken for Invoice:216 is 2943 milliseconds

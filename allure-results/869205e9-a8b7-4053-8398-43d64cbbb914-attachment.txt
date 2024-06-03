@@ -1,1 +1,0 @@
-The Time Taken for Invoice:73 is 3003 milliseconds

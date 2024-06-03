@@ -1,1 +1,0 @@
-The Time Taken for Invoice:580 is 2872 milliseconds

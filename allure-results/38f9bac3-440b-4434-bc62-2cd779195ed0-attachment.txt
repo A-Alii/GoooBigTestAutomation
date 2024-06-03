@@ -1,1 +1,0 @@
-The Time Taken for Invoice:138 is 2940 milliseconds

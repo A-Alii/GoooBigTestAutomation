@@ -1,1 +1,0 @@
-The Time Taken for Invoice:980 is 3129 milliseconds

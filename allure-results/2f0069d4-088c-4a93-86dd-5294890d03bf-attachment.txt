@@ -1,1 +1,0 @@
-The Time Taken for Invoice:979 is 3941 milliseconds

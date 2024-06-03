@@ -1,1 +1,0 @@
-The Time Taken for Invoice:760 is 4000 milliseconds

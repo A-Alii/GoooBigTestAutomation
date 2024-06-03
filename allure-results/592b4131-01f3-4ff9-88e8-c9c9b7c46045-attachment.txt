@@ -1,1 +1,0 @@
-The Time Taken for Invoice:86 is 3053 milliseconds

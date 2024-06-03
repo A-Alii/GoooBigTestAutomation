@@ -1,1 +1,0 @@
-The Time Taken for Invoice:299 is 3015 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:935 is 3467 milliseconds

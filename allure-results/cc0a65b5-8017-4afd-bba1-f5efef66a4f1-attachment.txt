@@ -1,1 +1,0 @@
-The Time Taken for Invoice:392 is 4017 milliseconds

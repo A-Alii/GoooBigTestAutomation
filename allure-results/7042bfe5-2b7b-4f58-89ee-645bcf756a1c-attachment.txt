@@ -1,1 +1,0 @@
-The Time Taken for Invoice:331 is 2895 milliseconds

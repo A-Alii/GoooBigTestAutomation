@@ -1,1 +1,0 @@
-The Time Taken for Invoice:978 is 3251 milliseconds

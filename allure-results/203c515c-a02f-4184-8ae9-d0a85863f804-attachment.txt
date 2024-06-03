@@ -1,1 +1,0 @@
-The Time Taken for Invoice:551 is 3157 milliseconds

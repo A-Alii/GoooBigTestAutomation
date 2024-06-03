@@ -1,1 +1,0 @@
-The Time Taken for Invoice:666 is 2789 milliseconds

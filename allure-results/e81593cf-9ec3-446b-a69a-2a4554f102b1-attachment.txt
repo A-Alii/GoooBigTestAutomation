@@ -1,1 +1,0 @@
-The Time Taken for Invoice:132 is 2986 milliseconds

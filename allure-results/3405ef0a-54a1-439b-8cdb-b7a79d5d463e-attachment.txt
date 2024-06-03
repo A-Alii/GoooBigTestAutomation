@@ -1,1 +1,0 @@
-The Time Taken for Invoice:158 is 2983 milliseconds

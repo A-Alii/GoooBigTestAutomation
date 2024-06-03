@@ -1,1 +1,0 @@
-The Time Taken for Invoice:370 is 3006 milliseconds

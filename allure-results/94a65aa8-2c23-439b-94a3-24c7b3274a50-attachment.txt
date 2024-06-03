@@ -1,1 +1,0 @@
-The Time Taken for Invoice:726 is 3358 milliseconds

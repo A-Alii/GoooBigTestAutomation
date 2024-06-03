@@ -1,1 +1,0 @@
-The Time Taken for Invoice:950 is 3065 milliseconds

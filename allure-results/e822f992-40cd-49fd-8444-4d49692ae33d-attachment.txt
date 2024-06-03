@@ -1,1 +1,0 @@
-The Time Taken for Invoice:323 is 3636 milliseconds

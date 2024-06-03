@@ -1,1 +1,0 @@
-The Time Taken for Invoice:875 is 3064 milliseconds

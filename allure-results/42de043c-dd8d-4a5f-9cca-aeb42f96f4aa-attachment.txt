@@ -1,1 +1,0 @@
-The Time Taken for Invoice:220 is 3106 milliseconds

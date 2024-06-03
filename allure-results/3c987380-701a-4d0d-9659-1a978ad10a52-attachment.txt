@@ -1,1 +1,0 @@
-The Time Taken for Invoice:945 is 2999 milliseconds

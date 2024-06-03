@@ -1,1 +1,0 @@
-The Time Taken for Invoice:480 is 4048 milliseconds

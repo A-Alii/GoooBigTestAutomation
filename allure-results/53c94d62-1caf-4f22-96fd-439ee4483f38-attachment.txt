@@ -1,1 +1,0 @@
-The Time Taken for Invoice:913 is 3387 milliseconds

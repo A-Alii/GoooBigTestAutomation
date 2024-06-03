@@ -1,1 +1,0 @@
-The Time Taken for Invoice:911 is 4093 milliseconds

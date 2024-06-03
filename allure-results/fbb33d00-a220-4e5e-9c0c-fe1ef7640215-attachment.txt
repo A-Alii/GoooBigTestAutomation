@@ -1,1 +1,0 @@
-The Time Taken for Invoice:925 is 4157 milliseconds

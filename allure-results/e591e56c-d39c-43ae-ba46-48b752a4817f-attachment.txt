@@ -1,1 +1,0 @@
-The Time Taken for Invoice:912 is 3979 milliseconds

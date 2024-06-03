@@ -1,1 +1,0 @@
-The Time Taken for Invoice:645 is 2914 milliseconds

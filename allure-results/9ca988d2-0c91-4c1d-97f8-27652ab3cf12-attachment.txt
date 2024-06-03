@@ -1,1 +1,0 @@
-The Time Taken for Invoice:908 is 3200 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:337 is 2826 milliseconds

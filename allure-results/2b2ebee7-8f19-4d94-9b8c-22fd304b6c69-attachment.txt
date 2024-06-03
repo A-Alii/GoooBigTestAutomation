@@ -1,1 +1,0 @@
-The Time Taken for Invoice:51 is 3024 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:489 is 3742 milliseconds

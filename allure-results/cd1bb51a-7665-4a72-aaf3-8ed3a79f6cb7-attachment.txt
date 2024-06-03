@@ -1,1 +1,0 @@
-The Time Taken for Invoice:929 is 3591 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:678 is 3585 milliseconds

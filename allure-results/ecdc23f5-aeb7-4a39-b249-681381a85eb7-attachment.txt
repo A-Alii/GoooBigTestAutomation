@@ -1,1 +1,0 @@
-The Time Taken for Invoice:178 is 2998 milliseconds

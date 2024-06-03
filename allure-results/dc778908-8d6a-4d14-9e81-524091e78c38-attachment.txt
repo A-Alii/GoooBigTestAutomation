@@ -1,1 +1,0 @@
-The Time Taken for Invoice:632 is 3336 milliseconds

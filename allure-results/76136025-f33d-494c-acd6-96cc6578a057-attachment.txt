@@ -1,1 +1,0 @@
-The Time Taken for Invoice:990 is 4072 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:904 is 2911 milliseconds

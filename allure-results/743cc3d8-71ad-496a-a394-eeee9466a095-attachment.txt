@@ -1,1 +1,0 @@
-The Time Taken for Invoice:492 is 2785 milliseconds

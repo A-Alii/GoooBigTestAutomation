@@ -1,1 +1,0 @@
-The Time Taken for Invoice:202 is 2885 milliseconds

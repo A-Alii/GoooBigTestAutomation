@@ -1,1 +1,0 @@
-The Time Taken for Invoice:608 is 3771 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:109 is 3368 milliseconds

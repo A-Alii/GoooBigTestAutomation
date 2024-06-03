@@ -1,1 +1,0 @@
-The Time Taken for Invoice:606 is 2877 milliseconds

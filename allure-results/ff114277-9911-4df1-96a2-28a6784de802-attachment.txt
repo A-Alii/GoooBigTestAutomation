@@ -1,1 +1,0 @@
-The Time Taken for Invoice:889 is 2821 milliseconds

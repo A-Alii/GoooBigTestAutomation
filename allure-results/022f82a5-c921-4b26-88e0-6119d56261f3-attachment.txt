@@ -1,1 +1,0 @@
-The Time Taken for Invoice:378 is 2795 milliseconds

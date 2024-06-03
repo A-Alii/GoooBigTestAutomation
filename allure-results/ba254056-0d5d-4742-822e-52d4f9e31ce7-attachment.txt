@@ -1,1 +1,0 @@
-The Time Taken for Invoice:782 is 3984 milliseconds

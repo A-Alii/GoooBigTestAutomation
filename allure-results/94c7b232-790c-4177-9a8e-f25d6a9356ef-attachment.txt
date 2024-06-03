@@ -1,1 +1,0 @@
-The Time Taken for Invoice:900 is 2786 milliseconds

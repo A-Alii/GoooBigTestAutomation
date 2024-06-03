@@ -1,1 +1,0 @@
-The Time Taken for Invoice:409 is 3807 milliseconds

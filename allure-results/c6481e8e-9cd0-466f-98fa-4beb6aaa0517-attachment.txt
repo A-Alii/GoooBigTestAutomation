@@ -1,1 +1,0 @@
-The Time Taken for Invoice:187 is 3363 milliseconds

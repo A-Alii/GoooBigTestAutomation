@@ -1,1 +1,0 @@
-The Time Taken for Invoice:605 is 2792 milliseconds

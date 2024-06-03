@@ -16,6 +16,25 @@ public class Login extends TestBase {
         return LoginButton.getAttribute("content-desc");
     }
 
+    @AndroidFindBy(xpath = "//android.view.View[@index='0']")
+    private MobileElement ErrorDisplay1;
+
+    @AndroidFindBy(xpath = "//android.view.View[@index='1']")
+    private MobileElement ErrorDisplay2;
+    @AndroidFindBy(xpath = "//android.view.View[@index='2']")
+    private MobileElement ErrorDisplay3;
+
+    public boolean isErrorUserNameDisplayed1() {
+        return ErrorDisplay1.isDisplayed();
+    }
+
+    public boolean isErrorUserNameDisplayed2() {
+        return ErrorDisplay2.isDisplayed();
+    }
+
+    public boolean isErrorUserNameDisplayed3() {
+        return ErrorDisplay3.isDisplayed();
+    }
     public void fillLoginScreen(String Name, String Pass) {
         UserName.click();
         UserName.sendKeys(Name);

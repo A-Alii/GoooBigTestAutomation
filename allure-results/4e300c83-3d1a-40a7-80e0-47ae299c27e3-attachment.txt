@@ -1,1 +1,0 @@
-The Time Taken for Invoice:571 is 2981 milliseconds

@@ -9,6 +9,10 @@ public class PriceOffer extends TestBase {
     MobileElement hamburgerMenu;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الإعدادات']")
     MobileElement settings;
+    @AndroidFindBy(xpath = "//android.view.View[@index='6']")
+    MobileElement check1;
+    @AndroidFindBy(xpath = "//android.view.View[@index='8']")
+    MobileElement check2;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إعدادات الطباعة']")
     MobileElement printingSettings;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index='11']")
@@ -43,7 +47,7 @@ public class PriceOffer extends TestBase {
     MobileElement Invoices;
     @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'ختيار عميل') or contains(@content-desc,'SR')]")
     MobileElement detailsOfInvoice;
-    @AndroidFindBy(xpath = "//android.view.View[@index='7']")
+    @AndroidFindBy(xpath = "//android.view.View[@index = '7' and contains(@content-desc,'.')]")
     MobileElement TotalInvoicePrice;
 
     public void smallNonTaxInvoiceDisplayPrice() {

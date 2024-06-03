@@ -1,1 +1,0 @@
-The Time Taken for Invoice:652 is 3349 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:295 is 2968 milliseconds

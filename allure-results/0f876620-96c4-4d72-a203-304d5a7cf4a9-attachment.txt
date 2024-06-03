@@ -1,1 +1,0 @@
-The Time Taken for Invoice:170 is 3587 milliseconds

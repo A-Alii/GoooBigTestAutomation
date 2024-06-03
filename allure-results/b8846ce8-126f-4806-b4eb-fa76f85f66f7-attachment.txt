@@ -1,1 +1,0 @@
-The Time Taken for Invoice:431 is 2827 milliseconds

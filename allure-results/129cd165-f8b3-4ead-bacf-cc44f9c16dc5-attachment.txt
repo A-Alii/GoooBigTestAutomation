@@ -1,1 +1,0 @@
-The Time Taken for Invoice:143 is 4659 milliseconds

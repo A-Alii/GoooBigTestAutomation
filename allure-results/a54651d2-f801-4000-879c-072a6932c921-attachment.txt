@@ -1,1 +1,0 @@
-The Time Taken for Invoice:233 is 3011 milliseconds

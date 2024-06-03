@@ -1,1 +1,0 @@
-The Time Taken for Invoice:838 is 2804 milliseconds

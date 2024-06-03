@@ -1,1 +1,0 @@
-The Time Taken for Invoice:291 is 4211 milliseconds

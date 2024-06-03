@@ -1,1 +1,0 @@
-The Time Taken for Invoice:126 is 3152 milliseconds

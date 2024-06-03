@@ -4,11 +4,18 @@ import GoooBigBase.TestBase;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.concurrent.TimeUnit;
+
 public class UploadInvoiceForClient extends TestBase {
+
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, 'مديونيات العملاء') or @index= '1']")
+    MobileElement clickOnClient;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='الكاشير']")
     MobileElement Cashier;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='العملاء']")
@@ -85,8 +92,13 @@ public class UploadInvoiceForClient extends TestBase {
     MobileElement clickOnClient1;
     @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, 'العملاء') and @index='0']")
     MobileElement clickOnClientP;
-    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, 'مديونيات العملاء') or contains(@index, '1')]")
-    MobileElement clickOnClient;
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, 'مديونيات العملاء') or @index= '2']")
+    MobileElement clickOnClientt;
+    public UploadInvoiceForClient() {
+        // Initialize page factory and WebDriverWait
+        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='دفع مبلغ']")
     MobileElement Payment;
     @AndroidFindBy(xpath = "//android.widget.ImageView[contains(@content-desc, 'إجمالى الرصيد')]")
@@ -209,10 +221,8 @@ public class UploadInvoiceForClient extends TestBase {
         hamburgerMenu.click();
         settings.click();
         printingSettings.click();
-
         check1.click();
         check2.click();
-
         NonTaxORTax.click();
         NonTax.click();
         submitCheck.click();
@@ -239,7 +249,7 @@ public class UploadInvoiceForClient extends TestBase {
     }
 
     public void selectClientName() {
-        clickOnClient.click();
+        clickOnClientt.click();
     }
 
     public void clickOnSelection() {

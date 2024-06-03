@@ -1,1 +1,0 @@
-The Time Taken for Invoice:739 is 3412 milliseconds

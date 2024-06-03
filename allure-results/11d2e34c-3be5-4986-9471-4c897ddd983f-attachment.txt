@@ -1,1 +1,0 @@
-The Time Taken for Invoice:88 is 3228 milliseconds

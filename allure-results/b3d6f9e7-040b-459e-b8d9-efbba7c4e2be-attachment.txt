@@ -1,1 +1,0 @@
-The Time Taken for Invoice:737 is 2907 milliseconds

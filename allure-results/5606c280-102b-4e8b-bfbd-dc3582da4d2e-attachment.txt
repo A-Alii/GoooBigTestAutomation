@@ -1,1 +1,0 @@
-The Time Taken for Invoice:996 is 3206 milliseconds

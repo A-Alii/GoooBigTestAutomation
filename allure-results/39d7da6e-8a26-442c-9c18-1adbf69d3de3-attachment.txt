@@ -1,1 +1,0 @@
-The Time Taken for Invoice:77 is 2843 milliseconds

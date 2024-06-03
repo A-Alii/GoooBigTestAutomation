@@ -1,1 +1,0 @@
-The Time Taken for Invoice:715 is 3046 milliseconds

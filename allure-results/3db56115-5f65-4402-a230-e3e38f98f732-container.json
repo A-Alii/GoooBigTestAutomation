@@ -1,1 +1,0 @@
-{"uuid":"3db56115-5f65-4402-a230-e3e38f98f732","name":"All Test Suite","children":["3b1791ba-a2c7-4061-a8fa-ab27000dccfe"],"befores":[{"name":"beforeClass","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1716637014901,"stop":1716637032520}],"afters":[],"start":1716637014851,"stop":1716637115115}

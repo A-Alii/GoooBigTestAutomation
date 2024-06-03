@@ -1,1 +1,0 @@
-The Time Taken for Invoice:78 is 2946 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:664 is 3204 milliseconds

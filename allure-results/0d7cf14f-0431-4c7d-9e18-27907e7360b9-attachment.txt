@@ -1,1 +1,0 @@
-The Time Taken for Invoice:128 is 3036 milliseconds

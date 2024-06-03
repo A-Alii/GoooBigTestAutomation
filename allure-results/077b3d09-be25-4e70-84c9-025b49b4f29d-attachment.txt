@@ -1,1 +1,0 @@
-Invoice Details Are:  : 500.00

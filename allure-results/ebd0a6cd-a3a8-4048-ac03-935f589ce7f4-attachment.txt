@@ -1,1 +1,0 @@
-The Time Taken for Invoice:79 is 3095 milliseconds

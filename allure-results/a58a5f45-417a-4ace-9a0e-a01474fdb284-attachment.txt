@@ -1,1 +1,0 @@
-The Time Taken for Invoice:448 is 2991 milliseconds

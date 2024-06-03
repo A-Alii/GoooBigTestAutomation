@@ -1,1 +1,0 @@
-The Time Taken for Invoice:983 is 3002 milliseconds

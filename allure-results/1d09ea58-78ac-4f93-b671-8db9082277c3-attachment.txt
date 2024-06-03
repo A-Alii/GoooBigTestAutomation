@@ -1,1 +1,0 @@
-The Time Taken for Invoice:837 is 3290 milliseconds

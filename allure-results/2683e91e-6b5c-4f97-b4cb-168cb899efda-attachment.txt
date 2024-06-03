@@ -1,1 +1,0 @@
-The Time Taken for Invoice:74 is 3037 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:691 is 4701 milliseconds

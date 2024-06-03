@@ -1,1 +1,0 @@
-The Time Taken for Invoice:305 is 2945 milliseconds

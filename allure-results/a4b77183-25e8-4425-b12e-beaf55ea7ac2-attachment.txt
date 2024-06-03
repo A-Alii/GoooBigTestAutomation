@@ -1,1 +1,0 @@
-The Time Taken for Invoice:485 is 3078 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:117 is 4135 milliseconds

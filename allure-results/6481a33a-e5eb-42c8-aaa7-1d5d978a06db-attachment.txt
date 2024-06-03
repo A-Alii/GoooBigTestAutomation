@@ -1,1 +1,0 @@
-The Time Taken for Invoice:617 is 3031 milliseconds

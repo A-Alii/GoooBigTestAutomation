@@ -1,1 +1,0 @@
-The Time Taken for Invoice:901 is 2993 milliseconds

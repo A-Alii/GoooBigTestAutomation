@@ -1,1 +1,0 @@
-The Time Taken for Invoice:160 is 3176 milliseconds

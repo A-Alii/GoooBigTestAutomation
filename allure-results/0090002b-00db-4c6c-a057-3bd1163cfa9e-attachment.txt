@@ -1,1 +1,0 @@
-The Time Taken for Invoice:755 is 3039 milliseconds

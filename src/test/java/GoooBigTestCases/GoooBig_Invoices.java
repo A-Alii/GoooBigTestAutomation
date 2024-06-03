@@ -40,6 +40,8 @@ public class GoooBig_Invoices extends TestBase {
     public void SmallTaxInvoiceWithDiscountOverProductLevel() throws InterruptedException, IOException {
         invoices = new Invoices();
         Allure.step("verify to select Invoice Type.");
+        invoices.clickOnCashier();
+        invoices.clickOnAllProducts();
         invoices.smallNonTaxInvoice();
         invoices.navigateBack();
         invoices.navigateBack();

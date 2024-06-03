@@ -107,7 +107,6 @@ public class GoooBig_Home extends TestBase {
 
         Allure.addAttachment("Test Output", "text/plain", "Output of testcase: TEST CASE PASSED and user can switch between all options.");
     }
-
     @Test(priority = 4)
     @Description("This test attempts to verify the Search bar on the home screen.")
     @Severity(SeverityLevel.CRITICAL)
@@ -117,7 +116,6 @@ public class GoooBig_Home extends TestBase {
         Allure.step("Verify search with valid data.");
         homeScreen.sendKeysAndPressEnterSearchBar("الكاشير");
         boolean searchResult = homeScreen.isClientsExist();
-        homeScreen.hideKeyboard();
         Assert.assertFalse(searchResult, "Search results found when none were expected");
     }
 
@@ -127,6 +125,8 @@ public class GoooBig_Home extends TestBase {
     @Owner("Ahmed Ali")
     public void VerifyUpdateFunctionality() {
         homeScreen = new HomeScreen();
+        homeScreen.clearSearchBar();
+        homeScreen.hideKeyboard();
         Allure.step("Verify Update Functionality.");
         homeScreen.clickOnCancelIcon();
         boolean UpdateResult = homeScreen.UpdateSectionIsDisplay();

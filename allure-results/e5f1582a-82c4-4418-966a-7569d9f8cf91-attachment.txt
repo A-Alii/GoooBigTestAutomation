@@ -1,1 +1,0 @@
-The Time Taken for Invoice:659 is 3225 milliseconds

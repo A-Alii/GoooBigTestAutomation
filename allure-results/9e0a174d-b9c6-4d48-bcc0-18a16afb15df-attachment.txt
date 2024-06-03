@@ -1,1 +1,0 @@
-The Time Taken for Invoice:845 is 3388 milliseconds

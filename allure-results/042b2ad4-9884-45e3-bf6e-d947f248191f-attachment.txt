@@ -1,1 +1,0 @@
-The Time Taken for Invoice:633 is 2972 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:482 is 3424 milliseconds

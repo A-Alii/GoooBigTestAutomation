@@ -1,1 +1,0 @@
-The Time Taken for Invoice:989 is 3617 milliseconds

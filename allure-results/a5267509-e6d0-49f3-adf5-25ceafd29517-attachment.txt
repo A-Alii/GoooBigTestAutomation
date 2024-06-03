@@ -1,1 +1,0 @@
-The Time Taken for Invoice:777 is 2992 milliseconds

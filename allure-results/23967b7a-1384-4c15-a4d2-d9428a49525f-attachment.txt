@@ -1,1 +1,0 @@
-The Time Taken for Invoice:10 is 4012 milliseconds

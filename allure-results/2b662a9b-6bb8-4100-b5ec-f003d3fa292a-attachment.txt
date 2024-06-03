@@ -1,1 +1,0 @@
-The Time Taken for Invoice:552 is 2990 milliseconds

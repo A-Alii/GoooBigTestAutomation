@@ -1,1 +1,0 @@
-The Time Taken for Invoice:397 is 3364 milliseconds

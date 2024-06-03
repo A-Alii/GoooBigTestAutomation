@@ -1,1 +1,0 @@
-The Time Taken for Invoice:986 is 3385 milliseconds

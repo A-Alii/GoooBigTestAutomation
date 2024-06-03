@@ -1,1 +1,0 @@
-The Time Taken for Invoice:915 is 2846 milliseconds

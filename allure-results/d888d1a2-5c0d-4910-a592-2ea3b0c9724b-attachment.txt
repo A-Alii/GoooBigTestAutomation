@@ -1,1 +1,0 @@
-The Time Taken for Invoice:640 is 2852 milliseconds

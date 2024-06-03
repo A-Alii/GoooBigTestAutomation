@@ -1,1 +1,0 @@
-The Time Taken for Invoice:115 is 3465 milliseconds

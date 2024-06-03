@@ -1,1 +1,0 @@
-The Time Taken for Invoice:655 is 3743 milliseconds

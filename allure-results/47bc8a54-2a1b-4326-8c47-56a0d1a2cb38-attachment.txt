@@ -1,1 +1,0 @@
-The Time Taken for Invoice:214 is 2983 milliseconds

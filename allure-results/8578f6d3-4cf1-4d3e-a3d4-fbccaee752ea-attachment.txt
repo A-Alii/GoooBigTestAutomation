@@ -1,1 +1,0 @@
-Output of testcase: TEST CASE PASSED and user can switch between all options.

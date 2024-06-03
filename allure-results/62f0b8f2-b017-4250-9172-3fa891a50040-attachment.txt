@@ -1,1 +1,0 @@
-The Time Taken for Invoice:550 is 4986 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:549 is 3530 milliseconds

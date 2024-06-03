@@ -1,1 +1,0 @@
-The Time Taken for Invoice:105 is 3018 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:479 is 3017 milliseconds

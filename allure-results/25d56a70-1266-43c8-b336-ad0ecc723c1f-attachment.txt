@@ -1,1 +1,0 @@
-The Time Taken for Invoice:75 is 2865 milliseconds

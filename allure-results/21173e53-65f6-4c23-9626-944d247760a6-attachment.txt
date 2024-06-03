@@ -1,1 +1,0 @@
-The Time Taken for Invoice:439 is 3873 milliseconds

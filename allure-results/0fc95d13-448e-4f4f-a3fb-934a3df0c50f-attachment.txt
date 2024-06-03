@@ -1,1 +1,0 @@
-The Time Taken for Invoice:798 is 2795 milliseconds

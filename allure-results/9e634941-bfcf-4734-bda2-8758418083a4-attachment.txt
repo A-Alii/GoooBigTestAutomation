@@ -1,1 +1,0 @@
-The Time Taken for Invoice:597 is 3040 milliseconds

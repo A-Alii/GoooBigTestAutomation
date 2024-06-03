@@ -1,1 +1,0 @@
-The Time Taken for Invoice:849 is 2927 milliseconds

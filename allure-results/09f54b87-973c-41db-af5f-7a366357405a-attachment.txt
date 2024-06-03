@@ -1,1 +1,0 @@
-The Time Taken for Invoice:573 is 2924 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:36 is 3360 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:118 is 3634 milliseconds

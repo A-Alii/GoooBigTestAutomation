@@ -1,1 +1,0 @@
-The Time Taken for Invoice:326 is 4192 milliseconds

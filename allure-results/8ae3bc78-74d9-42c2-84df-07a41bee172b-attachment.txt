@@ -1,1 +1,0 @@
-The Time Taken for Invoice:772 is 3128 milliseconds

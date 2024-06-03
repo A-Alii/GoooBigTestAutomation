@@ -1,1 +1,0 @@
-The Time Taken for Invoice:921 is 3394 milliseconds

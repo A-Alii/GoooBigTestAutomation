@@ -1,1 +1,0 @@
-The Time Taken for Invoice:740 is 2892 milliseconds

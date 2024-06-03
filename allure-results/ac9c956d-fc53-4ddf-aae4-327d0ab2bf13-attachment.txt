@@ -1,1 +1,0 @@
-The Time Taken for Invoice:525 is 3073 milliseconds

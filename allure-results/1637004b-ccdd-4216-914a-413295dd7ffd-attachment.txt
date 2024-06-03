@@ -1,1 +1,0 @@
-The Time Taken for Invoice:581 is 3527 milliseconds

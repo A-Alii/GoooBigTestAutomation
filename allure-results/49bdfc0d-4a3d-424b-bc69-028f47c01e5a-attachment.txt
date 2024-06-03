@@ -1,1 +1,0 @@
-The Time Taken for Invoice:984 is 3010 milliseconds

@@ -1,1 +1,0 @@
-The Time Taken for Invoice:793 is 3980 milliseconds

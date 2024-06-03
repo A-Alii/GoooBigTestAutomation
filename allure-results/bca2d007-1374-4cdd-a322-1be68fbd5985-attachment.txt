@@ -1,1 +1,0 @@
-The Time Taken for Invoice:70 is 3332 milliseconds

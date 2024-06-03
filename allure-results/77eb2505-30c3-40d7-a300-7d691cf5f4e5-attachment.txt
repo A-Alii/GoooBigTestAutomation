@@ -1,1 +1,0 @@
-The Time Taken for Invoice:917 is 3306 milliseconds

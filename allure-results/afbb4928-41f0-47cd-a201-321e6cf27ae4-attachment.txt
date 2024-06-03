@@ -1,1 +1,0 @@
-The Time Taken for Invoice:278 is 2984 milliseconds

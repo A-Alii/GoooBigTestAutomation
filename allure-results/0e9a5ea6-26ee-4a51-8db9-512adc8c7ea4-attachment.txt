@@ -1,1 +1,0 @@
-The Time Taken for Invoice:874 is 3016 milliseconds

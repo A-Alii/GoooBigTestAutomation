@@ -1,1 +1,0 @@
-The Time Taken for Invoice:174 is 3967 milliseconds

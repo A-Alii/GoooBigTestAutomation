@@ -1,1 +1,0 @@
-The Time Taken for Invoice:229 is 2959 milliseconds

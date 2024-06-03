@@ -1,1 +1,0 @@
-The Time Taken for Invoice:103 is 2886 milliseconds

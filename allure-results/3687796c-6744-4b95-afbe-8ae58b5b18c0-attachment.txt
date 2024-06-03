@@ -1,1 +1,0 @@
-The Time Taken for Invoice:427 is 2831 milliseconds
