@@ -1,0 +1,20 @@
+{
+  "reportName": "GoooBig Report",
+  "testRuns": [],
+  "statistic": {
+    "failed": 3,
+    "broken": 5,
+    "skipped": 1,
+    "passed": 46,
+    "unknown": 0,
+    "total": 55
+  },
+  "time": {
+    "start": 1717407040897,
+    "stop": 1717491137156,
+    "duration": 84096259,
+    "minDuration": 4,
+    "maxDuration": 60788,
+    "sumDuration": 1018557
+  }
+}

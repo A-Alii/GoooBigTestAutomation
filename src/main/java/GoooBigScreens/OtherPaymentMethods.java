@@ -74,15 +74,14 @@ public class OtherPaymentMethods extends TestBase {
     MobileElement productAgain;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc= '\u202Bيجب أن يكون المجموع يساوى مبلغ الفاتورة\u202C']")
     MobileElement popUp;
-    @AndroidFindBy(xpath = "//android.view.View[@index= '6']")
-    MobileElement Amount;
+
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='إضافة']")
     MobileElement addPaymentMethod;
-    @AndroidFindBy(xpath = "//android.view.View[@index='21']")
-    MobileElement date1;
+    @AndroidFindBy(xpath = "//android.view.View[@index = '21']")
+    MobileElement deliveryTime;
     @AndroidFindBy(xpath = "//android.widget.Button[@content-desc='OK']")
     MobileElement Ok;
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc='وقت التسليم']")
+    @AndroidFindBy(xpath = "//android.view.View[@index='21' or contains(@content-desc,'M')]")
     MobileElement dateAfter;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index='23']")
     MobileElement employeeName;
@@ -119,42 +118,9 @@ public class OtherPaymentMethods extends TestBase {
         NonTax.click();
         submitCheck.click();
     }
+    @AndroidFindBy(xpath = "//android.view.View[@index= '6']")
+    MobileElement Amount;
 
-    public void smallNonTaxInvoiceForOtherPaymentMethod() {
-        hamburgerMenu.click();
-        settings.click();
-        printingSettings.click();
-        NonTaxORTax.click();
-        NonTax.click();
-        submitCheck.click();
-    }
-
-    public void SmallTaxInvoice() {
-        hamburgerMenu.click();
-        settings.click();
-        printingSettings.click();
-        NonTaxORTax.click();
-        Tax.click();
-        submitCheck.click();
-    }
-
-    public void A4Invoice() {
-        hamburgerMenu.click();
-        settings.click();
-        printingSettings.click();
-        chooseInvoice.click();
-        A4.click();
-        submitCheck.click();
-    }
-
-    public void A4InvoiceNonTax() {
-        hamburgerMenu.click();
-        settings.click();
-        printingSettings.click();
-        chooseInvoice.click();
-        A4NonTax.click();
-        submitCheck.click();
-    }
 
     public void sendKeysToSearchProduct(String ProductName) {
         searchbar.click();
@@ -260,17 +226,66 @@ public class OtherPaymentMethods extends TestBase {
     public boolean isPopUpPresent() {
         return popUp.isDisplayed();
     }
-
+    @AndroidFindBy(xpath = "//android.view.View[@index= '3']")
+    MobileElement ResidualAmount;
     public String getAmount() {
         return Amount.getAttribute("content-desc");
+    }
+    @AndroidFindBy(xpath = "//android.view.View[@index= '0']")
+    MobileElement SurplusAmount;
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index= '15']")
+    MobileElement InvoiceTotalAmountInPaymentScreen;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index= '14']")
+    MobileElement PaymentMethod;
+    @AndroidFindBy(xpath = "//android.view.View[@index= '2']")
+    MobileElement PaymentMethod1;
+
+    public void smallNonTaxInvoiceForOtherPaymentMethod() {
+        hamburgerMenu.click();
+        settings.click();
+        printingSettings.click();
+        check1.click();
+        check2.click();
+        NonTaxORTax.click();
+        NonTax.click();
+        chooseInvoice.click();
+        A4.click();
+        submitCheck.click();
+    }
+
+    public String getResidualAmount() {
+        return ResidualAmount.getAttribute("content-desc");
+    }
+
+    public String getSurplusAmount() {
+        return SurplusAmount.getAttribute("content-desc");
+    }
+
+    public String getInvoiceTotalAmountInPaymentScreen() {
+        return InvoiceTotalAmountInPaymentScreen.getAttribute("text");
+    }
+
+    public void sendKeysToInvoiceTotalAmountInPaymentScreen(String amount) {
+        InvoiceTotalAmountInPaymentScreen.click();
+        InvoiceTotalAmountInPaymentScreen.clear();
+        InvoiceTotalAmountInPaymentScreen.sendKeys(amount);
+        hideKeyboard();
+    }
+
+    public void clickOnPaymentMethod() {
+        PaymentMethod.click();
+    }
+
+    public void clickOnPaymentMethod1() {
+        PaymentMethod1.click();
     }
 
     public void clickOnAddPaymentMethod() {
         addPaymentMethod.click();
     }
 
-    public void clickOnDate() {
-        date1.click();
+    public void clickOnDeliveryTime() {
+        deliveryTime.click();
     }
 
     public void clickOnOk() {

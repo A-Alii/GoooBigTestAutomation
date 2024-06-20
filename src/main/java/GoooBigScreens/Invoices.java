@@ -3,23 +3,33 @@ package GoooBigScreens;
 import GoooBigBase.TestBase;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import org.openqa.selenium.By;
+
+import java.util.List;
 
 public class Invoices extends TestBase {
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
+    @AndroidFindBy(xpath = "//android.view.View[@index='1']")
     MobileElement hamburgerMenu;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الإعدادات']")
     MobileElement settings;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إعدادات الطباعة']")
     MobileElement printingSettings;
-    @AndroidFindBy(xpath = "//android.view.View[@index='6']")
-    MobileElement check1;
-    @AndroidFindBy(xpath = "//android.view.View[@index='8']")
+
+
+    @AndroidFindBy(xpath = "//android.view.View[@index='0']")
+    List<MobileElement> check1;
+
+    @AndroidFindBy(xpath = "//android.view.View[@index='0']")
+    List<MobileElement> getCheck1;
+
+
+    @AndroidFindBy(xpath = "//android.view.View[@index='1']")
     MobileElement check2;
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='11']")
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
     MobileElement NonTaxORTax;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc= 'فاتورة ضريبية']")
     MobileElement NonTax;
-    @AndroidFindBy(xpath = "//android.view.View[@index='14']")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
     MobileElement submitCheck;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index='13']")
     MobileElement chooseInvoice;
@@ -66,6 +76,16 @@ public class Invoices extends TestBase {
         hamburgerMenu.click();
         settings.click();
         printingSettings.click();
+    }
+
+    public void checkbox1() {
+        MobileElement element = check1.get(1);
+        List<MobileElement> innerElements = element.findElements(By.xpath("//android.view.View[@index='0']"));
+        innerElements.get(0).click();
+    }
+
+    public void checkbox2() {
+        check2.click();
         NonTaxORTax.click();
         NonTax.click();
         submitCheck.click();

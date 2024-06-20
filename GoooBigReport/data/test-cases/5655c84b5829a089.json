@@ -1,0 +1,126 @@
+{
+  "uid": "5655c84b5829a089",
+  "name": "VerifyEditeProductFromNoticeCreditorInvoice",
+  "fullName": "GoooBigTestCases.GoooBig_NoticeCreditor.VerifyEditeProductFromNoticeCreditorInvoice",
+  "historyId": "732222f126a2e5557b9d52a399d6d9ec",
+  "time": {
+    "start": 1717407836761,
+    "stop": 1717407840194,
+    "duration": 3433
+  },
+  "description": "This test attempts to Edit product from cart for Notice Creditor Invoice.",
+  "descriptionHtml": "<p>This test attempts to Edit product from cart for Notice Creditor Invoice.</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "This test attempts to Edit product from cart for Notice Creditor Invoice.",
+    "status": "passed",
+    "steps": [],
+    "attachments": [
+      {
+        "uid": "24e1ad731d5b0871",
+        "name": "Screenshot for Result After Try To Edit on Notice Creditor Invoice",
+        "source": "24e1ad731d5b0871.png",
+        "type": "image/png",
+        "size": 105128
+      }
+    ],
+    "parameters": [],
+    "attachmentStep": false,
+    "stepsCount": 0,
+    "hasContent": true,
+    "attachmentsCount": 1,
+    "shouldDisplayMessage": false
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_NoticeCreditor"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_NoticeCreditor"
+    },
+    {
+      "name": "testMethod",
+      "value": "VerifyEditeProductFromNoticeCreditorInvoice"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_NoticeCreditor"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "2948@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "5655c84b5829a089.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

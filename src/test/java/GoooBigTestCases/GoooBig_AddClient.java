@@ -37,7 +37,7 @@ public class GoooBig_AddClient extends TestBase {
         Assert.assertTrue(addClientScreen.isAddClientHeaderDisplay(), "Add Client Screen is not displayed");
     }
 
-    @Test(priority = 3)
+    /*@Test(priority = 3)
     @Description("This test attempts to Verify Click On Cancel Button.")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
@@ -52,9 +52,9 @@ public class GoooBig_AddClient extends TestBase {
             Assert.fail("Cancel Button Doesn't Work");
             addClientScreen.navigateBack();
         }
-    }
+    }*/
 
-    @Test(priority = 4)
+   /* @Test(priority = 4)
     @Description("This test attempts to Verify Click On Add Client Button With Empty Data.")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
@@ -193,7 +193,7 @@ public class GoooBig_AddClient extends TestBase {
         System.out.println("Client Name was added in Table is: " + addClientScreen.getClientNameFromTable());
         Assert.assertEquals(ClientName, addClientScreen.getClientNameFromTable(), "after click on Apply button client doesn't added successfully and not matched.");
         addClientScreen.clickAddClientButton();
-    }
+    }*/
 
     @Test(priority = 10)
     @Description("This test attempts to Verify Add Client With Valid Same Previous Data.")

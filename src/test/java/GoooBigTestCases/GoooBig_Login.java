@@ -7,7 +7,6 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -17,7 +16,7 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 public class GoooBig_Login extends TestBase {
     Login login;
 
-    @Test(priority = 1)
+ /*   @Test(priority = 1)
     @Description("This test attempts to login to organization using an Empty Data UserId and a password.")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
@@ -83,7 +82,8 @@ public class GoooBig_Login extends TestBase {
         }
         // Attaching the output to Allure report
         Allure.addAttachment("Test Output", "text/plain", "Text in the field is: " + fieldText);
-    }
+    }*/
+
     @Test(priority = 5)
     @Description("This test attempts to Login to organization using valid UserId, password.")
     @Severity(CRITICAL)

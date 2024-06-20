@@ -1,0 +1,175 @@
+{
+  "uid": "ae682d0b8aea2c1f",
+  "name": "verifySelectWarehouse",
+  "fullName": "GoooBigTestCases.GoooBig_branchesAndWarehouses.verifySelectWarehouse",
+  "historyId": "69be4bd17c082efe478c53b95e0adc4e",
+  "time": {
+    "start": 1717428333667,
+    "stop": 1717428338814,
+    "duration": 5147
+  },
+  "description": "This test attempts to verify Select Warehouse.",
+  "descriptionHtml": "<p>This test attempts to verify Select Warehouse.</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "This test attempts to verify Select Warehouse.",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "verify to click on cashier option.",
+        "time": {
+          "start": 1717428333670,
+          "stop": 1717428333670,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      },
+      {
+        "name": "verify to select valid warehouse from list.",
+        "time": {
+          "start": 1717428334735,
+          "stop": 1717428334735,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      },
+      {
+        "name": "verify to click on Apply button.",
+        "time": {
+          "start": 1717428337808,
+          "stop": 1717428337808,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "730f70f1bcc2a5f2",
+        "name": "Screenshot for result",
+        "source": "730f70f1bcc2a5f2.png",
+        "type": "image/png",
+        "size": 80643
+      }
+    ],
+    "parameters": [],
+    "attachmentStep": false,
+    "stepsCount": 3,
+    "hasContent": true,
+    "attachmentsCount": 1,
+    "shouldDisplayMessage": false
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_branchesAndWarehouses"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_branchesAndWarehouses"
+    },
+    {
+      "name": "testMethod",
+      "value": "verifySelectWarehouse"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_branchesAndWarehouses"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "12136@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": true,
+  "retry": true,
+  "extra": {
+    "categories": [],
+    "tags": []
+  },
+  "source": "ae682d0b8aea2c1f.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

@@ -54,5 +54,4 @@ public class GoooBig_ShiftStart extends TestBase {
         shiftStart.ClickOnApplyButton();
         System.out.println("Shift Started Successfully");
     }
-
 }

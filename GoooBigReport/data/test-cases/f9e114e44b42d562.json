@@ -1,0 +1,234 @@
+{
+  "uid": "f9e114e44b42d562",
+  "name": "VerifyOtherPaymentMethodsScreen",
+  "fullName": "GoooBigTestCases.GoooBig_OtherPaymentMethods.VerifyOtherPaymentMethodsScreen",
+  "historyId": "1afe7806b9f9535ffd1d283dbfc649f1",
+  "time": {
+    "start": 1717421669224,
+    "stop": 1717421722511,
+    "duration": 53287
+  },
+  "description": "This test attempts to Small Non Tax Invoice With Discount over Invoice level",
+  "descriptionHtml": "<p>This test attempts to Small Non Tax Invoice With Discount over Invoice level</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "This test attempts to Small Non Tax Invoice With Discount over Invoice level",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "verify to search for a product and add it in cart.",
+        "time": {
+          "start": 1717421684432,
+          "stop": 1717421684433,
+          "duration": 1
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      },
+      {
+        "name": "verify to Do discount over invoice level.",
+        "time": {
+          "start": 1717421691101,
+          "stop": 1717421691101,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      },
+      {
+        "name": "verify to get data like price and Tax an total price of the invoice.",
+        "time": {
+          "start": 1717421698795,
+          "stop": 1717421698795,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      },
+      {
+        "name": "verify to do payment and print the invoice.",
+        "time": {
+          "start": 1717421698953,
+          "stop": 1717421698953,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "2b11fc5e97507b1c",
+        "name": "Test Output",
+        "source": "2b11fc5e97507b1c.txt",
+        "type": "text/plain",
+        "size": 56
+      },
+      {
+        "uid": "f265301cafbbef7",
+        "name": "Test Output",
+        "source": "f265301cafbbef7.txt",
+        "type": "text/plain",
+        "size": 38
+      },
+      {
+        "uid": "f1afd317de95ca36",
+        "name": "Test Output",
+        "source": "f1afd317de95ca36.txt",
+        "type": "text/plain",
+        "size": 44
+      },
+      {
+        "uid": "a291bbc17d0ff8ea",
+        "name": "Test Output",
+        "source": "a291bbc17d0ff8ea.txt",
+        "type": "text/plain",
+        "size": 46
+      },
+      {
+        "uid": "5265b7328ccee7ad",
+        "name": "Test Output",
+        "source": "5265b7328ccee7ad.txt",
+        "type": "text/plain",
+        "size": 46
+      },
+      {
+        "uid": "3b02d216116d896b",
+        "name": "Extracted Invoice Text",
+        "source": "3b02d216116d896b.txt",
+        "type": "text/plain",
+        "size": 1345
+      },
+      {
+        "uid": "ce1a0ba5f56b84c0",
+        "name": "Filtered Invoice Text",
+        "source": "ce1a0ba5f56b84c0.txt",
+        "type": "text/plain",
+        "size": 443
+      }
+    ],
+    "parameters": [],
+    "attachmentStep": false,
+    "stepsCount": 4,
+    "hasContent": true,
+    "attachmentsCount": 7,
+    "shouldDisplayMessage": false
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_OtherPaymentMethods"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_OtherPaymentMethods"
+    },
+    {
+      "name": "testMethod",
+      "value": "VerifyOtherPaymentMethodsScreen"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_OtherPaymentMethods"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "10972@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": true,
+  "retry": true,
+  "extra": {
+    "categories": [],
+    "tags": []
+  },
+  "source": "f9e114e44b42d562.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "uid": "931d140d173228c4",
+  "name": "VerifyToAddClientWithPhoneOnly",
+  "fullName": "GoooBigTestCases.GoooBig_AddClient.VerifyToAddClientWithPhoneOnly",
+  "historyId": "d8dee9930fae4b03f870d75dc9c6870",
+  "time": {
+    "start": 1717407221881,
+    "stop": 1717407229972,
+    "duration": 8091
+  },
+  "description": "This test attempts to Verify Add Client With Phone Only.",
+  "descriptionHtml": "<p>This test attempts to Verify Add Client With Phone Only.</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_AddClient"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_AddClient"
+    },
+    {
+      "name": "testMethod",
+      "value": "VerifyToAddClientWithPhoneOnly"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_AddClient"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "2948@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "931d140d173228c4.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

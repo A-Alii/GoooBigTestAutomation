@@ -1,0 +1,120 @@
+{
+  "uuid": "93299199-c729-464e-bc6b-d1ecaf47963c",
+  "historyId": "fa97b3c97ccbb8a342b24c9673a5fd2e",
+  "fullName": "GoooBigTestCases.GoooBig_Login.LoginToOrganizationUsingInvalidData",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Login"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Login"
+    },
+    {
+      "name": "testMethod",
+      "value": "LoginToOrganizationUsingInvalidData"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Login"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "2948@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "LoginToOrganizationUsingInvalidData",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to Login to organization using Invalid UserId, password.",
+  "steps": [
+    {
+      "name": "Enter With invalid data for userId, Password.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717407137340,
+      "stop": 1717407137340
+    },
+    {
+      "name": "Assert Error Validation Display",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717407142820,
+      "stop": 1717407142820
+    },
+    {
+      "name": "Clear Fields",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717407143479,
+      "stop": 1717407143479
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "3d401867-22c0-4542-91d0-71b7a2b00992-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1717407137338,
+  "stop": 1717407146757
+}

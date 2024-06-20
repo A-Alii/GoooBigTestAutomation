@@ -1,0 +1,160 @@
+{
+  "uuid": "cd66906a-222c-4a42-84da-3383601258c5",
+  "historyId": "4ec3ff46fb61ab9e59a705fa75cac272",
+  "fullName": "GoooBigTestCases.GoooBig_CashierServices.testcase7",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_CashierServices"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_CashierServices"
+    },
+    {
+      "name": "testMethod",
+      "value": "testcase7"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_CashierServices"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "6648@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "testcase7",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "verify to get data like price and Tax an total price of the invoice.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717513825049,
+      "stop": 1717513825049
+    },
+    {
+      "name": "verify to do payment and print the invoice.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717513825216,
+      "stop": 1717513825216
+    },
+    {
+      "name": "Assert Total Amount in cart with Total Amount in invoice.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717513837122,
+      "stop": 1717513837122
+    },
+    {
+      "name": "verify to Navigate to Invoice to compare total price in the screen with total price in the cart.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717513840302,
+      "stop": 1717513840302
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "1eb56afd-7404-4198-9a69-e37ce492511a-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "6a78ea10-6ad2-407d-ae3f-3e5863d0bf96-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "219650d1-20d0-4f81-932b-753180bcae51-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "d608f814-29c0-44a9-8c96-cfe6c1a78d29-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "0d906269-915d-44d5-8af3-d2ca1332e120-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Extracted Invoice Text",
+      "source": "cb781ac5-3c6d-4f15-9ee9-d6a172176132-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Filtered Invoice Text",
+      "source": "1da928cd-088b-4e0c-9ba6-07695f549574-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Screenshot for result",
+      "source": "624590d2-a099-4deb-86de-dfa01aa17f38-attachment"
+    },
+    {
+      "name": "Test Output",
+      "source": "d8a2fb7e-0b95-4aad-ba1d-08a820e2243a-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1717513820277,
+  "stop": 1717513845775
+}

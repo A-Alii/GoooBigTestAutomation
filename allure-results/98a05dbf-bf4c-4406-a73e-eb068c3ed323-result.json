@@ -1,0 +1,142 @@
+{
+  "uuid": "98a05dbf-bf4c-4406-a73e-eb068c3ed323",
+  "historyId": "c9aa098e3d77b84834ff93211d3daae3",
+  "fullName": "GoooBigTestCases.GoooBig_Home.switchedNavbarHomeScreen",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "testMethod",
+      "value": "switchedNavbarHomeScreen"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "2948@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "switchedNavbarHomeScreen",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to verify switching between navbar options on the home screen.",
+  "steps": [
+    {
+      "name": "Switch to Favorites.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717407201662,
+      "stop": 1717407201662
+    },
+    {
+      "name": "Switch to Categories.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717407204281,
+      "stop": 1717407204281
+    },
+    {
+      "name": "Switch to More.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717407207326,
+      "stop": 1717407207326
+    },
+    {
+      "name": "Switch to Home.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717407210963,
+      "stop": 1717407210963
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Screenshot",
+      "source": "1ed6e602-f8d2-4ad0-bbae-f6742fbc572d-attachment"
+    },
+    {
+      "name": "Screenshot",
+      "source": "d3a0ad5e-4f24-4e2d-991b-7d8a3feb9b66-attachment"
+    },
+    {
+      "name": "Screenshot",
+      "source": "7c8ab4f9-ac7d-48c2-a625-0d9d5fc8a3b4-attachment"
+    },
+    {
+      "name": "Test Output",
+      "source": "e309a3aa-de87-47cd-a5f2-88b3c4b4b506-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1717407201656,
+  "stop": 1717407211540
+}

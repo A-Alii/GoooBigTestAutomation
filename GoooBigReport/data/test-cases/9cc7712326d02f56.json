@@ -1,0 +1,216 @@
+{
+  "uid": "9cc7712326d02f56",
+  "name": "switchedNavbarHomeScreen",
+  "fullName": "GoooBigTestCases.GoooBig_Home.switchedNavbarHomeScreen",
+  "historyId": "c9aa098e3d77b84834ff93211d3daae3",
+  "time": {
+    "start": 1717407201656,
+    "stop": 1717407211540,
+    "duration": 9884
+  },
+  "description": "This test attempts to verify switching between navbar options on the home screen.",
+  "descriptionHtml": "<p>This test attempts to verify switching between navbar options on the home screen.</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "This test attempts to verify switching between navbar options on the home screen.",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "Switch to Favorites.",
+        "time": {
+          "start": 1717407201662,
+          "stop": 1717407201662,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      },
+      {
+        "name": "Switch to Categories.",
+        "time": {
+          "start": 1717407204281,
+          "stop": 1717407204281,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      },
+      {
+        "name": "Switch to More.",
+        "time": {
+          "start": 1717407207326,
+          "stop": 1717407207326,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      },
+      {
+        "name": "Switch to Home.",
+        "time": {
+          "start": 1717407210963,
+          "stop": 1717407210963,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "70e43151d7a0c353",
+        "name": "Screenshot",
+        "source": "70e43151d7a0c353.png",
+        "type": "image/png",
+        "size": 156330
+      },
+      {
+        "uid": "a01dbe7cfc7c8802",
+        "name": "Screenshot",
+        "source": "a01dbe7cfc7c8802.png",
+        "type": "image/png",
+        "size": 113234
+      },
+      {
+        "uid": "455ac5de2d5312a8",
+        "name": "Screenshot",
+        "source": "455ac5de2d5312a8.png",
+        "type": "image/png",
+        "size": 135369
+      },
+      {
+        "uid": "d17e4b164b9df840",
+        "name": "Test Output",
+        "source": "d17e4b164b9df840.txt",
+        "type": "text/plain",
+        "size": 77
+      }
+    ],
+    "parameters": [],
+    "attachmentStep": false,
+    "stepsCount": 4,
+    "hasContent": true,
+    "attachmentsCount": 4,
+    "shouldDisplayMessage": false
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "testMethod",
+      "value": "switchedNavbarHomeScreen"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "2948@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "9cc7712326d02f56.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

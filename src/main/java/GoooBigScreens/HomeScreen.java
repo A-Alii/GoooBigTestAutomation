@@ -13,7 +13,7 @@ public class HomeScreen extends TestBase {
     MobileElement AnotherServices;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='العمليات اليومية']")
     MobileElement DailyTransactions;
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
+    @AndroidFindBy(xpath = "//android.view.View[@index='2']")
     MobileElement HamburgerMenu;
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='1']")
     MobileElement searchBar;

@@ -1,0 +1,100 @@
+{
+  "uuid": "e2b807de-8681-48db-9ac4-d7af87c206c0",
+  "historyId": "53635c9a4e72733d55b01f04330910d2",
+  "fullName": "GoooBigTestCases.GoooBig_Login.LoginToOrganizationUsingValidData",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Login"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Login"
+    },
+    {
+      "name": "testMethod",
+      "value": "LoginToOrganizationUsingValidData"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Login"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "14708@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "LoginToOrganizationUsingValidData",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to Login to organization using valid UserId, password.",
+  "steps": [
+    {
+      "name": "Enter Valid Data",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717508776790,
+      "stop": 1717508776790
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "142e12d8-7a02-412a-bb75-5dd5dbf89808-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1717508776787,
+  "stop": 1717508786854
+}

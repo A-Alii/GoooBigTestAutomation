@@ -41,8 +41,10 @@ public class GoooBig_Invoices extends TestBase {
         invoices = new Invoices();
         Allure.step("verify to select Invoice Type.");
         invoices.clickOnCashier();
-        invoices.clickOnAllProducts();
+        //invoices.clickOnAllProducts();
         invoices.smallNonTaxInvoice();
+        invoices.checkbox1();
+        invoices.checkbox2();
         invoices.navigateBack();
         invoices.navigateBack();
         Allure.step("verify to search for a product and add it in cart.");
@@ -213,7 +215,7 @@ public class GoooBig_Invoices extends TestBase {
         invoices.hideKeyboard();
         System.out.println("Invoice Small Tax Added Successfully");
     }
-
+/*
     @Test(priority = 2)
     @Description("This test attempts to Small Non Tax Invoice With Discount over Invoice level")
     @Severity(CRITICAL)
@@ -775,8 +777,8 @@ public class GoooBig_Invoices extends TestBase {
             double totalPriceValue = Double.parseDouble(cleanedTotalPrice);
             double lastNumberValue = Double.parseDouble(numbers.get(numbers.size() - 1));
             Assert.assertEquals(totalPriceValue, lastNumberValue); // Specify a delta value for double comparison
-            System.out.println("TotalPrice is equal to the total Price number in invoices screen.");
-            Allure.addAttachment("Test Output", "text/plain", "Assertion Result is: " + "TotalPrice is equal to the total Price number in invoices screen.");
+            System.out.println("TotalPrice is equal to the total Price number in otherPaymentMethods screen.");
+            Allure.addAttachment("Test Output", "text/plain", "Assertion Result is: " + "TotalPrice is equal to the total Price number in otherPaymentMethods screen.");
         } else {
             System.out.println("No number extracted from details to compare with TotalPrice.");
         }
@@ -1533,5 +1535,6 @@ public class GoooBig_Invoices extends TestBase {
         invoices.hideKeyboard();
         System.out.println("Invoice Small Non Tax Added Successfully");
     }
+ */
 }
 

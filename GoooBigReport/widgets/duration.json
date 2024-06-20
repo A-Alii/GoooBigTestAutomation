@@ -1,0 +1,607 @@
+[
+  {
+    "uid": "4e32da880628c326",
+    "name": "testcase2",
+    "time": {
+      "start": 1717491096121,
+      "stop": 1717491137156,
+      "duration": 41035
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "84acebf67271beb3",
+    "name": "A4TaxInvoiceWithDiscountOverProductLevel",
+    "time": {
+      "start": 1717407493373,
+      "stop": 1717407543719,
+      "duration": 50346
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "2e21193bf6f683af",
+    "name": "LoginToOrganizationUsingValidData",
+    "time": {
+      "start": 1717491051650,
+      "stop": 1717491060110,
+      "duration": 8460
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "5159f49ac0ba1c97",
+    "name": "clickOnApplyWithoutEnterBoxFundStart",
+    "time": {
+      "start": 1717407163854,
+      "stop": 1717407173752,
+      "duration": 9898
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "fdb39a4fdbf096f",
+    "name": "VerifyToAddClientWithValidData",
+    "time": {
+      "start": 1717487246019,
+      "stop": 1717487262654,
+      "duration": 16635
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "4c7b293a61a986c7",
+    "name": "VerifyOtherPaymentMethodsScreen",
+    "time": {
+      "start": 1717421993104,
+      "stop": 1717421993112,
+      "duration": 8
+    },
+    "status": "skipped",
+    "severity": "critical"
+  },
+  {
+    "uid": "3b22406685b7077f",
+    "name": "prepareOrganizationUsingValidData",
+    "time": {
+      "start": 1717491013674,
+      "stop": 1717491040502,
+      "duration": 26828
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "cc8b03212e2abf08",
+    "name": "VerifyNoticeCreditorFunctionality",
+    "time": {
+      "start": 1717407829878,
+      "stop": 1717407835790,
+      "duration": 5912
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "85cb59655d4228a8",
+    "name": "smallNonTaxInvoiceWithDiscountOverProductLevel",
+    "time": {
+      "start": 1717407594518,
+      "stop": 1717407646489,
+      "duration": 51971
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "a2ab81074ec9a847",
+    "name": "prepareOrganizationUsingUserIdPasswordAndAnEmptyData",
+    "time": {
+      "start": 1717407073486,
+      "stop": 1717407086320,
+      "duration": 12834
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "a931cb850090189f",
+    "name": "VerifyWarehouseName",
+    "time": {
+      "start": 1717407177323,
+      "stop": 1717407182467,
+      "duration": 5144
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "3ce5570102541d0f",
+    "name": "VerifyToAddClientWithSpace",
+    "time": {
+      "start": 1717487222536,
+      "stop": 1717487246013,
+      "duration": 23477
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "8275f972556702d3",
+    "name": "VerifyOtherPaymentMethodsScreen",
+    "time": {
+      "start": 1717491071373,
+      "stop": 1717491096112,
+      "duration": 24739
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "824d75cffd6eb70f",
+    "name": "VerifyToAddClientWithNameOnly",
+    "time": {
+      "start": 1717407218117,
+      "stop": 1717407221875,
+      "duration": 3758
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "df375eccfe7ee49a",
+    "name": "CreateAnPostPaidInvoice",
+    "time": {
+      "start": 1717407869115,
+      "stop": 1717407913136,
+      "duration": 44021
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "38d7f955d81314d8",
+    "name": "VerifyClickOnCancelButton",
+    "time": {
+      "start": 1717407214685,
+      "stop": 1717407215950,
+      "duration": 1265
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "e38e0c4b0911688b",
+    "name": "LoginToOrganizationUsingInvalidData",
+    "time": {
+      "start": 1717407137338,
+      "stop": 1717407146757,
+      "duration": 9419
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "95d6851b30ced2c7",
+    "name": "beforeClass",
+    "time": {
+      "start": 1717421992811,
+      "stop": 1717421992821,
+      "duration": 10
+    },
+    "status": "broken",
+    "severity": "normal"
+  },
+  {
+    "uid": "f1419099e31d1c72",
+    "name": "verifyToUpdateClients",
+    "time": {
+      "start": 1717483912014,
+      "stop": 1717483938897,
+      "duration": 26883
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "8451f62211f35529",
+    "name": "SmallTaxInvoiceWithDiscountOverInvoiceLevel",
+    "time": {
+      "start": 1717407449381,
+      "stop": 1717407493367,
+      "duration": 43986
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "96c51a1f6a3293c1",
+    "name": "A4NonTaxInvoiceWithDiscountOverInvoiceLevel",
+    "time": {
+      "start": 1717407742939,
+      "stop": 1717407787861,
+      "duration": 44922
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "c3ac4068ffaa0b7a",
+    "name": "VerifyToAddClientWithInvalidPhoneData",
+    "time": {
+      "start": 1717407255986,
+      "stop": 1717407284463,
+      "duration": 28477
+    },
+    "status": "broken",
+    "severity": "critical"
+  },
+  {
+    "uid": "ea5a3b6383b82d24",
+    "name": "NavigateToClientsScreen",
+    "time": {
+      "start": 1717487217500,
+      "stop": 1717487220446,
+      "duration": 2946
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "abe8c78429cd8061",
+    "name": "prepareOrganizationUsingUserIdAndAnEmptyData",
+    "time": {
+      "start": 1717407059877,
+      "stop": 1717407073474,
+      "duration": 13597
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "9cc7712326d02f56",
+    "name": "switchedNavbarHomeScreen",
+    "time": {
+      "start": 1717407201656,
+      "stop": 1717407211540,
+      "duration": 9884
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "b7c1fe7a52c23704",
+    "name": "verifyToSelectCategoryAndDepartmentAndProduct",
+    "time": {
+      "start": 1717483862094,
+      "stop": 1717483872737,
+      "duration": 10643
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "5b33e9edc1a9b5a1",
+    "name": "NavigateToAddClientScreen",
+    "time": {
+      "start": 1717487220455,
+      "stop": 1717487222529,
+      "duration": 2074
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "e77c5cdadd905bfa",
+    "name": "GetTextFromLoginScreen",
+    "time": {
+      "start": 1717407146764,
+      "stop": 1717407149929,
+      "duration": 3165
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "fb4074427f04d4a4",
+    "name": "A4TaxInvoiceWithDiscountOverInvoiceLevel",
+    "time": {
+      "start": 1717407543725,
+      "stop": 1717407594512,
+      "duration": 50787
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "194ab56fb0751e69",
+    "name": "SmallNonTaxInvoiceWithDiscountOverInvoiceLevel",
+    "time": {
+      "start": 1717407646503,
+      "stop": 1717407689694,
+      "duration": 43191
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "af257ed7569cae18",
+    "name": "switchedRunManageOptionsHomeScreen",
+    "time": {
+      "start": 1717407184421,
+      "stop": 1717407193921,
+      "duration": 9500
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "340d6ef255f71758",
+    "name": "verifyToNavigateToCartWithoutProducts",
+    "time": {
+      "start": 1717483860263,
+      "stop": 1717483862088,
+      "duration": 1825
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "fc29df0a79f66dd0",
+    "name": "IsLogoExistInHomeScreen",
+    "time": {
+      "start": 1717407182474,
+      "stop": 1717407184409,
+      "duration": 1935
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "54f5d9fbaaffdf21",
+    "name": "VerifySearchBar",
+    "time": {
+      "start": 1717407193930,
+      "stop": 1717407197504,
+      "duration": 3574
+    },
+    "status": "failed",
+    "severity": "critical"
+  },
+  {
+    "uid": "ee4e7c830f0b0994",
+    "name": "verifySelectWarehouse",
+    "time": {
+      "start": 1717491060119,
+      "stop": 1717491065454,
+      "duration": 5335
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "50f3fb26cd0b2cfb",
+    "name": "redirectToLoginScreenAfterPrepareOrganization",
+    "time": {
+      "start": 1717491040649,
+      "stop": 1717491051618,
+      "duration": 10969
+    },
+    "status": "broken",
+    "severity": "critical"
+  },
+  {
+    "uid": "3c7ee4fc38ce7069",
+    "name": "VerifyToAddClientWithValidSameData",
+    "time": {
+      "start": 1717483833528,
+      "stop": 1717483848982,
+      "duration": 15454
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "86cfdb54e29d54af",
+    "name": "prepareOrganizationUsingInvalidData",
+    "time": {
+      "start": 1717407086328,
+      "stop": 1717407096139,
+      "duration": 9811
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "5783a6033eee8374",
+    "name": "beforeClass",
+    "time": {
+      "start": 1717483742220,
+      "stop": 1717483742224,
+      "duration": 4
+    },
+    "status": "broken",
+    "severity": "normal"
+  },
+  {
+    "uid": "ea3e20af4feb70de",
+    "name": "LoginToOrganizationUsingUserIdAndAnEmptyData",
+    "time": {
+      "start": 1717407127399,
+      "stop": 1717407137331,
+      "duration": 9932
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "c31c70268e15baf",
+    "name": "SmallTaxInvoiceWithDiscountOverProductLevel",
+    "time": {
+      "start": 1717407388585,
+      "stop": 1717407449373,
+      "duration": 60788
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "5e302b471bb2f8e8",
+    "name": "SmallTaxInvoiceToDisplayThePriceWithDiscountOverProduct",
+    "time": {
+      "start": 1717407913143,
+      "stop": 1717407960954,
+      "duration": 47811
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "493a958de26228c9",
+    "name": "VerifyRemoveProductFromNoticeCreditorInvoice",
+    "time": {
+      "start": 1717407835798,
+      "stop": 1717407836757,
+      "duration": 959
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "640384654340c293",
+    "name": "verifyToSelectInvoiceType",
+    "time": {
+      "start": 1717487262659,
+      "stop": 1717487273550,
+      "duration": 10891
+    },
+    "status": "broken",
+    "severity": "critical"
+  },
+  {
+    "uid": "931d140d173228c4",
+    "name": "VerifyToAddClientWithPhoneOnly",
+    "time": {
+      "start": 1717407221881,
+      "stop": 1717407229972,
+      "duration": 8091
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "ba53a0439f21592f",
+    "name": "verifyClickOnApplyWithValidData",
+    "time": {
+      "start": 1717491065464,
+      "stop": 1717491071364,
+      "duration": 5900
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "29a73f7bf547d71a",
+    "name": "loginToOrganizationUsingAnEmptyData",
+    "time": {
+      "start": 1717407119737,
+      "stop": 1717407127389,
+      "duration": 7652
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "954fed287ef4ead5",
+    "name": "verifyToSelectClientForInvoice",
+    "time": {
+      "start": 1717483872743,
+      "stop": 1717483911997,
+      "duration": 39254
+    },
+    "status": "failed",
+    "severity": "critical"
+  },
+  {
+    "uid": "5768f03595eec7cd",
+    "name": "VerifyClickOnAddClientButtonWithoutData",
+    "time": {
+      "start": 1717407215955,
+      "stop": 1717407218111,
+      "duration": 2156
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "b80f6c50c9054636",
+    "name": "prepareOrganizationUsingAnEmptyData",
+    "time": {
+      "start": 1717407040897,
+      "stop": 1717407059614,
+      "duration": 18717
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "14ec22ca5de9e137",
+    "name": "VerifyUpdateFunctionality",
+    "time": {
+      "start": 1717407197532,
+      "stop": 1717407201636,
+      "duration": 4104
+    },
+    "status": "failed",
+    "severity": "critical"
+  },
+  {
+    "uid": "1a83170d235ef6f6",
+    "name": "A4NonTaxInvoiceWithDiscountOverProductLevel",
+    "time": {
+      "start": 1717407689700,
+      "stop": 1717407742932,
+      "duration": 53232
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "5655c84b5829a089",
+    "name": "VerifyEditeProductFromNoticeCreditorInvoice",
+    "time": {
+      "start": 1717407836761,
+      "stop": 1717407840194,
+      "duration": 3433
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "404c4886ff021bc1",
+    "name": "PendingInvoiceTestCase",
+    "time": {
+      "start": 1717407787866,
+      "stop": 1717407829873,
+      "duration": 42007
+    },
+    "status": "passed",
+    "severity": "critical"
+  },
+  {
+    "uid": "eea11c9ef3095231",
+    "name": "VerifyToCreateANoticeCreditorInvoice",
+    "time": {
+      "start": 1717407840199,
+      "stop": 1717407869107,
+      "duration": 28908
+    },
+    "status": "passed",
+    "severity": "critical"
+  }
+]

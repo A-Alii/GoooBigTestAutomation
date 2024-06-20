@@ -1,0 +1,288 @@
+{
+  "uid": "404c4886ff021bc1",
+  "name": "PendingInvoiceTestCase",
+  "fullName": "GoooBigTestCases.GoooBig_PendingInvoice.PendingInvoiceTestCase",
+  "historyId": "fa940905302c2820e5c32ebec5bcfb8d",
+  "time": {
+    "start": 1717407787866,
+    "stop": 1717407829873,
+    "duration": 42007
+  },
+  "description": "This test attempts to Small Non Tax Invoice with discount over Product level and make it Pending invoice",
+  "descriptionHtml": "<p>This test attempts to Small Non Tax Invoice with discount over Product level and make it Pending invoice</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "This test attempts to Small Non Tax Invoice with discount over Product level and make it Pending invoice",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "verify to select Invoice Type.",
+        "time": {
+          "start": 1717407787869,
+          "stop": 1717407787869,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      },
+      {
+        "name": "verify to search for a product and add it in cart.",
+        "time": {
+          "start": 1717407794850,
+          "stop": 1717407794850,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      },
+      {
+        "name": "verify to search for a product and add it in cart.",
+        "time": {
+          "start": 1717407799906,
+          "stop": 1717407799907,
+          "duration": 1
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      },
+      {
+        "name": "verify to Do discount over product.",
+        "time": {
+          "start": 1717407809125,
+          "stop": 1717407809125,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      },
+      {
+        "name": "verify to get data like price and Tax an total price of the invoice.",
+        "time": {
+          "start": 1717407817899,
+          "stop": 1717407817899,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      },
+      {
+        "name": "verify to hold the invoice.",
+        "time": {
+          "start": 1717407820108,
+          "stop": 1717407820108,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      },
+      {
+        "name": "verify to get the price of pending invoice",
+        "time": {
+          "start": 1717407828108,
+          "stop": 1717407828108,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "stepsCount": 0,
+        "hasContent": false,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "f8c2b74a98759ee8",
+        "name": "Test Output",
+        "source": "f8c2b74a98759ee8.txt",
+        "type": "text/plain",
+        "size": 23
+      },
+      {
+        "uid": "4fed47eb603b2de3",
+        "name": "Test Output",
+        "source": "4fed47eb603b2de3.txt",
+        "type": "text/plain",
+        "size": 55
+      },
+      {
+        "uid": "745fc08d0a34ad5e",
+        "name": "Test Output",
+        "source": "745fc08d0a34ad5e.txt",
+        "type": "text/plain",
+        "size": 39
+      },
+      {
+        "uid": "31f11f7dba30d035",
+        "name": "Test Output",
+        "source": "31f11f7dba30d035.txt",
+        "type": "text/plain",
+        "size": 44
+      },
+      {
+        "uid": "4de031c1120460a9",
+        "name": "Test Output",
+        "source": "4de031c1120460a9.txt",
+        "type": "text/plain",
+        "size": 46
+      },
+      {
+        "uid": "1e4ae692a3e06903",
+        "name": "Screenshot for Pending Invoices.",
+        "source": "1e4ae692a3e06903.png",
+        "type": "image/png",
+        "size": 111601
+      },
+      {
+        "uid": "9c28acc98c25786a",
+        "name": "Test Output",
+        "source": "9c28acc98c25786a.txt",
+        "type": "text/plain",
+        "size": 86
+      }
+    ],
+    "parameters": [],
+    "attachmentStep": false,
+    "stepsCount": 7,
+    "hasContent": true,
+    "attachmentsCount": 7,
+    "shouldDisplayMessage": false
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_PendingInvoice"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_PendingInvoice"
+    },
+    {
+      "name": "testMethod",
+      "value": "PendingInvoiceTestCase"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_PendingInvoice"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "2948@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "404c4886ff021bc1.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

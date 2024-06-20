@@ -1,0 +1,94 @@
+{
+  "uuid": "37834eb2-d9db-4c99-a5e6-6c4216f15a5f",
+  "historyId": "a3262e3c2c1ebd2a99e5a896331ff6ec",
+  "fullName": "GoooBigTestCases.GoooBig_NoticeCreditor.VerifyToCreateANoticeCreditorInvoice",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_NoticeCreditor"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_NoticeCreditor"
+    },
+    {
+      "name": "testMethod",
+      "value": "VerifyToCreateANoticeCreditorInvoice"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_NoticeCreditor"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "11136@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "VerifyToCreateANoticeCreditorInvoice",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to Navigate to Make Notice Creditor invoice.",
+  "steps": [
+    {
+      "name": "verify to Navigate to End Shift to check the price of notice creditor was added successfully to his box.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1717508614101,
+      "stop": 1717508614101
+    }
+  ],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1717508612827,
+  "stop": 1717508618347
+}

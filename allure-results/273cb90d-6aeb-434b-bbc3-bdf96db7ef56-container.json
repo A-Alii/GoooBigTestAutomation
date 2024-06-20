@@ -1,0 +1,17 @@
+{
+  "uuid": "273cb90d-6aeb-434b-bbc3-bdf96db7ef56",
+  "name": "GoooBigTestCases.GoooBig_CashierServices",
+  "children": [
+    "1a923e89-aec1-4205-8782-dcb9c0bc69b9",
+    "aac74d3d-576b-43b0-90f0-8567369b28c6",
+    "7baea767-7771-4259-8f05-2160272a1375",
+    "45c347cc-0e86-4a16-8581-1c0732349a3a",
+    "51405944-2e26-4d95-9ee5-16b7008e42cb",
+    "2e9ff44a-7584-461e-a09d-837b39cb7921",
+    "cd66906a-222c-4a42-84da-3383601258c5"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1717513711885,
+  "stop": 1717513845793
+}

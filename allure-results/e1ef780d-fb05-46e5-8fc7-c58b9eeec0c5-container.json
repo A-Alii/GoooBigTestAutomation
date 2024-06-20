@@ -1,0 +1,18 @@
+{
+  "uuid": "e1ef780d-fb05-46e5-8fc7-c58b9eeec0c5",
+  "name": "GoooBigTestCases.GoooBig_Invoices",
+  "children": [
+    "f4bc3ce5-2b3e-4c12-b83a-f54f75a386e2",
+    "5063d18b-1676-408f-a767-fd2fa941acd1",
+    "e21afe6d-abf5-4314-8692-2b63ff790721",
+    "c33d62a3-a1d3-4ff3-8c31-0f41417e6655",
+    "e6bf9c72-29cb-4bdd-bb83-e1bce48bdaee",
+    "b5032a0e-b82b-41e5-adb3-4ebb8c65d12e",
+    "04bb6f9b-399d-4d0d-9802-7dfa8d43b44b",
+    "544de54c-ea21-4b49-99cf-721ae71d6b83"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1718030931122,
+  "stop": 1718030931798
+}

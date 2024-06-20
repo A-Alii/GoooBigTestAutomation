@@ -1,0 +1,11 @@
+{
+  "uuid": "9bfd46d4-7eb3-4536-8aae-e163e16f5b4b",
+  "name": "GoooBigTestCases.GoooBig_OtherPaymentMethods",
+  "children": [
+    "1b4d4b49-ce8a-4958-aabf-cfd34695f45a"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1717421858601,
+  "stop": 1717421954083
+}

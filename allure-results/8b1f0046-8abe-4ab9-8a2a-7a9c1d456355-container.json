@@ -1,0 +1,19 @@
+{
+  "uuid": "8b1f0046-8abe-4ab9-8a2a-7a9c1d456355",
+  "name": "F:/GoooBigMobileApp",
+  "children": [
+    "041ccd17-7674-4fcb-b3a1-98527acc8043",
+    "c9f26400-e34f-4906-957b-eab860b0f4ed",
+    "fac155f9-6e92-4413-830f-347ef7a7f075",
+    "bf9a5a75-392f-4a1f-9165-34c98f9ac3cf",
+    "b2c3d2f7-637b-43b4-869b-6ce7ff46bdf5",
+    "ce3abaef-8144-4f62-a33d-f7b2481e8f5b",
+    "f1257bb7-acb8-4a03-a154-2e764112827a",
+    "9f55cee1-75ab-440b-b6f4-ce73901e39eb",
+    "86653525-24a0-47e7-872a-1fddc809a8f7"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1718032042497,
+  "stop": 1718032139227
+}
