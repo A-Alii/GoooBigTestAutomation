@@ -1,0 +1,23 @@
+{
+  "uuid": "2bf180d5-14a0-4cda-a5f1-be55cb5ef480",
+  "name": "All Test Suite",
+  "children": [
+    "4a222472-3b90-4dd2-93b9-875795d5db81"
+  ],
+  "befores": [
+    {
+      "name": "beforeClass",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719140593091,
+      "stop": 1719140616113
+    }
+  ],
+  "afters": [],
+  "start": 1719140593004,
+  "stop": 1719140705921
+}

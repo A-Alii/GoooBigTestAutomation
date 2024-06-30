@@ -5,17 +5,17 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class PendingIInvoiceScreen extends TestBase {
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
+    @AndroidFindBy(xpath = "//android.view.View[@index='1']")
     MobileElement hamburgerMenu;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الإعدادات']")
     MobileElement settings;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إعدادات الطباعة']")
     MobileElement printingSettings;
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='11']")
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='فاتورة ضريبية']")
     MobileElement NonTaxORTax;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc= 'فاتورة ضريبية']")
     MobileElement NonTax;
-    @AndroidFindBy(xpath = "//android.view.View[@index='14']")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
     MobileElement submitCheck;
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='1']")
     MobileElement searchbar;

@@ -1,0 +1,11 @@
+{
+  "uuid": "afb91695-2255-42e8-850f-a86afe1a100e",
+  "name": "GoooBigTestCasesForTablet.GoooBig_branchesAndWarehouses",
+  "children": [
+    "d6b2f295-0ae3-4946-9186-a87e5cb13ace"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1719138205298,
+  "stop": 1719138326267
+}

@@ -1,0 +1,119 @@
+{
+  "uuid": "864dfe5b-0df7-41f3-ba10-68f95a5a746e",
+  "historyId": "7fd76d81c761ceaf0c76c6ccf572d517",
+  "fullName": "GoooBigTestCases.GoooBig_ShiftStart.verifyClickOnApplyWithValidData",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_ShiftStart"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_ShiftStart"
+    },
+    {
+      "name": "testMethod",
+      "value": "verifyClickOnApplyWithValidData"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_ShiftStart"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "7424@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "verifyClickOnApplyWithValidData",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to verify click on Apply with valid data.",
+  "steps": [
+    {
+      "name": "verify to enter a valid data to Box Fund",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719488793209,
+      "stop": 1719488793209
+    },
+    {
+      "name": "verify to select delivery from",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719488794034,
+      "stop": 1719488794034
+    },
+    {
+      "name": "verify to click on Apply Button",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719488796086,
+      "stop": 1719488796087
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Screenshot for result",
+      "source": "bf8ca32d-b3c2-45a2-a847-11d6a4c43d8d-attachment"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1719488793205,
+  "stop": 1719488797040
+}

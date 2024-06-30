@@ -1,0 +1,110 @@
+{
+  "uuid": "072dab02-c845-45df-b38d-192d05b04493",
+  "historyId": "f233978715ec13646d863a0010216a59",
+  "fullName": "GoooBigTestCasesForTablet.GoooBig_Preparation.prepareOrganizationUsingValidData",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCasesForTablet.GoooBig_Preparation"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCasesForTablet.GoooBig_Preparation"
+    },
+    {
+      "name": "testMethod",
+      "value": "prepareOrganizationUsingValidData"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCasesForTablet.GoooBig_Preparation"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "10248@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "prepareOrganizationUsingValidData",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to prepare organization using valid Data UserId, password and OrganizeId.",
+  "steps": [
+    {
+      "name": "Enter Valid Data",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719140617043,
+      "stop": 1719140617045
+    },
+    {
+      "name": "Assertion Validation correct.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719140642478,
+      "stop": 1719140642478
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "cb06aa0e-b6e3-4e1e-acb4-e1ea6c076f3e-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1719140616410,
+  "stop": 1719140654569
+}

@@ -15,7 +15,7 @@ public class OrganizationPreparation extends TestBase {
     MobileElement PrepareButton;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc=\"دخول\"]")
     MobileElement Login;
-    @AndroidFindBy(xpath = "//android.view.View[@index='31']")
+    @AndroidFindBy(xpath = "//android.view.View[@index='10' and @content-desc=\"تم بنجاح\"]")
     MobileElement ProductsNumberShow;
 
     @AndroidFindBy(xpath = "//android.view.View[@index='0']")
@@ -45,6 +45,7 @@ public class OrganizationPreparation extends TestBase {
     public void fillPrepareOrg(String Name, String Pass, String Id) {
         UserName.click();
         UserName.sendKeys(Name);
+        driver.hideKeyboard();
         Password.click();
         Password.sendKeys(Pass);
         driver.hideKeyboard();
@@ -63,10 +64,14 @@ public class OrganizationPreparation extends TestBase {
         // Clear data from each field
         UserName.click();
         UserName.clear();
+        driver.hideKeyboard();
         Password.click();
         Password.clear();
+        driver.hideKeyboard();
         OrgId.click();
+        driver.hideKeyboard();
         OrgId.clear();
+        driver.hideKeyboard();
     }
 
     public void clickLoginButton() {

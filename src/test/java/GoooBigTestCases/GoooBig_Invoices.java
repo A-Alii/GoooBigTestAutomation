@@ -33,6 +33,7 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 public class GoooBig_Invoices extends TestBase {
     Invoices invoices;
 
+    // Mobile Testing
     @Test(priority = 1)
     @Description("This test attempts to Small Tax Invoice with discount over Product level")
     @Severity(CRITICAL)
@@ -43,8 +44,6 @@ public class GoooBig_Invoices extends TestBase {
         invoices.clickOnCashier();
         //invoices.clickOnAllProducts();
         invoices.smallNonTaxInvoice();
-        invoices.checkbox1();
-        invoices.checkbox2();
         invoices.navigateBack();
         invoices.navigateBack();
         Allure.step("verify to search for a product and add it in cart.");

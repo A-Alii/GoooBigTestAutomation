@@ -8,13 +8,13 @@ import java.util.List;
 
 public class CashierServices extends TestBase {
 
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
+    @AndroidFindBy(xpath = "//android.view.View[@index='1']")
     MobileElement hamburgerMenu;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الإعدادات']")
     MobileElement settings;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إعدادات الطباعة']")
     MobileElement printingSettings;
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إعدادت العرض' or @index='3']")
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إعدادت العرض']")
     MobileElement presentationSettings;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='منتجات وأصناف']")
     MobileElement presentationStyle;
@@ -22,11 +22,11 @@ public class CashierServices extends TestBase {
     MobileElement check1;
     @AndroidFindBy(xpath = "//android.view.View[@index='8']")
     MobileElement check2;
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='11']")
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='فاتورة ضريبية']")
     MobileElement NonTaxORTax;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc= 'فاتورة ضريبية']")
     MobileElement NonTax;
-    @AndroidFindBy(xpath = "//android.view.View[@index='14']")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
     MobileElement submitCheck;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index='13']")
     MobileElement chooseInvoice;
@@ -62,8 +62,10 @@ public class CashierServices extends TestBase {
     MobileElement cashierServices;
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='0']")
     List<MobileElement> ServiceName;
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202Bيجب كتابة وصف للخدمة أولا\u202C']")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202Bيجب كتابة سعر للخدمة أولا\u202C']")
     MobileElement error;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202Bيجب كتابة وصف للخدمة أولا\u202C']")
+    MobileElement error2;
     @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'الخدمات') or @index='2']")
     MobileElement services;
     @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'ختيار عميل') or contains(@content-desc,'SR')]")
@@ -94,8 +96,6 @@ public class CashierServices extends TestBase {
     }
 
     public void smallNonTaxInvoice() {
-        check1.click();
-        check2.click();
         NonTaxORTax.click();
         NonTax.click();
         submitCheck.click();
@@ -123,6 +123,11 @@ public class CashierServices extends TestBase {
         ServiceName.get(0).sendKeys(name);
     }
 
+    public void clearServiceName() {
+        ServiceName.get(0).click();
+        ServiceName.get(0).clear();
+    }
+
     public void sendKeysToPriceOfService(int price) {
         ServiceName.get(1).click();
         ServiceName.get(1).clear();
@@ -131,6 +136,10 @@ public class CashierServices extends TestBase {
 
     public boolean isErrorDisplayed() {
         return error.isDisplayed();
+    }
+
+    public boolean isErrorDisplayed2() {
+        return error2.isDisplayed();
     }
 
     public void clickOnBasketButton() {

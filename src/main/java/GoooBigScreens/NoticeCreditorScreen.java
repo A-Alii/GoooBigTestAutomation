@@ -5,7 +5,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class NoticeCreditorScreen extends TestBase {
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
+    @AndroidFindBy(xpath = "//android.view.View[@index='1']")
     MobileElement hamburgerMenu;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الفواتير']")
     MobileElement Invoices;
@@ -13,6 +13,11 @@ public class NoticeCreditorScreen extends TestBase {
     MobileElement NoticeCreditorIcon;
     @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'السلة') or contains(@content-desc,'9000 SR')]")
     MobileElement BasketButton;
+
+    public boolean isBasketButtonVisible() {
+        return BasketButton.isDisplayed();
+    }
+
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='حذف']")
     MobileElement RemoveProductIcon;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc = 'التالي']")
@@ -47,6 +52,7 @@ public class NoticeCreditorScreen extends TestBase {
 
     public void clickOnNoticeCreditorIcon() {
         NoticeCreditorIcon.click();
+        driver.hideKeyboard();
     }
 
     public void goToCart() {

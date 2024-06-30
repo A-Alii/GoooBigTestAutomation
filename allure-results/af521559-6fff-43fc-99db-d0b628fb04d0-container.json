@@ -1,0 +1,24 @@
+{
+  "uuid": "af521559-6fff-43fc-99db-d0b628fb04d0",
+  "name": "GoooBigTestCases.GoooBig_Login.setUp",
+  "children": [
+    "963de930-f479-42ee-9e0b-4022266ee2a1"
+  ],
+  "description": "",
+  "befores": [
+    {
+      "name": "setUp",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719058268453,
+      "stop": 1719058268453
+    }
+  ],
+  "afters": [],
+  "start": 1719058268453,
+  "stop": 1719058268455
+}

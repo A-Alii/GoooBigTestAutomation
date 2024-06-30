@@ -31,10 +31,13 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
     @Description("This test attempts to select Invoice type.")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
-    public void verifyToSelectInvoiceType() {
+    public void verifyToSelectInvoiceType() throws InterruptedException {
         cashierScreen = new UploadInvoiceForClient();
         cashierScreen.ClickOnCashier();
         cashierScreen.smallNonTaxInvoice();
+        Thread.sleep(3000);
+        cashierScreen.checkbox1();
+        cashierScreen.checkbox2();
         cashierScreen.navigateBack();
         cashierScreen.navigateBack();
         cashierScreen.hideKeyboard();

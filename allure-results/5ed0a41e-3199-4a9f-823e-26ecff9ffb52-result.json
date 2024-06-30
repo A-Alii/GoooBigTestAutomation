@@ -1,0 +1,129 @@
+{
+  "uuid": "5ed0a41e-3199-4a9f-823e-26ecff9ffb52",
+  "historyId": "93a415e681d051e3338c7ba7d7dadf04",
+  "fullName": "GoooBigTestCasesForTablet.GoooBig_ShiftStart.clickOnApplyWithoutEnterBoxFundStart",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCasesForTablet.GoooBig_ShiftStart"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCasesForTablet.GoooBig_ShiftStart"
+    },
+    {
+      "name": "testMethod",
+      "value": "clickOnApplyWithoutEnterBoxFundStart"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCasesForTablet.GoooBig_ShiftStart"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "9804@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "clickOnApplyWithoutEnterBoxFundStart",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to verify click on Apply without enter Box Fund Start.",
+  "steps": [
+    {
+      "name": "verify to enter Empty Data To Box Fund",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719133091158,
+      "stop": 1719133091158
+    },
+    {
+      "name": "verify to select delivery from",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719133093615,
+      "stop": 1719133093616
+    },
+    {
+      "name": "verify to click on Apply Button",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719133095636,
+      "stop": 1719133095636
+    },
+    {
+      "name": "verify to clear fields",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719133099465,
+      "stop": 1719133099465
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Screenshot for result",
+      "source": "9d8be876-4006-4d7f-acf9-588d8be885a9-attachment"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1719133091150,
+  "stop": 1719133101376
+}

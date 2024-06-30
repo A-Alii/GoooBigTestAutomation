@@ -9,13 +9,13 @@ public class AddClientScreen extends TestBase {
     MobileElement clientsOption;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='العملاء']")
     MobileElement headerDisplay;
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إختيار عميل']")
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إضافة عميل جديد']")
     MobileElement addClientButton;
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc='إختيار عميل']")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='إضافة عميل جديد']")
     MobileElement addClientHeaderDisplay;
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202Bيجب اضافة اسم العميل\u202C']")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202Bاسم العميل مطلوب\u202C']")
     MobileElement popUp;
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202Bيجب اضافة جوال العميل\u202C']")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202Bرقم الهاتف مطلوب\u202C']")
     MobileElement popUpError;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202Bهذا العميل موجود بالفعل\u202C']")
     MobileElement popUpClient;

@@ -20,6 +20,7 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 public class GoooBig_ShiftStart extends TestBase {
     ShiftStart shiftStart;
 
+    // Mobile Testing
     @Test(priority = 1)
     @Description("This test attempts to verify click on Apply without enter Box Fund Start.")
     @Severity(CRITICAL)

@@ -1,0 +1,3 @@
+Invoice Details Are: 
+المجموع
+12500.00

@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 public class OtherPaymentMethods extends TestBase {
 
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
+    @AndroidFindBy(xpath = "//android.view.View[@index='1']")
     MobileElement hamburgerMenu;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الإعدادات']")
     MobileElement settings;
@@ -22,11 +22,11 @@ public class OtherPaymentMethods extends TestBase {
     MobileElement check1;
     @AndroidFindBy(xpath = "//android.view.View[@index='8']")
     MobileElement check2;
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='11']")
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='فاتورة ضريبية']")
     MobileElement NonTaxORTax;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc= 'فاتورة ضريبية']")
     MobileElement NonTax;
-    @AndroidFindBy(xpath = "//android.view.View[@index='14']")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
     MobileElement submitCheck;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index='13']")
     MobileElement chooseInvoice;
@@ -244,8 +244,6 @@ public class OtherPaymentMethods extends TestBase {
         hamburgerMenu.click();
         settings.click();
         printingSettings.click();
-        check1.click();
-        check2.click();
         NonTaxORTax.click();
         NonTax.click();
         chooseInvoice.click();

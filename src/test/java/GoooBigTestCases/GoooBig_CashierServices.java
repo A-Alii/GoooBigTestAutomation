@@ -29,7 +29,7 @@ public class GoooBig_CashierServices extends TestBase {
     @Test(priority = 1)
     public void testcase1() {
         cashierServices = new CashierServices();
-        cashierServices.clickOnCashier();
+        //cashierServices.clickOnCashier();
         cashierServices.clickOnHamburgerMenu();
         cashierServices.clickOnSettings();
         cashierServices.clickOnPrintingSettings();
@@ -46,14 +46,13 @@ public class GoooBig_CashierServices extends TestBase {
         cashierServices.clickOnSubmitButton();
         cashierServices.navigateBack();
         cashierServices.navigateBack();
-        cashierServices.navigateBack();
     }
 
     @Test(priority = 3)
     public void testcase3() {
         cashierServices = new CashierServices();
         cashierServices.clickOnSubmitButton();
-        Assert.assertTrue(cashierServices.isErrorDisplayed(), "Error is not displayed");
+        Assert.assertTrue(cashierServices.isErrorDisplayed2(), "Error is not displayed");
         System.out.println("Error is displayed");
     }
 
@@ -69,10 +68,11 @@ public class GoooBig_CashierServices extends TestBase {
     @Test(priority = 5)
     public void testcase5() {
         cashierServices = new CashierServices();
+        cashierServices.clearServiceName();
         cashierServices.sendKeysToPriceOfService(200);
         cashierServices.hideKeyboard();
         cashierServices.clickOnSubmitButton();
-        Assert.assertTrue(cashierServices.isErrorDisplayed(), "Error is not displayed");
+        Assert.assertTrue(cashierServices.isErrorDisplayed2(), "Error is not displayed");
     }
 
     @Test(priority = 6)
@@ -93,9 +93,9 @@ public class GoooBig_CashierServices extends TestBase {
     public void testcase7() throws InterruptedException, IOException {
         cashierServices = new CashierServices();
         cashierServices.clickOnBasketButton();
-        cashierServices.clickOnServices();
+        //cashierServices.clickOnServices();
         cashierServices.clickOnNextButton();
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         Allure.step("verify to get data like price and Tax an total price of the invoice.");
         String details = cashierServices.getDetailsOfInvoice();
 

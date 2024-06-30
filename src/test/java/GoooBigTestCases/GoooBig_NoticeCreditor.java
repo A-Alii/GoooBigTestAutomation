@@ -10,6 +10,9 @@ import net.sourceforge.tess4j.TesseractException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
+import org.testng.ITestContext;
+import org.testng.SkipException;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -27,11 +30,19 @@ import java.util.regex.Pattern;
 
 import static io.qameta.allure.SeverityLevel.CRITICAL;
 
-@Listeners(TestListener.class)
+@Listeners({TestListener.class})
 public class GoooBig_NoticeCreditor extends TestBase {
     NoticeCreditorScreen noticeCreditorScreen;
     String FilterNoticeCreditorNumberFirst;
     String FilterNoticeCreditorNumberSecond;
+    String FilterNumberOfProductsInInvoice;
+
+    @BeforeMethod
+    public void checkForPreviousFailures(ITestContext context) {
+        if (context.getAttribute("haltExecution") != null && (boolean) context.getAttribute("haltExecution")) {
+            throw new SkipException("Skipping tests due to a previous failure.");
+        }
+    }
 
     @Test(priority = 1)
     @Description("This test attempts to Navigate to Make Notice Creditor invoice.")
@@ -39,73 +50,6 @@ public class GoooBig_NoticeCreditor extends TestBase {
     @Owner("Ahmed Ali")
     public void testcase1() throws InterruptedException, IOException, TesseractException {
         noticeCreditorScreen = new NoticeCreditorScreen();
-        //noticeCreditorScreen.NavigateToCashierProduct();
-        /*Thread.sleep(3000);
-        Allure.step("click on Next Button.");
-        noticeCreditorScreen.clickOnNextBasket();
-        System.out.println("----------------------------------------");
-        Thread.sleep(3000);
-        String details = noticeCreditorScreen.getDetailsOfInvoice();
-        // Define the regular expression pattern to match text and numbers
-        Pattern pattern = Pattern.compile("([\\p{InArabic}\\s]+)|(SR \\d+\\.\\d+)");
-        Matcher matcher = pattern.matcher(details);
-
-        // Skip initial texts if needed
-        boolean skipInitialTexts = true;
-
-        String text = " " +
-                " إجمالى الضريبة ";
-        String number = "";
-        String lastNumber = "";
-
-        // Iterate through the matches and print the text and number
-        while (matcher.find()) {
-            String group = matcher.group();
-
-            // Skip initial texts if needed
-            if (skipInitialTexts) {
-                if (group.contains("إجمالى الضريبة")) {
-                    skipInitialTexts = false;
-                }
-                continue;
-            }
-            if (group.contains("SR")) {
-                number = group.substring(group.indexOf("SR") + 3); // Extract the number after "SR"
-                lastNumber = number;
-                System.out.println(text + number);
-                Allure.addAttachment("Test Output", "text/plain", "Invoice Details Are: " + text + number);
-            } else {
-                text = group;
-            }
-        }
-        System.out.println("----------------------------------------");
-        //Allure.addAttachment("Screenshot for Result After Try To Edit on Notice Creditor Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-        Allure.step("verify to do Notice Creditor for Invoice.");
-        noticeCreditorScreen.clickOnNoticeCreditorButton();
-        //Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-        Allure.step("verify to select client for the notice creditor invoice.");
-        noticeCreditorScreen.clickOnSelectClientForInvoice();
-        Thread.sleep(1000);
-        noticeCreditorScreen.selectClientName();
-        Thread.sleep(2000);
-        noticeCreditorScreen.clickOnSelection();
-        //Allure.addAttachment("Screenshot for result after select client", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-        Thread.sleep(2000);
-        Allure.step("verify to do Adding total price of Notice Creditor for Payment.");
-        noticeCreditorScreen.clickOnAddTotalPriceOfInvoice();
-        //Allure.addAttachment("Screenshot for result after add total price to payment", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-        Allure.step("verify to get Total Price After Adding Payment Method.");
-        String actual = noticeCreditorScreen.getPriceAfterAddTotalPrice();
-        String price = "0.00";
-        Allure.step("verify total price become zero after add all total price.");
-        Assert.assertEquals(actual, price);
-        Allure.step("verify to Confirm Notice Creditor.");
-        noticeCreditorScreen.clickOnConfirmationPaymentButton();
-        Thread.sleep(4000);
-        Allure.addAttachment("Screenshot for Receipt.", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-        Thread.sleep(2000);
-        noticeCreditorScreen.navigateBack();*/
-        //noticeCreditorScreen.NavigateToCashierProduct();
         Allure.step("verify to Navigate to End Shift to check the price of notice creditor was added successfully to his box.");
         noticeCreditorScreen.NavigateToEndShift();
 
@@ -150,15 +94,43 @@ public class GoooBig_NoticeCreditor extends TestBase {
 
     @Test(priority = 2)
     @Description("This test attempts to verify Notice Creditor Functionality.")
-    @Severity(CRITICAL)
+    @Severity(SeverityLevel.CRITICAL)
     @Owner("Ahmed Ali")
-    public void VerifyNoticeCreditorFunctionality() {
+    public void VerifyNoticeCreditorFunctionality() throws IOException, TesseractException, InterruptedException {
         noticeCreditorScreen = new NoticeCreditorScreen();
         Allure.step("Navigate to Invoices Screen.");
         noticeCreditorScreen.NavigateToInvoices();
         Allure.step("Select any invoice and click on Notice Creditor icon for invoice.");
         noticeCreditorScreen.clickOnNoticeCreditorIcon();
+        Thread.sleep(2000);
         noticeCreditorScreen.hideKeyboard();
+        Assert.assertTrue(noticeCreditorScreen.isBasketButtonVisible());
+        // Capture the screenshot and save it to a file
+        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        // Read the screenshot image file
+        BufferedImage fullImg = ImageIO.read(screenshot);
+        // Define the crop area (these coordinates should be adjusted based on your image)
+        int cropX = 800;
+        int cropY = 2200;
+        int cropWidth = 168;
+        int cropHeight = 87;
+        // Crop the image
+        BufferedImage croppedImg = fullImg.getSubimage(cropX, cropY, cropWidth, cropHeight);
+
+        // Save the cropped image to a new file
+        File screenshotFile = new File("NumberOfProductsInInvoice.png");
+        ImageIO.write(croppedImg, "png", screenshotFile);
+
+        System.out.println("Cropped screenshot saved: " + screenshotFile.getAbsolutePath());
+        // Use Tesseract to extract text from the image
+        ITesseract tesseract = new Tesseract();
+        tesseract.setDatapath("C:\\Program Files\\Tesseract-OCR\\tessdata");
+        tesseract.setLanguage("eng"); // Set the language to Arabic
+        String extractedText;
+        extractedText = tesseract.doOCR(screenshotFile);
+        FilterNumberOfProductsInInvoice = extractedText.replaceAll("[^0-9.]", "");
+        System.out.println("Number Of Products In Invoice: " + FilterNumberOfProductsInInvoice);
+        Assert.assertEquals(FilterNumberOfProductsInInvoice, "3", "Error in Notice Creditor invoice");
         noticeCreditorScreen.goToCart();
     }
 

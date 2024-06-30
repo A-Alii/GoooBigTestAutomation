@@ -1,0 +1,11 @@
+{
+  "uuid": "55febc82-13e7-4449-9649-1b91058531e0",
+  "name": "GoooBigTestCases.GoooBig_branchesAndWarehouses",
+  "children": [
+    "07f398aa-b2dd-46ce-bcd5-6d8367524e1e"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1719066174563,
+  "stop": 1719066249598
+}

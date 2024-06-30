@@ -5,7 +5,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class BoxOperation extends TestBase {
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
+    @AndroidFindBy(xpath = "//android.view.View[@index='1']")
     MobileElement hamburgerMenu;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='عمليات الصندوق']")
     MobileElement boxOperation;
@@ -25,7 +25,7 @@ public class BoxOperation extends TestBase {
     MobileElement amountTransaction;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
     MobileElement employeeName;
-    @AndroidFindBy(xpath = "//android.view.View[@index='1']")
+    @AndroidFindBy(xpath = "//android.view.View[@index='2']")
     MobileElement employeesChoice;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
     MobileElement applyTransaction;
@@ -63,6 +63,8 @@ public class BoxOperation extends TestBase {
         boxOperation.click();
     }
 
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الإعدادات']")
+    MobileElement settings;
     public void goToInvoices() {
         hamburgerMenu.click();
         Invoices.click();
@@ -92,27 +94,19 @@ public class BoxOperation extends TestBase {
         employeesChoice.click();
     }
 
-    public void sendKeysToBoxOperation1() {
-        clickOnDeposit();
-        applyTransaction.click();
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إعدادات الطباعة']")
+    MobileElement printingSettings;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='الكاشير']")
+    MobileElement Cashier;
+
+    public void setSubmitButton() {
+        submitButton.click();
     }
 
-    public void sendKeysToBoxOperation2(String amount) {
-        clickOnWithdraw();
-        amountTransaction.click();
-        amountTransaction.sendKeys(amount);
-        clickOnEmployee();
-        applyTransaction.click();
+    public void selectDepositTransactionType() {
+        clickOnDeposit();
     }
 
-    public void sendKeysToBoxOperation3(String amount) {
-        clickOnDeposit();
-        amountTransaction.click();
-        amountTransaction.clear();
-        amountTransaction.sendKeys(amount);
-        clickOnEmployee();
-        applyTransaction.click();
-    }
 
     public String getAmountTotalBox() {
         return TotalBox.getText();
@@ -192,4 +186,29 @@ public class BoxOperation extends TestBase {
     public void clickOnSubmitButtonInvoice() {
         submitButton.click();
     }
+
+    public void selectWithdrawTransactionType() {
+        clickOnWithdraw();
+    }
+
+    public void clickApplyTransaction() {
+        applyTransaction.click();
+    }
+
+    public void sendKeysToBoxOperation2(String amount) {
+        amountTransaction.click();
+        amountTransaction.sendKeys(amount);
+    }
+
+    public void CheckPrinting() {
+        hamburgerMenu.click();
+        settings.click();
+        printingSettings.click();
+    }
+
+    public void navigateToCashier() {
+        Cashier.click();
+    }
+
+
 }

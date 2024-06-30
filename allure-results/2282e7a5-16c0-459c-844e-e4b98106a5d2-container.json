@@ -1,0 +1,13 @@
+{
+  "uuid": "2282e7a5-16c0-459c-844e-e4b98106a5d2",
+  "name": "F:/GoooBigMobileApp",
+  "children": [
+    "22ac1c89-cb02-4447-8b71-269aed8fa9e0",
+    "f3b40dfb-19b9-49b8-879c-7f68f6e8ab57",
+    "28a5d1f0-8789-458a-be6c-eba141467433"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1719055433520,
+  "stop": 1719055476567
+}

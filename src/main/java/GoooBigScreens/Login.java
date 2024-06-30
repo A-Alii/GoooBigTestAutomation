@@ -4,6 +4,8 @@ import GoooBigBase.TestBase;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
+import java.util.List;
+
 public class Login extends TestBase {
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='0']")
     MobileElement UserName;
@@ -35,15 +37,9 @@ public class Login extends TestBase {
     public boolean isErrorUserNameDisplayed3() {
         return ErrorDisplay3.isDisplayed();
     }
-    public void fillLoginScreen(String Name, String Pass) {
-        UserName.click();
-        UserName.sendKeys(Name);
-        driver.hideKeyboard();
-        Password.click();
-        Password.sendKeys(Pass);
-        driver.hideKeyboard();
-        LoginButton.click();
-    }
+
+    @AndroidFindBy(xpath = "//android.view.View[@index='2']")
+    List<MobileElement> checkRemember;
 
     public void clearFields() {
         // Clear data from each field
@@ -53,7 +49,14 @@ public class Login extends TestBase {
         Password.clear();
     }
 
-    public void clickLoginButton() {
+    public void fillLoginScreen(String Name, String Pass) {
+        UserName.click();
+        UserName.sendKeys(Name);
+        driver.hideKeyboard();
+        Password.click();
+        Password.sendKeys(Pass);
+        driver.hideKeyboard();
+        checkRemember.get(0).click();
         LoginButton.click();
     }
 }

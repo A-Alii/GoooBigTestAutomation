@@ -5,11 +5,13 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class UploadInvoiceForClient extends TestBase {
@@ -36,7 +38,7 @@ public class UploadInvoiceForClient extends TestBase {
     MobileElement AppleDepartment;
     @AndroidFindBy(xpath = "//android.view.View[@index='3']")
     MobileElement ApplyDepartment;
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
+    @AndroidFindBy(xpath = "//android.view.View[@index='1']")
     MobileElement hamburgerMenu;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='رفع البيانات']")
     MobileElement uploadInvoiceOption;
@@ -54,7 +56,7 @@ public class UploadInvoiceForClient extends TestBase {
     MobileElement successUpload;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الإعدادات']")
     MobileElement settings;
-    @AndroidFindBy(xpath = "//android.view.View[@index='14']")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
     MobileElement submitCheck;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إعدادات الطباعة']")
     MobileElement printingSettings;
@@ -68,14 +70,15 @@ public class UploadInvoiceForClient extends TestBase {
     MobileElement deleteAllProducts;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='إفراغ السلة']")
     MobileElement confirmDeleteAllProducts;
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='11']")
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='فاتورة ضريبية']")
     MobileElement NonTaxORTax;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc= 'فاتورة ضريبية']")
     MobileElement NonTax;
-    @AndroidFindBy(xpath = "//android.view.View[@index='6']")
-    MobileElement check1;
-    @AndroidFindBy(xpath = "//android.view.View[@index='8']")
+    @AndroidFindBy(xpath = "//android.view.View[@index='0']")
+    List<MobileElement> check1;
+    @AndroidFindBy(xpath = "//android.view.View[@index='1']")
     MobileElement check2;
+
     @AndroidFindBy(xpath = "//android.widget.Button[@index='0']")
     MobileElement product1;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc = 'التالي']")
@@ -221,7 +224,15 @@ public class UploadInvoiceForClient extends TestBase {
         hamburgerMenu.click();
         settings.click();
         printingSettings.click();
-        check1.click();
+    }
+
+    public void checkbox1() {
+        MobileElement element = check1.get(1);
+        List<MobileElement> innerElements = element.findElements(By.xpath("//android.view.View[@index='0']"));
+        innerElements.get(0).click();
+    }
+
+    public void checkbox2() {
         check2.click();
         NonTaxORTax.click();
         NonTax.click();

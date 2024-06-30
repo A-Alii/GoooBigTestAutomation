@@ -1,9 +1,11 @@
 package GoooBigScreens;
 
 import GoooBigBase.TestBase;
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
@@ -14,19 +16,12 @@ public class Invoices extends TestBase {
     MobileElement settings;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إعدادات الطباعة']")
     MobileElement printingSettings;
-
-
-    @AndroidFindBy(xpath = "//android.view.View[@index='0']")
-    List<MobileElement> check1;
-
-    @AndroidFindBy(xpath = "//android.view.View[@index='0']")
-    List<MobileElement> getCheck1;
-
-
-    @AndroidFindBy(xpath = "//android.view.View[@index='1']")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='السماح بإعادة الطباعة']")
     MobileElement check2;
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='فاتورة ضريبية']")
     MobileElement NonTaxORTax;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='3']")
+    MobileElement SettingsTablet;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc= 'فاتورة ضريبية']")
     MobileElement NonTax;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
@@ -71,25 +66,10 @@ public class Invoices extends TestBase {
     MobileElement detailsOfInvoice;
     @AndroidFindBy(xpath = "//android.view.View[@index='8']")
     MobileElement TotalInvoicePrice;
-
-    public void smallNonTaxInvoice() {
-        hamburgerMenu.click();
-        settings.click();
-        printingSettings.click();
-    }
-
-    public void checkbox1() {
-        MobileElement element = check1.get(1);
-        List<MobileElement> innerElements = element.findElements(By.xpath("//android.view.View[@index='0']"));
-        innerElements.get(0).click();
-    }
-
-    public void checkbox2() {
-        check2.click();
-        NonTaxORTax.click();
-        NonTax.click();
-        submitCheck.click();
-    }
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, '  الطباعة')]")
+    MobileElement PrintingTablet;
+    @AndroidFindBy(xpath = "//android.view.View[@index='4']")
+    List<MobileElement> check2Tablet;
 
     public void SmallTaxInvoice() {
         hamburgerMenu.click();
@@ -212,4 +192,172 @@ public class Invoices extends TestBase {
     public void clickOnAllProducts() {
         AllProducts.click();
     }
+
+
+    // Tablet Testing
+    @AndroidFindBy(xpath = "//android.view.View[@index='2']")
+    List<MobileElement> check1Tablet;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='فاتورة ضريبية']")
+    MobileElement TaxInvoiceSelectorTablet;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='فاتورة ضريبية']")
+    MobileElement selectTaxInvoiceTablet;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
+    MobileElement submitTablet;
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='7']")
+    MobileElement searchbarTablet;
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'10000\n" +
+            "باقة رمضان ')]")
+    MobileElement addToCartFirstTablet;
+    @AndroidFindBy(xpath = "//android.view.View[@index = '1']")
+    List<MobileElement> EditProductTablet;
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='5']")
+    MobileElement discountFieldTablet;
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='3']")
+    MobileElement discountFieldTablet2;
+    @AndroidFindBy(xpath = "//android.view.View[@index='15' or contains(@content-desc,'اسم الصنف\n" +
+            "العدد\n" +
+            "السعر\n" +
+            "الإجمالى\n" +
+            "العدد\n" +
+            "1\n" +
+            "الكمية\n" +
+            "1\n" +
+            "الضريبة\n" +
+            "1239.13\n" +
+            "الخصم\n" +
+            "500.00\n" +
+            "الإجمالى\n" +
+            "9500.00')]")
+    MobileElement detailsOfInvoiceTablet;
+    @AndroidFindBy(xpath = "//android.view.View[@index = '6']")
+    List<MobileElement> CashButtonTablet;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الفواتير']")
+    MobileElement InvoicesTablet;
+    @AndroidFindBy(xpath = "//android.view.View[@index='8']")
+    MobileElement TotalInvoicePriceTablet;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إدارة الدوام']")
+    MobileElement manageShift;
+    @AndroidFindBy(xpath = "//android.view.View[@index='14']")
+    MobileElement TotalPayment;
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, 'كاش Cash')]")
+    MobileElement cashPayment;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='الطباعة المباشرة']")
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, 'الطباعة المباشرة')]")
+    private MobileElement directPrintingCheckbox;
+
+    public void smallNonTaxInvoice() throws InterruptedException {
+        hamburgerMenu.click();
+        settings.click();
+        printingSettings.click();
+        Thread.sleep(3000);
+        checkbox1();
+        check2.click();
+        NonTaxORTax.click();
+        NonTax.click();
+        submitCheck.click();
+    }
+
+    public void checkbox1() {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 10);
+            wait.until(ExpectedConditions.elementToBeClickable(directPrintingCheckbox));
+            directPrintingCheckbox.click();
+            System.out.println("Successfully clicked on 'الطباعة المباشرة' checkbox");
+        } catch (Exception e) {
+            System.err.println("Failed to click on 'الطباعة المباشرة' checkbox: " + e.getMessage());
+            throw e;
+        }
+    }
+
+    public void NavigateToSettingsTablet() {
+        SettingsTablet.click();
+        PrintingTablet.click();
+    }
+
+    public void checkPrintingSettingsTablet() {
+        check1Tablet.get(2).click();
+    }
+
+    public void smallNonTaxInvoiceTablet() {
+        TaxInvoiceSelectorTablet.click();
+        selectTaxInvoiceTablet.click();
+    }
+
+    public void clickOnSubmitButtonTablet() {
+        submitTablet.click();
+    }
+
+    public void sendKeysToSearchProductTablet(String ProductName) {
+        searchbarTablet.click();
+        searchbarTablet.sendKeys(ProductName);
+    }
+
+    public void clickOnProductFirstTablet() {
+        addToCartFirstTablet.click();
+    }
+
+    public void clearFieldsTablet() {
+        searchbarTablet.click();
+        searchbarTablet.clear();
+        driver.hideKeyboard();
+    }
+
+    public void clickOnEditProductTablet() {
+        EditProductTablet.get(1).click();
+    }
+
+    public void sendKeysToDiscountTablet(String discount) {
+        discountFieldTablet.click();
+        discountFieldTablet.clear();
+        discountFieldTablet2.click();
+        discountFieldTablet2.sendKeys(discount);
+    }
+
+    public String getDiscountAmountTablet() {
+        return discountFieldTablet.getText();
+    }
+
+    public String getDetailsOfInvoiceTablet() {
+        return detailsOfInvoiceTablet.getAttribute("content-desc");
+    }
+
+    public void clickOnCashButtonTablet() {
+        CashButtonTablet.get(1).click();
+    }
+
+    public void goToInvoicesTablet() {
+        InvoicesTablet.click();
+    }
+
+    public String getTotalInvoicePriceTablet() {
+        return TotalInvoicePriceTablet.getAttribute("content-desc");
+    }
+
+    public void clickOnManageShift() {
+        manageShift.click();
+    }
+
+    public String getTotalPayment() {
+        return TotalPayment.getAttribute("content-desc");
+    }
+
+    public String scroll() {
+        MobileElement element;
+        // Replace "android.view.View" with your actual class name and "10" with the desired index
+        element = driver.findElement(MobileBy.AndroidUIAutomator(
+                "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView("
+                        + "new UiSelector().className(\"android.view.View\").index(15))"));
+        // Get the content-desc attribute of the element
+        String contentDesc = element.getAttribute("content-desc");
+
+        return contentDesc;
+    }
+
+    public String getCahPayment() {
+        return cashPayment.getAttribute("content-desc");
+    }
+
+
+
+
 }

@@ -76,8 +76,16 @@ public class TestBase {
         driver.hideKeyboard();
     }
 
+    public void closeApp() {
+        driver.closeApp();
+    }
+
+    public void launchApp() {
+        driver.launchApp();
+    }
     public void navigateBack() {
         driver.navigate().back();
     }
+
 
 }

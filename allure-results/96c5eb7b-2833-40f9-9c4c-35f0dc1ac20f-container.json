@@ -1,0 +1,12 @@
+{
+  "uuid": "96c5eb7b-2833-40f9-9c4c-35f0dc1ac20f",
+  "name": "GoooBigTestCases.GoooBig_BoxOperation",
+  "children": [
+    "2b5b7afa-04f9-4f9d-a564-cb5c41e848a7",
+    "4f02f76f-84f3-4bde-ad7d-101e769cc0b7"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1719489254985,
+  "stop": 1719489345066
+}

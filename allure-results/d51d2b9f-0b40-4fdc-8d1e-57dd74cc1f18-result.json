@@ -1,0 +1,100 @@
+{
+  "uuid": "d51d2b9f-0b40-4fdc-8d1e-57dd74cc1f18",
+  "historyId": "3966db092c71d11f9070b9ea7cdc7c51",
+  "fullName": "GoooBigTestCases.GoooBig_Home.IsLogoExistInHomeScreen",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "testMethod",
+      "value": "IsLogoExistInHomeScreen"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "9304@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "IsLogoExistInHomeScreen",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to verify the logo is displayed.",
+  "steps": [
+    {
+      "name": "Check Logo in home screen is displayed.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1718979494279,
+      "stop": 1718979494279
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "60ab98f9-7518-4e70-8b70-3a0d1e933e16-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1718979494274,
+  "stop": 1718979495235
+}

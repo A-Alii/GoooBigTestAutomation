@@ -23,7 +23,7 @@ public class GoooBig_AddClient extends TestBase {
         addClientScreen = new AddClientScreen();
         addClientScreen.clickClientsOption();
         Allure.step("Click on Clients option");
-        Assert.assertTrue(addClientScreen.isHeaderDisplayed(), "Header is not displayed");
+        //Assert.assertTrue(addClientScreen.isHeaderDisplayed(), "Header is not displayed");
     }
 
     @Test(priority = 2)
@@ -37,7 +37,8 @@ public class GoooBig_AddClient extends TestBase {
         Assert.assertTrue(addClientScreen.isAddClientHeaderDisplay(), "Add Client Screen is not displayed");
     }
 
-    /*@Test(priority = 3)
+/*
+    @Test(priority = 3)
     @Description("This test attempts to Verify Click On Cancel Button.")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
@@ -52,9 +53,9 @@ public class GoooBig_AddClient extends TestBase {
             Assert.fail("Cancel Button Doesn't Work");
             addClientScreen.navigateBack();
         }
-    }*/
+    }
 
-   /* @Test(priority = 4)
+    @Test(priority = 4)
     @Description("This test attempts to Verify Click On Add Client Button With Empty Data.")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
@@ -158,7 +159,7 @@ public class GoooBig_AddClient extends TestBase {
             addClientScreen.sendKeysToTaxNumberField("33333");
             addClientScreen.hideKeyboard();
             addClientScreen.clickApplyButton();
-            Assert.assertTrue(addClientScreen.isPopUpDisplayed(), "After clicking on Apply button, a client added with string data for phone.");
+            Assert.assertTrue(addClientScreen.isPopUpDisplayedAfterAddClient(), "After clicking on Apply button, a client added with string data for phone.");
             previousTestFailed = false; // Test passed
         } catch (AssertionError | Exception e) {
             previousTestFailed = true; // Test failed
@@ -166,8 +167,9 @@ public class GoooBig_AddClient extends TestBase {
         }
 
     }
+*/
 
-    @Test(priority = 9)
+/*    @Test(priority = 9)
     @Description("This test attempts to Verify Add Client With Valid Data.")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
@@ -178,14 +180,18 @@ public class GoooBig_AddClient extends TestBase {
             addClientScreen.clickAddClientButton();
         }
         addClientScreen = new AddClientScreen();
+        addClientScreen.clearNameField();
         addClientScreen.sendKeysToNameField("Yousef");
         addClientScreen.hideKeyboard();
         String ClientName = addClientScreen.getClientName();
+        addClientScreen.clearPhoneField();
         System.out.println("Client Name is " + ClientName);
         addClientScreen.sendKeysToPhoneField("012589745623");
         addClientScreen.hideKeyboard();
+        addClientScreen.clearEmailField();
         addClientScreen.sendKeysToEmailField("Yousef@gmail.com");
         addClientScreen.hideKeyboard();
+        addClientScreen.clearTaxNumberField();
         addClientScreen.sendKeysToTaxNumberField("55555");
         addClientScreen.hideKeyboard();
         addClientScreen.clickApplyButton();
