@@ -1,0 +1,194 @@
+{
+  "uuid": "6572c581-c702-4d55-b316-17ee778f6160",
+  "historyId": "a3262e3c2c1ebd2a99e5a896331ff6ec",
+  "fullName": "GoooBigTestCases.GoooBig_NoticeCreditor.VerifyToCreateANoticeCreditorInvoice",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_NoticeCreditor"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_NoticeCreditor"
+    },
+    {
+      "name": "testMethod",
+      "value": "VerifyToCreateANoticeCreditorInvoice"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_NoticeCreditor"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "13856@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "VerifyToCreateANoticeCreditorInvoice",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to Navigate to Make Notice Creditor invoice.",
+  "steps": [
+    {
+      "name": "click on Next Button.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719807913069,
+      "stop": 1719807913069
+    },
+    {
+      "name": "verify to do Notice Creditor for Invoice.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719807915710,
+      "stop": 1719807915710
+    },
+    {
+      "name": "verify to select client for the notice creditor invoice.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719807915873,
+      "stop": 1719807915873
+    },
+    {
+      "name": "verify to do Adding total price of Notice Creditor for Payment.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719807922832,
+      "stop": 1719807922832
+    },
+    {
+      "name": "verify to get Total Price After Adding Payment Method.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719807923167,
+      "stop": 1719807923167
+    },
+    {
+      "name": "verify total price become zero after add all total price.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719807923927,
+      "stop": 1719807923928
+    },
+    {
+      "name": "verify to Confirm Notice Creditor.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719807923928,
+      "stop": 1719807923928
+    },
+    {
+      "name": "verify to Navigate to End Shift to check the price of notice creditor was added successfully to his box.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719807931294,
+      "stop": 1719807931294
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "90773e38-5893-4bb1-8f02-99721a36277f-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "47c9dbde-735b-497b-8462-db3dbb863bcc-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "f8ca743e-1977-48ea-b7c0-c3c2cada3b3a-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "3a63862a-5a47-413c-96ac-e49cfc328e78-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "449e4728-1b51-45a7-bb1b-36ab5b7a4d53-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Screenshot for Receipt.",
+      "source": "029d921e-855f-4879-aa14-dce9dba3e03f-attachment"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1719807913069,
+  "stop": 1719807935567
+}

@@ -1,0 +1,3 @@
+Invoice Details Are: 
+الخصم
+750.00

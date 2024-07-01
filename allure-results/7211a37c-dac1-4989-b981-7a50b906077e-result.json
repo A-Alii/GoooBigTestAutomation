@@ -1,0 +1,119 @@
+{
+  "uuid": "7211a37c-dac1-4989-b981-7a50b906077e",
+  "historyId": "69be4bd17c082efe478c53b95e0adc4e",
+  "fullName": "GoooBigTestCases.GoooBig_branchesAndWarehouses.verifySelectWarehouse",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_branchesAndWarehouses"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_branchesAndWarehouses"
+    },
+    {
+      "name": "testMethod",
+      "value": "verifySelectWarehouse"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_branchesAndWarehouses"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "7112@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "verifySelectWarehouse",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to verify Select Warehouse.",
+  "steps": [
+    {
+      "name": "verify to click on cashier option.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719807351689,
+      "stop": 1719807351689
+    },
+    {
+      "name": "verify to select valid warehouse from list.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719807352737,
+      "stop": 1719807352737
+    },
+    {
+      "name": "verify to click on Apply button.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719807356370,
+      "stop": 1719807356370
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Screenshot for result",
+      "source": "e1ab497d-827d-4549-b24b-624c34a64f25-attachment"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1719807351685,
+  "stop": 1719807357287
+}

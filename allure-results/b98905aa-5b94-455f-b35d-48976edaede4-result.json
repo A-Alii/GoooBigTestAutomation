@@ -1,0 +1,84 @@
+{
+  "uuid": "b98905aa-5b94-455f-b35d-48976edaede4",
+  "historyId": "e828525e1b6a59c7fbcf91bafa90acc1",
+  "fullName": "GoooBigTestCases.GoooBig_BoxOperation.testcase4",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_BoxOperation"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_BoxOperation"
+    },
+    {
+      "name": "testMethod",
+      "value": "testcase4"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_BoxOperation"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "13856@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "testcase4",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Formatted Invoice Data",
+      "source": "d2efa8c4-86e5-40ca-83c0-b5f0693f8bc9-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Screenshot for result",
+      "source": "0e2567f8-5905-430d-baec-44e069fa9365-attachment"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1719807763941,
+  "stop": 1719807788721
+}
