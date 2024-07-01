@@ -110,7 +110,7 @@ public class GoooBig_NoticeCreditor extends TestBase {
         // Read the screenshot image file
         BufferedImage fullImg = ImageIO.read(screenshot);
         // Define the crop area (these coordinates should be adjusted based on your image)
-        int cropX = 800;
+        int cropX = 820;
         int cropY = 2200;
         int cropWidth = 168;
         int cropHeight = 87;
@@ -175,6 +175,7 @@ public class GoooBig_NoticeCreditor extends TestBase {
         //Thread.sleep(3000);
         Allure.step("click on Next Button.");
         noticeCreditorScreen.clickOnNextBasket();
+        Thread.sleep(2000);
         System.out.println("بيانات الفاتورة الموجودة فى السلة");
         System.out.println("----------------------------------");
         String details = noticeCreditorScreen.getDetailsOfInvoice();

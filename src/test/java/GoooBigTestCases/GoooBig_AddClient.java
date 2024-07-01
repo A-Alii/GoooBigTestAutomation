@@ -37,7 +37,6 @@ public class GoooBig_AddClient extends TestBase {
         Assert.assertTrue(addClientScreen.isAddClientHeaderDisplay(), "Add Client Screen is not displayed");
     }
 
-/*
     @Test(priority = 3)
     @Description("This test attempts to Verify Click On Cancel Button.")
     @Severity(CRITICAL)
@@ -126,7 +125,7 @@ public class GoooBig_AddClient extends TestBase {
             addClientScreen.hideKeyboard();
             addClientScreen.clickApplyButton();
             // Verify popup is displayed
-            Assert.assertTrue(addClientScreen.isPopUpDisplayed(), "After clicking on Apply button, a client added with Spaces data.");
+            Assert.assertTrue(addClientScreen.isPopUpDisplayedAfterAddClient(), "After clicking on Apply button, a client added with Spaces data.");
             previousTestFailed = false; // Test passed
         } catch (AssertionError | Exception e) {
             previousTestFailed = true; // Test failed
@@ -167,9 +166,8 @@ public class GoooBig_AddClient extends TestBase {
         }
 
     }
-*/
 
-/*    @Test(priority = 9)
+    @Test(priority = 9)
     @Description("This test attempts to Verify Add Client With Valid Data.")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
@@ -199,7 +197,7 @@ public class GoooBig_AddClient extends TestBase {
         System.out.println("Client Name was added in Table is: " + addClientScreen.getClientNameFromTable());
         Assert.assertEquals(ClientName, addClientScreen.getClientNameFromTable(), "after click on Apply button client doesn't added successfully and not matched.");
         addClientScreen.clickAddClientButton();
-    }*/
+    }
 
     @Test(priority = 10)
     @Description("This test attempts to Verify Add Client With Valid Same Previous Data.")

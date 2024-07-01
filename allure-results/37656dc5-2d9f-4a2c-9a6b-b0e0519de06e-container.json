@@ -1,0 +1,13 @@
+{
+  "uuid": "37656dc5-2d9f-4a2c-9a6b-b0e0519de06e",
+  "name": "GoooBigTestCasesForTablet.GoooBig_ShiftStart",
+  "children": [
+    "308da645-de73-44ef-8916-e754c72701dd",
+    "880f11fd-b03a-4709-8d96-26911b6ea897",
+    "8e2b9dba-d97b-4e99-a018-105f63c6d36f"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1719731442410,
+  "stop": 1719731517239
+}

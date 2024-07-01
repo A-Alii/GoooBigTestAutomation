@@ -81,6 +81,7 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
         Thread.sleep(1000);
         cashierScreen.clickOnSelectClientForInvoice();
         Thread.sleep(2000);
+        cashierScreen.sendKeysToSearchClient("Yousef");
         cashierScreen.selectClientName();
         Thread.sleep(1000);
         cashierScreen.clickOnPayment();
@@ -103,7 +104,9 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
         System.out.println("Integer Number is: " + amountPostPaid);
 
         cashierScreen.navigateBack();
+        cashierScreen.hideKeyboard();
         cashierScreen.clickOnClientPanel();
+        cashierScreen.hideKeyboard();
         cashierScreen.clickOnClientFirst();
         cashierScreen.clickOnSelection();
         cashierScreen.navigateBack();
@@ -146,6 +149,7 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
 
         cashierScreen.clickOnClientsOption();
         Thread.sleep(2000);
+        cashierScreen.sendKeysToSearchClient1("Yousef");
         cashierScreen.selectClientName();
         cashierScreen.clickOnPayment();
         Thread.sleep(3000);
@@ -172,6 +176,7 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
         Assert.assertEquals(totalPostPaid, finalAmount);
         System.out.println("total amount of postpaid of client is equal");
         cashierScreen.navigateBack();
+        cashierScreen.hideKeyboard();
         cashierScreen.navigateBack();
     }
 

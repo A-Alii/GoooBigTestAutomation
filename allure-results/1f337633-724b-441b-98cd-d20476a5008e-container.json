@@ -1,0 +1,24 @@
+{
+  "uuid": "1f337633-724b-441b-98cd-d20476a5008e",
+  "name": "GoooBigTestCases.GoooBig_NoticeCreditor.checkForPreviousFailures",
+  "children": [
+    "ea0a38b6-cc6e-49af-bc31-7088efb555a1"
+  ],
+  "description": "",
+  "befores": [
+    {
+      "name": "checkForPreviousFailures",
+      "status": "passed",
+      "stage": "finished",
+      "description": "",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1719804049772,
+      "stop": 1719804049772
+    }
+  ],
+  "afters": [],
+  "start": 1719804049772,
+  "stop": 1719804049772
+}

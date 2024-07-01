@@ -1,0 +1,12 @@
+{
+  "uuid": "80a3ef5e-6267-4b7b-8c19-4250889fdb78",
+  "name": "GoooBigTestCasesForTablet.GoooBig_Preparation",
+  "children": [
+    "612b4623-6b5c-45a9-b65a-0b18c11c19a6",
+    "fcc0e28d-08ff-4540-9036-640ef7d01a3a"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1719737357420,
+  "stop": 1719737445872
+}

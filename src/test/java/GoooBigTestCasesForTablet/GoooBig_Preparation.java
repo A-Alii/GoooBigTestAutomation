@@ -19,7 +19,7 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 public class GoooBig_Preparation extends TestBase {
     OrganizationPreparation organizationPreparation;
 
-    /*    @Test(priority = 1)
+    @Test(priority = 1)
         @Description("This test attempts to prepare organization using an Empty Data UserId and a password and OrganizeId.")
         @Severity(CRITICAL)
         @Owner("Ahmed Ali")
@@ -82,7 +82,7 @@ public class GoooBig_Preparation extends TestBase {
             Assert.assertTrue(organizationPreparation.isErrorUserNameDisplayed4(), "Login element is not displayed.");
             System.out.println("PopUp Error Message is displayed to tell user data you entered are invalid.");
             Allure.addAttachment("Test Output", "text/plain", "Text in the field is: " + "PopUp Error Message is displayed to tell user data you entered are invalid");
-        }*/
+        }
     @Test(priority = 5)
     @Description("This test attempts to prepare organization using valid Data UserId, password and OrganizeId.")
     @Severity(CRITICAL)

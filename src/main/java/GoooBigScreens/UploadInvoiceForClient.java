@@ -91,7 +91,7 @@ public class UploadInvoiceForClient extends TestBase {
     MobileElement Confirmation;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc=\"إختيار عميل\"]")
     MobileElement selectClient;
-    @AndroidFindBy(xpath = "//android.view.View[@index= '6' or contains(@content-desc,'abcdefghijklmnopqrstuvwxYyz')]")
+    @AndroidFindBy(xpath = "//android.view.View[@index= '5' or contains(@content-desc,'abcdefghijklmnopqrstuvwxYyz')]")
     MobileElement clickOnClient1;
     @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, 'العملاء') and @index='0']")
     MobileElement clickOnClientP;
@@ -271,5 +271,21 @@ public class UploadInvoiceForClient extends TestBase {
         NoticeCreditorButton.click();
     }
 
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='3']")
+    MobileElement searchClient;
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='2']")
+    MobileElement searchClient1;
+
+    public void sendKeysToSearchClient(String name) {
+        searchClient.click();
+        searchClient.sendKeys(name);
+        driver.hideKeyboard();
+    }
+
+    public void sendKeysToSearchClient1(String name) {
+        searchClient1.click();
+        searchClient1.sendKeys(name);
+        driver.hideKeyboard();
+    }
 
 }
