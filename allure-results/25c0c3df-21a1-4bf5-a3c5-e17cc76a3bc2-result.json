@@ -1,0 +1,120 @@
+{
+  "uuid": "25c0c3df-21a1-4bf5-a3c5-e17cc76a3bc2",
+  "historyId": "6dd518ff2dc7d3aefb7c480f4494b5c3",
+  "fullName": "GoooBigTestCases.GoooBig_Login.LoginToOrganizationUsingUserIdAndAnEmptyData",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Login"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Login"
+    },
+    {
+      "name": "testMethod",
+      "value": "LoginToOrganizationUsingUserIdAndAnEmptyData"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Login"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "16076@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "LoginToOrganizationUsingUserIdAndAnEmptyData",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to Login to organization using UserId and an Empty Data for password.",
+  "steps": [
+    {
+      "name": "Enter With Empty Data For Password and invalid data for userId",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720048224444,
+      "stop": 1720048224444
+    },
+    {
+      "name": "Assert Error Validation Display",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720048232355,
+      "stop": 1720048232355
+    },
+    {
+      "name": "Clear Fields",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720048232989,
+      "stop": 1720048232989
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "b10d11df-2f6c-40a5-9da1-69400f9866f7-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1720048224442,
+  "stop": 1720048235859
+}

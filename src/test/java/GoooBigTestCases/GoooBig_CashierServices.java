@@ -29,7 +29,6 @@ public class GoooBig_CashierServices extends TestBase {
     @Test(priority = 1)
     public void testcase1() {
         cashierServices = new CashierServices();
-        //cashierServices.clickOnCashier();
         cashierServices.clickOnHamburgerMenu();
         cashierServices.clickOnSettings();
         cashierServices.clickOnPrintingSettings();

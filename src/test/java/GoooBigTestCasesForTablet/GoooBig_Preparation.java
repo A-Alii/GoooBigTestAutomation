@@ -95,6 +95,7 @@ public class GoooBig_Preparation extends TestBase {
         //Thread.sleep(2000);
         //Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Allure.step("Assertion Validation correct.");
+
         Assert.assertTrue(organizationPreparation.isProductsNumberDisplay(), "Products Number element is not displayed.");
         System.out.println("Preparation Successfully Done.....");
         Allure.addAttachment("Test Output", "text/plain", "Text in the field is: " + "Preparation Successfully Done.");

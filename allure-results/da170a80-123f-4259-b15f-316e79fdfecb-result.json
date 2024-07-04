@@ -1,0 +1,110 @@
+{
+  "uuid": "da170a80-123f-4259-b15f-316e79fdfecb",
+  "historyId": "65fcace0755f14a1b1fb8e977837aa39",
+  "fullName": "GoooBigTestCases.GoooBig_Login.loginToOrganizationUsingAnEmptyData",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Login"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Login"
+    },
+    {
+      "name": "testMethod",
+      "value": "loginToOrganizationUsingAnEmptyData"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Login"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "16076@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "loginToOrganizationUsingAnEmptyData",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to login to organization using an Empty Data UserId and a password.",
+  "steps": [
+    {
+      "name": "Enter With Empty Data",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720048214743,
+      "stop": 1720048214743
+    },
+    {
+      "name": "Assert Error Validation Display",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720048223730,
+      "stop": 1720048223730
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "1d87f577-a4af-4afe-8d97-8a541dbd7261-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1720048214697,
+  "stop": 1720048224419
+}

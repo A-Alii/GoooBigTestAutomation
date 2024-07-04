@@ -1,1 +1,0 @@
-Assertion Result: TotalPrice is equal to the total price number in invoices screen.

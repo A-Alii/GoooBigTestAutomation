@@ -42,7 +42,6 @@ public class GoooBig_Invoices extends TestBase {
         invoices = new Invoices();
         Allure.step("verify to select Invoice Type.");
         invoices.clickOnCashier();
-        //invoices.clickOnAllProducts();
         invoices.smallNonTaxInvoice();
         invoices.navigateBack();
         invoices.navigateBack();
@@ -214,7 +213,6 @@ public class GoooBig_Invoices extends TestBase {
         invoices.hideKeyboard();
         System.out.println("Invoice Small Tax Added Successfully");
     }
-/*
     @Test(priority = 2)
     @Description("This test attempts to Small Non Tax Invoice With Discount over Invoice level")
     @Severity(CRITICAL)
@@ -279,7 +277,7 @@ public class GoooBig_Invoices extends TestBase {
         System.out.println("----------------------------------");
         Allure.step("verify to do payment and print the invoice.");
         invoices.clickOnCashButton();
-        Thread.sleep(4000);
+        Thread.sleep(6000);
         // Capture the screenshot and save it to a file
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File screenshotFile = new File("invoice_screenshot.png");
@@ -376,7 +374,6 @@ public class GoooBig_Invoices extends TestBase {
         invoices.hideKeyboard();
         System.out.println("Invoice Small Non Tax Added Successfully");
     }
-
     @Test(priority = 3)
     @Description("This test attempts to A4 Tax Invoice with discount over Product level")
     @Severity(CRITICAL)
@@ -439,7 +436,7 @@ public class GoooBig_Invoices extends TestBase {
         }
         System.out.println("-------------------------");
         invoices.clickOnCashButton();
-        Thread.sleep(4000);
+        Thread.sleep(6000);
         // Capture the screenshot and save it to a file
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File screenshotFile = new File("invoice_screenshot-A4.png");
@@ -644,7 +641,7 @@ public class GoooBig_Invoices extends TestBase {
         }
         System.out.println("-------------------------");
         invoices.clickOnCashButton();
-        Thread.sleep(4000);
+        Thread.sleep(6000);
         // Capture the screenshot and save it to a file
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File screenshotFile = new File("invoice_screenshot-A4.png");
@@ -856,7 +853,7 @@ public class GoooBig_Invoices extends TestBase {
         System.out.println("----------------------------------");
         Allure.step("verify to do payment and print the invoice.");
         invoices.clickOnCashButton();
-        Thread.sleep(4000);
+        Thread.sleep(6000);
         // Capture the screenshot and save it to a file
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File screenshotFile = new File("invoice_screenshot.png");
@@ -1018,7 +1015,7 @@ public class GoooBig_Invoices extends TestBase {
         System.out.println("----------------------------------");
         Allure.step("verify to do payment and print the invoice.");
         invoices.clickOnCashButton();
-        Thread.sleep(4000);
+        Thread.sleep(6000);
         // Capture the screenshot and save it to a file
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File screenshotFile = new File("invoice_screenshot.png");
@@ -1185,7 +1182,7 @@ public class GoooBig_Invoices extends TestBase {
         }
         System.out.println("-------------------------");
         invoices.clickOnCashButton();
-        Thread.sleep(4000);
+        Thread.sleep(6000);
         // Capture the screenshot and save it to a file
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File screenshotFile = new File("invoice_screenshot-A4.png");
@@ -1392,7 +1389,7 @@ public class GoooBig_Invoices extends TestBase {
         }
         System.out.println("-------------------------");
         invoices.clickOnCashButton();
-        Thread.sleep(4000);
+        Thread.sleep(6000);
         // Capture the screenshot and save it to a file
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File screenshotFile = new File("invoice_screenshot-A4.png");
@@ -1534,6 +1531,5 @@ public class GoooBig_Invoices extends TestBase {
         invoices.hideKeyboard();
         System.out.println("Invoice Small Non Tax Added Successfully");
     }
- */
 }
 

@@ -28,7 +28,7 @@ public class OtherPaymentMethods extends TestBase {
     MobileElement NonTax;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
     MobileElement submitCheck;
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='13']")
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='3' and @content-desc='فاتورة صغيرة مبسطة']")
     MobileElement chooseInvoice;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc= 'فاتورة غير ضريبية']")
     MobileElement Tax;

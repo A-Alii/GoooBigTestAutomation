@@ -1,10 +1,15 @@
 package GoooBigScreens;
 
 import GoooBigBase.TestBase;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class OrganizationPreparation extends TestBase {
+    WebDriverWait wait = new WebDriverWait(driver, 10);
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='0']")
     MobileElement UserName;
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='1']")
@@ -57,7 +62,12 @@ public class OrganizationPreparation extends TestBase {
     }
 
     public boolean isProductsNumberDisplay() {
-        return ProductsNumberShow.isDisplayed();
+        try {
+            wait.until(ExpectedConditions.visibilityOf(ProductsNumberShow));
+            return ProductsNumberShow.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     public void clearFields() {

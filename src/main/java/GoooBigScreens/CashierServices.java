@@ -96,6 +96,7 @@ public class CashierServices extends TestBase {
     }
 
     public void smallNonTaxInvoice() {
+        Tax.click();
         NonTaxORTax.click();
         NonTax.click();
         submitCheck.click();

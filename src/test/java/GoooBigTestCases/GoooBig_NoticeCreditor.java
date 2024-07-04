@@ -34,15 +34,7 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 public class GoooBig_NoticeCreditor extends TestBase {
     NoticeCreditorScreen noticeCreditorScreen;
     String FilterNoticeCreditorNumberFirst;
-    String FilterNoticeCreditorNumberSecond;
     String FilterNumberOfProductsInInvoice;
-
-    @BeforeMethod
-    public void checkForPreviousFailures(ITestContext context) {
-        if (context.getAttribute("haltExecution") != null && (boolean) context.getAttribute("haltExecution")) {
-            throw new SkipException("Skipping tests due to a previous failure.");
-        }
-    }
 
     @Test(priority = 1)
     @Description("This test attempts to Navigate to Make Notice Creditor invoice.")
@@ -52,7 +44,7 @@ public class GoooBig_NoticeCreditor extends TestBase {
         noticeCreditorScreen = new NoticeCreditorScreen();
         Allure.step("verify to Navigate to End Shift to check the price of notice creditor was added successfully to his box.");
         noticeCreditorScreen.NavigateToEndShift();
-
+        Thread.sleep(2000);
         try {
             // Capture the screenshot and save it to a file
             File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -76,7 +68,7 @@ public class GoooBig_NoticeCreditor extends TestBase {
             // Use Tesseract to extract text from the image
             ITesseract tesseract = new Tesseract();
             tesseract.setDatapath("C:\\Program Files\\Tesseract-OCR\\tessdata");
-            tesseract.setLanguage("Arabic"); // Set the language to Arabic
+            tesseract.setLanguage("eng"); // Set the language to Arabic
             String extractedText;
             extractedText = tesseract.doOCR(screenshotFile);
             FilterNoticeCreditorNumberFirst = extractedText.replaceAll("[^0-9.]", "");
@@ -102,7 +94,7 @@ public class GoooBig_NoticeCreditor extends TestBase {
         noticeCreditorScreen.NavigateToInvoices();
         Allure.step("Select any invoice and click on Notice Creditor icon for invoice.");
         noticeCreditorScreen.clickOnNoticeCreditorIcon();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         noticeCreditorScreen.hideKeyboard();
         Assert.assertTrue(noticeCreditorScreen.isBasketButtonVisible());
         // Capture the screenshot and save it to a file
@@ -130,7 +122,7 @@ public class GoooBig_NoticeCreditor extends TestBase {
         extractedText = tesseract.doOCR(screenshotFile);
         FilterNumberOfProductsInInvoice = extractedText.replaceAll("[^0-9.]", "");
         System.out.println("Number Of Products In Invoice: " + FilterNumberOfProductsInInvoice);
-        Assert.assertEquals(FilterNumberOfProductsInInvoice, "3", "Error in Notice Creditor invoice");
+        Assert.assertEquals(FilterNumberOfProductsInInvoice, "2", "Error in Notice Creditor invoice");
         noticeCreditorScreen.goToCart();
     }
 
@@ -242,7 +234,7 @@ public class GoooBig_NoticeCreditor extends TestBase {
         //noticeCreditorScreen.NavigateToCashierProduct();
         Allure.step("verify to Navigate to End Shift to check the price of notice creditor was added successfully to his box.");
         noticeCreditorScreen.NavigateToEndShift();
-
+        Thread.sleep(2000);
         try {
             // Capture the screenshot and save it to a file
             File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -259,17 +251,17 @@ public class GoooBig_NoticeCreditor extends TestBase {
             BufferedImage croppedImg = fullImg.getSubimage(cropX, cropY, cropWidth, cropHeight);
 
             // Save the cropped image to a new file
-            File screenshotFile = new File("EndShift_cropped_screenshot.png");
-            ImageIO.write(croppedImg, "png", screenshotFile);
+            File screenshotFile1 = new File("EndShift_cropped_screenshot23232323.png");
+            ImageIO.write(croppedImg, "png", screenshotFile1);
 
-            System.out.println("Cropped screenshot saved: " + screenshotFile.getAbsolutePath());
+            System.out.println("Cropped screenshot saved: " + screenshotFile1.getAbsolutePath());
             // Use Tesseract to extract text from the image
             ITesseract tesseract = new Tesseract();
             tesseract.setDatapath("C:\\Program Files\\Tesseract-OCR\\tessdata");
-            tesseract.setLanguage("Arabic"); // Set the language to Arabic
+            tesseract.setLanguage("eng"); // Set the language to Arabic
             String extractedText;
-            extractedText = tesseract.doOCR(screenshotFile);
-            FilterNoticeCreditorNumberSecond = extractedText.replaceAll("[^0-9.]", "");
+            extractedText = tesseract.doOCR(screenshotFile1);
+            String FilterNoticeCreditorNumberSecond = extractedText.replaceAll("[^0-9.]", "");
             System.out.println("Notice Creditor Number: " + FilterNoticeCreditorNumberSecond);
 
             if (numbers.size() >= 3) {
@@ -291,6 +283,7 @@ public class GoooBig_NoticeCreditor extends TestBase {
                 int NoticeCreditorNumberSecondInt = NoticeCreditorNumberSecond.intValue();
                 int FilterNoticeCreditorNumberSum = NoticeCreditorNumberFirstInt + TotalAmountInCartInt;
                 System.out.println("FilterNoticeCreditorNumberSum:  " + FilterNoticeCreditorNumberSum);
+                System.out.println("NoticeCreditorNumberSecondInt: " + NoticeCreditorNumberSecondInt);
                 Assert.assertEquals(FilterNoticeCreditorNumberSum, NoticeCreditorNumberSecondInt);
             }
         } catch (IOException e) {

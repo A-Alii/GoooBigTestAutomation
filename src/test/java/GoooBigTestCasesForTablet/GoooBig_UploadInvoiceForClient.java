@@ -1,7 +1,7 @@
 package GoooBigTestCasesForTablet;
 
 import GoooBigBase.TestBase;
-import GoooBigScreensForTablet.UploadInvoiceForClient;
+import GoooBigScreensForTablet.UploadInvoiceForClientTablet;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -23,7 +23,7 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
     public String numberOnlyPostPaid = "";
     public int amountPostPaid = 0;
     public int amountLast;
-    UploadInvoiceForClient uploadInvoiceForClient;
+    UploadInvoiceForClientTablet uploadInvoiceForClient;
     private String test = "";
     private String test1 = "";
 
@@ -32,7 +32,7 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void verifyToSelectInvoiceType() throws InterruptedException {
-        uploadInvoiceForClient = new UploadInvoiceForClient();
+        uploadInvoiceForClient = new UploadInvoiceForClientTablet();
         uploadInvoiceForClient.clickOnSettings();
         uploadInvoiceForClient.clickOnPrinting();
         Thread.sleep(3000);
@@ -45,7 +45,7 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void verifyToNavigateToCartWithoutProducts() throws InterruptedException {
-        uploadInvoiceForClient = new UploadInvoiceForClient();
+        uploadInvoiceForClient = new UploadInvoiceForClientTablet();
         uploadInvoiceForClient.hideKeyboard();
         uploadInvoiceForClient.clickOnCashButton();
         Thread.sleep(1000);
@@ -57,7 +57,7 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void verifyToSelectCategoryAndDepartmentAndProduct() throws InterruptedException {
-        uploadInvoiceForClient = new UploadInvoiceForClient();
+        uploadInvoiceForClient = new UploadInvoiceForClientTablet();
         uploadInvoiceForClient.clickOnCategory();
         uploadInvoiceForClient.clickOnDepartment();
         uploadInvoiceForClient.clickOnIphoneProduct();
@@ -70,7 +70,7 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void verifyToSelectClientForInvoice() throws InterruptedException {
-        uploadInvoiceForClient = new UploadInvoiceForClient();
+        uploadInvoiceForClient = new UploadInvoiceForClientTablet();
         Allure.step("select client for invoice.");
         uploadInvoiceForClient.clickOnNext();
         Thread.sleep(1000);
@@ -98,6 +98,7 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
         amountPostPaid = Integer.parseInt(test);
         System.out.println("Integer Number is: " + amountPostPaid);
         uploadInvoiceForClient.navigateBack();
+        uploadInvoiceForClient.hideKeyboard();
         uploadInvoiceForClient.clickOnClients();
         uploadInvoiceForClient.clickOnSelectButton();
         uploadInvoiceForClient.clickOnPostPaidOption();
@@ -117,7 +118,7 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void verifyToUpdateClients() throws InterruptedException {
-        uploadInvoiceForClient = new UploadInvoiceForClient();
+        uploadInvoiceForClient = new UploadInvoiceForClientTablet();
         uploadInvoiceForClient.clickOnInvoicesScreen();
         String invoiceAmount = uploadInvoiceForClient.getInvoiceAmount();
         int endIndex = invoiceAmount.indexOf('.');

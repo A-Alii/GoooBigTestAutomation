@@ -37,7 +37,6 @@ public class GoooBig_OtherPaymentMethods extends TestBase {
     @Owner("Ahmed Ali")
     public void VerifyOtherPaymentMethodsScreen() throws InterruptedException, IOException {
         otherPaymentMethods = new OtherPaymentMethods();
-        otherPaymentMethods.clickOnCashier();
         otherPaymentMethods.smallNonTaxInvoiceForOtherPaymentMethod();
         otherPaymentMethods.navigateBack();
         otherPaymentMethods.navigateBack();

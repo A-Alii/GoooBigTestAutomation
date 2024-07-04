@@ -1,7 +1,7 @@
 package GoooBigTestCasesForTablet;
 
 import GoooBigBase.TestBase;
-import GoooBigScreensForTablet.AddClient;
+import GoooBigScreensForTablet.AddClientTablet;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -13,14 +13,14 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 
 public class GoooBig_AddClient extends TestBase {
     static boolean previousTestFailed = false;
-    AddClient addClient;
+    AddClientTablet addClient;
 
     @Test(priority = 1)
     @Description("This test attempts to verify the header of clients screen is Displayed.")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void NavigateToClientsScreen() {
-        addClient = new AddClient();
+        addClient = new AddClientTablet();
         addClient.clickOnClientsButton();
         Allure.step("Click on Clients option");
         //Assert.assertTrue(addClient.isHeaderDisplayed(), "Header is not displayed");
@@ -31,7 +31,7 @@ public class GoooBig_AddClient extends TestBase {
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void NavigateToaddClient() {
-        addClient = new AddClient();
+        addClient = new AddClientTablet();
         addClient.clickOnAddNewClientButton();
         Allure.step("Click on Add Client Button and check screen is displayed");
         //ظAssert.assertTrue(addClient.isAddClientHeaderDisplay(), "Add Client Screen is not displayed");
@@ -42,7 +42,7 @@ public class GoooBig_AddClient extends TestBase {
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void VerifyClickOnCancelButton() {
-        addClient = new AddClient();
+        addClient = new AddClientTablet();
         Allure.step("Click on Cancel Button.");
         addClient.clickCancelButton();
         Allure.step("Verify Cancel Button Redirect To Clients Screen");
@@ -59,7 +59,7 @@ public class GoooBig_AddClient extends TestBase {
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void VerifyClickOnAddClientButtonWithoutData() {
-        addClient = new AddClient();
+        addClient = new AddClientTablet();
         addClient.clickOnAddNewClientButton();
         Allure.step("Click on Add Client Button without any data.");
         addClient.clickOnSubmitButton();
@@ -76,7 +76,7 @@ public class GoooBig_AddClient extends TestBase {
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void VerifyToAddClientWithNameOnly() {
-        addClient = new AddClient();
+        addClient = new AddClientTablet();
         addClient.fillClientName("Yousef");
         addClient.hideKeyboard();
         addClient.clickOnSubmitButton();
@@ -93,7 +93,7 @@ public class GoooBig_AddClient extends TestBase {
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
     public void VerifyToAddClientWithPhoneOnly() {
-        addClient = new AddClient();
+        addClient = new AddClientTablet();
         addClient.clearName();
         addClient.hideKeyboard();
         addClient.fillClientPhone("012589745623");
@@ -113,7 +113,7 @@ public class GoooBig_AddClient extends TestBase {
     @Owner("Ahmed Ali")
     public void VerifyToAddClientWithSpace() {
         try {
-            addClient = new AddClient();
+            addClient = new AddClientTablet();
             addClient.fillClientName(" ");
             addClient.hideKeyboard();
             addClient.clearPhone();
@@ -144,7 +144,7 @@ public class GoooBig_AddClient extends TestBase {
             addClient.clickOnAddNewClientButton();
         }
         try {
-            addClient = new AddClient();
+            addClient = new AddClientTablet();
             addClient.clearName();
             addClient.fillClientName("Test");
             addClient.hideKeyboard();
@@ -204,7 +204,7 @@ public class GoooBig_AddClient extends TestBase {
     @Owner("Ahmed Ali")
     public void VerifyToAddClientWithValidSameData() {
         try {
-            addClient = new AddClient();
+            addClient = new AddClientTablet();
             addClient.clickCancelButton();
             addClient.clickOnAddNewClientButton();
             addClient.fillClientName("Yousef");

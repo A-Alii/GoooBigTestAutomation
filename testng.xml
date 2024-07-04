@@ -9,7 +9,7 @@
     </listeners>
     <test verbose="2" preserve-order="true" name="F:/GoooBigMobileApp">
         <classes>
-            <class name="GoooBigTestCases.GoooBig_Preparation"/>
+            <!--<class name="GoooBigTestCases.GoooBig_Preparation"/>
             <class name="GoooBigTestCases.GoooBig_Login"/>
             <class name="GoooBigTestCases.GoooBig_branchesAndWarehouses"/>
             <class name="GoooBigTestCases.GoooBig_ShiftStart"/>
@@ -18,22 +18,23 @@
             <class name="GoooBigTestCases.GoooBig_UploadInvoiceForClient"/>
             <class name="GoooBigTestCases.GoooBig_BoxOperation"/>
             <class name="GoooBigTestCases.GoooBig_Invoices"/>
-            <class name="GoooBigTestCases.GoooBig_PendingInvoice"/>
+            <class name="GoooBigTestCases.GoooBig_TotalBoxFundAfterPayment"/>
             <class name="GoooBigTestCases.GoooBig_NoticeCreditor"/>
+            <class name="GoooBigTestCases.GoooBig_PendingInvoice"/>
             <class name="GoooBigTestCases.GoooBig_PostPaid"/>
             <class name="GoooBigTestCases.GoooBig_PriceOffer"/>
-            <!--<class name="GoooBigTestCases.GoooBig_OtherPaymentMethods"/>-->
-            <class name="GoooBigTestCases.GoooBig_CashierServices"/>
+            <class name="GoooBigTestCases.GoooBig_OtherPaymentMethods"/>
+            <class name="GoooBigTestCases.GoooBig_CashierServices"/>-->
 
             <!--<class name="GoooBigTestCases.GoooBig_WebPortal"/>-->
 
 
-            <!--<class name="GoooBigTestCasesForTablet.GoooBig_Preparation"/>
+            <class name="GoooBigTestCasesForTablet.GoooBig_Preparation"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_Login"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_branchesAndWarehouses"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_ShiftStart"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_AddClient"/>
-            <class name="GoooBigTestCasesForTablet.GoooBig_UploadInvoiceForClient"/>-->
+            <class name="GoooBigTestCasesForTablet.GoooBig_UploadInvoiceForClient"/>
 
 
             <!--<class name="GoooBigTestCasesForTablet.GoooBig_Invoices"/>

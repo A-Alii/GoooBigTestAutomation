@@ -1,0 +1,189 @@
+{
+  "uuid": "982c3915-2bae-4f5a-8ec4-dac1730623cd",
+  "historyId": "fa940905302c2820e5c32ebec5bcfb8d",
+  "fullName": "GoooBigTestCases.GoooBig_PendingInvoice.PendingInvoiceTestCase",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_PendingInvoice"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_PendingInvoice"
+    },
+    {
+      "name": "testMethod",
+      "value": "PendingInvoiceTestCase"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_PendingInvoice"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "16076@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "PendingInvoiceTestCase",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to Small Non Tax Invoice with discount over Product level and make it Pending invoice",
+  "steps": [
+    {
+      "name": "verify to select Invoice Type.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720049042109,
+      "stop": 1720049042109
+    },
+    {
+      "name": "verify to search for a product and add it in cart.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720049056409,
+      "stop": 1720049056409
+    },
+    {
+      "name": "verify to search for a product and add it in cart.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720049061863,
+      "stop": 1720049061863
+    },
+    {
+      "name": "verify to Do discount over product.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720049072662,
+      "stop": 1720049072662
+    },
+    {
+      "name": "verify to get data like price and Tax an total price of the invoice.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720049086647,
+      "stop": 1720049086647
+    },
+    {
+      "name": "verify to hold the invoice.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720049090772,
+      "stop": 1720049090772
+    },
+    {
+      "name": "verify to get the price of pending invoice",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720049098561,
+      "stop": 1720049098561
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "b154a687-77ed-40a1-a538-9c37f930e0b7-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "994ee769-36d3-4e58-9844-2e6936d19b42-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "26b52e98-937e-4440-aafb-a81341ce504f-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "f11052b4-4645-4024-bd68-c90a748236e6-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "90a86910-5e22-4300-aa2b-e038f119e7b6-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Screenshot for Pending Invoices.",
+      "source": "8e66bf5b-07dd-48e6-9acc-3f8e8a836808-attachment"
+    },
+    {
+      "name": "Test Output",
+      "source": "2a50bb9f-89f6-42a5-a099-a7253cbf05a0-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1720049042107,
+  "stop": 1720049100755
+}

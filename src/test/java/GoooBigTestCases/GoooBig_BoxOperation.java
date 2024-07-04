@@ -66,7 +66,7 @@ public class GoooBig_BoxOperation extends TestBase {
         boxOperation.clickOnEmployee();
         boxOperation.clickApplyTransaction();
         System.out.println("Transaction Successfully Done!");
-        Thread.sleep(4000);
+        Thread.sleep(6000);
         // Capture the screenshot and save it to a file
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File screenshotFile = new File("invoice_screenshot.png");

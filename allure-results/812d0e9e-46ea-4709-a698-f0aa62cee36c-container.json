@@ -1,0 +1,15 @@
+{
+  "uuid": "812d0e9e-46ea-4709-a698-f0aa62cee36c",
+  "name": "GoooBigTestCases.GoooBig_UploadInvoiceForClient",
+  "children": [
+    "63f9091f-6439-4234-b6e8-941bcd96e65c",
+    "e9e061a4-ce55-44dc-986b-1712e52bb982",
+    "60c18690-cbc7-4e55-8922-3ad52913ee6b",
+    "9ae67a26-0061-4138-a41f-542ccde9b785",
+    "31fcea1f-8be6-490d-9e04-2d5a03c3763a"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1720048100546,
+  "stop": 1720049350996
+}

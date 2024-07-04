@@ -1,0 +1,189 @@
+{
+  "uuid": "9399031c-3e0f-4494-aca3-d64ab9785ff2",
+  "historyId": "1a5d79896346dca46ee4cca77d7642b7",
+  "fullName": "GoooBigTestCases.GoooBig_Invoices.A4NonTaxInvoiceWithDiscountOverInvoiceLevel",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Invoices"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Invoices"
+    },
+    {
+      "name": "testMethod",
+      "value": "A4NonTaxInvoiceWithDiscountOverInvoiceLevel"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Invoices"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "16076@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "A4NonTaxInvoiceWithDiscountOverInvoiceLevel",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to A4 Non Tax Invoice With Discount over Invoice level",
+  "steps": [
+    {
+      "name": "verify to search for a product and add it in cart.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720048923065,
+      "stop": 1720048923065
+    },
+    {
+      "name": "verify to search for a product and add it in cart.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720048927234,
+      "stop": 1720048927234
+    },
+    {
+      "name": "verify to Do discount over invoice level.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720048937405,
+      "stop": 1720048937405
+    },
+    {
+      "name": "verify to get data like price and Tax an total price of the invoice.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720048945705,
+      "stop": 1720048945705
+    },
+    {
+      "name": "Assert Total Discount Amount in cart with Total Discount Amount in invoice.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720048962306,
+      "stop": 1720048962306
+    },
+    {
+      "name": "Assert Total Amount After Discount in cart with Total Amount After Discount in invoice.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720048962306,
+      "stop": 1720048962306
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "86cf373b-4cc7-4871-a454-fd038a060163-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "de9248ca-a8fd-4a85-a1b1-5268d7106b59-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "4291d2f3-cbf2-43e6-b09e-29830d2ac162-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "0d95dbce-3135-46b1-a5fc-f8d5831347d9-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "f85dc3eb-31ad-4a93-84cc-cb5bf0596dba-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Extracted Invoice Text",
+      "source": "12f17ed3-c6d0-461a-b496-bca4952e5ed1-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Filtered Invoice Text",
+      "source": "0f3fab88-6383-4da3-8d5c-f9be74cf9471-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Screenshot for Invoice",
+      "source": "23a8d653-d04b-4ede-8196-619933ef45e6-attachment"
+    },
+    {
+      "name": "Test Output",
+      "source": "b8bb7c18-7cdf-40fa-913c-53acc8a95603-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1720048923062,
+  "stop": 1720048973395
+}
