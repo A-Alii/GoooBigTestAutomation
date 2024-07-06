@@ -1,0 +1,121 @@
+{
+  "uid": "a53d73cba5952bd1",
+  "name": "testcase4",
+  "fullName": "GoooBigTestCases.GoooBig_BoxOperation.testcase4",
+  "historyId": "e828525e1b6a59c7fbcf91bafa90acc1",
+  "time": {
+    "start": 1720233649894,
+    "stop": 1720233676035,
+    "duration": 26141
+  },
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "status": "passed",
+    "steps": [],
+    "attachments": [
+      {
+        "uid": "c65933350162b0bb",
+        "name": "Formatted Invoice Data",
+        "source": "c65933350162b0bb.txt",
+        "type": "text/plain",
+        "size": 37
+      },
+      {
+        "uid": "17b117e9c31acada",
+        "name": "Screenshot for result",
+        "source": "17b117e9c31acada.png",
+        "type": "image/png",
+        "size": 113649
+      }
+    ],
+    "parameters": [],
+    "attachmentStep": false,
+    "hasContent": true,
+    "stepsCount": 0,
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 2
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_BoxOperation"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_BoxOperation"
+    },
+    {
+      "name": "testMethod",
+      "value": "testcase4"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_BoxOperation"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "6548@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "a53d73cba5952bd1.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "uid": "2eff19422087f3d3",
+  "name": "VerifyWarehouseName",
+  "fullName": "GoooBigTestCases.GoooBig_Home.VerifyWarehouseName",
+  "historyId": "15d32070e1e72992c1bfec04d7384795",
+  "time": {
+    "start": 1720233452007,
+    "stop": 1720233456055,
+    "duration": 4048
+  },
+  "description": "This test attempts to verify the warehouse name is consistent across different screens.",
+  "descriptionHtml": "<p>This test attempts to verify the warehouse name is consistent across different screens.</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "This test attempts to verify the warehouse name is consistent across different screens.",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "Verify warehouse name in home screen contains warehouse name from warehouse screen",
+        "time": {
+          "start": 1720233454105,
+          "stop": 1720233454105,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "hasContent": false,
+        "stepsCount": 0,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0
+      },
+      {
+        "name": "Verify warehouse name in home screen contains warehouse name from hamburger menu",
+        "time": {
+          "start": 1720233455993,
+          "stop": 1720233455994,
+          "duration": 1
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "hasContent": false,
+        "stepsCount": 0,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "a860ceae1809b26a",
+        "name": "Test Output for Verify Warehouse Name",
+        "source": "a860ceae1809b26a.txt",
+        "type": "text/plain",
+        "size": 100
+      }
+    ],
+    "parameters": [],
+    "attachmentStep": false,
+    "hasContent": true,
+    "stepsCount": 2,
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 1
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "testMethod",
+      "value": "VerifyWarehouseName"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "6548@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "2eff19422087f3d3.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

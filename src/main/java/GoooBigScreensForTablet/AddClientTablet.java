@@ -51,6 +51,7 @@ public class AddClientTablet extends TestBase {
     public void fillClientEmail(String email) {
         ClientEmail.click();
         driver.hideKeyboard();
+        driver.hideKeyboard();
         ClientEmail.sendKeys(email);
     }
 
@@ -102,7 +103,9 @@ public class AddClientTablet extends TestBase {
 
     public void clearEmail() {
         ClientEmail.click();
+        driver.hideKeyboard();
         ClientEmail.clear();
+        driver.hideKeyboard();
     }
 
     public void clearTax() {

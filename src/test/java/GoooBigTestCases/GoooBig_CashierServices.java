@@ -31,8 +31,8 @@ public class GoooBig_CashierServices extends TestBase {
         cashierServices = new CashierServices();
         cashierServices.clickOnHamburgerMenu();
         cashierServices.clickOnSettings();
-        cashierServices.clickOnPrintingSettings();
-        cashierServices.smallNonTaxInvoice();
+        /*cashierServices.clickOnPrintingSettings();
+        cashierServices.smallNonTaxInvoice();*/
     }
 
     @Test(priority = 2)

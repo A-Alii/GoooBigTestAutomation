@@ -1,0 +1,106 @@
+{
+  "uid": "61d9b203f17a31c",
+  "name": "getTotalBoxFundAfterPayment",
+  "fullName": "GoooBigTestCases.GoooBig_TotalBoxFundAfterPayment.getTotalBoxFundAfterPayment",
+  "historyId": "52da4d16a4ea59222812509d66e5452f",
+  "time": {
+    "start": 1720234034295,
+    "stop": 1720234049584,
+    "duration": 15289
+  },
+  "description": "Total Box Fund After Payment",
+  "descriptionHtml": "<p>Total Box Fund After Payment</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_TotalBoxFundAfterPayment"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_TotalBoxFundAfterPayment"
+    },
+    {
+      "name": "testMethod",
+      "value": "getTotalBoxFundAfterPayment"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_TotalBoxFundAfterPayment"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "6548@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "61d9b203f17a31c.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

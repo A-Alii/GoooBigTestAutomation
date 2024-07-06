@@ -3,113 +3,89 @@
   "name": "categories",
   "children": [
     {
-      "name": "Product defects",
-      "children": [
-        {
-          "name": "Search results found when none were expected expected [false] but found [true]",
-          "children": [
-            {
-              "name": "VerifySearchBar",
-              "uid": "54f5d9fbaaffdf21",
-              "parentUid": "c0547fbb898359aad108df0cc6f6b012",
-              "status": "failed",
-              "time": {
-                "start": 1717407193930,
-                "stop": 1717407197504,
-                "duration": 3574
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 0,
-              "retriesStatusChange": false,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            }
-          ],
-          "uid": "c0547fbb898359aad108df0cc6f6b012"
-        },
-        {
-          "name": "Update results found when none were expected expected [false] but found [true]",
-          "children": [
-            {
-              "name": "VerifyUpdateFunctionality",
-              "uid": "14ec22ca5de9e137",
-              "parentUid": "608f6265622d9dcf105f7031429d4448",
-              "status": "failed",
-              "time": {
-                "start": 1717407197532,
-                "stop": 1717407201636,
-                "duration": 4104
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 0,
-              "retriesStatusChange": false,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            }
-          ],
-          "uid": "608f6265622d9dcf105f7031429d4448"
-        },
-        {
-          "name": "Invoice is not uploaded expected [true] but found [false]",
-          "children": [
-            {
-              "name": "verifyToSelectClientForInvoice",
-              "uid": "954fed287ef4ead5",
-              "parentUid": "0c182f1b105517fb86aa1cea7d3f3279",
-              "status": "failed",
-              "time": {
-                "start": 1717483872743,
-                "stop": 1717483911997,
-                "duration": 39254
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 2,
-              "retriesStatusChange": true,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            }
-          ],
-          "uid": "0c182f1b105517fb86aa1cea7d3f3279"
-        }
-      ],
-      "uid": "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-    },
-    {
       "name": "Test defects",
       "children": [
         {
-          "name": "Can't locate an element by this strategy: By.chained({By.xpath: //android.view.View[@content-desc='‫يجب اضافة اسم العميل‬']})",
+          "name": "Can't locate an element by this strategy: By.chained({By.xpath: //android.view.View[@content-desc='‫رقم الهاتف مطلوب‬']})",
           "children": [
+            {
+              "name": "VerifyToAddClientWithSpace",
+              "uid": "85f5b904e7e00323",
+              "parentUid": "0e35d2c650110b67813558882541f8dc",
+              "status": "broken",
+              "time": {
+                "start": 1720233478628,
+                "stop": 1720233502947,
+                "duration": 24319
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
             {
               "name": "VerifyToAddClientWithInvalidPhoneData",
-              "uid": "c3ac4068ffaa0b7a",
-              "parentUid": "bff1d85aaa512b8b16fc5b440a61af93",
+              "uid": "7cc9075d21d81551",
+              "parentUid": "0e35d2c650110b67813558882541f8dc",
               "status": "broken",
               "time": {
-                "start": 1717407255986,
-                "stop": 1717407284463,
-                "duration": 28477
+                "start": 1720233502960,
+                "stop": 1720233527277,
+                "duration": 24317
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "VerifyToAddClientWithSpace",
+              "uid": "e99fce4ab0058971",
+              "parentUid": "0e35d2c650110b67813558882541f8dc",
+              "status": "broken",
+              "time": {
+                "start": 1720272102179,
+                "stop": 1720272131432,
+                "duration": 29253
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "VerifyToAddClientWithInvalidPhoneData",
+              "uid": "3403ec1e187d5255",
+              "parentUid": "0e35d2c650110b67813558882541f8dc",
+              "status": "broken",
+              "time": {
+                "start": 1720272131453,
+                "stop": 1720272164189,
+                "duration": 32736
               },
               "flaky": false,
               "newFailed": false,
@@ -125,45 +101,20 @@
               "tags": []
             }
           ],
-          "uid": "bff1d85aaa512b8b16fc5b440a61af93"
+          "uid": "0e35d2c650110b67813558882541f8dc"
         },
         {
-          "name": "\nParameter 'deviceName' is required by BeforeSuite on method beforeClass but has not been marked @Optional or defined\nin C:\\Users\\LOL\\AppData\\Local\\JetBrains\\IdeaIC2023.3\\temp-testng-customsuite.xml",
+          "name": "java.lang.NumberFormatException",
           "children": [
             {
-              "name": "beforeClass",
-              "uid": "95d6851b30ced2c7",
-              "parentUid": "c3868815575ccf35513879db8c43df40",
+              "name": "testcase7",
+              "uid": "587f68acdf5c3d9c",
+              "parentUid": "247369b4790de71c45ce41ace657a420",
               "status": "broken",
               "time": {
-                "start": 1717421992811,
-                "stop": 1717421992821,
-                "duration": 10
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 2,
-              "retriesStatusChange": false,
-              "parameters": [],
-              "tags": []
-            }
-          ],
-          "uid": "c3868815575ccf35513879db8c43df40"
-        },
-        {
-          "name": "Connection refused: connect\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'LENOVO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'\nDriver info: driver.version: AndroidDriver",
-          "children": [
-            {
-              "name": "beforeClass",
-              "uid": "5783a6033eee8374",
-              "parentUid": "a18746af8f6d10df8f4766f634ad7643",
-              "status": "broken",
-              "time": {
-                "start": 1717483742220,
-                "stop": 1717483742224,
-                "duration": 4
+                "start": 1720234314311,
+                "stop": 1720234328346,
+                "duration": 14035
               },
               "flaky": false,
               "newFailed": false,
@@ -179,68 +130,103 @@
               "tags": []
             }
           ],
-          "uid": "a18746af8f6d10df8f4766f634ad7643"
-        },
-        {
-          "name": "Can't locate an element by this strategy: By.chained({By.xpath: //android.view.View[@content-desc='الكاشير']})",
-          "children": [
-            {
-              "name": "verifyToSelectInvoiceType",
-              "uid": "640384654340c293",
-              "parentUid": "b64bb6e8170afb3a64f1de65d186f714",
-              "status": "broken",
-              "time": {
-                "start": 1717487262659,
-                "stop": 1717487273550,
-                "duration": 10891
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 3,
-              "retriesStatusChange": true,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            }
-          ],
-          "uid": "b64bb6e8170afb3a64f1de65d186f714"
-        },
-        {
-          "name": "Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.ImageView[@content-desc=\"دخول\"]})",
-          "children": [
-            {
-              "name": "redirectToLoginScreenAfterPrepareOrganization",
-              "uid": "50f3fb26cd0b2cfb",
-              "parentUid": "84b5f2778e6daeabd66eea630b4f6d6f",
-              "status": "broken",
-              "time": {
-                "start": 1717491040649,
-                "stop": 1717491051618,
-                "duration": 10969
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 32,
-              "retriesStatusChange": true,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            }
-          ],
-          "uid": "84b5f2778e6daeabd66eea630b4f6d6f"
+          "uid": "247369b4790de71c45ce41ace657a420"
         }
       ],
       "uid": "bdbf199525818fae7a8651db9eafe741"
+    },
+    {
+      "name": "Product defects",
+      "children": [
+        {
+          "name": "expected [50.00] but found [1.00]",
+          "children": [
+            {
+              "name": "A4TaxInvoiceWithDiscountOverInvoiceLevel",
+              "uid": "e6e1b6be47bd38c7",
+              "parentUid": "c4dc6af344d99ef91838d2a99d7a5ffe",
+              "status": "failed",
+              "time": {
+                "start": 1720233819301,
+                "stop": 1720233859438,
+                "duration": 40137
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            }
+          ],
+          "uid": "c4dc6af344d99ef91838d2a99d7a5ffe"
+        },
+        {
+          "name": "expected [500.00] but found [1000.00]",
+          "children": [
+            {
+              "name": "A4NonTaxInvoiceWithDiscountOverProductLevel",
+              "uid": "976c4ae1598c94d7",
+              "parentUid": "dc29f3cb26a31ee390da1cbeeb6c5837",
+              "status": "failed",
+              "time": {
+                "start": 1720233953847,
+                "stop": 1720233998691,
+                "duration": 44844
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            }
+          ],
+          "uid": "dc29f3cb26a31ee390da1cbeeb6c5837"
+        },
+        {
+          "name": "Total values do not match. expected [9500.0] but found [1239.13]",
+          "children": [
+            {
+              "name": "SmallTaxInvoiceWithDiscountOverProductLevel",
+              "uid": "76c05d34dd274255",
+              "parentUid": "cbf844cec1e01d0119ac1a79e790057d",
+              "status": "failed",
+              "time": {
+                "start": 1720272288786,
+                "stop": 1720272322218,
+                "duration": 33432
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            }
+          ],
+          "uid": "cbf844cec1e01d0119ac1a79e790057d"
+        }
+      ],
+      "uid": "8fb3a91ba5aaf9de24cc8a92edc82b5d"
     }
   ]
 }

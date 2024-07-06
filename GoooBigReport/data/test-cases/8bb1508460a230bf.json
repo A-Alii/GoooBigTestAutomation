@@ -1,0 +1,287 @@
+{
+  "uid": "8bb1508460a230bf",
+  "name": "testcase2",
+  "fullName": "GoooBigTestCases.GoooBig_OtherPaymentMethods.testcase2",
+  "historyId": "6c5782eb67307f14dfc6d19c1652c245",
+  "time": {
+    "start": 1720234247626,
+    "stop": 1720234277436,
+    "duration": 29810
+  },
+  "description": "",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "verify to get data like price and Tax an total price of the invoice.",
+        "time": {
+          "start": 1720234247640,
+          "stop": 1720234247640,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "hasContent": false,
+        "stepsCount": 0,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0
+      },
+      {
+        "name": "verify to do payment and print the invoice.",
+        "time": {
+          "start": 1720234247767,
+          "stop": 1720234247767,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "hasContent": false,
+        "stepsCount": 0,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0
+      },
+      {
+        "name": "Assert AmountPayment in top screen with AmountPayment in text field.",
+        "time": {
+          "start": 1720234250585,
+          "stop": 1720234250585,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "hasContent": false,
+        "stepsCount": 0,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0
+      },
+      {
+        "name": "send value to the text field for Invoice Amount",
+        "time": {
+          "start": 1720234250585,
+          "stop": 1720234250585,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "hasContent": false,
+        "stepsCount": 0,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0
+      },
+      {
+        "name": "Assert the ResidualAmountPayment in the top screen with ResidualAmountPayment in text field.",
+        "time": {
+          "start": 1720234256123,
+          "stop": 1720234256123,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "hasContent": false,
+        "stepsCount": 0,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0
+      },
+      {
+        "name": "Select Payment Methods",
+        "time": {
+          "start": 1720234256355,
+          "stop": 1720234256355,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "hasContent": false,
+        "stepsCount": 0,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0
+      },
+      {
+        "name": "Assert AmountPayment in top screen with AmountPayment in text field.",
+        "time": {
+          "start": 1720234258443,
+          "stop": 1720234258443,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "hasContent": false,
+        "stepsCount": 0,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "8abeffbf76a0d695",
+        "name": "Test Output",
+        "source": "8abeffbf76a0d695.txt",
+        "type": "text/plain",
+        "size": 56
+      },
+      {
+        "uid": "6fb24a65cc84199",
+        "name": "Test Output",
+        "source": "6fb24a65cc84199.txt",
+        "type": "text/plain",
+        "size": 38
+      },
+      {
+        "uid": "138f5692d6dc0512",
+        "name": "Test Output",
+        "source": "138f5692d6dc0512.txt",
+        "type": "text/plain",
+        "size": 44
+      },
+      {
+        "uid": "27f63dd073da69ec",
+        "name": "Test Output",
+        "source": "27f63dd073da69ec.txt",
+        "type": "text/plain",
+        "size": 46
+      },
+      {
+        "uid": "4a90f23e26c48fc3",
+        "name": "Test Output",
+        "source": "4a90f23e26c48fc3.txt",
+        "type": "text/plain",
+        "size": 46
+      },
+      {
+        "uid": "6078ecba0d76bc79",
+        "name": "Extracted Invoice Text",
+        "source": "6078ecba0d76bc79.txt",
+        "type": "text/plain",
+        "size": 1353
+      },
+      {
+        "uid": "538de4c54832e3a7",
+        "name": "Filtered Invoice Text",
+        "source": "538de4c54832e3a7.txt",
+        "type": "text/plain",
+        "size": 378
+      }
+    ],
+    "parameters": [],
+    "attachmentStep": false,
+    "hasContent": true,
+    "stepsCount": 7,
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 7
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_OtherPaymentMethods"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_OtherPaymentMethods"
+    },
+    {
+      "name": "testMethod",
+      "value": "testcase2"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_OtherPaymentMethods"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "6548@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "8bb1508460a230bf.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

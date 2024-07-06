@@ -1,0 +1,161 @@
+{
+  "uid": "5edc66826ebfa730",
+  "name": "verifyToSelectClientForInvoice",
+  "fullName": "GoooBigTestCases.GoooBig_UploadInvoiceForClient.verifyToSelectClientForInvoice",
+  "historyId": "c96b6c94edecefe0cc9addb59cc8a1c8",
+  "time": {
+    "start": 1720233586133,
+    "stop": 1720233620808,
+    "duration": 34675
+  },
+  "description": "This test attempts to select client for invoice.",
+  "descriptionHtml": "<p>This test attempts to select client for invoice.</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "This test attempts to select client for invoice.",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "select client for invoice.",
+        "time": {
+          "start": 1720233587096,
+          "stop": 1720233587096,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "hasContent": false,
+        "stepsCount": 0,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0
+      },
+      {
+        "name": "click on PostPaid Button.",
+        "time": {
+          "start": 1720233606339,
+          "stop": 1720233606339,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "hasContent": false,
+        "stepsCount": 0,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "ab0111edcb31ef13",
+        "name": "Screenshot for invoice",
+        "source": "ab0111edcb31ef13.png",
+        "type": "image/png",
+        "size": 257037
+      }
+    ],
+    "parameters": [],
+    "attachmentStep": false,
+    "hasContent": true,
+    "stepsCount": 2,
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 1
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_UploadInvoiceForClient"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_UploadInvoiceForClient"
+    },
+    {
+      "name": "testMethod",
+      "value": "verifyToSelectClientForInvoice"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_UploadInvoiceForClient"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "6548@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "5edc66826ebfa730.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

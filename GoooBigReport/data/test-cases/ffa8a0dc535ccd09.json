@@ -1,0 +1,144 @@
+{
+  "uid": "ffa8a0dc535ccd09",
+  "name": "LoginToOrganizationUsingValidData",
+  "fullName": "GoooBigTestCasesForTablet.GoooBig_LoginTablet.LoginToOrganizationUsingValidData",
+  "historyId": "d7275ee04147a5b05db091112beec3c8",
+  "time": {
+    "start": 1720272037307,
+    "stop": 1720272046166,
+    "duration": 8859
+  },
+  "description": "This test attempts to Login to organization using valid UserId, password.",
+  "descriptionHtml": "<p>This test attempts to Login to organization using valid UserId, password.</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "This test attempts to Login to organization using valid UserId, password.",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "Enter Valid Data",
+        "time": {
+          "start": 1720272037309,
+          "stop": 1720272037309,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "attachmentStep": false,
+        "hasContent": false,
+        "stepsCount": 0,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "439eb2b524001ee4",
+        "name": "Test Output",
+        "source": "439eb2b524001ee4.txt",
+        "type": "text/plain",
+        "size": 79
+      }
+    ],
+    "parameters": [],
+    "attachmentStep": false,
+    "hasContent": true,
+    "stepsCount": 1,
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 1
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCasesForTablet.GoooBig_LoginTablet"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCasesForTablet.GoooBig_LoginTablet"
+    },
+    {
+      "name": "testMethod",
+      "value": "LoginToOrganizationUsingValidData"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCasesForTablet.GoooBig_LoginTablet"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "14800@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "ffa8a0dc535ccd09.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

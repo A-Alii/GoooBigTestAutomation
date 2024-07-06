@@ -29,15 +29,16 @@
             <!--<class name="GoooBigTestCases.GoooBig_WebPortal"/>-->
 
 
-            <class name="GoooBigTestCasesForTablet.GoooBig_Preparation"/>
-            <class name="GoooBigTestCasesForTablet.GoooBig_Login"/>
-            <class name="GoooBigTestCasesForTablet.GoooBig_branchesAndWarehouses"/>
-            <class name="GoooBigTestCasesForTablet.GoooBig_ShiftStart"/>
-            <class name="GoooBigTestCasesForTablet.GoooBig_AddClient"/>
-            <class name="GoooBigTestCasesForTablet.GoooBig_UploadInvoiceForClient"/>
+            <class name="GoooBigTestCasesForTablet.GoooBig_PreparationTablet"/>
+            <class name="GoooBigTestCasesForTablet.GoooBig_LoginTablet"/>
+            <class name="GoooBigTestCasesForTablet.GoooBig_branchesAndWarehousesTablet"/>
+            <class name="GoooBigTestCasesForTablet.GoooBig_ShiftStartTablet"/>
+            <class name="GoooBigTestCasesForTablet.GoooBig_AddClientTablet"/>
+            <class name="GoooBigTestCasesForTablet.GoooBig_UploadInvoiceForClientTablet"/>
+            <class name="GoooBigTestCasesForTablet.GoooBig_InvoicesTablet"/>
 
 
-            <!--<class name="GoooBigTestCasesForTablet.GoooBig_Invoices"/>
+            <!--<class name="GoooBigTestCasesForTablet.GoooBig_InvoicesTablet"/>
             <class name="GoooBigTestCases.GoooBig_SelectWarehouseForTablet"/>-->
         </classes>
     </test>

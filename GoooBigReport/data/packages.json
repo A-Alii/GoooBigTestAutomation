@@ -10,13 +10,13 @@
           "children": [
             {
               "name": "prepareOrganizationUsingAnEmptyData",
-              "uid": "b80f6c50c9054636",
+              "uid": "bfb28a2f6bc0ea7b",
               "parentUid": "b2bcd9bd9152b0b5916dc1b212c9b114",
               "status": "passed",
               "time": {
-                "start": 1717407040897,
-                "stop": 1717407059614,
-                "duration": 18717
+                "start": 1720233296677,
+                "stop": 1720233320862,
+                "duration": 24185
               },
               "flaky": false,
               "newFailed": false,
@@ -33,13 +33,13 @@
             },
             {
               "name": "prepareOrganizationUsingUserIdAndAnEmptyData",
-              "uid": "abe8c78429cd8061",
+              "uid": "2efdb236556e5f48",
               "parentUid": "b2bcd9bd9152b0b5916dc1b212c9b114",
               "status": "passed",
               "time": {
-                "start": 1717407059877,
-                "stop": 1717407073474,
-                "duration": 13597
+                "start": 1720233321003,
+                "stop": 1720233338739,
+                "duration": 17736
               },
               "flaky": false,
               "newFailed": false,
@@ -56,13 +56,13 @@
             },
             {
               "name": "prepareOrganizationUsingUserIdPasswordAndAnEmptyData",
-              "uid": "a2ab81074ec9a847",
+              "uid": "e669a77d9cbd9361",
               "parentUid": "b2bcd9bd9152b0b5916dc1b212c9b114",
               "status": "passed",
               "time": {
-                "start": 1717407073486,
-                "stop": 1717407086320,
-                "duration": 12834
+                "start": 1720233338752,
+                "stop": 1720233355916,
+                "duration": 17164
               },
               "flaky": false,
               "newFailed": false,
@@ -79,36 +79,13 @@
             },
             {
               "name": "prepareOrganizationUsingInvalidData",
-              "uid": "86cfdb54e29d54af",
+              "uid": "dd4207d4bdb2edc6",
               "parentUid": "b2bcd9bd9152b0b5916dc1b212c9b114",
               "status": "passed",
               "time": {
-                "start": 1717407086328,
-                "stop": 1717407096139,
-                "duration": 9811
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 0,
-              "retriesStatusChange": false,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            },
-            {
-              "name": "beforeClass",
-              "uid": "5783a6033eee8374",
-              "parentUid": "b2bcd9bd9152b0b5916dc1b212c9b114",
-              "status": "broken",
-              "time": {
-                "start": 1717483742220,
-                "stop": 1717483742224,
-                "duration": 4
+                "start": 1720233355925,
+                "stop": 1720233365366,
+                "duration": 9441
               },
               "flaky": false,
               "newFailed": false,
@@ -125,20 +102,20 @@
             },
             {
               "name": "prepareOrganizationUsingValidData",
-              "uid": "3b22406685b7077f",
+              "uid": "ca856acaa9c4acb9",
               "parentUid": "b2bcd9bd9152b0b5916dc1b212c9b114",
               "status": "passed",
               "time": {
-                "start": 1717491013674,
-                "stop": 1717491040502,
-                "duration": 26828
+                "start": 1720233365374,
+                "stop": 1720233392617,
+                "duration": 27243
               },
               "flaky": false,
               "newFailed": false,
               "newPassed": false,
               "newBroken": false,
-              "retriesCount": 33,
-              "retriesStatusChange": true,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
               "parameters": [
                 "emulator-5554",
                 "Android",
@@ -148,20 +125,20 @@
             },
             {
               "name": "redirectToLoginScreenAfterPrepareOrganization",
-              "uid": "50f3fb26cd0b2cfb",
+              "uid": "91a7574b84e270c8",
               "parentUid": "b2bcd9bd9152b0b5916dc1b212c9b114",
-              "status": "broken",
+              "status": "passed",
               "time": {
-                "start": 1717491040649,
-                "stop": 1717491051618,
-                "duration": 10969
+                "start": 1720233392631,
+                "stop": 1720233392837,
+                "duration": 206
               },
               "flaky": false,
               "newFailed": false,
               "newPassed": false,
               "newBroken": false,
-              "retriesCount": 32,
-              "retriesStatusChange": true,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
               "parameters": [
                 "emulator-5554",
                 "Android",
@@ -177,13 +154,13 @@
           "children": [
             {
               "name": "loginToOrganizationUsingAnEmptyData",
-              "uid": "29a73f7bf547d71a",
+              "uid": "8596aa2317340242",
               "parentUid": "38f820330529b24d2acb576608e0e7d4",
               "status": "passed",
               "time": {
-                "start": 1717407119737,
-                "stop": 1717407127389,
-                "duration": 7652
+                "start": 1720233392850,
+                "stop": 1720233401196,
+                "duration": 8346
               },
               "flaky": false,
               "newFailed": false,
@@ -200,13 +177,13 @@
             },
             {
               "name": "LoginToOrganizationUsingUserIdAndAnEmptyData",
-              "uid": "ea3e20af4feb70de",
+              "uid": "bdca6933d3bb6edd",
               "parentUid": "38f820330529b24d2acb576608e0e7d4",
               "status": "passed",
               "time": {
-                "start": 1717407127399,
-                "stop": 1717407137331,
-                "duration": 9932
+                "start": 1720233401210,
+                "stop": 1720233411940,
+                "duration": 10730
               },
               "flaky": false,
               "newFailed": false,
@@ -223,13 +200,13 @@
             },
             {
               "name": "LoginToOrganizationUsingInvalidData",
-              "uid": "e38e0c4b0911688b",
+              "uid": "317ec5f42a7b4fc1",
               "parentUid": "38f820330529b24d2acb576608e0e7d4",
               "status": "passed",
               "time": {
-                "start": 1717407137338,
-                "stop": 1717407146757,
-                "duration": 9419
+                "start": 1720233411946,
+                "stop": 1720233421968,
+                "duration": 10022
               },
               "flaky": false,
               "newFailed": false,
@@ -246,13 +223,13 @@
             },
             {
               "name": "GetTextFromLoginScreen",
-              "uid": "e77c5cdadd905bfa",
+              "uid": "2dd2c81d54907bae",
               "parentUid": "38f820330529b24d2acb576608e0e7d4",
               "status": "passed",
               "time": {
-                "start": 1717407146764,
-                "stop": 1717407149929,
-                "duration": 3165
+                "start": 1720233421974,
+                "stop": 1720233427017,
+                "duration": 5043
               },
               "flaky": false,
               "newFailed": false,
@@ -269,20 +246,20 @@
             },
             {
               "name": "LoginToOrganizationUsingValidData",
-              "uid": "2e21193bf6f683af",
+              "uid": "79fcd599f19332a8",
               "parentUid": "38f820330529b24d2acb576608e0e7d4",
               "status": "passed",
               "time": {
-                "start": 1717491051650,
-                "stop": 1717491060110,
-                "duration": 8460
+                "start": 1720233427025,
+                "stop": 1720233435458,
+                "duration": 8433
               },
               "flaky": false,
               "newFailed": false,
               "newPassed": false,
               "newBroken": false,
-              "retriesCount": 31,
-              "retriesStatusChange": true,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
               "parameters": [
                 "emulator-5554",
                 "Android",
@@ -294,17 +271,46 @@
           "uid": "38f820330529b24d2acb576608e0e7d4"
         },
         {
+          "name": "GoooBig_branchesAndWarehouses",
+          "children": [
+            {
+              "name": "verifySelectWarehouse",
+              "uid": "da88c29c69ac2162",
+              "parentUid": "7f70f5f532438e34730f586c6ca42264",
+              "status": "passed",
+              "time": {
+                "start": 1720233435463,
+                "stop": 1720233440364,
+                "duration": 4901
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            }
+          ],
+          "uid": "7f70f5f532438e34730f586c6ca42264"
+        },
+        {
           "name": "GoooBig_ShiftStart",
           "children": [
             {
               "name": "clickOnApplyWithoutEnterBoxFundStart",
-              "uid": "5159f49ac0ba1c97",
+              "uid": "23c758ffc34dd31",
               "parentUid": "d4cc15ba29c8429f7168a1179739688c",
               "status": "passed",
               "time": {
-                "start": 1717407163854,
-                "stop": 1717407173752,
-                "duration": 9898
+                "start": 1720233440369,
+                "stop": 1720233449186,
+                "duration": 8817
               },
               "flaky": false,
               "newFailed": false,
@@ -321,20 +327,20 @@
             },
             {
               "name": "verifyClickOnApplyWithValidData",
-              "uid": "ba53a0439f21592f",
+              "uid": "d33de4f86b82d01c",
               "parentUid": "d4cc15ba29c8429f7168a1179739688c",
               "status": "passed",
               "time": {
-                "start": 1717491065464,
-                "stop": 1717491071364,
-                "duration": 5900
+                "start": 1720233449192,
+                "stop": 1720233452002,
+                "duration": 2810
               },
               "flaky": false,
               "newFailed": false,
               "newPassed": false,
               "newBroken": false,
-              "retriesCount": 29,
-              "retriesStatusChange": true,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
               "parameters": [
                 "emulator-5554",
                 "Android",
@@ -350,13 +356,13 @@
           "children": [
             {
               "name": "VerifyWarehouseName",
-              "uid": "a931cb850090189f",
+              "uid": "2eff19422087f3d3",
               "parentUid": "fa5098bf580e315d51194c7c45772c2f",
               "status": "passed",
               "time": {
-                "start": 1717407177323,
-                "stop": 1717407182467,
-                "duration": 5144
+                "start": 1720233452007,
+                "stop": 1720233456055,
+                "duration": 4048
               },
               "flaky": false,
               "newFailed": false,
@@ -373,36 +379,13 @@
             },
             {
               "name": "IsLogoExistInHomeScreen",
-              "uid": "fc29df0a79f66dd0",
+              "uid": "b9c5ebb459cd1bdb",
               "parentUid": "fa5098bf580e315d51194c7c45772c2f",
               "status": "passed",
               "time": {
-                "start": 1717407182474,
-                "stop": 1717407184409,
-                "duration": 1935
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 0,
-              "retriesStatusChange": false,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            },
-            {
-              "name": "switchedRunManageOptionsHomeScreen",
-              "uid": "af257ed7569cae18",
-              "parentUid": "fa5098bf580e315d51194c7c45772c2f",
-              "status": "passed",
-              "time": {
-                "start": 1717407184421,
-                "stop": 1717407193921,
-                "duration": 9500
+                "start": 1720233456063,
+                "stop": 1720233457061,
+                "duration": 998
               },
               "flaky": false,
               "newFailed": false,
@@ -419,59 +402,13 @@
             },
             {
               "name": "VerifySearchBar",
-              "uid": "54f5d9fbaaffdf21",
-              "parentUid": "fa5098bf580e315d51194c7c45772c2f",
-              "status": "failed",
-              "time": {
-                "start": 1717407193930,
-                "stop": 1717407197504,
-                "duration": 3574
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 0,
-              "retriesStatusChange": false,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            },
-            {
-              "name": "VerifyUpdateFunctionality",
-              "uid": "14ec22ca5de9e137",
-              "parentUid": "fa5098bf580e315d51194c7c45772c2f",
-              "status": "failed",
-              "time": {
-                "start": 1717407197532,
-                "stop": 1717407201636,
-                "duration": 4104
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 0,
-              "retriesStatusChange": false,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            },
-            {
-              "name": "switchedNavbarHomeScreen",
-              "uid": "9cc7712326d02f56",
+              "uid": "970e4a396e6872ec",
               "parentUid": "fa5098bf580e315d51194c7c45772c2f",
               "status": "passed",
               "time": {
-                "start": 1717407201656,
-                "stop": 1717407211540,
-                "duration": 9884
+                "start": 1720233457075,
+                "stop": 1720233461994,
+                "duration": 4919
               },
               "flaky": false,
               "newFailed": false,
@@ -493,14 +430,60 @@
           "name": "GoooBig_AddClient",
           "children": [
             {
-              "name": "VerifyClickOnCancelButton",
-              "uid": "38d7f955d81314d8",
+              "name": "NavigateToClientsScreen",
+              "uid": "255517c9a7856719",
               "parentUid": "6cafaf0fdc3ebc656ded62fdafd0fd0d",
               "status": "passed",
               "time": {
-                "start": 1717407214685,
-                "stop": 1717407215950,
-                "duration": 1265
+                "start": 1720233462001,
+                "stop": 1720233463126,
+                "duration": 1125
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "NavigateToAddClientScreen",
+              "uid": "11622d360f2087cb",
+              "parentUid": "6cafaf0fdc3ebc656ded62fdafd0fd0d",
+              "status": "passed",
+              "time": {
+                "start": 1720233463131,
+                "stop": 1720233465113,
+                "duration": 1982
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "VerifyClickOnCancelButton",
+              "uid": "d8d5cfed086aa238",
+              "parentUid": "6cafaf0fdc3ebc656ded62fdafd0fd0d",
+              "status": "passed",
+              "time": {
+                "start": 1720233465118,
+                "stop": 1720233466325,
+                "duration": 1207
               },
               "flaky": false,
               "newFailed": false,
@@ -517,13 +500,13 @@
             },
             {
               "name": "VerifyClickOnAddClientButtonWithoutData",
-              "uid": "5768f03595eec7cd",
+              "uid": "df1c2a7f22ffb1de",
               "parentUid": "6cafaf0fdc3ebc656ded62fdafd0fd0d",
               "status": "passed",
               "time": {
-                "start": 1717407215955,
-                "stop": 1717407218111,
-                "duration": 2156
+                "start": 1720233466330,
+                "stop": 1720233468090,
+                "duration": 1760
               },
               "flaky": false,
               "newFailed": false,
@@ -540,13 +523,13 @@
             },
             {
               "name": "VerifyToAddClientWithNameOnly",
-              "uid": "824d75cffd6eb70f",
+              "uid": "b984db504954c23c",
               "parentUid": "6cafaf0fdc3ebc656ded62fdafd0fd0d",
               "status": "passed",
               "time": {
-                "start": 1717407218117,
-                "stop": 1717407221875,
-                "duration": 3758
+                "start": 1720233468095,
+                "stop": 1720233471326,
+                "duration": 3231
               },
               "flaky": false,
               "newFailed": false,
@@ -563,13 +546,36 @@
             },
             {
               "name": "VerifyToAddClientWithPhoneOnly",
-              "uid": "931d140d173228c4",
+              "uid": "3d3f33cb2fdcf81f",
               "parentUid": "6cafaf0fdc3ebc656ded62fdafd0fd0d",
               "status": "passed",
               "time": {
-                "start": 1717407221881,
-                "stop": 1717407229972,
-                "duration": 8091
+                "start": 1720233471330,
+                "stop": 1720233478622,
+                "duration": 7292
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "VerifyToAddClientWithSpace",
+              "uid": "85f5b904e7e00323",
+              "parentUid": "6cafaf0fdc3ebc656ded62fdafd0fd0d",
+              "status": "broken",
+              "time": {
+                "start": 1720233478628,
+                "stop": 1720233502947,
+                "duration": 24319
               },
               "flaky": false,
               "newFailed": false,
@@ -586,13 +592,36 @@
             },
             {
               "name": "VerifyToAddClientWithInvalidPhoneData",
-              "uid": "c3ac4068ffaa0b7a",
+              "uid": "7cc9075d21d81551",
               "parentUid": "6cafaf0fdc3ebc656ded62fdafd0fd0d",
               "status": "broken",
               "time": {
-                "start": 1717407255986,
-                "stop": 1717407284463,
-                "duration": 28477
+                "start": 1720233502960,
+                "stop": 1720233527277,
+                "duration": 24317
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "VerifyToAddClientWithValidData",
+              "uid": "6dfb50258e25f969",
+              "parentUid": "6cafaf0fdc3ebc656ded62fdafd0fd0d",
+              "status": "passed",
+              "time": {
+                "start": 1720233527289,
+                "stop": 1720233544916,
+                "duration": 17627
               },
               "flaky": false,
               "newFailed": false,
@@ -609,111 +638,19 @@
             },
             {
               "name": "VerifyToAddClientWithValidSameData",
-              "uid": "3c7ee4fc38ce7069",
+              "uid": "63704cbddedb1544",
               "parentUid": "6cafaf0fdc3ebc656ded62fdafd0fd0d",
               "status": "passed",
               "time": {
-                "start": 1717483833528,
-                "stop": 1717483848982,
-                "duration": 15454
+                "start": 1720233544922,
+                "stop": 1720233559278,
+                "duration": 14356
               },
               "flaky": false,
               "newFailed": false,
               "newPassed": false,
               "newBroken": false,
-              "retriesCount": 2,
-              "retriesStatusChange": true,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            },
-            {
-              "name": "NavigateToClientsScreen",
-              "uid": "ea5a3b6383b82d24",
-              "parentUid": "6cafaf0fdc3ebc656ded62fdafd0fd0d",
-              "status": "passed",
-              "time": {
-                "start": 1717487217500,
-                "stop": 1717487220446,
-                "duration": 2946
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 3,
-              "retriesStatusChange": true,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            },
-            {
-              "name": "NavigateToAddClientScreen",
-              "uid": "5b33e9edc1a9b5a1",
-              "parentUid": "6cafaf0fdc3ebc656ded62fdafd0fd0d",
-              "status": "passed",
-              "time": {
-                "start": 1717487220455,
-                "stop": 1717487222529,
-                "duration": 2074
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 3,
-              "retriesStatusChange": true,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            },
-            {
-              "name": "VerifyToAddClientWithSpace",
-              "uid": "3ce5570102541d0f",
-              "parentUid": "6cafaf0fdc3ebc656ded62fdafd0fd0d",
-              "status": "passed",
-              "time": {
-                "start": 1717487222536,
-                "stop": 1717487246013,
-                "duration": 23477
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 1,
-              "retriesStatusChange": true,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            },
-            {
-              "name": "VerifyToAddClientWithValidData",
-              "uid": "fdb39a4fdbf096f",
-              "parentUid": "6cafaf0fdc3ebc656ded62fdafd0fd0d",
-              "status": "passed",
-              "time": {
-                "start": 1717487246019,
-                "stop": 1717487262654,
-                "duration": 16635
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 1,
+              "retriesCount": 0,
               "retriesStatusChange": false,
               "parameters": [
                 "emulator-5554",
@@ -726,17 +663,190 @@
           "uid": "6cafaf0fdc3ebc656ded62fdafd0fd0d"
         },
         {
+          "name": "GoooBig_UploadInvoiceForClient",
+          "children": [
+            {
+              "name": "verifyToSelectInvoiceType",
+              "uid": "64554250adc89cd",
+              "parentUid": "fa9ace75c331e227138989792f93229e",
+              "status": "passed",
+              "time": {
+                "start": 1720233559287,
+                "stop": 1720233572770,
+                "duration": 13483
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "verifyToNavigateToCartWithoutProducts",
+              "uid": "9513f7f8d3c76eab",
+              "parentUid": "fa9ace75c331e227138989792f93229e",
+              "status": "passed",
+              "time": {
+                "start": 1720233572777,
+                "stop": 1720233575030,
+                "duration": 2253
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "verifyToSelectCategoryAndDepartmentAndProduct",
+              "uid": "33e3ca6d6c9a9928",
+              "parentUid": "fa9ace75c331e227138989792f93229e",
+              "status": "passed",
+              "time": {
+                "start": 1720233575050,
+                "stop": 1720233586128,
+                "duration": 11078
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "verifyToSelectClientForInvoice",
+              "uid": "5edc66826ebfa730",
+              "parentUid": "fa9ace75c331e227138989792f93229e",
+              "status": "passed",
+              "time": {
+                "start": 1720233586133,
+                "stop": 1720233620808,
+                "duration": 34675
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "verifyToUpdateClients",
+              "uid": "d87975a7d0984eb7",
+              "parentUid": "fa9ace75c331e227138989792f93229e",
+              "status": "passed",
+              "time": {
+                "start": 1720233620816,
+                "stop": 1720233646210,
+                "duration": 25394
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            }
+          ],
+          "uid": "fa9ace75c331e227138989792f93229e"
+        },
+        {
+          "name": "GoooBig_BoxOperation",
+          "children": [
+            {
+              "name": "NavigateToBoxOperations",
+              "uid": "45d84302e5c9cbc1",
+              "parentUid": "58519adf23ff29c0c0c74e08fc0b86ba",
+              "status": "passed",
+              "time": {
+                "start": 1720233646219,
+                "stop": 1720233649889,
+                "duration": 3670
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "testcase4",
+              "uid": "a53d73cba5952bd1",
+              "parentUid": "58519adf23ff29c0c0c74e08fc0b86ba",
+              "status": "passed",
+              "time": {
+                "start": 1720233649894,
+                "stop": 1720233676035,
+                "duration": 26141
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            }
+          ],
+          "uid": "58519adf23ff29c0c0c74e08fc0b86ba"
+        },
+        {
           "name": "GoooBig_Invoices",
           "children": [
             {
               "name": "SmallTaxInvoiceWithDiscountOverProductLevel",
-              "uid": "c31c70268e15baf",
+              "uid": "5b21dfa0baa74d46",
               "parentUid": "de0a2062f6b4e7d02081f92a947b65f7",
               "status": "passed",
               "time": {
-                "start": 1717407388585,
-                "stop": 1717407449373,
-                "duration": 60788
+                "start": 1720233676044,
+                "stop": 1720233735943,
+                "duration": 59899
               },
               "flaky": false,
               "newFailed": false,
@@ -753,13 +863,13 @@
             },
             {
               "name": "SmallTaxInvoiceWithDiscountOverInvoiceLevel",
-              "uid": "8451f62211f35529",
+              "uid": "1b8e21b0fb882277",
               "parentUid": "de0a2062f6b4e7d02081f92a947b65f7",
               "status": "passed",
               "time": {
-                "start": 1717407449381,
-                "stop": 1717407493367,
-                "duration": 43986
+                "start": 1720233735949,
+                "stop": 1720233776741,
+                "duration": 40792
               },
               "flaky": false,
               "newFailed": false,
@@ -776,13 +886,13 @@
             },
             {
               "name": "A4TaxInvoiceWithDiscountOverProductLevel",
-              "uid": "84acebf67271beb3",
+              "uid": "8a96f6afda896173",
               "parentUid": "de0a2062f6b4e7d02081f92a947b65f7",
               "status": "passed",
               "time": {
-                "start": 1717407493373,
-                "stop": 1717407543719,
-                "duration": 50346
+                "start": 1720233776749,
+                "stop": 1720233819293,
+                "duration": 42544
               },
               "flaky": false,
               "newFailed": false,
@@ -799,13 +909,13 @@
             },
             {
               "name": "A4TaxInvoiceWithDiscountOverInvoiceLevel",
-              "uid": "fb4074427f04d4a4",
+              "uid": "e6e1b6be47bd38c7",
               "parentUid": "de0a2062f6b4e7d02081f92a947b65f7",
-              "status": "passed",
+              "status": "failed",
               "time": {
-                "start": 1717407543725,
-                "stop": 1717407594512,
-                "duration": 50787
+                "start": 1720233819301,
+                "stop": 1720233859438,
+                "duration": 40137
               },
               "flaky": false,
               "newFailed": false,
@@ -822,13 +932,13 @@
             },
             {
               "name": "smallNonTaxInvoiceWithDiscountOverProductLevel",
-              "uid": "85cb59655d4228a8",
+              "uid": "87353d5ec0655e9e",
               "parentUid": "de0a2062f6b4e7d02081f92a947b65f7",
               "status": "passed",
               "time": {
-                "start": 1717407594518,
-                "stop": 1717407646489,
-                "duration": 51971
+                "start": 1720233859449,
+                "stop": 1720233913345,
+                "duration": 53896
               },
               "flaky": false,
               "newFailed": false,
@@ -845,13 +955,13 @@
             },
             {
               "name": "SmallNonTaxInvoiceWithDiscountOverInvoiceLevel",
-              "uid": "194ab56fb0751e69",
+              "uid": "8148316a0aa2e474",
               "parentUid": "de0a2062f6b4e7d02081f92a947b65f7",
               "status": "passed",
               "time": {
-                "start": 1717407646503,
-                "stop": 1717407689694,
-                "duration": 43191
+                "start": 1720233913351,
+                "stop": 1720233953838,
+                "duration": 40487
               },
               "flaky": false,
               "newFailed": false,
@@ -868,13 +978,13 @@
             },
             {
               "name": "A4NonTaxInvoiceWithDiscountOverProductLevel",
-              "uid": "1a83170d235ef6f6",
+              "uid": "976c4ae1598c94d7",
               "parentUid": "de0a2062f6b4e7d02081f92a947b65f7",
-              "status": "passed",
+              "status": "failed",
               "time": {
-                "start": 1717407689700,
-                "stop": 1717407742932,
-                "duration": 53232
+                "start": 1720233953847,
+                "stop": 1720233998691,
+                "duration": 44844
               },
               "flaky": false,
               "newFailed": false,
@@ -891,13 +1001,13 @@
             },
             {
               "name": "A4NonTaxInvoiceWithDiscountOverInvoiceLevel",
-              "uid": "96c51a1f6a3293c1",
+              "uid": "9f4c74422a88e70",
               "parentUid": "de0a2062f6b4e7d02081f92a947b65f7",
               "status": "passed",
               "time": {
-                "start": 1717407742939,
-                "stop": 1717407787861,
-                "duration": 44922
+                "start": 1720233998712,
+                "stop": 1720234034283,
+                "duration": 35571
               },
               "flaky": false,
               "newFailed": false,
@@ -916,17 +1026,17 @@
           "uid": "de0a2062f6b4e7d02081f92a947b65f7"
         },
         {
-          "name": "GoooBig_PendingInvoice",
+          "name": "GoooBig_TotalBoxFundAfterPayment",
           "children": [
             {
-              "name": "PendingInvoiceTestCase",
-              "uid": "404c4886ff021bc1",
-              "parentUid": "7bf76598c63180446f67bd4de091330e",
+              "name": "getTotalBoxFundAfterPayment",
+              "uid": "61d9b203f17a31c",
+              "parentUid": "ace61475ccb45f7b2b334404f110d312",
               "status": "passed",
               "time": {
-                "start": 1717407787866,
-                "stop": 1717407829873,
-                "duration": 42007
+                "start": 1720234034295,
+                "stop": 1720234049584,
+                "duration": 15289
               },
               "flaky": false,
               "newFailed": false,
@@ -942,20 +1052,43 @@
               "tags": []
             }
           ],
-          "uid": "7bf76598c63180446f67bd4de091330e"
+          "uid": "ace61475ccb45f7b2b334404f110d312"
         },
         {
           "name": "GoooBig_NoticeCreditor",
           "children": [
             {
-              "name": "VerifyNoticeCreditorFunctionality",
-              "uid": "cc8b03212e2abf08",
+              "name": "testcase1",
+              "uid": "1bb0df6ddad83094",
               "parentUid": "14f9cadef5e433ac4898440e39ba8281",
               "status": "passed",
               "time": {
-                "start": 1717407829878,
-                "stop": 1717407835790,
-                "duration": 5912
+                "start": 1720234049593,
+                "stop": 1720234055788,
+                "duration": 6195
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "VerifyNoticeCreditorFunctionality",
+              "uid": "3f34eab608e261eb",
+              "parentUid": "14f9cadef5e433ac4898440e39ba8281",
+              "status": "passed",
+              "time": {
+                "start": 1720234055804,
+                "stop": 1720234065198,
+                "duration": 9394
               },
               "flaky": false,
               "newFailed": false,
@@ -972,13 +1105,13 @@
             },
             {
               "name": "VerifyRemoveProductFromNoticeCreditorInvoice",
-              "uid": "493a958de26228c9",
+              "uid": "9f099a6d8b297f48",
               "parentUid": "14f9cadef5e433ac4898440e39ba8281",
               "status": "passed",
               "time": {
-                "start": 1717407835798,
-                "stop": 1717407836757,
-                "duration": 959
+                "start": 1720234065204,
+                "stop": 1720234067145,
+                "duration": 1941
               },
               "flaky": false,
               "newFailed": false,
@@ -995,13 +1128,13 @@
             },
             {
               "name": "VerifyEditeProductFromNoticeCreditorInvoice",
-              "uid": "5655c84b5829a089",
+              "uid": "61293f1e4711e58b",
               "parentUid": "14f9cadef5e433ac4898440e39ba8281",
               "status": "passed",
               "time": {
-                "start": 1717407836761,
-                "stop": 1717407840194,
-                "duration": 3433
+                "start": 1720234067149,
+                "stop": 1720234070190,
+                "duration": 3041
               },
               "flaky": false,
               "newFailed": false,
@@ -1018,13 +1151,13 @@
             },
             {
               "name": "VerifyToCreateANoticeCreditorInvoice",
-              "uid": "eea11c9ef3095231",
+              "uid": "faefda69f20d595e",
               "parentUid": "14f9cadef5e433ac4898440e39ba8281",
               "status": "passed",
               "time": {
-                "start": 1717407840199,
-                "stop": 1717407869107,
-                "duration": 28908
+                "start": 1720234070194,
+                "stop": 1720234094598,
+                "duration": 24404
               },
               "flaky": false,
               "newFailed": false,
@@ -1043,17 +1176,46 @@
           "uid": "14f9cadef5e433ac4898440e39ba8281"
         },
         {
+          "name": "GoooBig_PendingInvoice",
+          "children": [
+            {
+              "name": "PendingInvoiceTestCase",
+              "uid": "243d5f79c58c64c8",
+              "parentUid": "7bf76598c63180446f67bd4de091330e",
+              "status": "passed",
+              "time": {
+                "start": 1720234094604,
+                "stop": 1720234141759,
+                "duration": 47155
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            }
+          ],
+          "uid": "7bf76598c63180446f67bd4de091330e"
+        },
+        {
           "name": "GoooBig_PostPaid",
           "children": [
             {
               "name": "CreateAnPostPaidInvoice",
-              "uid": "df375eccfe7ee49a",
+              "uid": "45f3a417913ff07b",
               "parentUid": "7e3f7bbbbd3975bb4c74adcf262c59db",
               "status": "passed",
               "time": {
-                "start": 1717407869115,
-                "stop": 1717407913136,
-                "duration": 44021
+                "start": 1720234141765,
+                "stop": 1720234182547,
+                "duration": 40782
               },
               "flaky": false,
               "newFailed": false,
@@ -1076,13 +1238,13 @@
           "children": [
             {
               "name": "SmallTaxInvoiceToDisplayThePriceWithDiscountOverProduct",
-              "uid": "5e302b471bb2f8e8",
+              "uid": "6795949bfde5eb0d",
               "parentUid": "f98c1c2c3761448d7b8adb25dbfa8545",
               "status": "passed",
               "time": {
-                "start": 1717407913143,
-                "stop": 1717407960954,
-                "duration": 47811
+                "start": 1720234182553,
+                "stop": 1720234224723,
+                "duration": 42170
               },
               "flaky": false,
               "newFailed": false,
@@ -1104,59 +1266,21 @@
           "name": "GoooBig_OtherPaymentMethods",
           "children": [
             {
-              "name": "beforeClass",
-              "uid": "95d6851b30ced2c7",
-              "parentUid": "ba4d00e12718cfb6bfce022e61847286",
-              "status": "broken",
-              "time": {
-                "start": 1717421992811,
-                "stop": 1717421992821,
-                "duration": 10
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 2,
-              "retriesStatusChange": false,
-              "parameters": [],
-              "tags": []
-            },
-            {
               "name": "VerifyOtherPaymentMethodsScreen",
-              "uid": "4c7b293a61a986c7",
-              "parentUid": "ba4d00e12718cfb6bfce022e61847286",
-              "status": "skipped",
-              "time": {
-                "start": 1717421993104,
-                "stop": 1717421993112,
-                "duration": 8
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 2,
-              "retriesStatusChange": false,
-              "parameters": [],
-              "tags": []
-            },
-            {
-              "name": "VerifyOtherPaymentMethodsScreen",
-              "uid": "8275f972556702d3",
+              "uid": "99c3a3ac5caed436",
               "parentUid": "ba4d00e12718cfb6bfce022e61847286",
               "status": "passed",
               "time": {
-                "start": 1717491071373,
-                "stop": 1717491096112,
-                "duration": 24739
+                "start": 1720234224728,
+                "stop": 1720234247621,
+                "duration": 22893
               },
               "flaky": false,
               "newFailed": false,
               "newPassed": false,
               "newBroken": false,
-              "retriesCount": 26,
-              "retriesStatusChange": true,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
               "parameters": [
                 "emulator-5554",
                 "Android",
@@ -1166,20 +1290,20 @@
             },
             {
               "name": "testcase2",
-              "uid": "4e32da880628c326",
+              "uid": "8bb1508460a230bf",
               "parentUid": "ba4d00e12718cfb6bfce022e61847286",
               "status": "passed",
               "time": {
-                "start": 1717491096121,
-                "stop": 1717491137156,
-                "duration": 41035
+                "start": 1720234247626,
+                "stop": 1720234277436,
+                "duration": 29810
               },
               "flaky": false,
               "newFailed": false,
               "newPassed": false,
               "newBroken": false,
-              "retriesCount": 8,
-              "retriesStatusChange": true,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
               "parameters": [
                 "emulator-5554",
                 "Android",
@@ -1191,24 +1315,802 @@
           "uid": "ba4d00e12718cfb6bfce022e61847286"
         },
         {
-          "name": "GoooBig_UploadInvoiceForClient",
+          "name": "GoooBig_CashierServices",
           "children": [
             {
-              "name": "verifyToNavigateToCartWithoutProducts",
-              "uid": "340d6ef255f71758",
-              "parentUid": "fa9ace75c331e227138989792f93229e",
+              "name": "testcase1",
+              "uid": "12ad56502645c998",
+              "parentUid": "b1c6dd977b6ecb2bfec13da2aae595e3",
               "status": "passed",
               "time": {
-                "start": 1717483860263,
-                "stop": 1717483862088,
-                "duration": 1825
+                "start": 1720234277442,
+                "stop": 1720234280608,
+                "duration": 3166
               },
               "flaky": false,
               "newFailed": false,
               "newPassed": false,
               "newBroken": false,
-              "retriesCount": 2,
-              "retriesStatusChange": true,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "testcase2",
+              "uid": "c958d89bebb5c370",
+              "parentUid": "b1c6dd977b6ecb2bfec13da2aae595e3",
+              "status": "passed",
+              "time": {
+                "start": 1720234280615,
+                "stop": 1720234286439,
+                "duration": 5824
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "testcase3",
+              "uid": "a3534e45ca98aee9",
+              "parentUid": "b1c6dd977b6ecb2bfec13da2aae595e3",
+              "status": "passed",
+              "time": {
+                "start": 1720234286447,
+                "stop": 1720234288342,
+                "duration": 1895
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "testcase4",
+              "uid": "a1c5c12ea5100b92",
+              "parentUid": "b1c6dd977b6ecb2bfec13da2aae595e3",
+              "status": "passed",
+              "time": {
+                "start": 1720234288349,
+                "stop": 1720234292089,
+                "duration": 3740
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "testcase5",
+              "uid": "c31c20cc36ef10c7",
+              "parentUid": "b1c6dd977b6ecb2bfec13da2aae595e3",
+              "status": "passed",
+              "time": {
+                "start": 1720234292096,
+                "stop": 1720234298123,
+                "duration": 6027
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "testcase6",
+              "uid": "ef8c6944b60b7506",
+              "parentUid": "b1c6dd977b6ecb2bfec13da2aae595e3",
+              "status": "passed",
+              "time": {
+                "start": 1720234298131,
+                "stop": 1720234314306,
+                "duration": 16175
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "testcase7",
+              "uid": "587f68acdf5c3d9c",
+              "parentUid": "b1c6dd977b6ecb2bfec13da2aae595e3",
+              "status": "broken",
+              "time": {
+                "start": 1720234314311,
+                "stop": 1720234328346,
+                "duration": 14035
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            }
+          ],
+          "uid": "b1c6dd977b6ecb2bfec13da2aae595e3"
+        }
+      ],
+      "uid": "602bf7d9ec423620b50413242b82607d"
+    },
+    {
+      "name": "GoooBigTestCasesForTablet",
+      "children": [
+        {
+          "name": "GoooBig_PreparationTablet",
+          "children": [
+            {
+              "name": "prepareOrganizationUsingAnEmptyData",
+              "uid": "d45c05d5bbd3f14e",
+              "parentUid": "9dd4d2bd06c6bd08b2297e4c320ca3c2",
+              "status": "passed",
+              "time": {
+                "start": 1720271909988,
+                "stop": 1720271932880,
+                "duration": 22892
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "prepareOrganizationUsingUserIdAndAnEmptyData",
+              "uid": "c1bfff3af7a40c2e",
+              "parentUid": "9dd4d2bd06c6bd08b2297e4c320ca3c2",
+              "status": "passed",
+              "time": {
+                "start": 1720271933044,
+                "stop": 1720271950800,
+                "duration": 17756
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "prepareOrganizationUsingUserIdPasswordAndAnEmptyData",
+              "uid": "7da902dad12c3d4e",
+              "parentUid": "9dd4d2bd06c6bd08b2297e4c320ca3c2",
+              "status": "passed",
+              "time": {
+                "start": 1720271950810,
+                "stop": 1720271968474,
+                "duration": 17664
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "prepareOrganizationUsingInvalidData",
+              "uid": "5340d4cf4dd64118",
+              "parentUid": "9dd4d2bd06c6bd08b2297e4c320ca3c2",
+              "status": "passed",
+              "time": {
+                "start": 1720271968482,
+                "stop": 1720271978550,
+                "duration": 10068
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "prepareOrganizationUsingValidData",
+              "uid": "8916ad54e0870c0e",
+              "parentUid": "9dd4d2bd06c6bd08b2297e4c320ca3c2",
+              "status": "passed",
+              "time": {
+                "start": 1720271978559,
+                "stop": 1720272004688,
+                "duration": 26129
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "redirectToLoginScreenAfterPrepareOrganization",
+              "uid": "a2ddc8e6b2ec7ab5",
+              "parentUid": "9dd4d2bd06c6bd08b2297e4c320ca3c2",
+              "status": "passed",
+              "time": {
+                "start": 1720272004702,
+                "stop": 1720272005468,
+                "duration": 766
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            }
+          ],
+          "uid": "9dd4d2bd06c6bd08b2297e4c320ca3c2"
+        },
+        {
+          "name": "GoooBig_LoginTablet",
+          "children": [
+            {
+              "name": "loginToOrganizationUsingAnEmptyData",
+              "uid": "b23cd80f2ab44f33",
+              "parentUid": "eb1f74a95a2e7d2b5921bb34068f5fd4",
+              "status": "passed",
+              "time": {
+                "start": 1720272005476,
+                "stop": 1720272012602,
+                "duration": 7126
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "LoginToOrganizationUsingUserIdAndAnEmptyData",
+              "uid": "ea31d2f92fbf3fed",
+              "parentUid": "eb1f74a95a2e7d2b5921bb34068f5fd4",
+              "status": "passed",
+              "time": {
+                "start": 1720272012614,
+                "stop": 1720272022262,
+                "duration": 9648
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "LoginToOrganizationUsingInvalidData",
+              "uid": "ceee94913320fe0c",
+              "parentUid": "eb1f74a95a2e7d2b5921bb34068f5fd4",
+              "status": "passed",
+              "time": {
+                "start": 1720272022271,
+                "stop": 1720272032561,
+                "duration": 10290
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "GetTextFromLoginScreen",
+              "uid": "2bfe9e62e4cdc363",
+              "parentUid": "eb1f74a95a2e7d2b5921bb34068f5fd4",
+              "status": "passed",
+              "time": {
+                "start": 1720272032569,
+                "stop": 1720272037300,
+                "duration": 4731
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "LoginToOrganizationUsingValidData",
+              "uid": "ffa8a0dc535ccd09",
+              "parentUid": "eb1f74a95a2e7d2b5921bb34068f5fd4",
+              "status": "passed",
+              "time": {
+                "start": 1720272037307,
+                "stop": 1720272046166,
+                "duration": 8859
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            }
+          ],
+          "uid": "eb1f74a95a2e7d2b5921bb34068f5fd4"
+        },
+        {
+          "name": "GoooBig_branchesAndWarehousesTablet",
+          "children": [
+            {
+              "name": "verifySelectWarehouse",
+              "uid": "594b721185fde001",
+              "parentUid": "2d590714cd8c8406e8f86f719d5aa082",
+              "status": "passed",
+              "time": {
+                "start": 1720272046172,
+                "stop": 1720272052877,
+                "duration": 6705
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            }
+          ],
+          "uid": "2d590714cd8c8406e8f86f719d5aa082"
+        },
+        {
+          "name": "GoooBig_ShiftStartTablet",
+          "children": [
+            {
+              "name": "clickOnApplyWithoutEnterBoxFundStart",
+              "uid": "5683763818508edb",
+              "parentUid": "e6ef7080d63c89e8062436f1da528803",
+              "status": "passed",
+              "time": {
+                "start": 1720272052885,
+                "stop": 1720272061479,
+                "duration": 8594
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "verifyClickOnApplyWithValidData",
+              "uid": "fb4cb74c9d0684d7",
+              "parentUid": "e6ef7080d63c89e8062436f1da528803",
+              "status": "passed",
+              "time": {
+                "start": 1720272061487,
+                "stop": 1720272064597,
+                "duration": 3110
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "verifyNumberOfStartingShift",
+              "uid": "a3e0c93f1fc73f60",
+              "parentUid": "e6ef7080d63c89e8062436f1da528803",
+              "status": "passed",
+              "time": {
+                "start": 1720272064603,
+                "stop": 1720272067093,
+                "duration": 2490
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            }
+          ],
+          "uid": "e6ef7080d63c89e8062436f1da528803"
+        },
+        {
+          "name": "GoooBig_AddClientTablet",
+          "children": [
+            {
+              "name": "NavigateToClientsScreen",
+              "uid": "1a5c5eedc1aa2c96",
+              "parentUid": "82f25dc99218aa52a8984257d684a859",
+              "status": "passed",
+              "time": {
+                "start": 1720272067100,
+                "stop": 1720272078317,
+                "duration": 11217
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "NavigateToaddClient",
+              "uid": "74c3e0b30992657f",
+              "parentUid": "82f25dc99218aa52a8984257d684a859",
+              "status": "passed",
+              "time": {
+                "start": 1720272078331,
+                "stop": 1720272085341,
+                "duration": 7010
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "VerifyClickOnCancelButton",
+              "uid": "8f41f8d53d7d7d02",
+              "parentUid": "82f25dc99218aa52a8984257d684a859",
+              "status": "passed",
+              "time": {
+                "start": 1720272085347,
+                "stop": 1720272087470,
+                "duration": 2123
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "VerifyClickOnAddClientButtonWithoutData",
+              "uid": "98c0499301c05274",
+              "parentUid": "82f25dc99218aa52a8984257d684a859",
+              "status": "passed",
+              "time": {
+                "start": 1720272087476,
+                "stop": 1720272089482,
+                "duration": 2006
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "VerifyToAddClientWithNameOnly",
+              "uid": "d04e5066c933513b",
+              "parentUid": "82f25dc99218aa52a8984257d684a859",
+              "status": "passed",
+              "time": {
+                "start": 1720272089487,
+                "stop": 1720272093821,
+                "duration": 4334
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "VerifyToAddClientWithPhoneOnly",
+              "uid": "4ed33585ceccce76",
+              "parentUid": "82f25dc99218aa52a8984257d684a859",
+              "status": "passed",
+              "time": {
+                "start": 1720272093827,
+                "stop": 1720272102171,
+                "duration": 8344
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "VerifyToAddClientWithSpace",
+              "uid": "e99fce4ab0058971",
+              "parentUid": "82f25dc99218aa52a8984257d684a859",
+              "status": "broken",
+              "time": {
+                "start": 1720272102179,
+                "stop": 1720272131432,
+                "duration": 29253
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "VerifyToAddClientWithInvalidPhoneData",
+              "uid": "3403ec1e187d5255",
+              "parentUid": "82f25dc99218aa52a8984257d684a859",
+              "status": "broken",
+              "time": {
+                "start": 1720272131453,
+                "stop": 1720272164189,
+                "duration": 32736
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "VerifyToAddClientWithValidSameData",
+              "uid": "f30a73e9586a436",
+              "parentUid": "82f25dc99218aa52a8984257d684a859",
+              "status": "passed",
+              "time": {
+                "start": 1720272164201,
+                "stop": 1720272183628,
+                "duration": 19427
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            }
+          ],
+          "uid": "82f25dc99218aa52a8984257d684a859"
+        },
+        {
+          "name": "GoooBig_UploadInvoiceForClientTablet",
+          "children": [
+            {
+              "name": "verifyToSelectInvoiceType",
+              "uid": "e586d4be25ec7798",
+              "parentUid": "7a17e5e477d1ca8f4f22049b5f096b17",
+              "status": "passed",
+              "time": {
+                "start": 1720272183635,
+                "stop": 1720272194639,
+                "duration": 11004
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            },
+            {
+              "name": "verifyToNavigateToCartWithoutProducts",
+              "uid": "e9e3c706d2a4c7df",
+              "parentUid": "7a17e5e477d1ca8f4f22049b5f096b17",
+              "status": "passed",
+              "time": {
+                "start": 1720272194646,
+                "stop": 1720272197689,
+                "duration": 3043
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
               "parameters": [
                 "emulator-5554",
                 "Android",
@@ -1218,20 +2120,20 @@
             },
             {
               "name": "verifyToSelectCategoryAndDepartmentAndProduct",
-              "uid": "b7c1fe7a52c23704",
-              "parentUid": "fa9ace75c331e227138989792f93229e",
+              "uid": "993f0ac7826f23a4",
+              "parentUid": "7a17e5e477d1ca8f4f22049b5f096b17",
               "status": "passed",
               "time": {
-                "start": 1717483862094,
-                "stop": 1717483872737,
-                "duration": 10643
+                "start": 1720272197696,
+                "stop": 1720272201783,
+                "duration": 4087
               },
               "flaky": false,
               "newFailed": false,
               "newPassed": false,
               "newBroken": false,
-              "retriesCount": 2,
-              "retriesStatusChange": true,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
               "parameters": [
                 "emulator-5554",
                 "Android",
@@ -1241,20 +2143,20 @@
             },
             {
               "name": "verifyToSelectClientForInvoice",
-              "uid": "954fed287ef4ead5",
-              "parentUid": "fa9ace75c331e227138989792f93229e",
-              "status": "failed",
+              "uid": "beb86488fad3bcaf",
+              "parentUid": "7a17e5e477d1ca8f4f22049b5f096b17",
+              "status": "passed",
               "time": {
-                "start": 1717483872743,
-                "stop": 1717483911997,
-                "duration": 39254
+                "start": 1720272201791,
+                "stop": 1720272239616,
+                "duration": 37825
               },
               "flaky": false,
               "newFailed": false,
               "newPassed": false,
               "newBroken": false,
-              "retriesCount": 2,
-              "retriesStatusChange": true,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
               "parameters": [
                 "emulator-5554",
                 "Android",
@@ -1264,20 +2166,20 @@
             },
             {
               "name": "verifyToUpdateClients",
-              "uid": "f1419099e31d1c72",
-              "parentUid": "fa9ace75c331e227138989792f93229e",
+              "uid": "d2f553c0fedca47d",
+              "parentUid": "7a17e5e477d1ca8f4f22049b5f096b17",
               "status": "passed",
               "time": {
-                "start": 1717483912014,
-                "stop": 1717483938897,
-                "duration": 26883
+                "start": 1720272239623,
+                "stop": 1720272251883,
+                "duration": 12260
               },
               "flaky": false,
               "newFailed": false,
               "newPassed": false,
               "newBroken": false,
-              "retriesCount": 2,
-              "retriesStatusChange": true,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
               "parameters": [
                 "emulator-5554",
                 "Android",
@@ -1286,50 +2188,21 @@
               "tags": []
             },
             {
-              "name": "verifyToSelectInvoiceType",
-              "uid": "640384654340c293",
-              "parentUid": "fa9ace75c331e227138989792f93229e",
-              "status": "broken",
-              "time": {
-                "start": 1717487262659,
-                "stop": 1717487273550,
-                "duration": 10891
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 3,
-              "retriesStatusChange": true,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            }
-          ],
-          "uid": "fa9ace75c331e227138989792f93229e"
-        },
-        {
-          "name": "GoooBig_branchesAndWarehouses",
-          "children": [
-            {
-              "name": "verifySelectWarehouse",
-              "uid": "ee4e7c830f0b0994",
-              "parentUid": "7f70f5f532438e34730f586c6ca42264",
+              "name": "verifyToPayAnAmount",
+              "uid": "c6cd03895eaf7723",
+              "parentUid": "7a17e5e477d1ca8f4f22049b5f096b17",
               "status": "passed",
               "time": {
-                "start": 1717491060119,
-                "stop": 1717491065454,
-                "duration": 5335
+                "start": 1720272251889,
+                "stop": 1720272288779,
+                "duration": 36890
               },
               "flaky": false,
               "newFailed": false,
               "newPassed": false,
               "newBroken": false,
-              "retriesCount": 30,
-              "retriesStatusChange": true,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
               "parameters": [
                 "emulator-5554",
                 "Android",
@@ -1338,10 +2211,39 @@
               "tags": []
             }
           ],
-          "uid": "7f70f5f532438e34730f586c6ca42264"
+          "uid": "7a17e5e477d1ca8f4f22049b5f096b17"
+        },
+        {
+          "name": "GoooBig_InvoicesTablet",
+          "children": [
+            {
+              "name": "SmallTaxInvoiceWithDiscountOverProductLevel",
+              "uid": "76c05d34dd274255",
+              "parentUid": "06340ff37611a70fc7a757aa6248f7df",
+              "status": "failed",
+              "time": {
+                "start": 1720272288786,
+                "stop": 1720272322218,
+                "duration": 33432
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "emulator-5554",
+                "Android",
+                "9"
+              ],
+              "tags": []
+            }
+          ],
+          "uid": "06340ff37611a70fc7a757aa6248f7df"
         }
       ],
-      "uid": "602bf7d9ec423620b50413242b82607d"
+      "uid": "61775a1ed0ba6c28618ef3276a05f9f1"
     }
   ]
 }

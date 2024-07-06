@@ -1,0 +1,130 @@
+{
+  "uuid": "0af0a02b-409c-4af4-82da-d83534b1b2a6",
+  "historyId": "8f06267cdb9679f6939dc31004d9531",
+  "fullName": "GoooBigTestCases.GoooBig_Invoices.A4TaxInvoiceWithDiscountOverProductLevel",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Invoices"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Invoices"
+    },
+    {
+      "name": "testMethod",
+      "value": "A4TaxInvoiceWithDiscountOverProductLevel"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Invoices"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "6548@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "A4TaxInvoiceWithDiscountOverProductLevel",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to A4 Tax Invoice with discount over Product level",
+  "steps": [
+    {
+      "name": "verify to add product to cart",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720233786163,
+      "stop": 1720233786163
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "30b078b6-91d5-4196-b490-e589c95facf9-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "b33b69ec-074a-41ac-9128-5d9137dce632-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "de3c037b-66d7-4c4e-91a1-6fa2a863706b-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "16cf465c-7ee3-4dc9-aa98-1a53a5beb5f6-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "ff53c301-32b1-4cbc-a45c-1d626ae7d6c2-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Extracted Invoice Text",
+      "source": "6e987682-6389-4d57-981a-60e66a0c5eb2-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Filtered Invoice Text",
+      "source": "d320ea73-d8fd-457f-a5cf-5a51bfce6479-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1720233776749,
+  "stop": 1720233819293
+}

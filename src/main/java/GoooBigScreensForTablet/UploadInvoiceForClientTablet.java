@@ -206,5 +206,90 @@ public class UploadInvoiceForClientTablet extends TestBase {
         searchClient.clear();
     }
 
+    // Pay Amount For Client
+    @AndroidFindBy(xpath = "//android.view.View[@index='2']")
+    MobileElement clientNameInPaymentScreen;
+
+    public String getClientNameInPaymentScreen() {
+        return clientNameInPaymentScreen.getText();
+    }
+
+    @AndroidFindBy(xpath = "//android.view.View[@index='5']")
+    MobileElement TotalAmountOfPaymentScreen;
+
+    public String getTotalAmountOfPaymentScreen() {
+        return TotalAmountOfPaymentScreen.getText();
+    }
+
+    @AndroidFindBy(xpath = "//android.view.View[@index='8']")
+    MobileElement RemainingAmountOfPaymentScreen;
+
+    public String getRemainingAmountOfPaymentScreen() {
+        return RemainingAmountOfPaymentScreen.getText();
+    }
+
+    @AndroidFindBy(xpath = "//android.view.View[@index='5']")
+    MobileElement RemainingAmountOfPaymentScreen2;
+
+    public String getRemainingAmountOfPaymentScreen2() {
+        return RemainingAmountOfPaymentScreen2.getText();
+    }
+
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='11']")
+    MobileElement PayAmountForClient;
+
+    public void sendKeysToPayAmountForClient(String payAmount) {
+        PayAmountForClient.click();
+        driver.hideKeyboard();
+        PayAmountForClient.sendKeys(payAmount);
+        driver.hideKeyboard();
+    }
+
+    public String getPayAmountForClient() {
+        return PayAmountForClient.getText();
+    }
+
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='16']")
+    MobileElement DetailsField;
+
+    public void sendKeysToDetailsField(String details) {
+        DetailsField.click();
+        driver.hideKeyboard();
+        DetailsField.sendKeys(details);
+        driver.hideKeyboard();
+    }
+
+    public String getDetailsField() {
+        return DetailsField.getText();
+    }
+
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='إعادة حساب']")
+    MobileElement ResetButtonForPayment;
+
+    public void clickOnResetButtonForPayment() {
+        ResetButtonForPayment.click();
+    }
+
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
+    MobileElement SubmitButtonForPayment;
+
+    public void clickOnSubmitButtonForPayment() {
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        // Scroll to the element
+        driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))"
+                + ".scrollIntoView(new UiSelector().description(\"تنفيذ\").instance(0));");
+
+        // Locate the element
+        MobileElement submitButtonForPayment = (MobileElement) driver.findElementByXPath("//android.view.View[@content-desc='تنفيذ']");
+
+        // Wait until the element is clickable
+        wait.until(ExpectedConditions.elementToBeClickable(submitButtonForPayment));
+
+        // Click the element
+        submitButtonForPayment.click();
+    }
+
+
+
 
 }

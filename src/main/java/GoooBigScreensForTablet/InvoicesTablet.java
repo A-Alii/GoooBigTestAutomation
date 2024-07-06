@@ -23,13 +23,13 @@ public class InvoicesTablet extends TestBase {
     MobileElement selectTaxInvoiceTablet;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
     MobileElement submitTablet;
-    @AndroidFindBy(xpath = "//android.widget.EditText[@index='7']")
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='4']")
     MobileElement searchbarTablet;
     @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'10000\n" +
             "باقة رمضان ')]")
     MobileElement addToCartFirstTablet;
-    @AndroidFindBy(xpath = "//android.view.View[@index = '1']")
-    List<MobileElement> EditProductTablet;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc = '1.000']")
+    MobileElement EditProductTablet;
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='5']")
     MobileElement discountFieldTablet;
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='3']")
@@ -91,7 +91,7 @@ public class InvoicesTablet extends TestBase {
     }
 
     public void clickOnEditProductTablet() {
-        EditProductTablet.get(1).click();
+        EditProductTablet.click();
     }
 
     public void sendKeysToDiscountTablet(String discount) {
