@@ -9,12 +9,13 @@
     </listeners>
     <test verbose="2" preserve-order="true" name="F:/GoooBigMobileApp">
         <classes>
-            <!--<class name="GoooBigTestCases.GoooBig_Preparation"/>
+            <class name="GoooBigTestCases.GoooBig_Preparation"/>
             <class name="GoooBigTestCases.GoooBig_Login"/>
             <class name="GoooBigTestCases.GoooBig_branchesAndWarehouses"/>
             <class name="GoooBigTestCases.GoooBig_ShiftStart"/>
             <class name="GoooBigTestCases.GoooBig_Home"/>
-            <class name="GoooBigTestCases.GoooBig_AddClient"/>
+            <class name="GoooBigTestCases.GoooBig_Favorite"/>
+            <!--<class name="GoooBigTestCases.GoooBig_AddClient"/>
             <class name="GoooBigTestCases.GoooBig_UploadInvoiceForClient"/>
             <class name="GoooBigTestCases.GoooBig_BoxOperation"/>
             <class name="GoooBigTestCases.GoooBig_Invoices"/>
@@ -29,13 +30,13 @@
             <!--<class name="GoooBigTestCases.GoooBig_WebPortal"/>-->
 
 
-            <class name="GoooBigTestCasesForTablet.GoooBig_PreparationTablet"/>
+            <!--<class name="GoooBigTestCasesForTablet.GoooBig_PreparationTablet"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_LoginTablet"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_branchesAndWarehousesTablet"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_ShiftStartTablet"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_AddClientTablet"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_UploadInvoiceForClientTablet"/>
-            <class name="GoooBigTestCasesForTablet.GoooBig_InvoicesTablet"/>
+            <class name="GoooBigTestCasesForTablet.GoooBig_InvoicesTablet"/>-->
 
 
             <!--<class name="GoooBigTestCasesForTablet.GoooBig_InvoicesTablet"/>
