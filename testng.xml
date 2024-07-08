@@ -17,9 +17,10 @@
             <class name="GoooBigTestCases.GoooBig_Favorite"/>
             <!--<class name="GoooBigTestCases.GoooBig_AddClient"/>
             <class name="GoooBigTestCases.GoooBig_UploadInvoiceForClient"/>
-            <class name="GoooBigTestCases.GoooBig_BoxOperation"/>
+            <class name="GoooBigTestCases.GoooBig_BoxOperation"/>-->
             <class name="GoooBigTestCases.GoooBig_Invoices"/>
-            <class name="GoooBigTestCases.GoooBig_TotalBoxFundAfterPayment"/>
+            <class name="GoooBigTestCases.GoooBig_addFirstProductWithAddition"/>
+            <!--<class name="GoooBigTestCases.GoooBig_TotalBoxFundAfterPayment"/>
             <class name="GoooBigTestCases.GoooBig_NoticeCreditor"/>
             <class name="GoooBigTestCases.GoooBig_PendingInvoice"/>
             <class name="GoooBigTestCases.GoooBig_PostPaid"/>

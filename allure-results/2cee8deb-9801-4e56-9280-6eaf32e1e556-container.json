@@ -1,0 +1,12 @@
+{
+  "uuid": "2cee8deb-9801-4e56-9280-6eaf32e1e556",
+  "name": "GoooBigTestCases.GoooBig_ShiftStart",
+  "children": [
+    "693a057e-3258-4251-870f-f9c499123d3f",
+    "73d5d839-21b9-41e2-8905-234266b0a85e"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1720435579738,
+  "stop": 1720435730486
+}
