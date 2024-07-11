@@ -46,7 +46,14 @@ public class GoooBig_TotalBoxFundAfterPayment extends TestBase {
         System.out.println("Seventh Invoice: " + seventhInvoice);
         Double eighthInvoice = Double.parseDouble(totalBoxFundAfterPayment.getEightInvoice().replaceAll("[^0-9.]", ""));
         System.out.println("Eighth Invoice: " + eighthInvoice);
-        double TotalBoxFundAfterPayment = firstInvoice + secondInvoice + thirdInvoice + fourthInvoice + fifthInvoice + sixthInvoice + seventhInvoice + eighthInvoice;
+        Double ninthInvoice = Double.parseDouble(totalBoxFundAfterPayment.getNinthInvoice().replaceAll("[^0-9.]", ""));
+        System.out.println("Ninth Invoice: " + ninthInvoice);
+        Double tenInvoice = Double.parseDouble(totalBoxFundAfterPayment.getTenInvoice().replaceAll("[^0-9.]", ""));
+        System.out.println("Ten Invoice: " + tenInvoice);
+        totalBoxFundAfterPayment.clickOnNext();
+        Double elevenInvoice = Double.parseDouble(totalBoxFundAfterPayment.getElevenInvoice().replaceAll("[^0-9.]", ""));
+        System.out.println("Eleven Invoice: " + elevenInvoice);
+        double TotalBoxFundAfterPayment = firstInvoice + secondInvoice + thirdInvoice + fourthInvoice + fifthInvoice + sixthInvoice + seventhInvoice + eighthInvoice + ninthInvoice + tenInvoice;
         System.out.println("Total Box Fund After Payment: " + TotalBoxFundAfterPayment);
         totalBoxFundAfterPayment.navigateBack();
         totalBoxFundAfterPayment.hideKeyboard();

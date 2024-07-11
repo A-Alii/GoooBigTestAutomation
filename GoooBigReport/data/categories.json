@@ -10,19 +10,19 @@
           "children": [
             {
               "name": "VerifyToAddClientWithSpace",
-              "uid": "85f5b904e7e00323",
+              "uid": "a2335cd96c5ffe30",
               "parentUid": "0e35d2c650110b67813558882541f8dc",
               "status": "broken",
               "time": {
-                "start": 1720233478628,
-                "stop": 1720233502947,
-                "duration": 24319
+                "start": 1720610996876,
+                "stop": 1720611021940,
+                "duration": 25064
               },
               "flaky": false,
               "newFailed": false,
               "newPassed": false,
               "newBroken": false,
-              "retriesCount": 0,
+              "retriesCount": 1,
               "retriesStatusChange": false,
               "parameters": [
                 "emulator-5554",
@@ -33,19 +33,19 @@
             },
             {
               "name": "VerifyToAddClientWithInvalidPhoneData",
-              "uid": "7cc9075d21d81551",
+              "uid": "7aaf0bf3cbd9e2d0",
               "parentUid": "0e35d2c650110b67813558882541f8dc",
               "status": "broken",
               "time": {
-                "start": 1720233502960,
-                "stop": 1720233527277,
-                "duration": 24317
+                "start": 1720611021961,
+                "stop": 1720611048782,
+                "duration": 26821
               },
               "flaky": false,
               "newFailed": false,
               "newPassed": false,
               "newBroken": false,
-              "retriesCount": 0,
+              "retriesCount": 1,
               "retriesStatusChange": false,
               "parameters": [
                 "emulator-5554",
@@ -56,13 +56,13 @@
             },
             {
               "name": "VerifyToAddClientWithSpace",
-              "uid": "e99fce4ab0058971",
+              "uid": "64ab997e2e9ea511",
               "parentUid": "0e35d2c650110b67813558882541f8dc",
               "status": "broken",
               "time": {
-                "start": 1720272102179,
-                "stop": 1720272131432,
-                "duration": 29253
+                "start": 1720684039977,
+                "stop": 1720684067193,
+                "duration": 27216
               },
               "flaky": false,
               "newFailed": false,
@@ -79,13 +79,13 @@
             },
             {
               "name": "VerifyToAddClientWithInvalidPhoneData",
-              "uid": "3403ec1e187d5255",
+              "uid": "5ec9026f2c636dbe",
               "parentUid": "0e35d2c650110b67813558882541f8dc",
               "status": "broken",
               "time": {
-                "start": 1720272131453,
-                "stop": 1720272164189,
-                "duration": 32736
+                "start": 1720684067213,
+                "stop": 1720684096358,
+                "duration": 29145
               },
               "flaky": false,
               "newFailed": false,
@@ -108,13 +108,13 @@
           "children": [
             {
               "name": "testcase7",
-              "uid": "587f68acdf5c3d9c",
+              "uid": "a477b8c5508fd107",
               "parentUid": "247369b4790de71c45ce41ace657a420",
               "status": "broken",
               "time": {
-                "start": 1720234314311,
-                "stop": 1720234328346,
-                "duration": 14035
+                "start": 1720612006268,
+                "stop": 1720612023306,
+                "duration": 17038
               },
               "flaky": false,
               "newFailed": false,
@@ -134,99 +134,6 @@
         }
       ],
       "uid": "bdbf199525818fae7a8651db9eafe741"
-    },
-    {
-      "name": "Product defects",
-      "children": [
-        {
-          "name": "expected [50.00] but found [1.00]",
-          "children": [
-            {
-              "name": "A4TaxInvoiceWithDiscountOverInvoiceLevel",
-              "uid": "e6e1b6be47bd38c7",
-              "parentUid": "c4dc6af344d99ef91838d2a99d7a5ffe",
-              "status": "failed",
-              "time": {
-                "start": 1720233819301,
-                "stop": 1720233859438,
-                "duration": 40137
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 0,
-              "retriesStatusChange": false,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            }
-          ],
-          "uid": "c4dc6af344d99ef91838d2a99d7a5ffe"
-        },
-        {
-          "name": "expected [500.00] but found [1000.00]",
-          "children": [
-            {
-              "name": "A4NonTaxInvoiceWithDiscountOverProductLevel",
-              "uid": "976c4ae1598c94d7",
-              "parentUid": "dc29f3cb26a31ee390da1cbeeb6c5837",
-              "status": "failed",
-              "time": {
-                "start": 1720233953847,
-                "stop": 1720233998691,
-                "duration": 44844
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 0,
-              "retriesStatusChange": false,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            }
-          ],
-          "uid": "dc29f3cb26a31ee390da1cbeeb6c5837"
-        },
-        {
-          "name": "Total values do not match. expected [9500.0] but found [1239.13]",
-          "children": [
-            {
-              "name": "SmallTaxInvoiceWithDiscountOverProductLevel",
-              "uid": "76c05d34dd274255",
-              "parentUid": "cbf844cec1e01d0119ac1a79e790057d",
-              "status": "failed",
-              "time": {
-                "start": 1720272288786,
-                "stop": 1720272322218,
-                "duration": 33432
-              },
-              "flaky": false,
-              "newFailed": false,
-              "newPassed": false,
-              "newBroken": false,
-              "retriesCount": 0,
-              "retriesStatusChange": false,
-              "parameters": [
-                "emulator-5554",
-                "Android",
-                "9"
-              ],
-              "tags": []
-            }
-          ],
-          "uid": "cbf844cec1e01d0119ac1a79e790057d"
-        }
-      ],
-      "uid": "8fb3a91ba5aaf9de24cc8a92edc82b5d"
     }
   ]
 }

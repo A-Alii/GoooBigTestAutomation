@@ -1,0 +1,11 @@
+{
+  "uuid": "8ed1f61e-35f8-457d-bd5f-d2d14cffd891",
+  "name": "GoooBigTestCases.GoooBig_PriceOffer",
+  "children": [
+    "cec171d2-7520-4fb4-a07a-22ebe7fcd590"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1720610801429,
+  "stop": 1720612023362
+}

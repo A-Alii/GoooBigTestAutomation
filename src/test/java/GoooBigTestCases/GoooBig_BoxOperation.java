@@ -52,6 +52,7 @@ public class GoooBig_BoxOperation extends TestBase {
     public void NavigateToBoxOperations() throws InterruptedException {
         boxOperation = new BoxOperation();
         boxOperation.navigateToCashier();
+        Thread.sleep(2000);
         boxOperation.goToBoxOperation();
         boxOperation.isBoxOperationScreenDisplay();
         System.out.println("Box Operation Screen Is Displayed.");
@@ -62,6 +63,7 @@ public class GoooBig_BoxOperation extends TestBase {
         boxOperation = new BoxOperation();
         Thread.sleep(1000);
         boxOperation.selectDepositTransactionType();
+        Thread.sleep(1000);
         boxOperation.sendKeysToBoxOperation2(amount);
         boxOperation.clickOnEmployee();
         boxOperation.clickApplyTransaction();
@@ -74,12 +76,12 @@ public class GoooBig_BoxOperation extends TestBase {
         // Use Tesseract to extract text from the image
         ITesseract tesseract = new Tesseract();
         tesseract.setDatapath("C:\\Program Files\\Tesseract-OCR\\tessdata");
-        tesseract.setLanguage("Arabic"); // Set the language to Arabic
+        tesseract.setLanguage("eng"); // Set the language to Arabic
         String extractedText;
         try {
             extractedText = tesseract.doOCR(screenshotFile);
             extractedText = extractedText.replace("عlدي|", "إيداع");
-
+            System.out.println("Extracted Text: " + extractedText);
             // Extract required information
             String deposit = "";
             String from = "";
@@ -152,8 +154,6 @@ public class GoooBig_BoxOperation extends TestBase {
         Assert.assertTrue(boxOperation.logoIsDisplay(), "Logo Not Display");
         boxOperation.navigateBack();
         boxOperation.hideKeyboard();
-        boxOperation.navigateBack();
-        boxOperation.navigateBack();
     }
 
 }

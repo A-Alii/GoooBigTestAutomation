@@ -1,0 +1,88 @@
+{
+  "uuid": "7cd5b7ec-a9a5-43f0-bda4-25a2b857355a",
+  "historyId": "732222f126a2e5557b9d52a399d6d9ec",
+  "fullName": "GoooBigTestCases.GoooBig_NoticeCreditor.VerifyEditeProductFromNoticeCreditorInvoice",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_NoticeCreditor"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_NoticeCreditor"
+    },
+    {
+      "name": "testMethod",
+      "value": "VerifyEditeProductFromNoticeCreditorInvoice"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_NoticeCreditor"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "13648@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "VerifyEditeProductFromNoticeCreditorInvoice",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to Edit product from cart for Notice Creditor Invoice.",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Screenshot for Result After Try To Edit on Notice Creditor Invoice",
+      "source": "c3d0af60-f127-474d-a7ff-bb2ea76b3e33-attachment"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1720611742053,
+  "stop": 1720611745173
+}

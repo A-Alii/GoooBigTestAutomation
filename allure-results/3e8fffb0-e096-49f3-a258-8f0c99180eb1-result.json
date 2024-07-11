@@ -1,0 +1,100 @@
+{
+  "uuid": "3e8fffb0-e096-49f3-a258-8f0c99180eb1",
+  "historyId": "aa1cf766c931ea3ab8de179b78ac302c",
+  "fullName": "GoooBigTestCasesForTablet.GoooBig_LoginTablet.GetTextFromLoginScreen",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCasesForTablet.GoooBig_LoginTablet"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCasesForTablet.GoooBig_LoginTablet"
+    },
+    {
+      "name": "testMethod",
+      "value": "GetTextFromLoginScreen"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCasesForTablet.GoooBig_LoginTablet"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "5440@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "GetTextFromLoginScreen",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to Get Text",
+  "steps": [
+    {
+      "name": "Get Text there is in Login button.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720683991461,
+      "stop": 1720683991461
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "03c16d73-e5de-468b-8a9b-67602f1259b7-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1720683988457,
+  "stop": 1720683993143
+}

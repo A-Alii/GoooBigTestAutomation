@@ -5,12 +5,12 @@
       "uid": "7d0421919ebcae780c955830177c9415",
       "name": "All Test Suite",
       "statistic": {
-        "failed": 3,
+        "failed": 0,
         "broken": 5,
         "skipped": 0,
-        "passed": 83,
+        "passed": 90,
         "unknown": 0,
-        "total": 91
+        "total": 95
       }
     }
   ]

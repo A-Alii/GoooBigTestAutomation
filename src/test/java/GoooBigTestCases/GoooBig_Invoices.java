@@ -41,7 +41,7 @@ public class GoooBig_Invoices extends TestBase {
     public void SmallTaxInvoiceWithDiscountOverProductLevel() throws InterruptedException, IOException {
         invoices = new Invoices();
         Allure.step("verify to select Invoice Type.");
-        invoices.clickOnCashier();
+        //invoices.clickOnCashier();
         invoices.smallNonTaxInvoice();
         invoices.navigateBack();
         invoices.navigateBack();
@@ -213,7 +213,8 @@ public class GoooBig_Invoices extends TestBase {
         invoices.hideKeyboard();
         System.out.println("Invoice Small Tax Added Successfully");
     }
-  /*  @Test(priority = 2)
+
+    @Test(priority = 2)
     @Description("This test attempts to Small Non Tax Invoice With Discount over Invoice level")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
@@ -1530,6 +1531,6 @@ public class GoooBig_Invoices extends TestBase {
         invoices.navigateBack();
         invoices.hideKeyboard();
         System.out.println("Invoice Small Non Tax Added Successfully");
-    }*/
+    }
 }
 

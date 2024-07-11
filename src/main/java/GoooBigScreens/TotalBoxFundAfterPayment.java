@@ -76,6 +76,31 @@ public class TotalBoxFundAfterPayment extends TestBase {
         return eightInvoice.getAttribute("content-desc");
     }
 
+    @AndroidFindBy(xpath = "//android.view.View[@index='56']")
+    MobileElement ninthInvoice;
+    @AndroidFindBy(xpath = "//android.view.View[@index='62']")
+    MobileElement TenInvoice;
+    @AndroidFindBy(xpath = "//android.widget.Button[@index='4']")
+    MobileElement navigateToNext;
+    @AndroidFindBy(xpath = "//android.view.View[@index='8']")
+    MobileElement elevenInvoice;
+
+    public String getNinthInvoice() {
+        return ninthInvoice.getAttribute("content-desc");
+    }
+
+    public String getTenInvoice() {
+        return TenInvoice.getAttribute("content-desc");
+    }
+
+    public void clickOnNext() {
+        navigateToNext.click();
+    }
+
+    public String getElevenInvoice() {
+        return elevenInvoice.getAttribute("content-desc");
+    }
+
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إنهاء الدوام']")
     MobileElement EndShift;
 

@@ -1,0 +1,174 @@
+{
+  "uuid": "1f50f03d-5993-4ed6-a80c-e0e6b4909ebe",
+  "historyId": "34d024ec8825f4f4b2cbe4941e803234",
+  "fullName": "GoooBigTestCasesForTablet.GoooBig_InvoicesTablet.SmallTaxInvoiceWithDiscountOverProductLevel",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCasesForTablet.GoooBig_InvoicesTablet"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCasesForTablet.GoooBig_InvoicesTablet"
+    },
+    {
+      "name": "testMethod",
+      "value": "SmallTaxInvoiceWithDiscountOverProductLevel"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCasesForTablet.GoooBig_InvoicesTablet"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "5440@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "SmallTaxInvoiceWithDiscountOverProductLevel",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to Small Tax Invoice with discount over Product level",
+  "steps": [
+    {
+      "name": "verify to search for a product and add it in cart.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720684219024,
+      "stop": 1720684219024
+    },
+    {
+      "name": "verify to Do discount over product.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720684223342,
+      "stop": 1720684223342
+    },
+    {
+      "name": "verify to get data like price and Tax an total price of the invoice.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720684233190,
+      "stop": 1720684233190
+    },
+    {
+      "name": "verify to do payment and print the invoice.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720684233502,
+      "stop": 1720684233502
+    },
+    {
+      "name": "verify to Navigate to Invoice to compare total price in the screen with total price in the cart.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1720684246983,
+      "stop": 1720684246983
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "0bec93aa-afbd-42e1-aa06-4b88343ae254-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "46569db3-c79f-488d-873e-9f6b6c1e4df8-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "024d9268-64e4-4e4e-92bb-b4638ad5211b-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "e1039643-ed9a-4391-9036-aaca46eeab63-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Extracted Invoice Text",
+      "source": "4acea18c-2920-490c-a253-43bbe7e8f3b5-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Filtered Invoice Text",
+      "source": "a9fe163b-d754-4144-ae54-ceccecf8bdf2-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Screenshot for result",
+      "source": "d95768c9-580f-44d4-ba36-4db218952b67-attachment"
+    },
+    {
+      "name": "Test Output",
+      "source": "3bc7c7fe-0b37-4637-8f23-7a223442173a-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1720684219017,
+  "stop": 1720684251679
+}

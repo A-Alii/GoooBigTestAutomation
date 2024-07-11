@@ -50,6 +50,12 @@ public class UploadInvoiceForClient extends TestBase {
     MobileElement updateButton;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202Bجاري تحديث البيانات\u202C']")
     MobileElement loadingUpdate;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202Bيجب رفع كل الفواتير أولاً\u202C']")
+    MobileElement shouldUploadFirst;
+
+    public boolean isShouldUploadFirst() {
+        return shouldUploadFirst.isDisplayed();
+    }
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='بدء الرفع']")
     MobileElement StartUploadInvoice;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202B تم الرفع بنجاح\u202C']")

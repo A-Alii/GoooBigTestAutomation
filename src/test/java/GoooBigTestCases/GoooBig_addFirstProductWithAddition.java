@@ -242,6 +242,7 @@ public class GoooBig_addFirstProductWithAddition extends TestBase {
         Thread.sleep(2000);
         Allure.addAttachment("Screenshot for Cart", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         additionForProductScreen.deleteProduct();
+        Thread.sleep(2000);
         additionForProductScreen.clickOnNextBasket();
         Thread.sleep(3000);
         Allure.step("verify to get data like price and Tax an total price of the invoice.");

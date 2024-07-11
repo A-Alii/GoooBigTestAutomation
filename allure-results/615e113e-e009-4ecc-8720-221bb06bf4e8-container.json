@@ -1,0 +1,16 @@
+{
+  "uuid": "615e113e-e009-4ecc-8720-221bb06bf4e8",
+  "name": "GoooBigTestCasesForTablet.GoooBig_UploadInvoiceForClientTablet",
+  "children": [
+    "869b39da-7218-465d-888b-8fac774599c9",
+    "f2d22774-5a0f-4167-98b0-78dc4f4b1bda",
+    "bf83babb-089a-485b-b553-610733337f9d",
+    "aef31c63-c304-4183-a1f4-ef1ede983bde",
+    "308a02bc-fb4b-4f29-b337-f2a626f0670c",
+    "71207f71-b347-4f72-a47e-9ddc292bf35f"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1720683847927,
+  "stop": 1720684251706
+}

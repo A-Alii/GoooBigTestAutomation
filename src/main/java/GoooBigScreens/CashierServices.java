@@ -44,7 +44,9 @@ public class CashierServices extends TestBase {
     MobileElement addToCart1;
     @AndroidFindBy(xpath = "//android.widget.Button[@index = '0']")
     MobileElement addToCartFirst;
-    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'السلة') or contains(@content-desc,'200.00 SR')]")
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'1\n" +
+            "السلة\n" +
+            "200.00 SR') or contains(@content-desc,'200.00 SR')]")
     MobileElement BasketButton;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc = 'التالي']")
     MobileElement NextButton;

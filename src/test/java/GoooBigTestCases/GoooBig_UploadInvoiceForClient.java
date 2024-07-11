@@ -129,6 +129,13 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
     public void verifyToUpdateClients() throws InterruptedException {
         cashierScreen = new UploadInvoiceForClient();
         cashierScreen.updateClients();
+        /*Thread.sleep(1000);
+        if(cashierScreen.isShouldUploadFirst()){
+            cashierScreen.navigateBack();
+            cashierScreen.ClickOnCashier();
+            cashierScreen.clickOnUploadInvoice();
+            cashierScreen.updateClients();
+        }*/
         Thread.sleep(6000);
         //Assert.assertFalse(cashierScreen.isLoadingUpdateDisplay(), "Loading is not finished");
         cashierScreen.navigateBack();

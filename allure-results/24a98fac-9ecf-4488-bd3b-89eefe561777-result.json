@@ -1,0 +1,92 @@
+{
+  "uuid": "24a98fac-9ecf-4488-bd3b-89eefe561777",
+  "historyId": "6289f0d226caa16513fae33ce07a5159",
+  "fullName": "GoooBigTestCases.GoooBig_Favorite.verify_favorite_screen",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Favorite"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Favorite"
+    },
+    {
+      "name": "testMethod",
+      "value": "verify_favorite_screen"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Favorite"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "13648@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "verify_favorite_screen",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify favorite screen",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Favorite Screen",
+      "source": "b0a1bd7f-7a06-48bc-b9ce-5b58e7e499cc-attachment"
+    },
+    {
+      "name": "No Favorites",
+      "source": "94474761-5ded-45dd-9749-d618ff8b6d57-attachment"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1720610974874,
+  "stop": 1720610980622
+}

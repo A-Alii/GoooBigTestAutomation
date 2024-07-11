@@ -11,7 +11,7 @@ public class PendingIInvoiceScreen extends TestBase {
     MobileElement settings;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إعدادات الطباعة']")
     MobileElement printingSettings;
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='فاتورة ضريبية']")
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='فاتورة غير ضريبية']")
     MobileElement NonTaxORTax;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc= 'فاتورة ضريبية']")
     MobileElement NonTax;
