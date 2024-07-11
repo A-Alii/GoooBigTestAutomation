@@ -1,0 +1,178 @@
+{
+  "uid": "fea1bcdb7bf85bc2",
+  "name": "verifySelectWarehouse",
+  "fullName": "GoooBigTestCasesForTablet.GoooBig_branchesAndWarehousesTablet.verifySelectWarehouse",
+  "historyId": "994620f6debed5aad830fe5695bdd27a",
+  "time": {
+    "start": 1720684002812,
+    "stop": 1720684008962,
+    "duration": 6150
+  },
+  "description": "This test attempts to verify Select Warehouse.",
+  "descriptionHtml": "<p>This test attempts to verify Select Warehouse.</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "This test attempts to verify Select Warehouse.",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "verify to click on cashier option.",
+        "time": {
+          "start": 1720684002813,
+          "stop": 1720684002813,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "verify to select valid warehouse from list.",
+        "time": {
+          "start": 1720684003337,
+          "stop": 1720684003337,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "verify to click on Apply button.",
+        "time": {
+          "start": 1720684008163,
+          "stop": 1720684008163,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "20d82bd5904518a7",
+        "name": "Screenshot for result",
+        "source": "20d82bd5904518a7.png",
+        "type": "image/png",
+        "size": 196793
+      }
+    ],
+    "parameters": [],
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 1,
+    "stepsCount": 3,
+    "attachmentStep": false,
+    "hasContent": true
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCasesForTablet.GoooBig_branchesAndWarehousesTablet"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCasesForTablet.GoooBig_branchesAndWarehousesTablet"
+    },
+    {
+      "name": "testMethod",
+      "value": "verifySelectWarehouse"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCasesForTablet.GoooBig_branchesAndWarehousesTablet"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "5440@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "fea1bcdb7bf85bc2.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

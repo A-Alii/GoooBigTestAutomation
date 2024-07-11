@@ -1,0 +1,330 @@
+{
+  "uid": "608d78d677298aae",
+  "name": "smallNonTaxInvoiceWithDiscountOverProductLevel",
+  "fullName": "GoooBigTestCases.GoooBig_Invoices.smallNonTaxInvoiceWithDiscountOverProductLevel",
+  "historyId": "ccfebac0becdcadd13a936559e7e29b2",
+  "time": {
+    "start": 1720611514622,
+    "stop": 1720611568263,
+    "duration": 53641
+  },
+  "description": "This test attempts to Small Non Tax Invoice with discount over Product level",
+  "descriptionHtml": "<p>This test attempts to Small Non Tax Invoice with discount over Product level</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "This test attempts to Small Non Tax Invoice with discount over Product level",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "verify to select Invoice Type.",
+        "time": {
+          "start": 1720611514626,
+          "stop": 1720611514626,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "verify to search for a product and add it in cart.",
+        "time": {
+          "start": 1720611522817,
+          "stop": 1720611522817,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "verify to Do discount over product.",
+        "time": {
+          "start": 1720611533861,
+          "stop": 1720611533861,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "verify to get data like price and Tax an total price of the invoice.",
+        "time": {
+          "start": 1720611543918,
+          "stop": 1720611543918,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "verify to do payment and print the invoice.",
+        "time": {
+          "start": 1720611544809,
+          "stop": 1720611544809,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "Assert Total Amount in cart with Total Amount in invoice.",
+        "time": {
+          "start": 1720611558067,
+          "stop": 1720611558067,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "verify to Navigate to Invoice to compare total price in the screen with total price in the cart.",
+        "time": {
+          "start": 1720611561203,
+          "stop": 1720611561203,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "4ac5bf36fd0e0bd7",
+        "name": "Screenshot for result",
+        "source": "4ac5bf36fd0e0bd7.png",
+        "type": "image/png",
+        "size": 201130
+      },
+      {
+        "uid": "8dfa809c765e13c3",
+        "name": "Test Output",
+        "source": "8dfa809c765e13c3.txt",
+        "type": "text/plain",
+        "size": 26
+      },
+      {
+        "uid": "c6689cd5b6f61b13",
+        "name": "Screenshot for result",
+        "source": "c6689cd5b6f61b13.png",
+        "type": "image/png",
+        "size": 100203
+      },
+      {
+        "uid": "339881934a736b93",
+        "name": "Screenshot for result",
+        "source": "339881934a736b93.png",
+        "type": "image/png",
+        "size": 117453
+      },
+      {
+        "uid": "439edd36e28d4468",
+        "name": "Test Output",
+        "source": "439edd36e28d4468.txt",
+        "type": "text/plain",
+        "size": 56
+      },
+      {
+        "uid": "3433350cd0d19101",
+        "name": "Test Output",
+        "source": "3433350cd0d19101.txt",
+        "type": "text/plain",
+        "size": 39
+      },
+      {
+        "uid": "e32e6997cb058bf2",
+        "name": "Test Output",
+        "source": "e32e6997cb058bf2.txt",
+        "type": "text/plain",
+        "size": 45
+      },
+      {
+        "uid": "da5720308fb3f36b",
+        "name": "Test Output",
+        "source": "da5720308fb3f36b.txt",
+        "type": "text/plain",
+        "size": 47
+      },
+      {
+        "uid": "53010efb6c474e51",
+        "name": "Test Output",
+        "source": "53010efb6c474e51.txt",
+        "type": "text/plain",
+        "size": 47
+      },
+      {
+        "uid": "aa63331c6cdc4d43",
+        "name": "Extracted Invoice Text",
+        "source": "aa63331c6cdc4d43.txt",
+        "type": "text/plain",
+        "size": 657
+      },
+      {
+        "uid": "4bccaf3a78df5c23",
+        "name": "Filtered Invoice Text",
+        "source": "4bccaf3a78df5c23.txt",
+        "type": "text/plain",
+        "size": 60
+      },
+      {
+        "uid": "df931befae0087fa",
+        "name": "Screenshot for result",
+        "source": "df931befae0087fa.png",
+        "type": "image/png",
+        "size": 209710
+      },
+      {
+        "uid": "c6e45b54f5ea2b13",
+        "name": "Test Output",
+        "source": "c6e45b54f5ea2b13.txt",
+        "type": "text/plain",
+        "size": 86
+      }
+    ],
+    "parameters": [],
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 13,
+    "stepsCount": 7,
+    "attachmentStep": false,
+    "hasContent": true
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Invoices"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Invoices"
+    },
+    {
+      "name": "testMethod",
+      "value": "smallNonTaxInvoiceWithDiscountOverProductLevel"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Invoices"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "13648@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "608d78d677298aae.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

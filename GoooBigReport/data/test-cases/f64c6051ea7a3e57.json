@@ -1,0 +1,180 @@
+{
+  "uid": "f64c6051ea7a3e57",
+  "name": "prepareOrganizationUsingAnEmptyData",
+  "fullName": "GoooBigTestCases.GoooBig_Preparation.prepareOrganizationUsingAnEmptyData",
+  "historyId": "a6822990bc47218b6634539282010d18",
+  "time": {
+    "start": 1720610801646,
+    "stop": 1720610825293,
+    "duration": 23647
+  },
+  "description": "This test attempts to prepare organization using an Empty Data UserId and a password and OrganizeId.",
+  "descriptionHtml": "<p>This test attempts to prepare organization using an Empty Data UserId and a password and OrganizeId.</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 1,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "This test attempts to prepare organization using an Empty Data UserId and a password and OrganizeId.",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "Enter With Empty Data",
+        "time": {
+          "start": 1720610802085,
+          "stop": 1720610802089,
+          "duration": 4
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "Assert Error Validation Display",
+        "time": {
+          "start": 1720610816468,
+          "stop": 1720610816468,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "Clear Fields",
+        "time": {
+          "start": 1720610817202,
+          "stop": 1720610817202,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 0,
+    "stepsCount": 3,
+    "attachmentStep": false,
+    "hasContent": true
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Preparation"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Preparation"
+    },
+    {
+      "name": "testMethod",
+      "value": "prepareOrganizationUsingAnEmptyData"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Preparation"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "13648@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [
+      {
+        "uid": "7062508baa120525",
+        "status": "passed",
+        "time": {
+          "start": 1720610214480,
+          "stop": 1720610238309,
+          "duration": 23829
+        }
+      }
+    ],
+    "categories": [],
+    "tags": []
+  },
+  "source": "f64c6051ea7a3e57.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

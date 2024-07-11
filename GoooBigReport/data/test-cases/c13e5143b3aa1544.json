@@ -1,0 +1,136 @@
+{
+  "uid": "c13e5143b3aa1544",
+  "name": "VerifyClickOnAddClientButtonWithoutData",
+  "fullName": "GoooBigTestCasesForTablet.GoooBig_AddClientTablet.VerifyClickOnAddClientButtonWithoutData",
+  "historyId": "fe33a059ee3d579dcb74641f97482bab",
+  "time": {
+    "start": 1720684026988,
+    "stop": 1720684029084,
+    "duration": 2096
+  },
+  "description": "This test attempts to Verify Click On Add Client Button With Empty Data.",
+  "descriptionHtml": "<p>This test attempts to Verify Click On Add Client Button With Empty Data.</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "This test attempts to Verify Click On Add Client Button With Empty Data.",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "Click on Add Client Button without any data.",
+        "time": {
+          "start": 1720684027241,
+          "stop": 1720684027241,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 0,
+    "stepsCount": 1,
+    "attachmentStep": false,
+    "hasContent": true
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCasesForTablet.GoooBig_AddClientTablet"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCasesForTablet.GoooBig_AddClientTablet"
+    },
+    {
+      "name": "testMethod",
+      "value": "VerifyClickOnAddClientButtonWithoutData"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCasesForTablet.GoooBig_AddClientTablet"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "5440@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "c13e5143b3aa1544.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

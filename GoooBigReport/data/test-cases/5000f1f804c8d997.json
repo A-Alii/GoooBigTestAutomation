@@ -1,0 +1,171 @@
+{
+  "uid": "5000f1f804c8d997",
+  "name": "prepareOrganizationUsingInvalidData",
+  "fullName": "GoooBigTestCases.GoooBig_Preparation.prepareOrganizationUsingInvalidData",
+  "historyId": "645d87708c73f9a642b9d473e1bd1d6e",
+  "time": {
+    "start": 1720610862679,
+    "stop": 1720610873715,
+    "duration": 11036
+  },
+  "description": "This test attempts to prepare organization using Invalid Data UserId, password and OrganizeId.",
+  "descriptionHtml": "<p>This test attempts to prepare organization using Invalid Data UserId, password and OrganizeId.</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 1,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "This test attempts to prepare organization using Invalid Data UserId, password and OrganizeId.",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "Enter With invalid data for userId, Password, OrganizationId",
+        "time": {
+          "start": 1720610862682,
+          "stop": 1720610862682,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "Assert Error Validation Display",
+        "time": {
+          "start": 1720610872964,
+          "stop": 1720610872964,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "cf0448bce639963b",
+        "name": "Test Output",
+        "source": "cf0448bce639963b.txt",
+        "type": "text/plain",
+        "size": 96
+      }
+    ],
+    "parameters": [],
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 1,
+    "stepsCount": 2,
+    "attachmentStep": false,
+    "hasContent": true
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Preparation"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Preparation"
+    },
+    {
+      "name": "testMethod",
+      "value": "prepareOrganizationUsingInvalidData"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Preparation"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "13648@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [
+      {
+        "uid": "c48520c221f2dc53",
+        "status": "passed",
+        "time": {
+          "start": 1720610274075,
+          "stop": 1720610285018,
+          "duration": 10943
+        }
+      }
+    ],
+    "categories": [],
+    "tags": []
+  },
+  "source": "5000f1f804c8d997.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

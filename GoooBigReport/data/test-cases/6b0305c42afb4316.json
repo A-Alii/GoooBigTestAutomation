@@ -1,0 +1,205 @@
+{
+  "uid": "6b0305c42afb4316",
+  "name": "clickOnApplyWithoutEnterBoxFundStart",
+  "fullName": "GoooBigTestCases.GoooBig_ShiftStart.clickOnApplyWithoutEnterBoxFundStart",
+  "historyId": "8d8495d04d2fd17e814dae91b477c9b0",
+  "time": {
+    "start": 1720610950609,
+    "stop": 1720610959770,
+    "duration": 9161
+  },
+  "description": "This test attempts to verify click on Apply without enter Box Fund Start.",
+  "descriptionHtml": "<p>This test attempts to verify click on Apply without enter Box Fund Start.</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 1,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "This test attempts to verify click on Apply without enter Box Fund Start.",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "verify to enter Empty Data To Box Fund",
+        "time": {
+          "start": 1720610950614,
+          "stop": 1720610950614,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "verify to select delivery from",
+        "time": {
+          "start": 1720610953617,
+          "stop": 1720610953617,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "verify to click on Apply Button",
+        "time": {
+          "start": 1720610954656,
+          "stop": 1720610954656,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "verify to clear fields",
+        "time": {
+          "start": 1720610958604,
+          "stop": 1720610958604,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "ee41155fbf217c27",
+        "name": "Screenshot for result",
+        "source": "ee41155fbf217c27.png",
+        "type": "image/png",
+        "size": 68477
+      }
+    ],
+    "parameters": [],
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 1,
+    "stepsCount": 4,
+    "attachmentStep": false,
+    "hasContent": true
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_ShiftStart"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_ShiftStart"
+    },
+    {
+      "name": "testMethod",
+      "value": "clickOnApplyWithoutEnterBoxFundStart"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_ShiftStart"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "13648@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [
+      {
+        "uid": "9446e18f928657d",
+        "status": "passed",
+        "time": {
+          "start": 1720610364257,
+          "stop": 1720610374037,
+          "duration": 9780
+        }
+      }
+    ],
+    "categories": [],
+    "tags": []
+  },
+  "source": "6b0305c42afb4316.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

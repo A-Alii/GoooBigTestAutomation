@@ -1,0 +1,116 @@
+{
+  "uid": "62cc2c670dc30b28",
+  "name": "VerifyToAddClientWithValidSameData",
+  "fullName": "GoooBigTestCases.GoooBig_AddClient.VerifyToAddClientWithValidSameData",
+  "historyId": "7ee2bbb658a11ed66d160a1c059a1f8f",
+  "time": {
+    "start": 1720611066349,
+    "stop": 1720611081248,
+    "duration": 14899
+  },
+  "description": "This test attempts to Verify Add Client With Valid Same Previous Data.",
+  "descriptionHtml": "<p>This test attempts to Verify Add Client With Valid Same Previous Data.</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 1,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_AddClient"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_AddClient"
+    },
+    {
+      "name": "testMethod",
+      "value": "VerifyToAddClientWithValidSameData"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_AddClient"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "13648@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [
+      {
+        "uid": "ffbaaa6611c16f40",
+        "status": "passed",
+        "time": {
+          "start": 1720610483338,
+          "stop": 1720610497344,
+          "duration": 14006
+        }
+      }
+    ],
+    "categories": [],
+    "tags": []
+  },
+  "source": "62cc2c670dc30b28.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "uid": "6e8f90caa304ad63",
+  "name": "LoginToOrganizationUsingUserIdAndAnEmptyData",
+  "fullName": "GoooBigTestCasesForTablet.GoooBig_LoginTablet.LoginToOrganizationUsingUserIdAndAnEmptyData",
+  "historyId": "55eae84231f6e363a21e7d374c226b2c",
+  "time": {
+    "start": 1720683967677,
+    "stop": 1720683978215,
+    "duration": 10538
+  },
+  "description": "This test attempts to Login to organization using UserId and an Empty Data for password.",
+  "descriptionHtml": "<p>This test attempts to Login to organization using UserId and an Empty Data for password.</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "This test attempts to Login to organization using UserId and an Empty Data for password.",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "Enter With Empty Data For Password and invalid data for userId",
+        "time": {
+          "start": 1720683967681,
+          "stop": 1720683967681,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "Assert Error Validation Display",
+        "time": {
+          "start": 1720683973928,
+          "stop": 1720683973928,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "Clear Fields",
+        "time": {
+          "start": 1720683975075,
+          "stop": 1720683975075,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "3dde68968c34743e",
+        "name": "Test Output",
+        "source": "3dde68968c34743e.txt",
+        "type": "text/plain",
+        "size": 70
+      }
+    ],
+    "parameters": [],
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 1,
+    "stepsCount": 3,
+    "attachmentStep": false,
+    "hasContent": true
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCasesForTablet.GoooBig_LoginTablet"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCasesForTablet.GoooBig_LoginTablet"
+    },
+    {
+      "name": "testMethod",
+      "value": "LoginToOrganizationUsingUserIdAndAnEmptyData"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCasesForTablet.GoooBig_LoginTablet"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "5440@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "6e8f90caa304ad63.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}

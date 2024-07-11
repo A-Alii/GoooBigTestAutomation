@@ -1,0 +1,217 @@
+{
+  "uid": "ce0c4996c9ca1696",
+  "name": "A4TaxInvoiceWithDiscountOverInvoiceLevel",
+  "fullName": "GoooBigTestCases.GoooBig_Invoices.A4TaxInvoiceWithDiscountOverInvoiceLevel",
+  "historyId": "8f5e9ddb9f72603466e6a3cd074f604",
+  "time": {
+    "start": 1720611461905,
+    "stop": 1720611514616,
+    "duration": 52711
+  },
+  "description": "This test attempts to A4 Invoice with discount over Invoice level",
+  "descriptionHtml": "<p>This test attempts to A4 Invoice with discount over Invoice level</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "testStage": {
+    "description": "This test attempts to A4 Invoice with discount over Invoice level",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "Assert Total Discount Amount in cart with Total Discount Amount in invoice.",
+        "time": {
+          "start": 1720611504854,
+          "stop": 1720611504854,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      },
+      {
+        "name": "Assert Total Amount After Discount in cart with Total Amount After Discount in invoice.",
+        "time": {
+          "start": 1720611504854,
+          "stop": 1720611504854,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0,
+        "stepsCount": 0,
+        "attachmentStep": false,
+        "hasContent": false
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "4fea5123c5b2f90d",
+        "name": "Test Output",
+        "source": "4fea5123c5b2f90d.txt",
+        "type": "text/plain",
+        "size": 55
+      },
+      {
+        "uid": "c6bd76da5220e9f4",
+        "name": "Test Output",
+        "source": "c6bd76da5220e9f4.txt",
+        "type": "text/plain",
+        "size": 38
+      },
+      {
+        "uid": "f76cc92dd2eb1787",
+        "name": "Test Output",
+        "source": "f76cc92dd2eb1787.txt",
+        "type": "text/plain",
+        "size": 44
+      },
+      {
+        "uid": "988ea7812e74ea49",
+        "name": "Test Output",
+        "source": "988ea7812e74ea49.txt",
+        "type": "text/plain",
+        "size": 46
+      },
+      {
+        "uid": "e38db44c94a70291",
+        "name": "Test Output",
+        "source": "e38db44c94a70291.txt",
+        "type": "text/plain",
+        "size": 46
+      },
+      {
+        "uid": "9c70b0d5f11eca7f",
+        "name": "Extracted Invoice Text",
+        "source": "9c70b0d5f11eca7f.txt",
+        "type": "text/plain",
+        "size": 1292
+      },
+      {
+        "uid": "79ccf5d0c5c554f0",
+        "name": "Filtered Invoice Text",
+        "source": "79ccf5d0c5c554f0.txt",
+        "type": "text/plain",
+        "size": 155
+      },
+      {
+        "uid": "af9b0ff508f3c602",
+        "name": "Screenshot for Invoice",
+        "source": "af9b0ff508f3c602.png",
+        "type": "image/png",
+        "size": 207830
+      },
+      {
+        "uid": "a914e3005e0a9ad",
+        "name": "Test Output",
+        "source": "a914e3005e0a9ad.txt",
+        "type": "text/plain",
+        "size": 97
+      }
+    ],
+    "parameters": [],
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 9,
+    "stepsCount": 2,
+    "attachmentStep": false,
+    "hasContent": true
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Invoices"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Invoices"
+    },
+    {
+      "name": "testMethod",
+      "value": "A4TaxInvoiceWithDiscountOverInvoiceLevel"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Invoices"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "13648@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "critical",
+    "owner": "Ahmed Ali",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "ce0c4996c9ca1696.json",
+  "parameterValues": [
+    "emulator-5554",
+    "Android",
+    "9"
+  ]
+}
