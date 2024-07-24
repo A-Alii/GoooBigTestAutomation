@@ -82,9 +82,8 @@ public class UploadInvoiceForClient extends TestBase {
     MobileElement Tax;
 
     public void clickOnNonTax() {
-        Tax.click();
+        NonTaxORTax.click();
         NonTax.click();
-        submitCheck.click();
     }
     @AndroidFindBy(xpath = "//android.view.View[@content-desc= 'فاتورة ضريبية']")
     MobileElement NonTax;
@@ -232,6 +231,49 @@ public class UploadInvoiceForClient extends TestBase {
 
     public String getInvoiceAmount() {
         return invoiceAmount.getAttribute("content-desc");
+    }
+
+    @AndroidFindBy(xpath = "//android.widget.Button[@text='ALLOW']")
+    MobileElement Allow;
+    @AndroidFindBy(xpath = "//android.widget.Button[@text='ALLOW']")
+    MobileElement Allow2;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='الفواتير والطابعة']")
+    MobileElement invoiceAndPrinting;
+
+    public void clickOnAllow() {
+        Allow.click();
+    }
+
+    public void clickOnAllow2() {
+        Allow2.click();
+    }
+
+    public void clickOnInvoiceAndPrinting() {
+        invoiceAndPrinting.click();
+    }
+
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='Print to PDF']")
+    MobileElement PrintToPdf2;
+
+    public void clickOnPrintPdf2() {
+        PrintToPdf2.click();
+        submitCheck.click();
+    }
+
+    public void clickOnPrintToPdf() {
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        // Scroll to the element
+        driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))"
+                + ".scrollIntoView(new UiSelector().description(\"Print to PDF\").instance(0));");
+
+        // Locate the element
+        MobileElement PrintToPdf = (MobileElement) driver.findElementByXPath("//android.widget.ImageView[@content-desc='Print to PDF']");
+
+        // Wait until the element is clickable
+        wait.until(ExpectedConditions.elementToBeClickable(PrintToPdf));
+
+        // Click the element
+        PrintToPdf.click();
     }
 
     public void smallNonTaxInvoice() {

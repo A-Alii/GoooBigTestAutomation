@@ -15,6 +15,23 @@ public class OrganizationPreparationTablet extends TestBase {
     MobileElement OrgId;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"تجهيز\"]")
     MobileElement PrepareButton;
+
+    public void clickOnPrepareButton() {
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        // Scroll to the element
+        driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))"
+                + ".scrollIntoView(new UiSelector().description(\"تجهيز\").instance(0));");
+
+        // Locate the element
+        MobileElement PrepareButton = (MobileElement) driver.findElementByXPath("//android.view.View[@content-desc=\"تجهيز\"]");
+
+        // Wait until the element is clickable
+        wait.until(ExpectedConditions.elementToBeClickable(PrepareButton));
+
+        // Click the element
+        PrepareButton.click();
+    }
+
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc=\"دخول\"]")
     MobileElement Login;
     @AndroidFindBy(xpath = "//android.view.View[@index='31']")
@@ -46,16 +63,18 @@ public class OrganizationPreparationTablet extends TestBase {
 
     public void fillPrepareOrg(String Name, String Pass, String Id) {
         UserName.click();
+        hideKeyboard();
         UserName.sendKeys(Name);
         driver.hideKeyboard();
         Password.click();
+        hideKeyboard();
         Password.sendKeys(Pass);
         driver.hideKeyboard();
         OrgId.click();
         driver.hideKeyboard();
         OrgId.sendKeys(Id);
         driver.hideKeyboard();
-        PrepareButton.click();
+        clickOnPrepareButton();
     }
 
     public boolean isProductsNumberDisplay() {

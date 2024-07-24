@@ -1,0 +1,100 @@
+{
+  "uuid": "6da0c3e1-0062-483c-88a8-316adcb3f685",
+  "historyId": "3966db092c71d11f9070b9ea7cdc7c51",
+  "fullName": "GoooBigTestCases.GoooBig_Home.IsLogoExistInHomeScreen",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "testMethod",
+      "value": "IsLogoExistInHomeScreen"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "15112@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "IsLogoExistInHomeScreen",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to verify the logo is displayed.",
+  "steps": [
+    {
+      "name": "Check Logo in home screen is displayed.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721821185863,
+      "stop": 1721821185863
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "d6d38137-4e77-4b41-869f-ac40b0ce03fe-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1721821185860,
+  "stop": 1721821186897
+}

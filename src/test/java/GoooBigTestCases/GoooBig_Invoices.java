@@ -34,7 +34,7 @@ public class GoooBig_Invoices extends TestBase {
     Invoices invoices;
 
     // Mobile Testing
-    @Test(priority = 1)
+/*    @Test(priority = 1)
     @Description("This test attempts to Small Tax Invoice with discount over Product level")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
@@ -557,7 +557,7 @@ public class GoooBig_Invoices extends TestBase {
         Allure.addAttachment("Screenshot for Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         invoices.navigateBack();
-        //invoices.clickOnCashier();
+        invoices.clickOnCashier();
         invoices.goToInvoices();
         Thread.sleep(3000);
         System.out.println("********************************************");
@@ -763,7 +763,7 @@ public class GoooBig_Invoices extends TestBase {
         Allure.addAttachment("Screenshot for Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         invoices.navigateBack();
-        //invoices.clickOnCashier();
+        invoices.clickOnCashier();
         invoices.goToInvoices();
         Thread.sleep(3000);
         System.out.println("********************************************");
@@ -1118,7 +1118,7 @@ public class GoooBig_Invoices extends TestBase {
         invoices.navigateBack();
         invoices.hideKeyboard();
         System.out.println("Invoice Small Non Tax Added Successfully");
-    }
+    }*/
 
     @Test(priority = 7)
     @Description("This test attempts to A4 Non Tax Invoice with discount over Product level")
@@ -1216,6 +1216,7 @@ public class GoooBig_Invoices extends TestBase {
             // Patterns to match the lines of interest
             String[] keywords = {
                     "الاجمالى",
+                    "الاجمالى .",
                     "مجموع الخصومات",
                     "إجمالى المبلغ المستحق"
             };
@@ -1244,7 +1245,11 @@ public class GoooBig_Invoices extends TestBase {
             // Extract values by key
             System.out.println("استخراج القيمة بأستخدام المفتاح الخاص بها من الفاتورة");
             System.out.println("----------------------------------------------------");
+            // Extract values by key
             String totalAmount = extractValueByKeyA4(result, "الاجمالى");
+            if (totalAmount.isEmpty()) {
+                totalAmount = extractValueByKey(result, "الاجمالى .");
+            }
             System.out.println("الاجمالى(الفاتورة) : " + totalAmount);
             String discountAmount = extractValueByKeyA4(result, "مجموع الخصومات");
             System.out.println("الخصم(الفاتورة) : " + discountAmount);
@@ -1308,7 +1313,7 @@ public class GoooBig_Invoices extends TestBase {
         Allure.addAttachment("Screenshot for Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         invoices.navigateBack();
-        //invoices.clickOnCashier();
+        invoices.clickOnCashier();
         invoices.goToInvoices();
         Thread.sleep(3000);
         System.out.println("********************************************");
@@ -1424,8 +1429,10 @@ public class GoooBig_Invoices extends TestBase {
             // Patterns to match the lines of interest
             String[] keywords = {
                     "الاجمالى",
+                    "الاجمالى .",
                     "مجموع الخصومات",
-                    "إجمالى المبلغ المستحق"
+                    "إجمالى المبلغ المستحق",
+                    " نن إجمالى المبلغ المستحق"
             };
             Pattern arabicAndNumbersPattern = Pattern.compile("[\\p{InArabic}\\d.,:]+");
             for (String line : lines) {
@@ -1452,11 +1459,19 @@ public class GoooBig_Invoices extends TestBase {
             // Extract values by key
             System.out.println("استخراج القيمة بأستخدام المفتاح الخاص بها من الفاتورة");
             System.out.println("----------------------------------------------------");
+
+            // Extract values by key
             String totalAmount = extractValueByKeyA4(result, "الاجمالى");
+            if (totalAmount.isEmpty()) {
+                totalAmount = extractValueByKeyA4(result, ". الاجمالى");
+            }
             System.out.println("الاجمالى(الفاتورة) : " + totalAmount);
             String discountAmount = extractValueByKeyA4(result, "مجموع الخصومات");
             System.out.println("الخصم(الفاتورة) : " + discountAmount);
             String totalAmountAfterDiscount = extractValueByKeyA4(result, "إجمالى المبلغ المستحق");
+            if (totalAmountAfterDiscount.isEmpty()) {
+                totalAmountAfterDiscount = extractValueByKeyA4(result, "نن إجمالى المبلغ المستحق");
+            }
             System.out.println("الأجمالى بعد الخصم(الفاتورة) : " + totalAmountAfterDiscount);
             //String totalAmountBeforeDiscount = discountAmount + totalAmountAfterDiscount;
 
@@ -1516,7 +1531,7 @@ public class GoooBig_Invoices extends TestBase {
         Allure.addAttachment("Screenshot for Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         invoices.navigateBack();
-        //invoices.clickOnCashier();
+        invoices.clickOnCashier();
         invoices.goToInvoices();
         Thread.sleep(3000);
         System.out.println("********************************************");

@@ -48,7 +48,7 @@ public class GoooBig_UploadInvoiceForClientTablet extends TestBase {
         uploadInvoiceForClient.clickOnAllow2();
         Thread.sleep(4000);
         uploadInvoiceForClient.clickOnPrinting();
-        Thread.sleep(3000);
+        Thread.sleep(4000);
         uploadInvoiceForClient.clickOnTaxInvoice();
         uploadInvoiceForClient.clickOnPrintToPdf();
         uploadInvoiceForClient.clickOnPrintToPdf2();
@@ -248,11 +248,12 @@ public class GoooBig_UploadInvoiceForClientTablet extends TestBase {
         }
         Allure.addAttachment("Screenshot for Receipt of Payment", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         uploadInvoiceForClient.navigateBack();
+        uploadInvoiceForClient.clickOnPayAmount();
         uploadInvoiceForClient.clickOnResetButtonForPayment();
         Thread.sleep(3000);
         double Remaining = RemainingAmount - amountToPayAfter;
         System.out.println("Remaining Amount is: " + Remaining);
-        double RemainingAmountAfterPrinting = Double.parseDouble(uploadInvoiceForClient.getRemainingAmountOfPaymentScreen2());
+        double RemainingAmountAfterPrinting = Double.parseDouble(uploadInvoiceForClient.getRemainingAmountOfPaymentScreen3());
         System.out.println("Remaining Amount After Printing is: " + RemainingAmountAfterPrinting);
         Assert.assertEquals(Remaining, RemainingAmountAfterPrinting);
         System.out.println("Remaining Amount is: " + RemainingAmountAfterPrinting);

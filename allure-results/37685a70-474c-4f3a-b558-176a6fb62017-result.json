@@ -1,0 +1,110 @@
+{
+  "uuid": "37685a70-474c-4f3a-b558-176a6fb62017",
+  "historyId": "15d32070e1e72992c1bfec04d7384795",
+  "fullName": "GoooBigTestCases.GoooBig_Home.VerifyWarehouseName",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "testMethod",
+      "value": "VerifyWarehouseName"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_Home"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "3820@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "VerifyWarehouseName",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to verify the warehouse name is consistent across different screens.",
+  "steps": [
+    {
+      "name": "Verify warehouse name in home screen contains warehouse name from warehouse screen",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721817704434,
+      "stop": 1721817704434
+    },
+    {
+      "name": "Verify warehouse name in home screen contains warehouse name from hamburger menu",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721817706938,
+      "stop": 1721817706938
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output for Verify Warehouse Name",
+      "source": "54c10816-87b2-4a53-8b1b-f48089e585fb-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1721817700461,
+  "stop": 1721817707017
+}

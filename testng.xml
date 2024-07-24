@@ -35,14 +35,13 @@
             <class name="GoooBigTestCasesForTablet.GoooBig_LoginTablet"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_branchesAndWarehousesTablet"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_ShiftStartTablet"/>
-            <!--<class name="GoooBigTestCasesForTablet.GoooBig_AddClientTablet"/>
+            <class name="GoooBigTestCasesForTablet.GoooBig_AddClientTablet"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_UploadInvoiceForClientTablet"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_BoxOperationTablet"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_AddFirstProductWithAdditionTablet"/>
-            <class name="GoooBigTestCasesForTablet.GoooBig_PendingInvoiceTablet"/>-->
+            <class name="GoooBigTestCasesForTablet.GoooBig_PendingInvoiceTablet"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_PriceOffer"/>
-
-            <!-- <class name="GoooBigTestCasesForTablet.GoooBig_InvoicesTablet"/>-->
+            <class name="GoooBigTestCasesForTablet.GoooBig_InvoicesTablet"/>
 
             <!--<class name="GoooBigTestCasesForTablet.GoooBig_InvoicesTablet"/>
             <class name="GoooBigTestCases.GoooBig_SelectWarehouseForTablet"/>-->

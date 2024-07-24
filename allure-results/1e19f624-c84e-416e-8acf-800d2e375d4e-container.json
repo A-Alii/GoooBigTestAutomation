@@ -1,0 +1,11 @@
+{
+  "uuid": "1e19f624-c84e-416e-8acf-800d2e375d4e",
+  "name": "GoooBigTestCases.GoooBig_TotalBoxFundAfterPayment",
+  "children": [
+    "0b42776c-f63d-4d51-ac95-5c553ccc4956"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1721818842478,
+  "stop": 1721819893303
+}

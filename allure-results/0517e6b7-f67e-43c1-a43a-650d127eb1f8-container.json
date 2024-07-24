@@ -1,0 +1,19 @@
+{
+  "uuid": "0517e6b7-f67e-43c1-a43a-650d127eb1f8",
+  "name": "GoooBigTestCasesForTablet.GoooBig_AddClientTablet",
+  "children": [
+    "f49891c5-f167-4923-b108-70a1322c85e8",
+    "c3a7cd0e-7551-439b-bb40-00c1295b9011",
+    "cde576b3-4cf1-4682-9226-733fe1163a4e",
+    "30e368ac-a9e5-4271-9208-8dcc07fb347d",
+    "44a3a946-0c4c-480a-8b02-196f2b115163",
+    "2fa06a13-6a7a-4f09-9759-97ee64244a6c",
+    "3b94ba59-f967-44e6-84d8-09ef09e2ef87",
+    "ee81dd89-9062-47fd-815f-7a058fabf036",
+    "370612a8-a3cf-44b0-8298-e10d7f2eda43"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1721835267252,
+  "stop": 1721836088352
+}

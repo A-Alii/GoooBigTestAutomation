@@ -144,7 +144,6 @@ public class GoooBig_BoxOperationTablet extends TestBase {
         Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         boxOperation.navigateBack();
-        boxOperation.navigateBack();
         boxOperation.clickOnManageShift();
         Thread.sleep(2000);
         // Capture the screenshot and save it to a file

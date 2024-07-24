@@ -41,6 +41,10 @@ public class UploadInvoiceForClientTablet extends TestBase {
     MobileElement Debits;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='دفع مبلغ']")
     MobileElement PayAmount;
+
+    public void clickOnPayAmount() {
+        PayAmount.click();
+    }
     @AndroidFindBy(xpath = "//android.view.View[@index='5']")
     MobileElement TotalDebitsAmount;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='العملاء\n" +
@@ -93,6 +97,12 @@ public class UploadInvoiceForClientTablet extends TestBase {
     @AndroidFindBy(xpath = "//android.view.View[@index='3']")
     MobileElement RemainingAmountOfPaymentScreen2;
 
+    @AndroidFindBy(xpath = "//android.view.View[@index='8']")
+    MobileElement RemainingAmountOfPaymentScreen3;
+
+    public String getRemainingAmountOfPaymentScreen3() {
+        return RemainingAmountOfPaymentScreen3.getText();
+    }
     public void clickOnPrinting() {
         Printing.click();
     }

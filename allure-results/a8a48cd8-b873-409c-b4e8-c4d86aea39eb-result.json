@@ -1,0 +1,74 @@
+{
+  "uuid": "a8a48cd8-b873-409c-b4e8-c4d86aea39eb",
+  "historyId": "afe45515b6a7082b1f75a5d10d87a0a6",
+  "fullName": "GoooBigTestCasesForTablet.GoooBig_BoxOperationTablet.verifyToDoTransactionWithSendingAmount",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCasesForTablet.GoooBig_BoxOperationTablet"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCasesForTablet.GoooBig_BoxOperationTablet"
+    },
+    {
+      "name": "testMethod",
+      "value": "verifyToDoTransactionWithSendingAmount"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCasesForTablet.GoooBig_BoxOperationTablet"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "16768@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "verifyToDoTransactionWithSendingAmount",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1721826926605,
+  "stop": 1721826932014
+}

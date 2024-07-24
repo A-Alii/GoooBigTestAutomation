@@ -7,6 +7,7 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -15,7 +16,6 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 @Listeners(TestListener.class)
 public class GoooBig_LoginTablet extends TestBase {
     LoginTablet login;
-/*
     @Test(priority = 1)
     @Description("This test attempts to login to organization using an Empty Data UserId and a password.")
     @Severity(CRITICAL)
@@ -84,7 +84,7 @@ public class GoooBig_LoginTablet extends TestBase {
         }
         // Attaching the output to Allure report
         Allure.addAttachment("Test Output", "text/plain", "Text in the field is: " + fieldText);
-    }*/
+    }
 
     @Test(priority = 5)
     @Description("This test attempts to Login to organization using valid UserId, password.")
@@ -94,7 +94,7 @@ public class GoooBig_LoginTablet extends TestBase {
         login = new LoginTablet();
         Allure.step("Enter Valid Data");
         login.clearFields();
-        login.fillLoginScreen("0583", "4657");
+        login.fillLoginScreen("0583", "0583");
         System.out.println("Login Successfully Done.");
         Allure.addAttachment("Test Output", "text/plain", "Text in the field is: " + "Login Done Successfully and user redirect to Home screen.");
         login.hideKeyboard();

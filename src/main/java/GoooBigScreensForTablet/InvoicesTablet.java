@@ -25,32 +25,50 @@ public class InvoicesTablet extends TestBase {
     MobileElement submitTablet;
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='4']")
     MobileElement searchbarTablet;
-    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'10000\n" +
-            "باقة رمضان ')]")
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'1500\n" +
+            "هواوي 23 ')]")
     MobileElement addToCartFirstTablet;
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'1000\n" +
+            "قرنفل مسمار ')]")
+    MobileElement addToCartSecondTablet;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc = '1.000']")
     MobileElement EditProductTablet;
-    @AndroidFindBy(xpath = "//android.widget.EditText[@text='500.0']")
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='5']")
     MobileElement discountFieldTablet;
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='3']")
     MobileElement discountFieldTablet2;
-    @AndroidFindBy(xpath = "//android.view.View[@index='15' or contains(@content-desc,'اسم الصنف\n" +
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'اسم الصنف\n" +
             "العدد\n" +
             "السعر\n" +
             "الإجمالى\n" +
             "العدد\n" +
-            "1\n" +
+            "2\n" +
             "الكمية\n" +
-            "1\n" +
+            "2\n" +
             "الضريبة\n" +
-            "1239.13\n" +
+            "313.04\n" +
             "الخصم\n" +
-            "500.00\n" +
+            "100.00\n" +
             "الإجمالى\n" +
-            "9500.00')]")
+            "2400.00')]")
     MobileElement detailsOfInvoiceTablet;
-    @AndroidFindBy(xpath = "//android.view.View[@index = '6']")
-    List<MobileElement> CashButtonTablet;
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'اسم الصنف\n" +
+            "العدد\n" +
+            "السعر\n" +
+            "الإجمالى\n" +
+            "العدد\n" +
+            "2\n" +
+            "الكمية\n" +
+            "2\n" +
+            "الضريبة\n" +
+            "300.00\n" +
+            "الخصم\n" +
+            "200.00\n" +
+            "الإجمالى\n" +
+            "2300.00')]")
+    MobileElement detailsOfInvoiceTablet2;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc = 'كاش']")
+    MobileElement CashButtonTablet;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الفواتير']")
     MobileElement InvoicesTablet;
     @AndroidFindBy(xpath = "//android.view.View[@index='8']")
@@ -84,6 +102,10 @@ public class InvoicesTablet extends TestBase {
         addToCartFirstTablet.click();
     }
 
+    public void clickOnProductSecondTablet() {
+        addToCartSecondTablet.click();
+    }
+
     public void clearFieldsTablet() {
         searchbarTablet.click();
         searchbarTablet.clear();
@@ -96,9 +118,11 @@ public class InvoicesTablet extends TestBase {
 
     public void sendKeysToDiscountTablet(String discount) {
         discountFieldTablet.click();
+        hideKeyboard();
         discountFieldTablet.clear();
-        discountFieldTablet2.sendKeys(discount);
-        driver.hideKeyboard();
+        hideKeyboard();
+        discountFieldTablet.sendKeys(discount);
+        hideKeyboard();
     }
 
     public String getDiscountAmountTablet() {
@@ -109,8 +133,12 @@ public class InvoicesTablet extends TestBase {
         return detailsOfInvoiceTablet.getAttribute("content-desc");
     }
 
+    public String getDetailsOfInvoiceTablet2() {
+        return detailsOfInvoiceTablet2.getAttribute("content-desc");
+    }
+
     public void clickOnCashButtonTablet() {
-        CashButtonTablet.get(1).click();
+        CashButtonTablet.click();
     }
 
     public void goToInvoicesTablet() {
@@ -149,4 +177,22 @@ public class InvoicesTablet extends TestBase {
         SubmitButton.click();
     }
 
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='خصم']")
+    MobileElement discountButton;
+
+    public void clickOnDiscountButton() {
+        discountButton.click();
+    }
+
+    @AndroidFindBy(xpath = "//android.widget.EditText[@index='3']")
+    MobileElement discountField;
+
+    public void SendKeysToDiscountField(String discount) {
+        discountField.click();
+        hideKeyboard();
+        discountField.clear();
+        hideKeyboard();
+        discountField.sendKeys(discount);
+        hideKeyboard();
+    }
 }

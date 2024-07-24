@@ -211,5 +211,7 @@ public class GoooBig_PriceOffer extends TestBase {
 
         System.out.println("********************************************");
         priceOffer.navigateBack();
+        priceOffer.clearSearchProductTablet();
+        priceOffer.hideKeyboard();
     }
 }

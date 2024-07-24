@@ -1,0 +1,124 @@
+{
+  "uuid": "d5b66f2b-505f-423d-a12d-f6d1e0f5f4ec",
+  "historyId": "a9acca743680a187ffae02075ce8f255",
+  "fullName": "GoooBigTestCases.GoooBig_PriceOffer.SmallTaxInvoiceToDisplayThePriceWithDiscountOverProduct",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_PriceOffer"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_PriceOffer"
+    },
+    {
+      "name": "testMethod",
+      "value": "SmallTaxInvoiceToDisplayThePriceWithDiscountOverProduct"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_PriceOffer"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "9424@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "SmallTaxInvoiceToDisplayThePriceWithDiscountOverProduct",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to Small Non Tax Invoice with discount over Product level to display Price.",
+  "steps": [
+    {
+      "name": "verify to Navigate to Invoice to compare total price in the screen with total price in the cart.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721819782988,
+      "stop": 1721819782988
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "4b102611-6d20-4314-8192-3e61a7520287-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "da1af964-243b-4980-8dbf-528b466be280-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "44166a30-40c0-41c3-9a2a-bed66ebaa8a7-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "830e6a68-042e-41e7-bc1c-eb82222844d5-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Screenshot for Invoice",
+      "source": "75d37cd7-6c57-4079-92ea-35a369bc4e67-attachment"
+    },
+    {
+      "name": "Test Output",
+      "source": "31268a62-3fa0-40ac-84b1-8dcdafb0b742-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1721819738932,
+  "stop": 1721819784289
+}

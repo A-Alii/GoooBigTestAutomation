@@ -1,0 +1,11 @@
+{
+  "uuid": "6ef8537b-6d73-469d-bfb9-c3ba8ca8a9b5",
+  "name": "GoooBigTestCasesForTablet.GoooBig_InvoicesTablet",
+  "children": [
+    "32edbea2-32d8-49b9-8e05-ec7df93e695e"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1721829218024,
+  "stop": 1721829445816
+}

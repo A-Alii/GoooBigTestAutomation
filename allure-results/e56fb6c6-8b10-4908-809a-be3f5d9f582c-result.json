@@ -1,0 +1,93 @@
+{
+  "uuid": "e56fb6c6-8b10-4908-809a-be3f5d9f582c",
+  "historyId": "4128d137fb6f009cefc42e575f4e09c9",
+  "fullName": "GoooBigTestCasesForTablet.GoooBig_UploadInvoiceForClientTablet.verifyToPayAnAmount",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCasesForTablet.GoooBig_UploadInvoiceForClientTablet"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCasesForTablet.GoooBig_UploadInvoiceForClientTablet"
+    },
+    {
+      "name": "testMethod",
+      "value": "verifyToPayAnAmount"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCasesForTablet.GoooBig_UploadInvoiceForClientTablet"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "16768@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "verifyToPayAnAmount",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to Update Clients from Update Screen.",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Formatted Invoice Data",
+      "source": "79170475-2cee-4187-aecd-7b234fc7975a-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Screenshot for Receipt of Payment",
+      "source": "c7d76d3e-e7c5-4735-afb6-11fbe22625a6-attachment"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1721826875270,
+  "stop": 1721826918332
+}

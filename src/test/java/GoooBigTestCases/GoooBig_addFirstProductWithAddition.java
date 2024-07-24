@@ -225,8 +225,6 @@ public class GoooBig_addFirstProductWithAddition extends TestBase {
             System.out.println("total Amount Reprint is: " + totalAmountReprint);
             // Accessing the first, second, and third numbers
             additionForProductScreen.navigateBack();
-            additionForProductScreen.navigateBack();
-            additionForProductScreen.navigateBack();
             additionForProductScreen.hideKeyboard();
             System.out.println("Invoice Small Tax Added Successfully");
         } catch (TesseractException e) {

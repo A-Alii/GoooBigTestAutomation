@@ -1,0 +1,145 @@
+{
+  "uuid": "49d1aa7b-78e0-4e58-95a1-77ac93052867",
+  "historyId": "eedc1d22ffa2dbd0c37d755947560e1a",
+  "fullName": "GoooBigTestCasesForTablet.GoooBig_PriceOffer.priceOffer",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCasesForTablet.GoooBig_PriceOffer"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCasesForTablet.GoooBig_PriceOffer"
+    },
+    {
+      "name": "testMethod",
+      "value": "priceOffer"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCasesForTablet.GoooBig_PriceOffer"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "18292@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "priceOffer",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "verify to search for a product and add it in cart.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721835922003,
+      "stop": 1721835922003
+    },
+    {
+      "name": "verify to Do discount over product.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721835933694,
+      "stop": 1721835933694
+    },
+    {
+      "name": "verify to Navigate to Invoice to compare total price in the screen with total price in the cart.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721835965853,
+      "stop": 1721835965854
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "153ef182-237c-4c99-9ace-d02d0fd1cc20-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "40cf54d4-0ca5-4bd6-9082-fcedca28af94-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "fa31fe08-c16a-4724-bb33-c4f0337de84f-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "ccb37c66-bfb3-4a75-9847-5254a212a33c-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Extracted Invoice Text",
+      "source": "eacd8c6b-a27e-4c62-a34a-70791e3d39d2-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Filtered Invoice Text",
+      "source": "dbf10a81-96c3-4595-96fa-076ec0f01f0e-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Screenshot for result",
+      "source": "11cd4420-7f0b-4d36-92bc-c1be58171679-attachment"
+    },
+    {
+      "name": "Test Output",
+      "source": "0029afaa-46b0-4d46-ad34-82a0e12d6ad4-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1721835906985,
+  "stop": 1721835976628
+}

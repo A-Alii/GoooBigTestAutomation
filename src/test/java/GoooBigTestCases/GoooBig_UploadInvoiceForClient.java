@@ -35,10 +35,16 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
         cashierScreen = new UploadInvoiceForClient();
         cashierScreen.ClickOnCashier();
         cashierScreen.smallNonTaxInvoice();
-        Thread.sleep(3000);
+        cashierScreen.clickOnAllow();
+        Thread.sleep(2000);
+        cashierScreen.clickOnAllow2();
+        Thread.sleep(2000);
         cashierScreen.clickOnPrinting();
-        Thread.sleep(10000);
+        Thread.sleep(5000);
         cashierScreen.clickOnNonTax();
+        cashierScreen.clickOnInvoiceAndPrinting();
+        cashierScreen.clickOnPrintToPdf();
+        cashierScreen.clickOnPrintPdf2();
         cashierScreen.navigateBack();
         cashierScreen.navigateBack();
         cashierScreen.hideKeyboard();

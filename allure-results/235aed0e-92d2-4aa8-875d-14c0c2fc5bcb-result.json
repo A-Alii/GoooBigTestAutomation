@@ -1,0 +1,109 @@
+{
+  "uuid": "235aed0e-92d2-4aa8-875d-14c0c2fc5bcb",
+  "historyId": "c96b6c94edecefe0cc9addb59cc8a1c8",
+  "fullName": "GoooBigTestCases.GoooBig_UploadInvoiceForClient.verifyToSelectClientForInvoice",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCases.GoooBig_UploadInvoiceForClient"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCases.GoooBig_UploadInvoiceForClient"
+    },
+    {
+      "name": "testMethod",
+      "value": "verifyToSelectClientForInvoice"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCases.GoooBig_UploadInvoiceForClient"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "15112@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "verifyToSelectClientForInvoice",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to select client for invoice.",
+  "steps": [
+    {
+      "name": "select client for invoice.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721821235953,
+      "stop": 1721821235953
+    },
+    {
+      "name": "click on PostPaid Button.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1721821255458,
+      "stop": 1721821255458
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Screenshot for invoice",
+      "source": "3cfb5d66-15e8-47a0-9b6e-7b64468b037e-attachment"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1721821234983,
+  "stop": 1721821273741
+}

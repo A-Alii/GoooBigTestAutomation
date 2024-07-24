@@ -7,6 +7,7 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -17,7 +18,6 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 @Listeners(TestListener.class)
 public class GoooBig_PreparationTablet extends TestBase {
     OrganizationPreparationTablet organizationPreparation;
-/*
 
     @Test(priority = 1)
     @Description("This test attempts to prepare organization using an Empty Data UserId and a password and OrganizeId.")
@@ -83,7 +83,6 @@ public class GoooBig_PreparationTablet extends TestBase {
         System.out.println("PopUp Error Message is displayed to tell user data you entered are invalid.");
         Allure.addAttachment("Test Output", "text/plain", "Text in the field is: " + "PopUp Error Message is displayed to tell user data you entered are invalid");
     }
-*/
 
     @Test(priority = 5)
     @Description("This test attempts to prepare organization using valid Data UserId, password and OrganizeId.")
@@ -93,7 +92,7 @@ public class GoooBig_PreparationTablet extends TestBase {
         organizationPreparation = new OrganizationPreparationTablet();
         Allure.step("Enter Valid Data");
         organizationPreparation.clearFields();
-        organizationPreparation.fillPrepareOrg("0583", "4657", "1266");
+        organizationPreparation.fillPrepareOrg("0583", "0583", "1266");
         //Thread.sleep(2000);
         //Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Allure.step("Assertion Validation correct.");
