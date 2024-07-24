@@ -41,7 +41,6 @@ public class GoooBig_Invoices extends TestBase {
     public void SmallTaxInvoiceWithDiscountOverProductLevel() throws InterruptedException, IOException {
         invoices = new Invoices();
         Allure.step("verify to select Invoice Type.");
-        //invoices.clickOnCashier();
         invoices.smallNonTaxInvoice();
         invoices.navigateBack();
         invoices.navigateBack();
@@ -188,6 +187,7 @@ public class GoooBig_Invoices extends TestBase {
         Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         invoices.navigateBack();
+        invoices.clickOnCashier();
         Allure.step("verify to Navigate to Invoice to compare total price in the screen with total price in the cart.");
         invoices.goToInvoices();
         Thread.sleep(3000);
@@ -351,6 +351,7 @@ public class GoooBig_Invoices extends TestBase {
         Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         invoices.navigateBack();
+        invoices.clickOnCashier();
         Allure.step("verify to Navigate to Invoice to compare total price in the screen with total price in the cart.");
         invoices.goToInvoices();
         Thread.sleep(3000);
@@ -556,6 +557,7 @@ public class GoooBig_Invoices extends TestBase {
         Allure.addAttachment("Screenshot for Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         invoices.navigateBack();
+        //invoices.clickOnCashier();
         invoices.goToInvoices();
         Thread.sleep(3000);
         System.out.println("********************************************");
@@ -761,6 +763,7 @@ public class GoooBig_Invoices extends TestBase {
         Allure.addAttachment("Screenshot for Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         invoices.navigateBack();
+        //invoices.clickOnCashier();
         invoices.goToInvoices();
         Thread.sleep(3000);
         System.out.println("********************************************");
@@ -927,6 +930,8 @@ public class GoooBig_Invoices extends TestBase {
         Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         invoices.navigateBack();
+        invoices.clickOnCashier();
+        Thread.sleep(2000);
         Allure.step("verify to Navigate to Invoice to compare total price in the screen with total price in the cart.");
         invoices.goToInvoices();
         Thread.sleep(3000);
@@ -1089,6 +1094,7 @@ public class GoooBig_Invoices extends TestBase {
         Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         invoices.navigateBack();
+        invoices.clickOnCashier();
         Allure.step("verify to Navigate to Invoice to compare total price in the screen with total price in the cart.");
         invoices.goToInvoices();
         Thread.sleep(3000);
@@ -1302,6 +1308,7 @@ public class GoooBig_Invoices extends TestBase {
         Allure.addAttachment("Screenshot for Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         invoices.navigateBack();
+        //invoices.clickOnCashier();
         invoices.goToInvoices();
         Thread.sleep(3000);
         System.out.println("********************************************");
@@ -1509,6 +1516,7 @@ public class GoooBig_Invoices extends TestBase {
         Allure.addAttachment("Screenshot for Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         invoices.navigateBack();
+        //invoices.clickOnCashier();
         invoices.goToInvoices();
         Thread.sleep(3000);
         System.out.println("********************************************");

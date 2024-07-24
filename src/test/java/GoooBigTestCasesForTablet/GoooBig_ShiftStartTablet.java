@@ -27,7 +27,7 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 @Listeners(TestListener.class)
 public class GoooBig_ShiftStartTablet extends TestBase {
     ShiftStartTablet shiftStart;
-    String StartingShift = "5000.0";
+    String StartingShift = "5000.000";
 
     // Tablet Testing
     @Test(priority = 1)
@@ -73,14 +73,15 @@ public class GoooBig_ShiftStartTablet extends TestBase {
     public void verifyNumberOfStartingShift() throws InterruptedException, IOException, TesseractException {
         shiftStart = new ShiftStartTablet();
         shiftStart.clickOnManageShift();
+        Thread.sleep(2000);
         // Capture the screenshot and save it to a file
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         // Read the screenshot image file
         BufferedImage fullImg = ImageIO.read(screenshot);
         // Define the crop area (these coordinates should be adjusted based on your image)
-        int cropX = 1795;
-        int cropY = 347;
-        int cropWidth = 145;
+        int cropX = 1785;
+        int cropY = 370;
+        int cropWidth = 160;
         int cropHeight = 55;
         // Crop the image
         BufferedImage croppedImg = fullImg.getSubimage(cropX, cropY, cropWidth, cropHeight);
@@ -100,5 +101,21 @@ public class GoooBig_ShiftStartTablet extends TestBase {
         System.out.println("Number Of Products In Invoice: " + NumberOfStartingShift);
         Assert.assertEquals(NumberOfStartingShift, StartingShift, "The Number of Start Shift in the Mange Shift screen does not match the Number of Starting Shift in the field.");
         shiftStart.navigateBack();
+/*
+        // Capture the screenshot and save it to a file
+        File screenshot2 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        // Read the screenshot image file
+        BufferedImage fullImg2 = ImageIO.read(screenshot);
+        // Define the crop area (these coordinates should be adjusted based on your image)
+        int cropX2 = 1785;
+        int cropY2 = 515;
+        int cropWidth2 = 160;
+        int cropHeight2 = 55;
+        // Crop the image
+        BufferedImage croppedImg2 = fullImg.getSubimage(cropX2, cropY2, cropWidth2, cropHeight2);
+
+        // Save the cropped image to a new file
+        File screenshotFile2 = new File("NumberOfStartingShift2.png");
+        ImageIO.write(croppedImg2, "png", screenshotFile2);*/
     }
 }

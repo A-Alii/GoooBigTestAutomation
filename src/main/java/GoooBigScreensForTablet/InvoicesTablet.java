@@ -30,7 +30,7 @@ public class InvoicesTablet extends TestBase {
     MobileElement addToCartFirstTablet;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc = '1.000']")
     MobileElement EditProductTablet;
-    @AndroidFindBy(xpath = "//android.widget.EditText[@index='5']")
+    @AndroidFindBy(xpath = "//android.widget.EditText[@text='500.0']")
     MobileElement discountFieldTablet;
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='3']")
     MobileElement discountFieldTablet2;
@@ -119,6 +119,34 @@ public class InvoicesTablet extends TestBase {
 
     public String getTotalInvoicePriceTablet() {
         return TotalInvoicePriceTablet.getAttribute("content-desc");
+    }
+
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='3']")
+    MobileElement settings;
+    @AndroidFindBy(xpath = "//android.view.View[@index='1' and @content-desc='  الطباعة']")
+    MobileElement Printing;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='فاتورة ضريبية']")
+    MobileElement TaxInvoiceDropDown;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='فاتورة ضريبية']")
+    MobileElement TaxInvoice;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
+    MobileElement SubmitButton;
+
+    public void clickOnSettings() {
+        settings.click();
+    }
+
+    public void clickOnPrinting() {
+        Printing.click();
+    }
+
+    public void clickOnTaxInvoice() {
+        TaxInvoiceDropDown.click();
+        TaxInvoice.click();
+    }
+
+    public void clickOnSubmitButton() {
+        SubmitButton.click();
     }
 
 }

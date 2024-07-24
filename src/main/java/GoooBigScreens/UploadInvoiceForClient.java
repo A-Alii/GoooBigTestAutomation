@@ -30,13 +30,13 @@ public class UploadInvoiceForClient extends TestBase {
     MobileElement CartEmpty;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='التصنيفات']")
     MobileElement Categories;
-    @AndroidFindBy(xpath = "//android.view.View[@index='3']")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
     MobileElement ApplyCategory;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='الأقسام']")
     MobileElement Department;
     @AndroidFindBy(xpath = "//android.widget.RadioButton[@content-desc='لابتوب']")
     MobileElement AppleDepartment;
-    @AndroidFindBy(xpath = "//android.view.View[@index='3']")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
     MobileElement ApplyDepartment;
     @AndroidFindBy(xpath = "//android.view.View[@index='1']")
     MobileElement hamburgerMenu;
@@ -78,6 +78,14 @@ public class UploadInvoiceForClient extends TestBase {
     MobileElement confirmDeleteAllProducts;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='فاتورة ضريبية']")
     MobileElement NonTaxORTax;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='فاتورة غير ضريبية']")
+    MobileElement Tax;
+
+    public void clickOnNonTax() {
+        Tax.click();
+        NonTax.click();
+        submitCheck.click();
+    }
     @AndroidFindBy(xpath = "//android.view.View[@content-desc= 'فاتورة ضريبية']")
     MobileElement NonTax;
     @AndroidFindBy(xpath = "//android.view.View[@index='0']")
@@ -229,6 +237,9 @@ public class UploadInvoiceForClient extends TestBase {
     public void smallNonTaxInvoice() {
         hamburgerMenu.click();
         settings.click();
+    }
+
+    public void clickOnPrinting() {
         printingSettings.click();
     }
 

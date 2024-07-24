@@ -10,9 +10,6 @@ import net.sourceforge.tess4j.TesseractException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
-import org.testng.ITestContext;
-import org.testng.SkipException;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -231,6 +228,7 @@ public class GoooBig_NoticeCreditor extends TestBase {
         Allure.addAttachment("Screenshot for Receipt.", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         noticeCreditorScreen.navigateBack();
+        noticeCreditorScreen.NavigateToCashierProduct();
         //noticeCreditorScreen.NavigateToCashierProduct();
         Allure.step("verify to Navigate to End Shift to check the price of notice creditor was added successfully to his box.");
         noticeCreditorScreen.NavigateToEndShift();

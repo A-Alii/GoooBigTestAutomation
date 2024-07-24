@@ -8,6 +8,12 @@ public class PostPaidScreen extends TestBase {
 
     @AndroidFindBy(xpath = "//android.view.View[@index='1']")
     MobileElement hamburgerMenu;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='الكاشير']")
+    MobileElement Cashier;
+
+    public void clickOnCahier() {
+        Cashier.click();
+    }
     @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc,'السلة') or contains(@content-desc,'9000 SR')]")
     MobileElement BasketButton;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc = 'التالي']")

@@ -83,6 +83,8 @@ public class GoooBig_PriceOffer extends TestBase {
         Allure.addAttachment("Screenshot for Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         priceOffer.navigateBack();
+        priceOffer.clickOnCashier();
+        Thread.sleep(2000);
         priceOffer.goToInvoices();
         Thread.sleep(2000);
         priceOffer.clickOnInvoiceDisplayPrice();

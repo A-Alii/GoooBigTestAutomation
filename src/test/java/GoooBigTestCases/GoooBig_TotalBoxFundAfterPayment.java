@@ -72,10 +72,10 @@ public class GoooBig_TotalBoxFundAfterPayment extends TestBase {
         // Read the screenshot image file
         BufferedImage fullImg = ImageIO.read(screenshot);
         // Define the crop area (these coordinates should be adjusted based on your image)
-        int cropX = 816;
-        int cropY = 1326;
-        int cropWidth = 214;
-        int cropHeight = 87;
+        int cropX = 788;
+        int cropY = 1412;
+        int cropWidth = 242;
+        int cropHeight = 94;
         // Crop the image
         BufferedImage croppedImg = fullImg.getSubimage(cropX, cropY, cropWidth, cropHeight);
         // Save the cropped image to a new file

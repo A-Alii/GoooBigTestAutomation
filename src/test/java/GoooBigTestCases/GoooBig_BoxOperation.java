@@ -76,7 +76,7 @@ public class GoooBig_BoxOperation extends TestBase {
         // Use Tesseract to extract text from the image
         ITesseract tesseract = new Tesseract();
         tesseract.setDatapath("C:\\Program Files\\Tesseract-OCR\\tessdata");
-        tesseract.setLanguage("eng"); // Set the language to Arabic
+        tesseract.setLanguage("Arabic"); // Set the language to Arabic
         String extractedText;
         try {
             extractedText = tesseract.doOCR(screenshotFile);
@@ -93,8 +93,6 @@ public class GoooBig_BoxOperation extends TestBase {
                     deposit = line.replaceAll("[^0-9.]", "").trim();
                 } else if (line.contains("من")) {
                     from = line.replaceAll(".*من\\s*", "").trim();
-                    // Attempt to correct common OCR errors in Arabic names
-                    //from = correctArabicName(from);
                 } else if (line.contains("إلى")) {
                     to = line.replaceAll(".*إلى\\s*", "").trim();
                 }
@@ -102,9 +100,9 @@ public class GoooBig_BoxOperation extends TestBase {
 
             // Format the output
             String formattedOutput = String.format("إيداع : %s\nمن : %s\nإلى : %s", deposit, from, to);
-            System.out.println("deposit: " + deposit);
+            /*System.out.println("deposit: " + deposit);
             System.out.println("from: " + from);
-            System.out.println("to: " + to);
+            System.out.println("to: " + to);*/
 
             System.out.println("----------------------------------");
             System.out.println("البيانات المطلوبة من الفاتورة");
@@ -128,10 +126,10 @@ public class GoooBig_BoxOperation extends TestBase {
             BufferedImage fullImg = ImageIO.read(screenshot1);
 
             // Define the crop area (these coordinates should be adjusted based on your image)
-            int cropX = 830;
-            int cropY = 660;
-            int cropWidth = 200;
-            int cropHeight = 50;
+            int cropX = 838;
+            int cropY = 672;
+            int cropWidth = 192;
+            int cropHeight = 83;
 
             // Crop the image
             BufferedImage croppedImg = fullImg.getSubimage(cropX, cropY, cropWidth, cropHeight);

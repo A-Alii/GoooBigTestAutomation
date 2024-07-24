@@ -3,6 +3,8 @@ package GoooBigScreensForTablet;
 import GoooBigBase.TestBase;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class OrganizationPreparationTablet extends TestBase {
     @AndroidFindBy(xpath = "//android.widget.EditText[@index='0']")
@@ -75,6 +77,8 @@ public class OrganizationPreparationTablet extends TestBase {
     }
 
     public void clickLoginButton() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOf(Login));
         Login.click();
     }
 }

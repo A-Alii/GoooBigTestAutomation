@@ -16,7 +16,7 @@ public class ShiftStartTablet extends TestBase {
     MobileElement ApplyButtonTablet;
     // Tablet Testing
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إدارة الدوام']")
-    private MobileElement manageShift;
+    MobileElement manageShift;
 
     public void clickOnManageShift() {
         manageShift.click();

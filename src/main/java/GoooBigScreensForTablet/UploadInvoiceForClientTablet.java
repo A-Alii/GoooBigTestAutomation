@@ -84,6 +84,15 @@ public class UploadInvoiceForClientTablet extends TestBase {
         settings.click();
     }
 
+    @AndroidFindBy(xpath = "//android.widget.Button[@text='ALLOW']")
+    MobileElement Allow;
+    @AndroidFindBy(xpath = "//android.widget.Button[@text='ALLOW']")
+    MobileElement Allow2;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='Print to PDF']")
+    MobileElement PrintToPdf2;
+    @AndroidFindBy(xpath = "//android.view.View[@index='3']")
+    MobileElement RemainingAmountOfPaymentScreen2;
+
     public void clickOnPrinting() {
         Printing.click();
     }
@@ -91,6 +100,16 @@ public class UploadInvoiceForClientTablet extends TestBase {
     public void clickOnTaxInvoice() {
         TaxInvoiceDropDown.click();
         TaxInvoice.click();
+    }
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='إدارة الدوام']")
+    MobileElement manageShift;
+
+    public void clickOnAllow() {
+        Allow.click();
+    }
+
+    public void clickOnAllow2() {
+        Allow2.click();
     }
 
     public void clickOnSubmitButton() {
@@ -161,14 +180,20 @@ public class UploadInvoiceForClientTablet extends TestBase {
         StartUploadInvoice.click();
     }
 
-    public boolean isSuccessUpload() {
-        WebDriverWait wait = new WebDriverWait(driver, 10); // wait for up to 10 seconds
-        try {
-            wait.until(ExpectedConditions.visibilityOf(successUpload));
-            return successUpload.isDisplayed();
-        } catch (Exception e) {
-            return false;
-        }
+    public void clickOnPrintToPdf() {
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        // Scroll to the element
+        driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))"
+                + ".scrollIntoView(new UiSelector().description(\"Print to PDF\").instance(0));");
+
+        // Locate the element
+        MobileElement PrintToPdf = (MobileElement) driver.findElementByXPath("//android.widget.ImageView[@content-desc='Print to PDF']");
+
+        // Wait until the element is clickable
+        wait.until(ExpectedConditions.elementToBeClickable(PrintToPdf));
+
+        // Click the element
+        PrintToPdf.click();
     }
 
     public void updateClients() throws InterruptedException {
@@ -228,8 +253,9 @@ public class UploadInvoiceForClientTablet extends TestBase {
         return RemainingAmountOfPaymentScreen.getText();
     }
 
-    @AndroidFindBy(xpath = "//android.view.View[@index='5']")
-    MobileElement RemainingAmountOfPaymentScreen2;
+    public void clickOnPrintToPdf2() {
+        PrintToPdf2.click();
+    }
 
     public String getRemainingAmountOfPaymentScreen2() {
         return RemainingAmountOfPaymentScreen2.getText();
@@ -289,7 +315,19 @@ public class UploadInvoiceForClientTablet extends TestBase {
         submitButtonForPayment.click();
     }
 
+    public boolean isSuccessUpload() {
+        WebDriverWait wait = new WebDriverWait(driver, 20); // wait for up to 10 seconds
+        try {
+            wait.until(ExpectedConditions.visibilityOf(successUpload));
+            return successUpload.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
 
+    public void clickOnManageShift() {
+        manageShift.click();
+    }
 
 
 }

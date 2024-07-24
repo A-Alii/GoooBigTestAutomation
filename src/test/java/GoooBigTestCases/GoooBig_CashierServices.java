@@ -81,6 +81,7 @@ public class GoooBig_CashierServices extends TestBase {
         cashierServices.sendKeysToPriceOfService(200);
         cashierServices.hideKeyboard();
         cashierServices.clickOnSubmitButton();
+        cashierServices.clickOnBasketButton();
         try {
             Assert.assertFalse(cashierServices.isErrorDisplayed());
         } catch (Exception e) {
@@ -91,7 +92,6 @@ public class GoooBig_CashierServices extends TestBase {
     @Test(priority = 7)
     public void testcase7() throws InterruptedException, IOException {
         cashierServices = new CashierServices();
-        cashierServices.clickOnBasketButton();
         //cashierServices.clickOnServices();
         cashierServices.clickOnNextButton();
         Thread.sleep(1000);
@@ -209,6 +209,7 @@ public class GoooBig_CashierServices extends TestBase {
         Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         cashierServices.navigateBack();
+        //cashierServices.clickOnCashier();
         Allure.step("verify to Navigate to Invoice to compare total price in the screen with total price in the cart.");
         cashierServices.goToInvoices();
         Thread.sleep(3000);

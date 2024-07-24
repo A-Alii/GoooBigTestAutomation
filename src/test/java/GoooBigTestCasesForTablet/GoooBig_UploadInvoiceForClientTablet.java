@@ -15,6 +15,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
@@ -32,6 +34,7 @@ public class GoooBig_UploadInvoiceForClientTablet extends TestBase {
     UploadInvoiceForClientTablet uploadInvoiceForClient;
     private String test = "";
     private String test1 = "";
+    public String amountToPay = "500.000";
 
     @Test(priority = 1)
     @Description("This test attempts to select Invoice type.")
@@ -40,9 +43,15 @@ public class GoooBig_UploadInvoiceForClientTablet extends TestBase {
     public void verifyToSelectInvoiceType() throws InterruptedException {
         uploadInvoiceForClient = new UploadInvoiceForClientTablet();
         uploadInvoiceForClient.clickOnSettings();
+        uploadInvoiceForClient.clickOnAllow();
+        Thread.sleep(2000);
+        uploadInvoiceForClient.clickOnAllow2();
+        Thread.sleep(4000);
         uploadInvoiceForClient.clickOnPrinting();
         Thread.sleep(3000);
         uploadInvoiceForClient.clickOnTaxInvoice();
+        uploadInvoiceForClient.clickOnPrintToPdf();
+        uploadInvoiceForClient.clickOnPrintToPdf2();
         uploadInvoiceForClient.clickOnSubmitButton();
     }
 
@@ -117,6 +126,8 @@ public class GoooBig_UploadInvoiceForClientTablet extends TestBase {
         uploadInvoiceForClient.clickOnUploadInvoice();
         Assert.assertTrue(uploadInvoiceForClient.isSuccessUpload(), "Invoice is not uploaded");
         System.out.println("Invoice is uploaded");
+        uploadInvoiceForClient.clickOnUploadInvoice();
+        uploadInvoiceForClient.clickOnUploadInvoice();
     }
 
     @Test(priority = 5)
@@ -159,7 +170,6 @@ public class GoooBig_UploadInvoiceForClientTablet extends TestBase {
 
         int finalAmount = amountPostPaid + amountLast;
         System.out.println("sum of postpaid amount and invoice amount: " + finalAmount);
-
         Assert.assertEquals(totalPostPaid, finalAmount);
         System.out.println("total amount of postpaid of client is equal");
 
@@ -172,7 +182,7 @@ public class GoooBig_UploadInvoiceForClientTablet extends TestBase {
     @Description("This test attempts to Update Clients from Update Screen.")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
-    public void verifyToPayAnAmount() throws InterruptedException, IOException {
+    public void verifyToPayAnAmount() throws InterruptedException, IOException, TesseractException {
         uploadInvoiceForClient = new UploadInvoiceForClientTablet();
         Thread.sleep(4000);
         String ClientName = uploadInvoiceForClient.getClientNameInPaymentScreen();
@@ -181,7 +191,6 @@ public class GoooBig_UploadInvoiceForClientTablet extends TestBase {
         System.out.println("Total Amount is: " + totalAmount);
         double RemainingAmount = Double.parseDouble(uploadInvoiceForClient.getRemainingAmountOfPaymentScreen());
         System.out.println("Remaining Amount is: " + RemainingAmount);
-        String amountToPay = "500.0";
         uploadInvoiceForClient.sendKeysToPayAmountForClient(amountToPay);
         uploadInvoiceForClient.hideKeyboard();
         double amountPaid = Double.parseDouble(uploadInvoiceForClient.getPayAmountForClient());
@@ -251,5 +260,34 @@ public class GoooBig_UploadInvoiceForClientTablet extends TestBase {
         uploadInvoiceForClient.navigateBack();
         uploadInvoiceForClient.navigateBack();
         uploadInvoiceForClient.navigateBack();
+        uploadInvoiceForClient.clickOnManageShift();
+        Thread.sleep(2000);
+        // Capture the screenshot and save it to a file
+        File screenshotManageShift = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        // Read the screenshot image file
+        BufferedImage fullImg = ImageIO.read(screenshotManageShift);
+        // Define the crop area (these coordinates should be adjusted based on your image)
+        int cropX2 = 1785;
+        int cropY2 = 515;
+        int cropWidth2 = 160;
+        int cropHeight2 = 55;
+        // Crop the image
+        BufferedImage croppedImg = fullImg.getSubimage(cropX2, cropY2, cropWidth2, cropHeight2);
+        // Save the cropped image to a new file
+        File screenshotFileManageShift = new File("screenshotManageShift.png");
+        ImageIO.write(croppedImg, "png", screenshotFileManageShift);
+        System.out.println("Cropped screenshot saved: " + screenshotFileManageShift.getAbsolutePath());
+        // Use Tesseract to extract text from the image
+        ITesseract tesseractManageShift = new Tesseract();
+        tesseractManageShift.setDatapath("C:\\Program Files\\Tesseract-OCR\\tessdata");
+        tesseractManageShift.setLanguage("eng"); // Set the language to Arabic
+        String extractedTextMangeShift;
+        extractedTextMangeShift = tesseractManageShift.doOCR(screenshotFileManageShift);
+        String NumberOfStartingManageShift = extractedTextMangeShift.replaceAll("[^0-9.]", "");
+        System.out.println("Number Of deposit In Manage Shift: " + NumberOfStartingManageShift);
+        System.out.println("amountToPay: " + amountToPay);
+        Assert.assertEquals(NumberOfStartingManageShift, amountToPay);
+        uploadInvoiceForClient.navigateBack();
     }
+
 }

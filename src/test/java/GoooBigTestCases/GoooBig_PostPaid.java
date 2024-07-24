@@ -67,7 +67,7 @@ public class GoooBig_PostPaid extends TestBase {
         Allure.addAttachment("Screenshot for invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         postPaidScreen.navigateBack();
-        //postPaidScreen.NavigateToCashierProduct();
-        //postPaidScreen.hideKeyboard();
+        postPaidScreen.clickOnCahier();
+        postPaidScreen.hideKeyboard();
     }
 }

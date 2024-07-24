@@ -98,12 +98,6 @@ public class GoooBig_OtherPaymentMethods extends TestBase {
             System.out.println(lastText + numbers.get(numbers.size() - 1));
             Allure.addAttachment("Test Output", "text/plain", "Invoice Details Are: " + lastText + numbers.get(numbers.size() - 1));
         }
-        System.out.println("-------------------------");
-        Allure.step("verify to do payment and print the invoice.");
-        otherPaymentMethods.clickOnOtherPaymentMethodButton();
-        otherPaymentMethods.clickOnConfirmTransaction();
-        Assert.assertTrue(otherPaymentMethods.isPopUpPresent());
-        System.out.println("Can't do payment transaction without doing the payment method.");
         System.out.println("*****************************************************");
         System.out.println("البيانات الموجوده فى صفحة الدفع فى الاعلى");
         String AmountPayment = otherPaymentMethods.getAmount();
@@ -118,6 +112,13 @@ public class GoooBig_OtherPaymentMethods extends TestBase {
         Allure.step("Assert AmountPayment in top screen with AmountPayment in text field.");
         Assert.assertEquals(TotalNumberInPaymentScreen, AmountPayment);
         System.out.println("Assert AmountPayment in top screen with AmountPayment in text field Done Successfully.");
+
+        System.out.println("-------------------------");
+        Allure.step("verify to do payment and print the invoice.");
+        otherPaymentMethods.clickOnOtherPaymentMethodButton();
+        otherPaymentMethods.clickOnConfirmTransaction();
+        Assert.assertTrue(otherPaymentMethods.isPopUpPresent());
+        System.out.println("Can't do payment transaction without doing the payment method.");
         Allure.step("send value to the text field for Invoice Amount");
         otherPaymentMethods.sendKeysToInvoiceTotalAmountInPaymentScreen("10");
         otherPaymentMethods.clickOnAddPaymentMethod();
@@ -281,6 +282,7 @@ public class GoooBig_OtherPaymentMethods extends TestBase {
         Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         otherPaymentMethods.navigateBack();
+        otherPaymentMethods.clickOnCashier();
         Allure.step("verify to Navigate to Invoice to compare total price in the screen with total price in the cart.");
         otherPaymentMethods.goToInvoices();
         Thread.sleep(3000);

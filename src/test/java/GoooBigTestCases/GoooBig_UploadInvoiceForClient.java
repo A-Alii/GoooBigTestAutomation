@@ -36,8 +36,9 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
         cashierScreen.ClickOnCashier();
         cashierScreen.smallNonTaxInvoice();
         Thread.sleep(3000);
-        cashierScreen.checkbox1();
-        cashierScreen.checkbox2();
+        cashierScreen.clickOnPrinting();
+        Thread.sleep(10000);
+        cashierScreen.clickOnNonTax();
         cashierScreen.navigateBack();
         cashierScreen.navigateBack();
         cashierScreen.hideKeyboard();
@@ -117,6 +118,7 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
         Allure.addAttachment("Screenshot for invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         cashierScreen.navigateBack();
+        cashierScreen.ClickOnCashier();
         cashierScreen.clickOnUploadInvoice();
         Assert.assertTrue(cashierScreen.isSuccessUpload(), "Invoice is not uploaded");
         System.out.println("Invoice is uploaded");
@@ -129,14 +131,7 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
     public void verifyToUpdateClients() throws InterruptedException {
         cashierScreen = new UploadInvoiceForClient();
         cashierScreen.updateClients();
-        /*Thread.sleep(1000);
-        if(cashierScreen.isShouldUploadFirst()){
-            cashierScreen.navigateBack();
-            cashierScreen.ClickOnCashier();
-            cashierScreen.clickOnUploadInvoice();
-            cashierScreen.updateClients();
-        }*/
-        Thread.sleep(6000);
+        Thread.sleep(15000);
         //Assert.assertFalse(cashierScreen.isLoadingUpdateDisplay(), "Loading is not finished");
         cashierScreen.navigateBack();
         cashierScreen.ClickOnCashier();

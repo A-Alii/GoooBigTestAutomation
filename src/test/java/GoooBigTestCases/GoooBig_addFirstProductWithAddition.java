@@ -151,6 +151,8 @@ public class GoooBig_addFirstProductWithAddition extends TestBase {
         Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         additionForProductScreen.navigateBack();
+        additionForProductScreen.clickOnCashier();
+        Thread.sleep(2000);
         Allure.step("verify to Navigate to Invoice to compare total price in the screen with total price in the cart.");
         additionForProductScreen.goToInvoices();
         Thread.sleep(3000);
@@ -173,7 +175,7 @@ public class GoooBig_addFirstProductWithAddition extends TestBase {
 
         System.out.println("********************************************");
         additionForProductScreen.clickOnReprint();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         Allure.addAttachment("ScreenShot for Reprint Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         // Capture the screenshot and save it to a file
         File screenshotReprint = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -358,6 +360,7 @@ public class GoooBig_addFirstProductWithAddition extends TestBase {
         Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         additionForProductScreen.navigateBack();
+        additionForProductScreen.clickOnCashier();
         Allure.step("verify to Navigate to Invoice to compare total price in the screen with total price in the cart.");
         additionForProductScreen.goToInvoices();
         Thread.sleep(3000);
@@ -380,7 +383,7 @@ public class GoooBig_addFirstProductWithAddition extends TestBase {
 
         System.out.println("********************************************");
         additionForProductScreen.clickOnReprint();
-        Thread.sleep(3000);
+        Thread.sleep(8000);
         Allure.addAttachment("ScreenShot for Reprint Invoice", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         // Capture the screenshot and save it to a file
         File screenshotReprint = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -429,8 +432,6 @@ public class GoooBig_addFirstProductWithAddition extends TestBase {
             System.out.println("total Amount is: " + totalAmount);
             System.out.println("total Amount Reprint is: " + totalAmountReprint);
             // Accessing the first, second, and third numbers
-            additionForProductScreen.navigateBack();
-            additionForProductScreen.navigateBack();
             additionForProductScreen.navigateBack();
             additionForProductScreen.hideKeyboard();
             System.out.println("Invoice Small Tax Added Successfully");

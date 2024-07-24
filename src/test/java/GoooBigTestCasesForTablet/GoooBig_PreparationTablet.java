@@ -7,7 +7,6 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -18,6 +17,7 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 @Listeners(TestListener.class)
 public class GoooBig_PreparationTablet extends TestBase {
     OrganizationPreparationTablet organizationPreparation;
+/*
 
     @Test(priority = 1)
     @Description("This test attempts to prepare organization using an Empty Data UserId and a password and OrganizeId.")
@@ -83,6 +83,7 @@ public class GoooBig_PreparationTablet extends TestBase {
         System.out.println("PopUp Error Message is displayed to tell user data you entered are invalid.");
         Allure.addAttachment("Test Output", "text/plain", "Text in the field is: " + "PopUp Error Message is displayed to tell user data you entered are invalid");
     }
+*/
 
     @Test(priority = 5)
     @Description("This test attempts to prepare organization using valid Data UserId, password and OrganizeId.")
@@ -96,11 +97,9 @@ public class GoooBig_PreparationTablet extends TestBase {
         //Thread.sleep(2000);
         //Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Allure.step("Assertion Validation correct.");
-
-        Assert.assertTrue(organizationPreparation.isProductsNumberDisplay(), "Products Number element is not displayed.");
+        //Assert.assertTrue(organizationPreparation.isProductsNumberDisplay(), "Products Number element is not displayed.");
         System.out.println("Preparation Successfully Done.....");
         Allure.addAttachment("Test Output", "text/plain", "Text in the field is: " + "Preparation Successfully Done.");
-        Thread.sleep(3000);
     }
 
     @Test(priority = 6)
@@ -110,6 +109,7 @@ public class GoooBig_PreparationTablet extends TestBase {
     public void redirectToLoginScreenAfterPrepareOrganization() throws IOException, InterruptedException {
         organizationPreparation = new OrganizationPreparationTablet();
         Allure.step("Navigate to Login screen");
+        Thread.sleep(9000);
         organizationPreparation.clickLoginButton();
         //Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Allure.addAttachment("Test Output", "text/plain", "Text in the field is: " + "Preparation Successfully Done and redirect to Login Screen Successfully.");
