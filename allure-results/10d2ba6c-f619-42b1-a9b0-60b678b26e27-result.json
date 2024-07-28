@@ -1,0 +1,94 @@
+{
+  "uuid": "10d2ba6c-f619-42b1-a9b0-60b678b26e27",
+  "historyId": "fe33a059ee3d579dcb74641f97482bab",
+  "fullName": "GoooBigTestCasesForTablet.GoooBig_AddClientTablet.VerifyClickOnAddClientButtonWithoutData",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCasesForTablet.GoooBig_AddClientTablet"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCasesForTablet.GoooBig_AddClientTablet"
+    },
+    {
+      "name": "testMethod",
+      "value": "VerifyClickOnAddClientButtonWithoutData"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCasesForTablet.GoooBig_AddClientTablet"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "8288@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "owner",
+      "value": "Ahmed Ali"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "links": [],
+  "name": "VerifyClickOnAddClientButtonWithoutData",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "This test attempts to Verify Click On Add Client Button With Empty Data.",
+  "steps": [
+    {
+      "name": "Click on Add Client Button without any data.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1722155251226,
+      "stop": 1722155251226
+    }
+  ],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1722155250966,
+  "stop": 1722155253102
+}

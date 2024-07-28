@@ -42,6 +42,8 @@
             <class name="GoooBigTestCasesForTablet.GoooBig_PendingInvoiceTablet"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_PriceOffer"/>
             <class name="GoooBigTestCasesForTablet.GoooBig_InvoicesTablet"/>
+            <class name="GoooBigTestCasesForTablet.GoooBig_NoticeCreditorTablet"/>
+            <class name="GoooBigTestCasesForTablet.GoooBig_ServicesAndProducts"/>
 
             <!--<class name="GoooBigTestCasesForTablet.GoooBig_InvoicesTablet"/>
             <class name="GoooBigTestCases.GoooBig_SelectWarehouseForTablet"/>-->

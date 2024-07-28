@@ -1,0 +1,11 @@
+{
+  "uuid": "db16b27f-a7f4-45fc-9337-505fe95c2187",
+  "name": "GoooBigTestCasesForTablet.GoooBig_PriceOffer",
+  "children": [
+    "1778f659-790f-4640-8d2d-797ea46937c6"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1722155016570,
+  "stop": 1722156455444
+}

@@ -1,0 +1,84 @@
+{
+  "uuid": "cc2469dd-3db9-4a19-8ba9-db24e0360884",
+  "historyId": "d4f150e2cf1d50e35a925514df3f307f",
+  "fullName": "GoooBigTestCasesForTablet.GoooBig_BoxOperationTablet.verifyToDoTransactionWithValidData",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCasesForTablet.GoooBig_BoxOperationTablet"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCasesForTablet.GoooBig_BoxOperationTablet"
+    },
+    {
+      "name": "testMethod",
+      "value": "verifyToDoTransactionWithValidData"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCasesForTablet.GoooBig_BoxOperationTablet"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "8288@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "verifyToDoTransactionWithValidData",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Formatted Invoice Data",
+      "source": "e07da57f-34b5-4b15-984b-c1a48a6efd7f-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Screenshot for result",
+      "source": "dddb9953-fde6-4137-8a1d-bf91a4643427-attachment"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1722155547567,
+  "stop": 1722155574144
+}

@@ -36,7 +36,6 @@ public class GoooBig_PreparationTablet extends TestBase {
         //takeScreenshot("Test Step 1");
     }
 
-
     @Test(priority = 2)
     @Description("This test attempts to prepare organization using UserId and an Empty Data for password and OrganizeId.")
     @Severity(CRITICAL)

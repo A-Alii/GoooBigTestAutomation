@@ -1,0 +1,95 @@
+{
+  "uuid": "a17724d5-2f5a-4961-9981-3dda10a3a5cf",
+  "historyId": "e3907b72158db305648ad6e37ebb851e",
+  "fullName": "GoooBigTestCasesForTablet.GoooBig_PendingInvoiceTablet.verify_PendingInvoiceTablet",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCasesForTablet.GoooBig_PendingInvoiceTablet"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCasesForTablet.GoooBig_PendingInvoiceTablet"
+    },
+    {
+      "name": "testMethod",
+      "value": "verify_PendingInvoiceTablet"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCasesForTablet.GoooBig_PendingInvoiceTablet"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "8288@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "verify_PendingInvoiceTablet",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Test Output",
+      "source": "88be8500-7454-4cd7-bce7-2555869cda88-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "9a8b3b21-c162-4911-a1bb-b28fda16c55f-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "c8b2467a-ef86-4955-a1ee-282901a89816-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "9ed656e5-620e-4bd2-9667-0cf843526790-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1722155724512,
+  "stop": 1722155740940
+}

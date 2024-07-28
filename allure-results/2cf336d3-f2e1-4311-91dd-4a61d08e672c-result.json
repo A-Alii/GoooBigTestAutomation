@@ -1,0 +1,148 @@
+{
+  "uuid": "2cf336d3-f2e1-4311-91dd-4a61d08e672c",
+  "historyId": "a8d1eb11a4647f19a35d5b3b122a1206",
+  "fullName": "GoooBigTestCasesForTablet.GoooBig_AddFirstProductWithAdditionTablet.addTwoProductsWithSameAddition",
+  "labels": [
+    {
+      "name": "package",
+      "value": "GoooBigTestCasesForTablet.GoooBig_AddFirstProductWithAdditionTablet"
+    },
+    {
+      "name": "testClass",
+      "value": "GoooBigTestCasesForTablet.GoooBig_AddFirstProductWithAdditionTablet"
+    },
+    {
+      "name": "testMethod",
+      "value": "addTwoProductsWithSameAddition"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "F:/GoooBigMobileApp"
+    },
+    {
+      "name": "subSuite",
+      "value": "GoooBigTestCasesForTablet.GoooBig_AddFirstProductWithAdditionTablet"
+    },
+    {
+      "name": "host",
+      "value": "Lenovo"
+    },
+    {
+      "name": "thread",
+      "value": "8288@Lenovo.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "addTwoProductsWithSameAddition",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "verify to do payment and print the invoice.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1722155631486,
+      "stop": 1722155631486
+    },
+    {
+      "name": "verify to Navigate to Invoice to compare total price in the screen with total price in the cart.",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1722155649500,
+      "stop": 1722155649500
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Screenshot for Cart",
+      "source": "768ab3b2-5a3e-4a46-a591-d07c3e04e59a-attachment"
+    },
+    {
+      "name": "Test Output",
+      "source": "4b30d361-6063-476a-b5bb-be41de3c4b54-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "3c6073df-9f27-4eee-b03f-ce04112ac733-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Test Output",
+      "source": "76c9bba9-e16b-4710-8e2b-850abab96530-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Extracted Invoice Text",
+      "source": "29cff0a6-278c-4fd3-b1d0-359579f82769-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Filtered Invoice Text",
+      "source": "6a0fb2bc-bc3c-48c0-9f07-502782562638-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Screenshot for result",
+      "source": "42f5b591-5c76-4311-a979-67b851349cc0-attachment"
+    },
+    {
+      "name": "Test Output",
+      "source": "1b506871-c436-441f-b860-414c35ba6055-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "ScreenShot for Reprint Invoice",
+      "source": "01891b71-72b4-48d4-988a-cab57edc1ad1-attachment"
+    },
+    {
+      "name": "Extracted Invoice Text",
+      "source": "e441cc15-be22-4db7-b336-2034eeafb1b9-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "Filtered Invoice Text",
+      "source": "27ee8848-3b49-4018-b3d6-f01c2882985b-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "platformName",
+      "value": "Android"
+    },
+    {
+      "name": "deviceName",
+      "value": "emulator-5554"
+    },
+    {
+      "name": "platformVersion",
+      "value": "9"
+    }
+  ],
+  "start": 1722155616213,
+  "stop": 1722155670813
+}

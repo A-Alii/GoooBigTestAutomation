@@ -157,6 +157,12 @@ public class InvoicesTablet extends TestBase {
     MobileElement TaxInvoiceDropDown;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='فاتورة ضريبية']")
     MobileElement TaxInvoice;
+
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='فاتورة ضريبية']")
+    MobileElement NonTaxInvoiceDropDown;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='فاتورة غير ضريبية']")
+    MobileElement NonTaxInvoice;
+
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='تنفيذ']")
     MobileElement SubmitButton;
 
@@ -172,6 +178,8 @@ public class InvoicesTablet extends TestBase {
         TaxInvoiceDropDown.click();
         TaxInvoice.click();
     }
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='فاتورة صغيرة مبسطة']")
+    MobileElement smallTaxInvoice;
 
     public void clickOnSubmitButton() {
         SubmitButton.click();
@@ -194,5 +202,26 @@ public class InvoicesTablet extends TestBase {
         hideKeyboard();
         discountField.sendKeys(discount);
         hideKeyboard();
+    }
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='فاتورة A4']")
+    MobileElement largeTaxInvoice;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='فاتورة صغيرة مبسطة']")
+    MobileElement smallNonTaxInvoice;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='فاتورة مبيعات غير ضريبية']")
+    MobileElement largeNonTaxInvoice;
+
+    public void clickOnNonTaxInvoice() {
+        NonTaxInvoiceDropDown.click();
+        NonTaxInvoice.click();
+    }
+
+    public void clickOnLargeTaxInvoice() {
+        smallTaxInvoice.click();
+        largeTaxInvoice.click();
+    }
+
+    public void clickOnLargeNonTaxInvoice() {
+        smallNonTaxInvoice.click();
+        largeNonTaxInvoice.click();
     }
 }

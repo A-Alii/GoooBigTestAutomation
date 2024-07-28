@@ -65,15 +65,15 @@ public class OrganizationPreparationTablet extends TestBase {
         UserName.click();
         hideKeyboard();
         UserName.sendKeys(Name);
-        driver.hideKeyboard();
+        hideKeyboard();
         Password.click();
         hideKeyboard();
         Password.sendKeys(Pass);
-        driver.hideKeyboard();
+        hideKeyboard();
         OrgId.click();
-        driver.hideKeyboard();
+        hideKeyboard();
         OrgId.sendKeys(Id);
-        driver.hideKeyboard();
+        hideKeyboard();
         clickOnPrepareButton();
     }
 

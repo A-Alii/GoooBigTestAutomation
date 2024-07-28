@@ -1,1 +1,0 @@
-Assertion Result is: TotalPrice is equal to the total Price number in additionForProductScreen screen.

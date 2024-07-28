@@ -44,6 +44,7 @@ public class LoginTablet extends TestBase {
         UserName.sendKeys(Name);
         driver.hideKeyboard();
         Password.click();
+        hideKeyboard();
         Password.sendKeys(Pass);
         driver.hideKeyboard();
         checkRemember.get(0).click();
