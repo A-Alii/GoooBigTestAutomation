@@ -282,7 +282,7 @@ public class GoooBig_OtherPaymentMethods extends TestBase {
         Allure.addAttachment("Screenshot for result", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         Thread.sleep(2000);
         otherPaymentMethods.navigateBack();
-        otherPaymentMethods.clickOnCashier();
+        //otherPaymentMethods.clickOnCashier();
         Allure.step("verify to Navigate to Invoice to compare total price in the screen with total price in the cart.");
         otherPaymentMethods.goToInvoices();
         Thread.sleep(3000);

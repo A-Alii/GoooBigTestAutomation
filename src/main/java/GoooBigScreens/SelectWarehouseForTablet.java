@@ -16,7 +16,15 @@ public class SelectWarehouseForTablet extends TestBase {
 
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='اختر الفرع']")
     MobileElement selectWarehouse;
-    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, 'مستودع') and contains(@index, '0')]")
+
+    /*MobileElement selectWarehouseFromList
+            = driver.findElement(
+                    MobileBy.xpath(
+                            "//android.view.View[contains(@content-desc, 'تجريبي') and contains(@index, '0')]"));
+*/
+
+
+    @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, 'تجريبي') and contains(@index, '0')]")
     MobileElement selectWarehouseFromList;
     @AndroidFindBy(xpath = "//android.view.View[@index='0' and contains(@content-desc, '0')]")
     MobileElement selectProduct;
@@ -32,6 +40,8 @@ public class SelectWarehouseForTablet extends TestBase {
     MobileElement ApplyButton;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='كاش']")
     MobileElement cashInvoice;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='تعليق']")
+    MobileElement pendingInvoice;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202Bمن فضلك اختر طابعة\u202C']")
     MobileElement processComplete;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='رفع البيانات']")
@@ -40,6 +50,8 @@ public class SelectWarehouseForTablet extends TestBase {
     MobileElement StartUploadInvoice;
     @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202B تم الرفع بنجاح\u202C']")
     MobileElement UploadSuccess;
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc='\u202Bتم بنجاح\u202C']")
+    MobileElement DoneSuccessfully;
 
     public void clickOnSelectWarehouse() {
         selectWarehouse.click();
@@ -75,11 +87,25 @@ public class SelectWarehouseForTablet extends TestBase {
         cashInvoice.click();
     }
 
+    public void clickOnPendingInvoice() {
+        pendingInvoice.click();
+    }
+
     public boolean processComplete() {
         WebDriverWait wait = new WebDriverWait(driver, 5); // wait for up to 5 seconds
         try {
             wait.until(ExpectedConditions.visibilityOf(processComplete));
             return processComplete.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean DonePendingInvoiceComplete() {
+        WebDriverWait wait = new WebDriverWait(driver, 5); // wait for up to 5 seconds
+        try {
+            wait.until(ExpectedConditions.visibilityOf(DoneSuccessfully));
+            return DoneSuccessfully.isDisplayed();
         } catch (Exception e) {
             return false;
         }

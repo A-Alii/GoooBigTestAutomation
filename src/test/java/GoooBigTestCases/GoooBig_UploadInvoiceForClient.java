@@ -127,6 +127,9 @@ public class GoooBig_UploadInvoiceForClient extends TestBase {
         cashierScreen.ClickOnCashier();
         cashierScreen.clickOnUploadInvoice();
         Assert.assertTrue(cashierScreen.isSuccessUpload(), "Invoice is not uploaded");
+        cashierScreen.clickOnUploadInvoiceAgain();
+        Assert.assertTrue(cashierScreen.isSuccessUpload(), "Invoice is not uploaded");
+        cashierScreen.clickOnUploadInvoiceAgain();
         System.out.println("Invoice is uploaded");
     }
 

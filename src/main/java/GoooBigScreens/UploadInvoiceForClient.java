@@ -137,6 +137,11 @@ public class UploadInvoiceForClient extends TestBase {
         StartUploadInvoice.click();
     }
 
+    public void clickOnUploadInvoiceAgain() {
+        uploadInvoiceOption.click();
+        StartUploadInvoice.click();
+    }
+
     public void updateClients() {
         UpdateOption.click();
         checkClient.click();

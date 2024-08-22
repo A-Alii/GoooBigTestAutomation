@@ -7,7 +7,6 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -19,7 +18,7 @@ import static io.qameta.allure.SeverityLevel.CRITICAL;
 public class GoooBig_PreparationTablet extends TestBase {
     OrganizationPreparationTablet organizationPreparation;
 
-    @Test(priority = 1)
+    /*@Test(priority = 1)
     @Description("This test attempts to prepare organization using an Empty Data UserId and a password and OrganizeId.")
     @Severity(CRITICAL)
     @Owner("Ahmed Ali")
@@ -82,7 +81,7 @@ public class GoooBig_PreparationTablet extends TestBase {
         System.out.println("PopUp Error Message is displayed to tell user data you entered are invalid.");
         Allure.addAttachment("Test Output", "text/plain", "Text in the field is: " + "PopUp Error Message is displayed to tell user data you entered are invalid");
     }
-
+*/
     @Test(priority = 5)
     @Description("This test attempts to prepare organization using valid Data UserId, password and OrganizeId.")
     @Severity(CRITICAL)

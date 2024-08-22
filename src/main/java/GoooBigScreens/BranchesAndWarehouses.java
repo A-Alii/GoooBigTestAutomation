@@ -15,7 +15,7 @@ public class BranchesAndWarehouses extends TestBase {
     MobileElement BranchesAndWarehouses;
     @AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, 'مستودع') and contains(@index, '0')]")
     MobileElement SelectWarehouse;
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='5']")
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@index='2']")
     MobileElement WarehouseNameInBranches;
     public void clickOnCashier() {
         Cashier.click();
